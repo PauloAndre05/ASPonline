@@ -3,12 +3,16 @@
     align-items: center;
     justify-content: space-between;
     padding: .3rem 5rem 0 5rem;
-    background-color: #000000a6;
+    background-color: #000000;
     position: fixed;
+    border-radius: 100px;
+    width: 1200px;
+    margin: auto;
     left: 0;
     right: 0;
     top: 0;
-    border-bottom: 3px solid #fff;
+    border-bottom: 1px solid #fff;
+    z-index: 10;
 }
 
 .menu .lista{

@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  
+
+.sessaoServicos{
+    background: rgba(0, 0, 0, 0.523) url("../../../images/abstract-background-dark-blue-with-modern-corporate-concept-vector-illustration_297535-2899.jpg");
+    background-blend-mode: color;
+    display: flex;  
+    justify-content: center;
+    align-items: center	;
+    padding: 2rem 0;
+}
+
+.container_itens{
+   width: 65%;
+}
+
+.container_itens h2{
+  color: #fff;
+  border-bottom:  1px solid #59D0E8;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.container_itens > p{
+  color:#59D0E8;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.slick-slider > div{
+  margin: 0 10px;
+}
+
+.slick-list{
+  margin: 0 -10px;
+}
+
+.item{
+    background-color: #fff; 
+    color: #000;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: .3rem;
+}
+
+.item i{
+    font-size: 3.5rem;
+    color: #432669;
+
+}
+
+.item h3{
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.item button{  
+  background-color: #000;
+  font-size: 1rem;
+  width: 200px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+

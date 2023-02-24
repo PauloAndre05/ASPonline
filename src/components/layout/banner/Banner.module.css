@@ -1,33 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box  ;
+}
+
 .banner{
     width: 100%;
-    height: 35rem;
+    height: 37rem;
 }
 
 .imagem_banner{
     background-image: url("../../../images/Banner.jpg");
-    width: 100%;
-    height: 100%;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.415);
     background-blend-mode: color;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
 
-.imagem_banner h1{
+.imagem_banner > h1{
     color: #fff;
-    margin-top: 8rem;
+    margin-top: 6em;
     font-size: 2rem;
 }
 
 .imagem_banner p{
     color: #fff;
     font-size: 1.5rem;
+    margin: 2rem;
     width: 34rem;
     text-align: center;
 }
 
-.imagem_banner h1, p{
+.imagem_banner h1{
     text-shadow: .1px 2px 8px rgba(0, 0, 0, 0.797);
+}
+
+.imagem_banner button{
+    background-color: #59d0e85a;    
 }

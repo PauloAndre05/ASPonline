@@ -1,14 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .botao{
     font-size: 1rem;
     color: #fff;
     width: 200px;
     height: 35px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     transition: all .5s;
+    letter-spacing: .15rem; 
+    font-weight: bolder;
 }
 
 .botao:hover{
-    background: rgba(0, 0, 0, 0.65);
     cursor: pointer;
 }

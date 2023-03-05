@@ -46,7 +46,6 @@ function SessaoServicos() {
         <section className= {styles.sessaoServicos}>                
             <div className={styles.container_itens}>
               <h2>Serviços</h2>
-              <p>Serviços disponíveis para você</p>
               <Slider {...settings}>
                 {dataCard.map((item) => (
                   <div className={styles.lista}>

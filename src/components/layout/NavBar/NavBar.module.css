@@ -1,14 +1,15 @@
+
 .menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: .3rem 5rem 0 5rem;
-    background-color: #000000a6;
+    height: 3rem;
+    background-color: #272C44;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    border-bottom: 3px solid #fff;
 }
 
 .menu .lista{

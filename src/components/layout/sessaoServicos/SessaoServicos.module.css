@@ -5,12 +5,12 @@
 }  
 
 .sessaoServicos{
-    background: rgba(0, 0, 0, 0.523) url("../../../images/abstract-background-dark-blue-with-modern-corporate-concept-vector-illustration_297535-2899.jpg");
     background-blend-mode: color;
     display: flex;  
     justify-content: center;
-    align-items: center	;
-    padding: 2rem 0;
+    align-items: center;
+    height: 500px;
+    margin: 3rem 0;
 }
 
 .container_itens{
@@ -18,8 +18,8 @@
 }
 
 .container_itens h2{
-  color: #fff;
-  border-bottom:  1px solid #59D0E8;
+  font-size: 1.8rem;
+  color: #242424;
   margin-bottom: 2rem;
   display: inline-block;
 }
@@ -39,7 +39,7 @@
 }
 
 .item{
-    background-color: #fff; 
+  background-color: #ececec;
     color: #000;
     height: 300px;
     width: 250px;

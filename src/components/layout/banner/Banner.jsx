@@ -6,8 +6,8 @@ function Banner() {
         <section className={styles.banner}>
             <div className={styles.imagem_banner}> 
                 <h1>AGENDAMENTO DE SERVIÇOS PÚBLICOS ONLINE</h1>
-                <p>Faça aqui o seu agendamento online, imprima o seu recibo e evite filas enormes</p>
-                <Botao nome="Agendar"/>
+                <p>Agende online, imprima o recibo evite filas enormes. Fácil, rápido e conveniente!</p>
+                <Botao nome="Agendar Agora"/>
             </div>
 
             

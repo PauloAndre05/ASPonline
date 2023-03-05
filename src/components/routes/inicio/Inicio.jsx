@@ -1,5 +1,6 @@
 import { Banner } from "../../layout/banner/Banner"
 import { Formulario } from "../../layout/formulario/Formulario"
+import { QuemSomos } from "../../layout/quem_somos/QuemSomos"
 import { SessaoServicos } from "../../layout/sessaoServicos/SessaoServicos"
 
 function Inicio() {
@@ -7,7 +8,8 @@ function Inicio() {
         <>
             <Banner/> 
             <SessaoServicos/>
-            <Formulario/>         
+            <Formulario/> 
+            <QuemSomos/>        
         </>
     )
 }

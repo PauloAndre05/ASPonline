@@ -4,6 +4,7 @@ import { Agendar } from './components/routes/agendar/Agendar';
 import { Inicio } from './components/routes/inicio/Inicio';
 import { Servicos } from './components/routes/servicos/Servicos';
 import { Sobre } from './components/routes/sobre/Sobre';
+import { Footer } from './components/layout/footer/Footer'
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           <Route path='/sobre' element={<Sobre/>} />
 
         </Routes>
+
+        <Footer/>
       </BrowserRouter> 
   
     </div>

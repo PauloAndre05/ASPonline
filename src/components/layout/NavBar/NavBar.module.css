@@ -5,12 +5,13 @@
     justify-content: space-between;
     padding: .3rem 5rem 0 5rem;
     height: 3rem;
-    background-color: #272C44;
+    background: linear-gradient(to left, #21463e, #2c4a50);
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     z-index: 100;
+
 }
 
 .menu .lista{

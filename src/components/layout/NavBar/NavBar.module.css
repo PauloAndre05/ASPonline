@@ -1,17 +1,21 @@
+main{
+    position: relative;
+
+}
+
 
 .menu{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: .3rem 5rem 0 5rem;
+    justify-content: space-around;
+    padding: 1.7rem 6rem;
     height: 3rem;
-    background: linear-gradient(to left, #21463e, #2c4a50);
-    position: fixed;
+    background: #8AA8A9;
+    color: #fff;
     left: 0;
     right: 0;
     top: 0;
     z-index: 100;
-
 }
 
 .menu .lista{

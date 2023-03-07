@@ -6,7 +6,7 @@ export const dataCard = [
         icone: "",
         servico: "Bilhete",
         desc: "Requisitos",
-    },
+    },  
 
     {
         id: 2,

@@ -1,5 +1,7 @@
 import styles from './QuemSomos.module.css'
 import { Preenchimento } from '../preenchimento/Preenchimento'
+
+
 function QuemSomos() {
     return(
         <>
@@ -10,6 +12,7 @@ function QuemSomos() {
                 </section>
                 
             </main>
+
             <Preenchimento/>
         </>
         

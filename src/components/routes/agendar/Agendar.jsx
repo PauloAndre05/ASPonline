@@ -1,6 +1,11 @@
+import { Formulario } from "../../layout/formulario/Formulario"
+import styles from './Agendar.mosule.css'
+
 function Agendar() {
     return(
-        <h1>Agendar</h1>
+        <div className={styles.container}>
+            <Formulario/>
+        </div>
     )
 }
 

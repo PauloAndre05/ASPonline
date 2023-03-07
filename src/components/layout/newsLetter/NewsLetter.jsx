@@ -16,12 +16,12 @@ function NewsLetter(){
                     </div>
 
                     <div className={styles.email}>
-                        <label htmlFor="email">Email <span>*</span></label>
+                        <label htmlFor="email">Email <span>*</span> </label>
                         <input type="email" name='email' id='email' placeholder='Seu Email'/>
                     </div>
 
                     <div className={styles.mensagem}>
-                        <label htmlFor="mensagem">Mensagem</label>
+                        <label htmlFor="mensagem">Mensagem <span>*</span> </label>
                         <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder='Sua Mensagem'></textarea>
                     </div>
 

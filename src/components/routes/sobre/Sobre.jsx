@@ -1,6 +1,11 @@
+import { QuemSomos } from "../../layout/quem_somos/QuemSomos"
+import styles from './Sobre.module.css'
+
 function Sobre() {
     return(
-        <h1>Sobre</h1>
+        <div className={styles.container}>
+            <QuemSomos className={styles.QuemSomos}/>
+        </div>
     )
 }
 

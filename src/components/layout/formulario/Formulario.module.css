@@ -9,11 +9,12 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #00000070;
+    background-color: #00000078;
     background-blend-mode: color;
     width: 100%;
-    padding: 1.5rem 0;
+    height: 100vh;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 1rem;
 }

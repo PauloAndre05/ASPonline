@@ -1,36 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 main{
     position: relative;
-
 }
 
 
 .menu{
+    position: fixed;
     display: flex;  
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1.7rem 6rem;
     height: 3rem;
-    background: #8AA8A9;
+    background: #05162A;
     color: #fff;
     left: 0;
     right: 0;
     top: 0;
     z-index: 100;
+    padding: 0 10rem;
 }
 
 .menu .lista{
     display: flex;
     list-style: none;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .menu .lista a{
     color: #fff;
+    font-size: .95rem;
     text-decoration: none;
     transition: all .4s;
     padding: .5rem;
 }
 
-.menu .lista a:hover{
-    color: black;
-}

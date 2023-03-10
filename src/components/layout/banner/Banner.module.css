@@ -1,26 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box  ;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
 .banner{
     width: 100%;
-    height: 37rem;
+    height: 80vh;
 }
 
 .imagem_banner{
     background-image: url("../../../images/Banner.jpg");
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.415);
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.445);
     background-blend-mode: color;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-}
+}   
 
 .imagem_banner > h1{
     color: #fff;

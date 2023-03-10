@@ -1,8 +1,12 @@
 import { Botao } from '../botao/Botao'
 import styles from './NewsLetter.module.css'
+import { Preenchimento } from '../preenchimento/Preenchimento'
+
 
 function NewsLetter(){
     return(
+        <>
+        <Preenchimento/>   
         <main className={styles.container}>
             <div className={styles.texto}>
                 <h2>NewsLetter</h2>
@@ -31,6 +35,7 @@ function NewsLetter(){
                 </form>
             </div>
         </main>
+        </>    
     )
 }
 

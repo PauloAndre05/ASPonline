@@ -14,7 +14,6 @@
     border: none;
     transition: all .5s;
     letter-spacing: .15rem; 
-    font-weight: bolder;
 }
 
 .botao:hover{

@@ -1,17 +1,17 @@
 import styles from './SessaoServicos.module.css'
 import Slider from "react-slick";
-import { HiIdentification } from 'react-icons/hi2'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { dataCard } from './Dados';
 import { Botao } from '../botao/Botao';
+import { Espaco } from '../espaco/Espaco';
 
 
 function SessaoServicos() {
     const settings = {
         dots: true,
         infinite: false,
-        speed: 900,
+        speed: 1500,
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,
@@ -50,15 +50,20 @@ function SessaoServicos() {
                 {dataCard.map((item) => (
                   <div className={styles.lista}>
                     <div className={styles.item}>
-                      <i> <HiIdentification/> </i>
-                      <h3> {item.servico} </h3>
-                      <p> {item.desc}</p>
-                      <Botao nome="Agendar"/>
+                      <div className={styles.img}>
+                        <img src={item.img} alt= {item.servico} />
+                      </div>
+                      <div className={styles.baixo}>
+                        <h3> {item.servico} </h3>
+                        <p> {item.desc}</p>
+                        <Botao nome="Agendar"/>
+                      </div>
                     </div>
                   </div>
                 ))}
               </Slider>
             </div>
+            <Espaco/>
         </section>
     )
 }

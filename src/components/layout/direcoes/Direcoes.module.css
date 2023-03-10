@@ -1,0 +1,23 @@
+.container{
+    width: 100%;
+    padding: 3rem 0;
+}
+
+section.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}   
+
+
+section.texto h1{
+    font-size: 1.8rem;
+}
+
+section.texto p{
+    color: rgba(0, 0, 0, 0.64);
+    width: 40rem;
+    text-align: center;
+    line-height: 1.7rem;
+}

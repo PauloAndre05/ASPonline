@@ -8,24 +8,33 @@
     background: url("../../../images/bgQuemSomos.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #000000ac;
+    background-color: #000000c8;
     background-blend-mode: color;
     width: 100%;
     height: 100vh;
     padding: 3rem 5rem;
 }
 
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 .container h2{
-    color: #fff;
+    color: #d5d5d5;
     font-size: 1.8rem;
     text-transform: uppercase;
 }
 
 
 .container p{
-    margin-top: 1rem;
-    color: #fff;
+    color: #717e88;
     font-size: 1.3rem;
-    width: 30rem;
+    width: 50rem;
+    text-align: center;
+    margin-top: 2rem;
 }
+

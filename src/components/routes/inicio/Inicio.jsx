@@ -1,4 +1,5 @@
 import { Banner } from "../../layout/banner/Banner"
+import { Direcoes } from "../../layout/direcoes/Direcoes"
 import { Formulario } from "../../layout/formulario/Formulario"
 import { NewsLetter } from "../../layout/newsLetter/NewsLetter"
 import { QuemSomos } from "../../layout/quem_somos/QuemSomos"
@@ -10,6 +11,7 @@ function Inicio() {
             <Banner/> 
             <SessaoServicos/>
             <Formulario/> 
+            <Direcoes/>
             <QuemSomos/>  
             <NewsLetter/>      
         </>

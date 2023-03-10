@@ -21,15 +21,15 @@ export const dataCard = [
 
     {
         id: 3,
-        img: "",
-        servico: "Cartão de Munícipe",
+        img: recenseamento,
+        servico: "Recenciamento Militar",
         desc: "Requisitos:",
     },
 
     {
         id: 4,
-        img: recenseamento,
-        servico: "Recenciamento Militar",
+        img: "",
+        servico: "Cartão de Munícipe",
         desc: "Requisitos:",
     },
 

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+
 *{
     padding: 0;
     margin: 0;
@@ -18,6 +19,7 @@
     background-position: center center;
     background-color: rgba(0, 0, 0, 0.445);
     background-blend-mode: color;
+    background-position: bottom;
     width: 100%;
     height: 100%;
     display: flex;
@@ -45,11 +47,20 @@
 }
 
 .imagem_banner button{
-    background-color: #fff;
-    color: #000;
+    background-color: #05162A;
+    color: #fff;
 }
 
 .imagem_banner button:hover{
-    background-color: #fff;
-    color: #00072E;
+    background-color: #061d38;
 }
+
+/*================================== START MEDIA SCREEN =============================*/
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    .banner{
+        height: 26rem;
+    }
+}
+
+/*================================== FINISHED MEDIA SCREEN =============================*/

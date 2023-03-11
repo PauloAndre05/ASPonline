@@ -9,7 +9,7 @@ function Formulario() {
                     <p>Preencha o formulário</p>
                 </div>
                 <div className={styles.formulario}>
-                    <form >
+                    <form>
                         <div className={styles.primeira_linha}>
 
                             <div className={styles.servico}>

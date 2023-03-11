@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 .container{
     background: url("../../../images/bgNewsLetter.jpg")no-repeat;
     background-color: #00000081;
@@ -11,8 +13,16 @@
     background-size: cover;
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
+    padding: 3rem 0;
+    gap: 3rem;
+}
+
+div.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 div.texto h2{
@@ -28,7 +38,6 @@ div.texto p{
 }
 
 div.formulario{
-    padding: 4rem;
     border-radius: .5rem;
 }
 
@@ -80,3 +89,10 @@ div.formulario label span{
 .botao button{
     width: 100%;
 }
+
+/*================================== START MEDIA SCREEN =============================*/
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+}
+
+/*================================== FINISHED MEDIA SCREEN =============================*/

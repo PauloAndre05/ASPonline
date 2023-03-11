@@ -7,6 +7,8 @@ section.texto{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    width: 90%;
     gap: 1rem;
 }   
 
@@ -21,3 +23,16 @@ section.texto p{
     text-align: center;
     line-height: 1.7rem;
 }
+
+
+/*================================== START MEDIA SCREEN =============================*/
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+
+    section.texto p{
+        width: 100%;
+    }
+    
+}
+
+/*================================== FINISHED MEDIA SCREEN =============================*/

@@ -5,18 +5,19 @@
 }
 
 .botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #242424;
-    font-size: 1rem;
     color: #fff;
+    font-size: 1rem;
+    letter-spacing: .15rem; 
     width: 200px;
     height: 35px;
     border-radius: 5px;
     border: none;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.703);
     transition: all .5s;
-    letter-spacing: .15rem; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .botao:hover{

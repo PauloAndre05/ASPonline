@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom'
 function NavBar() {
     return(
         <main>
-            <div className={styles.divtop}>
-
-            </div>
+        
             <nav className={styles.menu}>
                 <div className={styles.logo}> <img src="" alt="logo" /> </div>
                 <ul className={styles.lista}>
@@ -16,7 +14,7 @@ function NavBar() {
                     <li> <Link to="/agendar"> Agendar </Link> </li>
                     <li> <Link to="/sobre"> Sobre </Link> </li>
                 </ul>
-        </nav>
+            </nav>
         </main>
         
     )

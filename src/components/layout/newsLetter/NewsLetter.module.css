@@ -90,9 +90,32 @@ div.formulario label span{
     width: 100%;
 }
 
-/*================================== START MEDIA SCREEN =============================*/
+/*================================== START MEDIA SCREEN FOR TABLET (min-width: 600px) and (max-width: 768px)  =============================*/
 
 @media screen and (min-width: 600px) and (max-width: 768px){
 }
 
-/*================================== FINISHED MEDIA SCREEN =============================*/
+/*================================== FINISHED MEDIA SCREEN FOR TABLET =============================*/
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*================================== START MEDIA SCREEN FOR MOBILE (max-width: 600px)  =============================*/
+
+@media screen and (max-width: 600px){
+
+
+    div.texto h2{
+        font-size: 1.5rem; 
+        width: 100%;     
+        text-align: center;  
+    }
+    
+    div.texto p{
+        width: 80%;
+        margin: auto;
+    }
+}
+  
+  /*================================== FINISH MEDIA SCREEN FOR MOBILE =============================*/

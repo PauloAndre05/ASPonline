@@ -38,9 +38,12 @@ function Formulario() {
 
                         <div className={styles.terceira_linha}>
 
-                            <div className={styles.data}>
+                            <div className={styles.data_hora}>
                                 <label htmlFor="data">Data <span>*</span></label>
-                                <input type="date" name="data" id="data" />
+                                <div className={styles.inputs}>
+                                    <input type="date" name="data" id="data" />
+                                    <input type="time"/>
+                                </div>
                             </div>
                             <div className={styles.botao}>
                                 <p>É obrigátorio preencher todos os campos <span>*</span></p>

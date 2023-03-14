@@ -1,17 +1,27 @@
 
 import { Botao } from '../botao/Botao'
 import styles from './Banner.module.css'
+import banner from '../../../images/recenseamento.png'
+import * as S from './styles';
+
 function Banner() {
     return(
-        <section className={styles.banner}>
-            <div className={styles.imagem_banner}> 
+        <S.Banner>
+            <S.ImageBanner>
+                <S.Imagem 
+                    src={banner} 
+                    alt="Imagem do banner" 
+                /> 
+            </S.ImageBanner>
+                
+            <S.Text>
                 <h1>AGENDAMENTO DE SERVIÇOS PÚBLICOS ONLINE</h1>
                 <p>Agende online, imprima o recibo evite filas enormes. Fácil, rápido e conveniente!</p>
-                <Botao nome="Agendar Agora"/>
-            </div>
-
-            
-        </section>
+                <S.ButtonContainer>
+                    <Botao nome="Agendar Agora"/>
+                </S.ButtonContainer>
+            </S.Text>
+        </S.Banner>
     )
 }
 

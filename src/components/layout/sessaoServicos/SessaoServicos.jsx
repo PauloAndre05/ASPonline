@@ -19,17 +19,17 @@ function SessaoServicos() {
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinitbe: true,
               dots: true
             }
           },
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToShow: 1,
+              slidesToScroll: 1,
               initialSlide: 2
             }
           },
@@ -45,7 +45,7 @@ function SessaoServicos() {
     return(
         <section className= {styles.sessaoServicos}>                
             <div className={styles.container_itens}>
-              <h2>Serviços</h2>
+              <h2>Serviços</h2> 
               <Slider {...settings}>
                 {dataCard.map((item) => (
                   <div className={styles.lista}>

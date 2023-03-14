@@ -1,36 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-main{
-    position: relative;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 
 .menu{
     display: flex;  
     align-items: center;
+    justify-content: center;
     justify-content: space-between;
-    padding: 1.7rem 6rem;
-    height: 3rem;
+    padding: 1rem 6rem;
     background: #05162A;
     color: #fff;
-    left: 0;
-    right: 0;
-    top: 0;
     z-index: 100;
-    padding: 0 10rem;
 }
 
 .menu .lista{
+    margin: 0;
     display: flex;
     list-style: none;
     gap: 1.5rem;
 }
 
 .menu .lista a{
-    color: #fff;
-    font-size: .95rem;
+    color: #c6c6c6;
+    font-size: 1.1rem;
     text-decoration: none;
     transition: all .4s;
-    padding: .5rem;
 }
 
+
+/*================================== START MEDIA SCREEN FOR MOBILE (max-width: 600px)  =============================*/
+
+@media screen and (max-width: 600px){
+
+    .menu .lista{
+        display: none;
+    }
+
+}
+
+/*================================== FINISH MEDIA SCREEN FOR MOBILE =============================*/

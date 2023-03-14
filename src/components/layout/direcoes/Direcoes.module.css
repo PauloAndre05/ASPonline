@@ -15,6 +15,7 @@ section.texto{
 
 section.texto h1{
     font-size: 1.8rem;
+    text-transform: uppercase;
 }
 
 section.texto p{
@@ -25,7 +26,7 @@ section.texto p{
 }
 
 
-/*================================== START MEDIA SCREEN =============================*/
+/*================================== START MEDIA SCREEN FOR TABLET (min-width: 600px) and (max-width: 768px)  =============================*/
 
 @media screen and (min-width: 600px) and (max-width: 768px){
 
@@ -35,4 +36,22 @@ section.texto p{
     
 }
 
-/*================================== FINISHED MEDIA SCREEN =============================*/
+/*================================== FINISHED MEDIA SCREEN FOR TABLET =============================*/
+
+/*-------------------------------------------------------------------------------*/
+
+/*================================== START MEDIA SCREEN FOR MOBILE (max-width: 600px)  =============================*/
+
+@media screen and (max-width: 600px){
+
+    section.texto p{
+        width: 100%;
+    }
+
+    section.texto h1{
+        font-size: 1.5rem;
+    }
+
+}
+  
+  /*================================== FINISH MEDIA SCREEN FOR MOBILE =============================*/

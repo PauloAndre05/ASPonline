@@ -10,16 +10,15 @@
     align-items: center;
     background-color: #242424;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: .15rem; 
-    width: 200px;
-    height: 35px;
+    padding: .5rem 3rem;
     border-radius: 5px;
     border: none;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.703);
     transition: all .5s;
 }
 
 .botao:hover{
     cursor: pointer;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.703);
 }

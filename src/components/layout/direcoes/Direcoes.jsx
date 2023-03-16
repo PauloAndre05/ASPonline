@@ -1,13 +1,28 @@
-import styles from './Direcoes.module.css'
+import * as S from './StylesDirecao'
 
 function Direcoes() {
     return(
-        <main className={styles.container}>
-            <section className={styles.texto}>
+        <S.containerContainer>
+            <S.containerMain>
                 <h1>Direcções</h1>   
-                <p>Nossa sesssão de direções torna mais fácil para você chegar ao seu destino e aproveitar nossos serviços. Com a ajuda do Google Maps, fornecemos instruções precias e fáceis de seguir para que você possa navegar pela cidade com confiança </p>
-            </section>
-        </main>
+                <p>Segue as nossas direcções para chegar ao seu destino. Com a ajuda do Google Maps, fornecemos instruções precias e fáceis de seguir para que você possa navegar pela cidade com confiança </p>
+
+                <S.tabela>
+                    <S.column>
+                        <S.title>Instituição</S.title>
+                    </S.column>
+
+                    <S.column>
+                        <S.title>Localização</S.title>
+                    </S.column>
+                    
+                    <S.column>
+                        <S.title>Geográfica</S.title>
+                    </S.column>
+                </S.tabela>
+
+            </S.containerMain>
+        </S.containerContainer>
     )
 }
 

@@ -1,11 +1,16 @@
-*{
+import styled from "styled-components";
+
+
+
+export const container = styled.main`
+    *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+`;
 
-
-.menu{
+export const menu = styled.nav`
     display: flex;  
     align-items: center;
     justify-content: center;
@@ -14,31 +19,24 @@
     background: #05162A;
     color: #fff;
     z-index: 100;
-}
+`
 
-.menu .lista{
+export const lotipo = styled.div`
+
+`
+
+export const lista = styled.ul`
     margin: 0;
     display: flex;
     list-style: none;
     gap: 1.5rem;
-}
+`
 
-.menu .lista a{
+export const itens = styled.li`
+    a{
     color: #c6c6c6;
     font-size: 1.1rem;
     text-decoration: none;
     transition: all .4s;
-}
-
-
-/*================================== START MEDIA SCREEN FOR MOBILE (max-width: 600px)  =============================*/
-
-@media screen and (max-width: 600px){
-
-    .menu .lista{
-        display: none;
     }
-
-}
-
-/*================================== FINISH MEDIA SCREEN FOR MOBILE =============================*/
+`

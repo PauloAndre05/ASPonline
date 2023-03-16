@@ -1,8 +1,8 @@
-import styles from './Botao.module.css'
+import * as styles from './stylesButton'
 
 function Botao({nome}) {
     return(
-        <button className={styles.botao}> {nome} </button>
+        <styles.button> {nome} </styles.button>
     )
 }
 

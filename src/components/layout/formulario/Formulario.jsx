@@ -42,7 +42,6 @@ function Formulario() {
                                 <label htmlFor="data">Data <span>*</span></label>
                                 <div className={styles.inputs}>
                                     <input type="date" name="data" id="data" />
-                                    <input type="time"/>
                                 </div>
                             </div>
                             <div className={styles.botao}>

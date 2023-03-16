@@ -1,13 +1,13 @@
 import { FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
-import styles from './Footer.module.css'
+import *  as S from './stylesFooter'
 
 function Footer() {
     return(
 
-        <footer className={styles.footer}>
+        <S.footer >
 
-            <div className={styles.container}>
-                <div className={styles.coluna1}>
+            <S.container>
+                <S.colunas >
                     <div>
                         <h2>Páginas</h2>
                     </div>
@@ -15,28 +15,28 @@ function Footer() {
                     <p>Serviços</p>
                     <p>Agendar</p>
                     <p>Sobre</p>
-                </div>
-                <div className={styles.coluna2}>
+                </S.colunas>
+                <S.colunas >
                     <div>
                         <h2>Serviços</h2>
                     </div>
                     <p>Atendimento do cliente online</p>
-                </div>
-                <div className={styles.coluna3}>
+                </S.colunas>
+                <S.colunas >
                     <div>
                         <h2>Redes Sociais</h2>
                     </div>
-                    <div className={styles.icons}>
+                    <S.containerIcons>
                         <i> <FaFacebook/> </i>
                         <i> <FaInstagram/> </i>
                         <i> <FaLinkedinIn/> </i>
-                    </div>
-                </div>
-            </div>
+                    </S.containerIcons>
+                </S.colunas>
+            </S.container>
 
-            <p className={styles.copy}>Todos os direitos reservados</p>
+            <S.copy>Todos os direitos reservados</S.copy>
 
-        </footer>
+        </S.footer>
 
     )
 }

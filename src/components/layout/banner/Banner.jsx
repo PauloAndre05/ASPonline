@@ -1,8 +1,7 @@
 
 import { Botao } from '../botao/Botao'
-import styles from './Banner.module.css'
 import banner from '../../../images/recenseamento.png'
-import * as S from './styles';
+import * as S from './stylesBanner';
 
 function Banner() {
     return(
@@ -21,6 +20,7 @@ function Banner() {
                     <Botao nome="Agendar Agora"/>
                 </S.ButtonContainer>
             </S.Text>
+            
         </S.Banner>
     )
 }

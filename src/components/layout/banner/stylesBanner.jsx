@@ -1,14 +1,23 @@
 import styled from "styled-components";
 
-export const Banner=styled.section`
+export const Banner = styled.section`
     
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box  ;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+    height: 80vh;
+    width: 100%;
+    position: relative;
 `;
 
-export const ImageBanner=styled.div`
+export const ImageBanner = styled.div`
     background-color: rgba(0, 0, 0, 0.8);overflow: hidden;
     width: 100%;
     height: 100%;
-
    
 @keyframes zoom{
     0%{
@@ -40,7 +49,7 @@ export const Imagem=styled.img`
     animation: zoom 2.5s;
 `
 
-export const Text=styled.div`
+export const Text = styled.div`
     color: #fff;
     position: absolute;
     top: 50%;
@@ -59,6 +68,7 @@ export const Text=styled.div`
         display: flex;
         justify-content: center;
         font-size: 1.5rem;
+        margin: 1.5rem 0;
     }
 
 
@@ -67,33 +77,17 @@ export const Text=styled.div`
         color: #fff;
         display: flex;
         align-items: center;
+        width: 14rem;
+        height: 2.5rem;
     }
 
     button:hover{
         background-color: #061d38;
     }
-
-    
-@media screen and (min-width: 600px) and (max-width: 768px){
-    h1{
-        font-size: 1.6rem;
-        width: 35rem;
-    }
-    p{
-        margin: 0 auto;
-        margin-bottom: 1rem;
-        font-size: 1.2rem;
-    }
-    button{
-        padding: .5rem 1.4rem;  
-        font-size: 1rem;
-    }
-}
 `;
 
-export const ButtonContainer=styled.div`
+ export const ButtonContainer=styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-   
 `;

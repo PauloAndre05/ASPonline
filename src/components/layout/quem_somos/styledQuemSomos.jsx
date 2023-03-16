@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import bgQuemSomos from '../../../images/bgQuemSomos.png'
 
 export const container = styled.div`
-    background: url("../../../images/bgQuemSomos.png");
+    background: bgQuemSomos;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000c8;

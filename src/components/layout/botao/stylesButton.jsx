@@ -10,7 +10,6 @@ export const button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0000006f;
     color: #fff;
     font-size: 1.1rem;
     letter-spacing: .15rem; 

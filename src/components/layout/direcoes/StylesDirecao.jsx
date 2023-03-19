@@ -1,44 +1,75 @@
 import styled from "styled-components";
 
 export const containerContainer = styled.main `
-    margin: 5rem 0;
+   
 `
 
 export const containerMain = styled.section`
-    > h1{
+    
+`
+
+export const texto = styled.div`
+    h1{
         font-size: 1.8rem;
         text-transform: uppercase;
-        text-align: center;
+        margin-bottom: 0;
+        margin-bottom: 2rem;
+        border-bottom: 3px solid red;
+        line-height: 3rem;
     }
 
-    > p{
-        color: #00000077;
-        margin: 0 auto;
-        font-size: 1.1rem;
-        width: 50rem;
-        text-align: center;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
+    
+    img{
+        width: 9rem;
+        text-align: right;
+    }
+    > p{
+        color: #0000009f;
+        font-size: 1.2rem;
+        width: 35rem;
+    }
+`
+
+export const textoImagem = styled.section`
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+`
+
+export const cardImagem = styled.div`
+    width: 35rem;
+`
+
+export const imagem = styled.img`
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
 `
 
 export const tabela = styled.table`
     margin: 5rem auto;
     text-transform: uppercase;
-    width:90%;
+    width:80%;
 `
 
 export const line = styled.tr`
-    background-color: #939393;
+    color: #000;
     :nth-child(2n){
         background-color: lightgrey;
     }
-
-    :nth-child(2n) a{
-        color: #010101;
+    a{
+        color: blue;
     }
 `
 export const title = styled.th`
-    background-color: black;
-    color:#fff;
     text-align: center;
     padding: .9rem;
 `

@@ -1,4 +1,4 @@
-
+import { AiOutlineArrowUp } from 'react-icons/ai'
 import { Botao } from '../botao/Botao'
 import banner from '../../../images/recenseamento.png'
 import * as S from './stylesBanner';
@@ -20,7 +20,9 @@ function Banner() {
                     <Botao nome="Agendar Agora"/>
                 </S.ButtonContainer>
             </S.Text>
-            
+            <S.toTop href=''>
+                <AiOutlineArrowUp/>
+            </S.toTop>
         </S.Banner>
     )
 }

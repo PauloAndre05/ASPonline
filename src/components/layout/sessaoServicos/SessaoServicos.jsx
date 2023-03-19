@@ -1,5 +1,9 @@
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import * as S from './stylesServicos'
+import { Botao } from '../../layout/botao/Botao'
+import { dataCard } from "./Dados";
 
 function SessaoServicos() {
     const settings = {
@@ -37,9 +41,27 @@ function SessaoServicos() {
         ]
       };
     return(
-      <main>
-
-      </main>
+      <S.containerContainer>
+        <S.container>
+          <S.titleSection>Serviços</S.titleSection>
+          <Slider {...settings}>
+          {dataCard.map(item => (
+          <S.card>
+            <S.cardTop>
+              <S.imagem src={item.img} alt={item.servico}/>
+            </S.cardTop>
+            <S.cardBottom>
+              <S.title>{item.servico}</S.title>
+              <S.containerbutton>
+                <Botao nome="Agendar"/>
+              </S.containerbutton>
+            </S.cardBottom>
+          </S.card>
+          ))}
+          </Slider>
+        
+        </S.container>
+      </S.containerContainer>
     )
 }
 

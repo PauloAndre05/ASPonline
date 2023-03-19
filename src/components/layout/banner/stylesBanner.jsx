@@ -73,16 +73,19 @@ export const Text = styled.div`
 
 
     button{
-        background-color: #05162A;
+        border: 1px solid #05162A;
+        border-radius: 50px;
         color: #fff;
         display: flex;
         align-items: center;
         width: 14rem;
         height: 2.5rem;
+        background-color: transparent;
     }
 
     button:hover{
-        background-color: #061d38;
+        background-color: #fff;
+        color: #000;
     }
 `;
 
@@ -91,3 +94,22 @@ export const Text = styled.div`
     display: flex;
     justify-content: center;
 `;
+
+export const toTop = styled.a`
+    position: fixed;
+    right: 3rem;
+    bottom: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #061d38;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: all .5s;
+
+    :hover{
+       padding-bottom: 1rem;
+    }
+`

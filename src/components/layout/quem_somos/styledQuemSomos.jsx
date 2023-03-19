@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const container = styled.div`
-    background: bgQuemSomos;
+    background-image:url("../../../images/bgQuemSomos.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000c8;
@@ -16,8 +16,8 @@ export const container = styled.div`
     }
 `
 
-export const texto = styled.section`
-    display: flex;
+export const texto = styled.section` 
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;

@@ -1,6 +1,7 @@
 import bi from '../../../images/bi.png'
 import contribuinte from '../../../images/contribuinte.png'
 import recenseamento from '../../../images/recenseamento.png'
+import paulo from '../../../images/imgDir.jpg'
 
 import { } from 'react-icons/hi'
 
@@ -19,13 +20,13 @@ export const dataCard = [
     },
     {
         id: 3,
-        img: recenseamento,
+        img: paulo,
         servico: "Recenciamento Militar",
         desc: "Requisitos:",
     },
     {
         id: 4,
-        img: recenseamento,
+        img: paulo,
         servico: "Cartão de Munícipe",
         desc: "Requisitos:",
     },

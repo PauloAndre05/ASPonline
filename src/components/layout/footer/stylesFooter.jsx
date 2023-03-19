@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const footer = styled.footer`
-    background-color: #000;
+    background-color: #1d262d;
     bottom: 0;
     padding: 1rem 0 1rem 0;
 `
@@ -19,13 +19,13 @@ export const colunas = styled.div`
     
     h2{
         font-size: 1.1rem;
-        color: #2a4769;
+        color: #ffffffbc;
     }
 
     p{
         font-size: 1rem;
         line-height: 1.5rem;
-        color: grey;
+        color: #6a849e;
     }
 `
 
@@ -37,7 +37,7 @@ export const containerIcons = styled.div`
 `
 
 export const copy = styled.p`
-    color: grey;
+    color: #6a849e;
     font-size: .9rem;
     text-align: center;
 `

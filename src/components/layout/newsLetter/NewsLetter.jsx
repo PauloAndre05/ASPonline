@@ -32,6 +32,7 @@ function NewsLetter(){
                     <S.buttonNewsLetter>
                         <Botao nome="Enviar"/>
                     </S.buttonNewsLetter>
+
                 </S.form>
             </S.containerFormulario>
         </S.container>

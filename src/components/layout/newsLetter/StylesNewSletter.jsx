@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const container =  styled.main`
     background: url("../../../images/bgNewsLetter.jpg"), no-repeat;
-    background-color: #00000081;
+    background-color: #1d262d;
     background-blend-mode: color;
     background-size: cover;
     display: flex;

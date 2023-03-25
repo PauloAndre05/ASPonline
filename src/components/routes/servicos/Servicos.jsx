@@ -1,39 +1,30 @@
 import { Botao } from '../../layout/botao/Botao'
+import { dataCard } from '../../layout/sessaoServicos/Dados'
 import { SessaoServicos } from '../../layout/sessaoServicos/SessaoServicos'
-import styles from './Servicos.module.css'
+import * as S from './stylesServicos'
 
 function Servicos() {
     return(
-        <main className={styles.container}>
+        <S.container>
             <SessaoServicos/>
 
-            <section className={styles.sessaoServicos}>   
-                <article>
-                    <Botao/>
-                </article>
-                <article>
-                    <Botao/>
-                </article>
-                <article>
-                    <Botao/>
-                </article>
-                <article>
-                    <Botao/>
-                </article>
-                <article>
-                    <Botao/>
-                </article>
-                <article>
-                    <Botao/>
-                </article>
-                <article>
-                    <Botao/>
-                </article>
-                <article>
-                    <Botao/>
-                </article>
-            </section>
-        </main>
+                <S.containerCards>   
+                    {dataCard.map((item) => (
+                    <S.card>
+                        <h1>{item.servico}</h1>
+                        <p>{item.desc}</p>
+                        <ul>
+                            <li>{item.a}</li>
+                            <li>{item.b}</li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        
+                        <Botao name={`Agendar ${item.servico}`}/>
+                    </S.card>
+                    ))}               
+                </S.containerCards>
+        </S.container>
     )
 }
 

@@ -44,4 +44,7 @@ export const form = styled.form`
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    select{
+        width: 400px;
+    }
 `

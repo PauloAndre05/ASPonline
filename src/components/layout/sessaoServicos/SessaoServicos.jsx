@@ -15,8 +15,8 @@ function SessaoServicos() {
         initialSlide: 0,
         responsive: [
           {
-            breakpoint: 1024,
-            settings: {
+              breakpoint: 1024,
+              settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
               infinitbe: true,
@@ -53,7 +53,7 @@ function SessaoServicos() {
             <S.cardBottom>
               <S.title>{item.servico}</S.title>
               <S.containerbutton>
-                <Botao nome="Agendar"/>
+                <Botao name="Agendar"/>
               </S.containerbutton>
             </S.cardBottom>
           </S.card>

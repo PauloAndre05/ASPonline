@@ -26,7 +26,6 @@ export const lotipo = styled.div`
 `
 
 export const lista = styled.ul`
-    margin: 0;
     display: flex;
     list-style: none;
     gap: 1.5rem;

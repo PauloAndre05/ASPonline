@@ -10,7 +10,12 @@ export const dataCard = [
         id: 1,
         img: bi,
         servico: "Bilhete",
-        desc: "Requisitos",
+        desc: "Requisitos:",
+        a: "Ter idade mínima de 6 anos",
+        b: "Titular da certidão de Cópia integral do Asento de Nascimento",
+        c: "",
+
+        
     },  
     {
         id: 2,

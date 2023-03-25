@@ -1,13 +1,9 @@
 import styled from "styled-components";
 
-export const container = styled.div`
-    background-image:url("../../../images/bgQuemSomos.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+export const container = styled.main`
     background-color: #000000c8;
-    background-blend-mode: color;
     width: 100%;
-    padding: 3rem 3rem;
+    position: relative;
 
     h2{
         color: #d5d5d5;
@@ -16,15 +12,25 @@ export const container = styled.div`
     }
 `
 
+export const containerImg = styled.section` 
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+    
+`
+
+export const background = styled.img`
+    object-fit: cover;
+    width: 100%;
+    opacity: .5;
+`
+
 export const texto = styled.section` 
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 90%;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
 
     p{
     color: #ffffffbe;

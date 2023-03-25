@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Banner = styled.section`
+export const Banner = styled.main`
     
 *{
     padding: 0;
@@ -9,25 +9,16 @@ export const Banner = styled.section`
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
-    height: 80vh;
+    height: 500px;
     width: 100%;
     position: relative;
 `;
 
 export const ImageBanner = styled.div`
-    background-color: rgba(0, 0, 0, 0.8);overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.863);
+    overflow: hidden;
     width: 100%;
     height: 100%;
-   
-@keyframes zoom{
-    0%{
-        transform: scale(1.3);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-
 
 @media screen and (max-width: 600px){
     height: 26rem;
@@ -44,9 +35,8 @@ export const ImageBanner = styled.div`
 export const Imagem=styled.img`
     width: 100%;
     height: 100%;
-    opacity: .7;
+    opacity: .4;
     object-fit: cover;
-    animation: zoom 2.5s;
 `
 
 export const Text = styled.div`
@@ -73,7 +63,7 @@ export const Text = styled.div`
 
 
     button{
-        border: 1px solid #05162A;
+        border: 1px solid #fff;
         border-radius: 50px;
         color: #fff;
         display: flex;
@@ -97,10 +87,9 @@ export const Text = styled.div`
 
 export const toTop = styled.a`
     position: fixed;
-    right: 3rem;
+    right: 2rem;
     bottom: 2rem;
     width: 3rem;
-    height: 3rem;
     background-color: #061d38;
     color: #fff;
     display: flex;
@@ -108,8 +97,12 @@ export const toTop = styled.a`
     align-items: center;
     font-size: 1.5rem;
     transition: all .5s;
+    z-index: 1;
 
     :hover{
        padding-bottom: 1rem;
+       background-color: #fff;
+       color: #061d38;
+       border-radius: 50%;
     }
 `

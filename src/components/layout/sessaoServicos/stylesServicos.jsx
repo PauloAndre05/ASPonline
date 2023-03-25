@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 export const containerContainer = styled.main`
-    background-color: #e7e7e7;
-    padding: 5rem 0 8rem 0;
+    background-color: #627579a3;
+    padding: 2rem 0 8rem 0;
 `
 export const titleSection = styled.h1`
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     text-align: center;
-    border-bottom: 3px solid #061d38 ;
+    
     color: #061d38;
     display: inline-block;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+    width: 100%;
 `
 
 export const container = styled.div`

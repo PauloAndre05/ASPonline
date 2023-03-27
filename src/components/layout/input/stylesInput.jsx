@@ -9,6 +9,3 @@ export const input = styled.input`
     border: none;
     outline: none;
 `
-export const option = styled.option`
-
-`

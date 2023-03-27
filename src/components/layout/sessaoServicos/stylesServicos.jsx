@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
 export const containerContainer = styled.main`
-    background-color: #627579a3;
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    background-color: #6275795a;
     padding: 2rem 0 8rem 0;
 `
 export const titleSection = styled.h1`
     margin-bottom: 1rem;
     text-align: center;
-    
     color: #061d38;
     display: inline-block;
     font-weight: bold;
@@ -50,8 +54,23 @@ export const title = styled.h3`
 `
 
 export const containerbutton =styled.div`
+
+    a{
+        text-decoration: none;
+    }
+
     button{
         background-color: #061d38;
+        border: 1px solid #ffffff31;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8rem;
+        height: 2rem;
+        padding-bottom: .2rem;
+        text-decoration: none;
+        
     }
     button:hover{
         background-color: #fff;

@@ -10,7 +10,7 @@ export const containerMain = styled.section`
 
 export const texto = styled.div`
     h1{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
         margin-bottom: 0;
         margin-bottom: 2rem;
@@ -45,7 +45,7 @@ export const textoImagem = styled.section`
 `
 
 export const cardImagem = styled.div`
-    width: 35rem;
+    width: 30rem;
 `
 
 export const imagem = styled.img`

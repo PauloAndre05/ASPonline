@@ -20,7 +20,7 @@ export const texto = styled.div`
     h2{
         text-transform: uppercase;
         font-size: 1.8rem;
-        color: #fff;
+        color: #bd5500a2; ;
     }
 
     p{
@@ -43,26 +43,21 @@ export const form =  styled.form`
 export const containerLabelInput = styled.div`
     display: flex;
     flex-direction: column;
-    input{
-        background-color: #ffffff;
-        width: 25rem;
-        height: 2.5rem;
-        border-radius: .5rem;
+    input, textarea{
+        background-color: transparent;
         border: none;
         outline: none;
-        border: .3px solid rgba(0, 0, 0, 0.224);
-        padding: .5rem;
+        border-bottom: 1px solid #fff;
+        padding: 1rem 0;
+        color: #fff;
+        font-size: 1.1rem;
+        width: 30rem;
+        background: none;
     }
 
     textarea{
-        background-color: #ffffff;
-        width: 25rem;
-        height: 3.5rem;
-        border-radius: .5rem;
-        border: none;
-        outline: none;
-        border: .3px solid rgba(0, 0, 0, 0.224);
-        padding: .5rem;
+        max-height: 5rem;
+        min-height: 3.4rem;
     }
 
     label{
@@ -77,6 +72,17 @@ export const containerLabelInput = styled.div`
 
 export const buttonNewsLetter = styled.div`
     button{
-        width: 100%;
+        background-color: transparent;
+        border: 1px solid #bd5500a2; ;
+        width: 10rem;
+        height: 2rem;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    button:hover{
+        background-color: #000;
+        color: #fff;
+        border-color: #ffffff7c;
     }
 `

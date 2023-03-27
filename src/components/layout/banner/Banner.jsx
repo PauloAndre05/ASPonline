@@ -5,6 +5,7 @@ import banner2 from '../../../images/banner2.png'
 import banner3 from '../../../images/contribuinte.png'
 import * as S from './stylesBanner';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom'
 
 
 function Banner() {
@@ -57,7 +58,9 @@ function Banner() {
                 <h1>AGENDAMENTO DE SERVIÇOS PÚBLICOS ONLINE</h1>
                 <p>Agende online, imprima o recibo evite filas enormes. Fácil, rápido e conveniente!</p>
                 <S.ButtonContainer>
-                    <Botao name="Agendar Agora"/>
+                    <Link to="agendar">
+                        <Botao name="Agendar Agora"/>
+                    </Link>
                 </S.ButtonContainer>
             </S.Text>
             <S.toTop href='#'>

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import * as S from './stylesServicos'
 import { Botao } from '../../layout/botao/Botao'
 import { dataCard } from "./Dados";
+import { Link } from "react-router-dom";
 
 function SessaoServicos() {
     const settings = {
@@ -53,7 +54,9 @@ function SessaoServicos() {
             <S.cardBottom>
               <S.title>{item.servico}</S.title>
               <S.containerbutton>
-                <Botao name="Agendar"/>
+                <Link to="/agendar">
+                  <Botao name="Agendar"/>
+                </Link>
               </S.containerbutton>
             </S.cardBottom>
           </S.card>

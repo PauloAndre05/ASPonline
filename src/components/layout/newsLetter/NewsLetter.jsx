@@ -15,22 +15,19 @@ function NewsLetter(){
             <S.containerFormulario >
                 <S.form action="">
                     <S.containerLabelInput>
-                        <label htmlFor="nome">Nome Completo</label>
-                        <input type="text" name='nome' id='nome' placeholder='Seu Nome Completo'/>
+                        <input type="text" name='nome' id='nome' placeholder='Nome Completo'/>
                     </S.containerLabelInput>
 
                     <S.containerLabelInput >
-                        <label htmlFor="email">Email <span>*</span> </label>
                         <input type="email" name='email' id='email' placeholder='Seu Email'/>
                     </S.containerLabelInput>
 
                     <S.containerLabelInput>
-                        <label htmlFor="mensagem">Mensagem <span>*</span> </label>
                         <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder='Sua Mensagem'></textarea>
                     </S.containerLabelInput>
 
                     <S.buttonNewsLetter>
-                        <Botao nome="Enviar"/>
+                        <Botao name="Enviar"/>
                     </S.buttonNewsLetter>
 
                 </S.form>

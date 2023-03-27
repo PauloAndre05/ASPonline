@@ -77,5 +77,5 @@ export const input = styled.div`
 export const copy = styled.p`
     color: #6a849e;
     text-align: center;
-    padding: 1rem 0;
+    padding: .5rem 0;
 `

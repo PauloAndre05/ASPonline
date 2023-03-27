@@ -45,7 +45,7 @@ function Footer() {
                 </S.colunas>
             </S.container>
 
-            <S.copy>Todos os direitos reservados</S.copy>
+            <S.copy>Copyrigth &copy; Todos os direitos reservados</S.copy>
 
         </S.footer>
     )

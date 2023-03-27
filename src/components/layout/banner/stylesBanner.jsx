@@ -8,7 +8,6 @@ export const Banner = styled.main`
     box-sizing: border-box  ;
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
-
     height: 500px;
     width: 100%;
     position: relative;
@@ -45,12 +44,12 @@ export const Text = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;    
+      
     
     > h1{
-        display: flex;
-        justify-content: center;
-        font-size: 2.8rem;
+        width: 100%;
+        font-size: 2.4rem;
+        text-align: center;
         text-shadow: .1px 2px 8px rgba(0, 0, 0, 0.797);
     }
 
@@ -61,28 +60,32 @@ export const Text = styled.div`
         margin: 1.5rem 0;
     }
 
-
-    button{
-        border: 1px solid #fff;
-        border-radius: 50px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        width: 14rem;
-        height: 2.5rem;
-        background-color: transparent;
-    }
-
-    button:hover{
-        background-color: #fff;
-        color: #000;
-    }
 `;
 
  export const ButtonContainer=styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    
+    a{
+        text-decoration: none;
+    }
+
+     button{
+        border: 1px solid #ffffff31;
+        box-shadow: 1px 2px 5px #000000af;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        width: 12rem;
+        height: 2rem;
+        background-color: #000;
+        text-decoration: none;
+    }
+
+    button:hover{
+        background-color: #131313;
+    }
 `;
 
 export const toTop = styled.a`

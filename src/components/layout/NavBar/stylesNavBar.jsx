@@ -15,7 +15,7 @@ export const menu = styled.nav`
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    padding: 1rem 6rem;
+    padding: .8rem 8rem;
     background: #05162A;
     color: #fff;
     z-index: 100;
@@ -33,9 +33,13 @@ export const lista = styled.ul`
 
 export const itens = styled.li`
     a{
-    color: #c6c6c6;
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: all .4s;
+        font-size: 1.1rem;
+        color: #c6c6c6;
+        text-decoration: none;
+        transition: all .4s;
+    }
+
+    a:hover{
+        color: #9f9f9f;
     }
 `

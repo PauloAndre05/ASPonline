@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const container = styled.main`
-    background-color: #000000c8;
+    background-color: #000000;
     width: 100%;
     position: relative;
 
     h2{
         color: #d5d5d5;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
     }
 `
@@ -23,7 +23,7 @@ export const containerImg = styled.section`
 export const background = styled.img`
     object-fit: cover;
     width: 100%;
-    opacity: .5;
+    opacity: .4;
 `
 
 export const texto = styled.section` 

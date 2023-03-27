@@ -27,7 +27,11 @@ export const card = styled.article`
     padding: .6rem;
     border: .3px solid #ffffff14;
     border-radius: 5px;
+    transition: all .5s;
 
+    :hover{
+        box-shadow: 0px 0px 3px #fff;
+    } 
     h1{
         font-size: 1.3rem;
         color: #bd5500a2; 
@@ -45,6 +49,7 @@ export const card = styled.article`
     button{
         font-size: .8rem;
         background-color: #000;
+        color: #fff;
         border: 1px solid #ffffff9a;
         width: 100%;
         height: 2.5rem;

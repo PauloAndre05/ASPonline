@@ -22,7 +22,7 @@ export const titleSection = styled.h1`
 `
 
 export const container = styled.div`
-    width: 70%;
+    width: 60%;
     margin: 0 auto;  
     
     @media screen and (min-width: 320px) and (max-width: 600px){

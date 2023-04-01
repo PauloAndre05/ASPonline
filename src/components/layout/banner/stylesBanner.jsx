@@ -28,7 +28,7 @@ export const Banner = styled.main`
 `;
 
 export const ImageBanner = styled.div`
-    background-color: rgba(0, 0, 0, 0.863);
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
     width: 100%;
     height: 100%;

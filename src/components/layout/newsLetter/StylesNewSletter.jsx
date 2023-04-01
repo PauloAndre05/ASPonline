@@ -47,8 +47,8 @@ export const containerLabelInput = styled.div`
         background-color: transparent;
         border: none;
         outline: none;
-        border-bottom: 1px solid #fff;
-        padding: 1rem 0;
+        border-bottom: 1px solid #ffffff86;
+        padding: 1rem 0 1rem .3rem;
         color: #fff;
         font-size: 1.1rem;
         width: 30rem;
@@ -73,7 +73,7 @@ export const containerLabelInput = styled.div`
 export const buttonNewsLetter = styled.div`
     button{
         background-color: transparent;
-        border: 1px solid #bd5500a2; ;
+        border: 1px solid #bd5500a2; 
         width: 10rem;
         height: 2rem;
         color: #fff;
@@ -81,8 +81,9 @@ export const buttonNewsLetter = styled.div`
     }
 
     button:hover{
-        background-color: #000;
-        color: #fff;
+        background-color: #185090e4;
+        color: #000;
         border-color: #ffffff7c;
+        border: none;
     }
 `

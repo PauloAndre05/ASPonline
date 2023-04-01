@@ -7,7 +7,7 @@ export const containerContainer = styled.main`
         box-sizing: border-box;
     }
     background-color: #6275795a;
-    padding: 2rem 0 8rem 0;
+    padding: 2rem 0 3rem 0;
 `
 export const titleSection = styled.h1`
     margin-bottom: 1rem;
@@ -23,11 +23,15 @@ export const titleSection = styled.h1`
 
 export const container = styled.div`
     width: 70%;
-    margin: 0 auto;    
+    margin: 0 auto;  
+    
+    @media screen and (min-width: 320px) and (max-width: 600px){
+        width: 45%;
+    }
 `
 export const card = styled.div`
-    border: 10px solid transparent;
-    border-radius: 8px;
+    border: 6px solid transparent;
+    border-radius: 5px;
     overflow: hidden;
 `
 
@@ -51,6 +55,10 @@ export const imagem = styled.img`
 export const title = styled.h3`
     font-size: 1.1rem;
     text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+        font-size: .9rem;
+    } 
 `
 
 export const containerbutton =styled.div`

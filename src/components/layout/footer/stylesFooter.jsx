@@ -9,6 +9,10 @@ export const footer = styled.footer`
     background-color: #1d262d;
     bottom: 0;
     padding: 1rem 0 0 0;
+
+     @media screen and (min-width: 320px) and (max-width: 600px){
+        border: 1px solid red;
+    }
 `
 
 export const container = styled.div`
@@ -51,6 +55,7 @@ export const icon = styled.div`
 `
 
 export const input = styled.div`
+    
     form{
         display: flex;
         margin-top: 2rem;
@@ -58,6 +63,7 @@ export const input = styled.div`
     input{
         background-color: #00000059;
         padding-left: 1rem;
+        height: 2.5rem;
         color: #fff;
     }
     button{
@@ -71,6 +77,10 @@ export const input = styled.div`
     button:hover{
         background-color: #000;
         box-shadow: none;
+    }
+
+    @media screen and (max-width: 600px){
+        max-width: 310px;
     }
 `
 

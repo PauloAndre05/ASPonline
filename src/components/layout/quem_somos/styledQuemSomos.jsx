@@ -3,39 +3,46 @@ import styled from "styled-components";
 export const container = styled.main`
     background-color: #000000;
     width: 100%;
+    height: 35rem;
     position: relative;
-
+    
     h2{
         color: #d5d5d5;
         font-size: 1.5rem;
         text-transform: uppercase;
     }
+
+    @media screen and (min-width: 320px) and (max-width: 600px){
+        border: 1px solid red;
+    }
 `
 
 export const containerImg = styled.section` 
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
     width: 100%;
-    height: 80vh;
-    
+    height: 100%;
 `
 
 export const background = styled.img`
     object-fit: cover;
     width: 100%;
-    opacity: .4;
+    height: 100%;
+    opacity: .2;
 `
 
 export const texto = styled.section` 
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);   
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    top: 4rem;
+    left: 4rem;
+   
 
-    p{
+    p{  
     color: #ffffffbe;
-    width: 50rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 2rem;
     text-align: justify;
     }

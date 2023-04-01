@@ -46,8 +46,8 @@ function SessaoServicos() {
         <S.container>
           <S.titleSection>Serviços</S.titleSection>
           <Slider {...settings}>
-          {dataCard.map(item => (
-          <S.card>
+          {dataCard.map((item, index) => (
+          <S.card key={index}>
             <S.cardTop>
               <S.imagem src={item.img} alt={item.servico}/>
             </S.cardTop>

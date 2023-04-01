@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const containerContainer = styled.main`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     padding: 2rem 0 8rem 0;
-    background-color: #000;
+
+   
 `
 export const text = styled.section`
 
@@ -13,7 +17,7 @@ export const text = styled.section`
         font-size: 1.5rem;
         color: #061d38;
         text-align: center;
-        color: #bd5500a2; 
+        font-weight: bold;
     }
 `
 
@@ -21,28 +25,34 @@ export const containerForm = styled.section`
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        flex-wrap: wrap;
         padding: 2rem 3rem;
-        border-radius: 10px;
-        max-width: 50rem;
-
+        border: 1px solid red;
         h3{
+            text-align: center;
             text-transform: uppercase;
-            width: 30rem;
+            width: 100%;
         }
+    @media screen  and (max-width: 320px){
+        max-width: 450px;
+        margin: 0 auto;
+        h3{
+            font-size: .9rem;
+        }
+    }
 `
 
 export const form = styled.form`
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column; 
+    flex-wrap: wrap;
 `
 
 export const inputs = styled.div`
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
 
     input,select{
@@ -58,7 +68,6 @@ export const inputs = styled.div`
 
 export const containerButton = styled.div`
     margin-top: 1rem;
-
     button{
         
     }

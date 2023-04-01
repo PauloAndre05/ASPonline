@@ -29,15 +29,13 @@ function Direcoes() {
                         <S.title>Localização</S.title>
                         <S.title>Coordenadas</S.title>
                     </S.line>
-                    {dataTable.map((item) => (
-                    <S.line>
+                    {dataTable.map((item, index) => (
+                    <S.line key={index}>
                         <S.colunm>{item.nome}</S.colunm>
                         <S.colunm>{item.localizacao}</S.colunm>
                         <S.colunm> <S.link href={item.link}> {item.cooredenada}</S.link> </S.colunm>
                     </S.line> 
                     ))}
-                      
-
                 </S.tabela>
 
             </S.containerMain>

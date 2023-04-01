@@ -1,14 +1,25 @@
 import styled from "styled-components";
 
 export const containerContainer = styled.main `
-   
+   margin-top: 5rem;
+   width: 95%;
+   margin: 0 auto;
 `
 
 export const containerMain = styled.section`
     
 `
 
+export const textoImagem = styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+`
+
 export const texto = styled.div`
+    width: 30rem;
     h1{
         font-size: 1.5rem;
         text-transform: uppercase;
@@ -31,21 +42,18 @@ export const texto = styled.div`
     }
     > p{
         color: #0000009f;
-        font-size: 1.2rem;
-        width: 35rem;
+        font-size: 1.15rem;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 992px){
+       
     }
 `
 
-export const textoImagem = styled.section`
-    display: flex;
-    align-items: top;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-`
-
 export const cardImagem = styled.div`
-    width: 30rem;
+    width: 25rem;
+    height: 100%;
 `
 
 export const imagem = styled.img`
@@ -57,11 +65,17 @@ export const imagem = styled.img`
 export const tabela = styled.table`
     margin: 5rem auto;
     text-transform: uppercase;
-    width:80%;
+    width:90%;
+
+    @media screen and (max-width: 425px){
+        display: block;
+        overflow-x: scroll;
+    }
 `
 
 export const line = styled.tr`
     color: #000;
+    font-size: .9rem;
     :nth-child(2n){
         background-color: lightgrey;
     }

@@ -1,20 +1,36 @@
 import { Link } from 'react-router-dom'
-import * as s from './stylesNavBar'
+import * as S from './stylesNavBar'
+import logo from '../../../images/logo.svg'
 
 
 function NavBar() {
     return(
-        <s.container>
-            <s.menu>
-                <s.lotipo> <img src="" alt="logo" /> </s.lotipo>
-                <s.lista >
-                    <s.itens> <Link to="/"> Inicio </Link> </s.itens>
-                    <s.itens> <Link to="/servicos"> Serviços </Link> </s.itens>
-                    <s.itens> <Link to="/agendar"> Agendar </Link> </s.itens>
-                    <s.itens> <Link to="/sobre"> Sobre </Link> </s.itens>
-                </s.lista>
-            </s.menu>
-        </s.container>
+        <S.container>
+            
+            <S.menu>
+                <S.hamburguer>
+                    <S.line1></S.line1>
+                    <S.line2></S.line2>
+                    <S.line3></S.line3>
+                </S.hamburguer>
+                <S.lotipo> <img src={logo} alt="logo" /> </S.lotipo>
+                <S.lista >
+                    <S.itens> <Link to="/"> Inicio </Link> </S.itens>
+                    <S.itens> <Link to="/servicos"> Serviços </Link> </S.itens>
+                    <S.itens> <Link to="/agendar"> Agendar </Link> </S.itens>
+                    <S.itens> <Link to="/sobre"> Sobre </Link> </S.itens>
+                </S.lista>
+            </S.menu>
+
+            <S.sideBar>
+                <S.lista >
+                    <S.itens> <Link to="/"> Inicio </Link> </S.itens>
+                    <S.itens> <Link to="/servicos"> Serviços </Link> </S.itens>
+                    <S.itens> <Link to="/agendar"> Agendar </Link> </S.itens>
+                    <S.itens> <Link to="/sobre"> Sobre </Link> </S.itens>
+                </S.lista>
+            </S.sideBar>
+        </S.container>
         
     )
 }

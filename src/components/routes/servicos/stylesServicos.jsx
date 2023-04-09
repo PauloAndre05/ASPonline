@@ -17,6 +17,14 @@ export const containerCards = styled.section`
     padding: 5rem 0;
     background-color: #000;
     color: #ffffff9a;
+
+    a{
+        text-decoration: none;
+    }
+    h1{
+        font-size: 1.3rem;
+        color: #bd5500a2; 
+    }    
 `
 
 export const card = styled.article`
@@ -40,6 +48,7 @@ export const card = styled.article`
         width: 100%;
         font-weight: bolder;
         margin: 1rem 0 .5rem 0;
+        color: #fff;
     }
 
     ul{
@@ -51,7 +60,8 @@ export const card = styled.article`
         background-color: #000;
         color: #fff;
         border: 1px solid #ffffff9a;
-        width: 100%;
+        width:100%;
         height: 2.5rem;
+        border-radius: none;
     }
 `

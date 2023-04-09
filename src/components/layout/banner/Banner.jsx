@@ -1,16 +1,22 @@
+import { Link } from 'react-router-dom'
 import { AiOutlineArrowUp } from 'react-icons/ai'
 import { Botao } from '../botao/Botao'
+
 import banner from '../../../images/recenseamento.png'
 import banner2 from '../../../images/banner2.png'
 import banner3 from '../../../images/contribuinte.png'
+import banner4 from '../../../images/recenseamentoMob.png'
+import banner5 from '../../../images/bannerMob.png'
+import banner6 from '../../../images/contribuinteMob.png'
+
 import * as S from './stylesBanner';
 import Slider from 'react-slick';
-import { Link } from 'react-router-dom'
+
 
 
 function Banner() {
 
-    const carousel = [
+    const carousel1 = [
         {
             id: 1,
             image: banner2
@@ -25,7 +31,26 @@ function Banner() {
             id: 3,
             image: banner3
         }
+
 ]
+
+    const carousel2 = [
+    {
+        id: 4,
+        image: banner4
+    },
+
+    {
+        id: 5,
+        image: banner5
+    },
+
+    {
+        id: 6,
+        image: banner6
+    }
+]
+
 
     const settings = {
         dots: false,
@@ -41,18 +66,27 @@ function Banner() {
         <S.Banner>
             <S.ImageBanner>
                 <Slider {...settings}>
-                    {carousel.map((image) => (
+                    {carousel1.map((image) => (
                         <S.Imagem 
                             src={image.image} 
                             alt="Imagem do banner"
-                            key={image}
+                            key={image.id}
                         /> 
                     ))}
                 </Slider>
-
-                
-                
             </S.ImageBanner>
+
+            <S.ImageBanner2>
+                <Slider {...settings}>
+                    {carousel2.map((image) => (
+                        <S.Imagem 
+                            src={image.image} 
+                            alt="Imagem do banner"
+                            key={image.id}
+                        /> 
+                    ))}
+                </Slider>
+            </S.ImageBanner2>
                 
             <S.Text>
                 <h1>AGENDAMENTO DE SERVIÇOS PÚBLICOS ONLINE</h1>

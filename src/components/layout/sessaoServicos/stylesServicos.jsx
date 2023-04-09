@@ -53,11 +53,11 @@ export const imagem = styled.img`
     border-radius: 10px;
 `
 export const title = styled.h3`
-    font-size: 1.1rem;
+    font-size: .9rem;
     text-transform: uppercase;
 
     @media screen and (max-width: 768px) {
-        font-size: .9rem;
+        font-size: .8rem;
     } 
 `
 
@@ -74,11 +74,11 @@ export const containerbutton =styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 8rem;
-        height: 2rem;
+        width: 7.5rem;
+        height: 1.7rem;
         padding-bottom: .2rem;
         text-decoration: none;
-        
+        font-size: .9rem;
     }
     button:hover{
         background-color: #fff;

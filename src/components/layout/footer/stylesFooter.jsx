@@ -11,22 +11,20 @@ export const footer = styled.footer`
     padding: 1rem 0 0 0;
 
      @media screen and (min-width: 320px) and (max-width: 600px){
-        border: 1px solid red;
+   
     }
 `
 
 export const container = styled.div`
     display: flex;
     justify-content: center;
+    align-items: start;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 1rem 0;
-    border-bottom: 1px solid #8AA8A9;
 `
 
 export const colunas = styled.div`
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem; 
     > div{
         margin-bottom: 1rem;
     }
@@ -37,27 +35,71 @@ export const colunas = styled.div`
     }
 
     p{  
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.6rem;
         color: #6a849e;
+        width:7rem;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    a>p:hover{
+        color: #000000;
+    }
+
+    @media screen and (max-width: 600px){
+        p{
+            width: 10rem;
+        }
+    }
+
+    @media screen and (max-width: 320px){
+       p{
+        width: 8rem;
+       }
     }
 `
 
+export const coluna = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    h2{
+        color: #ffffffbc;
+        font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 609px){
+       width: 100%;
+    }
+`
+
+
 export const containerIcons = styled.div`
-   
+   div > h2{
+    margin-bottom: .5rem;
+    text-align: center;
+   }
 `
 
 export const icon = styled.div`
     color: #fff;
     font-size: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1rem;
 `
 
 export const input = styled.div`
-    
+
+    width: 25rem;
     form{
         display: flex;
+        justify-content: center;
         margin-top: 2rem;
     }
     input{
@@ -72,6 +114,7 @@ export const input = styled.div`
         color: #fff;
         border-radius: 0;
         box-shadow: none;
+        
     }
 
     button:hover{
@@ -79,13 +122,17 @@ export const input = styled.div`
         box-shadow: none;
     }
 
-    @media screen and (max-width: 600px){
-        max-width: 310px;
+    @media screen and (max-width: 768px){
+        width: 24rem;
+    }
+    
+    @media screen and (max-width: 420px){
+       width: 95%;
     }
 `
 
 export const copy = styled.p`
     color: #6a849e;
     text-align: center;
-    padding: .5rem 0;
+    padding: 2rem 0 .8rem 0;
 `

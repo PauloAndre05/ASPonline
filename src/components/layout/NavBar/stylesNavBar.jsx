@@ -2,10 +2,26 @@ import styled from "styled-components";
 
 export const container = styled.main`
     *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    display: flex;
+    flex-direction: column;
+`
+
+export const hamburguer = styled.div`
+    display: none;
+`
+
+export const line1 = styled.div`
+`
+
+export const line2 = styled.div`
+`
+
+export const line3 = styled.div`
 `
 
 export const menu = styled.nav`
@@ -15,11 +31,15 @@ export const menu = styled.nav`
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    padding: .5rem 8rem;
+    padding: .6rem 8rem .9rem 8rem;
     background: #185090;
     color: #fff;
     z-index: 100;
     box-shadow: 1px 5px 8px rgba(0, 0, 0, .3);
+`
+
+export const sideBar = styled.div`
+    display: none;
 `
 
 export const lotipo = styled.div`
@@ -43,7 +63,11 @@ export const itens = styled.li`
         transition: all .4s;
     }
 
-    a:hover{
-        color: #9f9f9f;
+    a: hover{
+        color: #DC9833;
+    }
+
+    a: active{
+        color: #DC9833;
     }
 `

@@ -13,36 +13,48 @@ function Footer() {
                     <div>
                         <h2>Páginas</h2>
                     </div>
-                    <p>Inicio</p>
-                    <p>Serviços</p>
-                    <p>Agendar</p>
-                    <p>Sobre</p>
+                        <a href="/">
+                            <p>Inicio</p>
+                        </a>
+                        <a href="/servicos">
+                            <p>Serviços</p>
+                        </a >
+                        <a  href="/agendar">
+                            <p>Agendar</p>
+                        </a>
+                        <a  href="/sobre">
+                            <p>Sobre</p>
+                        </a>
+                        
                 </S.colunas>
                 <S.colunas >
                     <div>
                         <h2>Serviços</h2>
                     </div>
                     <p>Atendimento do cliente online</p>
+                    
+                </S.colunas>
+                <S.coluna >
+                    
+                    <S.containerIcons>
+                        <div>
+                        <h2>Redes Sociais</h2>
+                        </div>
+                        <S.icon>
+                            <i> <FaFacebook/> </i>
+                            <i> <FaInstagram/> </i>
+                            <i> <FaLinkedinIn/> </i>
+                        </S.icon>
+
+                    </S.containerIcons>
                     <S.input>
                         <form action="">
                             <Input type="email" name="email" id="email" placeholder = {"Seu email..."} required/>
                             <Botao name="Enviar"/>
                         </form>
                     </S.input>
-                </S.colunas>
-                <S.colunas >
-                    <div>
-                        <h2>Redes Sociais</h2>
-                    </div>
-                    <S.containerIcons>
-                        <S.icon>
-                            <i> <FaFacebook/> </i>
-                            <i> <FaInstagram/> </i>
-                            <i> <FaLinkedinIn/> </i>
-                        </S.icon>
                 
-                    </S.containerIcons>
-                </S.colunas>
+                </S.coluna>
             </S.container>
 
             <S.copy>Copyrigth &copy; Todos os direitos reservados</S.copy>

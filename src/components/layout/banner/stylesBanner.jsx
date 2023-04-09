@@ -12,19 +12,22 @@ export const Banner = styled.main`
     width: 100%;
     position: relative;
 
-    
 
     @media screen and (max-width: 992px){
        height: 300px;
     }
     @media screen and (min-width: 601px) and (max-width: 768px) {
         height: 250px;
-        border: 1px solid red;
     }
 
-    @media screen and (min-width: 320px) and (max-width: 600px){
-        height: 205px;
+    @media screen and (max-width: 600px){
+        height: 40vh;
     }
+
+    @media screen and (max-width: 400px){
+        height: 50vh;
+    }
+
 `;
 
 export const ImageBanner = styled.div`
@@ -32,6 +35,24 @@ export const ImageBanner = styled.div`
     overflow: hidden;
     width: 100%;
     height: 100%;
+    @media screen and (max-width: 600px){
+        display: none;
+}
+`
+
+export const ImageBanner2 = styled.div`
+    display: none;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width: 600px){
+        display: block;
+    }
+
+    img{
+        object-fit: contain;
+    }
 `;
 
 export const Imagem=styled.img`
@@ -39,6 +60,10 @@ export const Imagem=styled.img`
     height: 100%;
     opacity: .4;
     object-fit: cover;
+
+    @media screen and (max-width: 600px){
+        object-fit: contain;
+}
 `
 
 export const Text = styled.div`
@@ -51,6 +76,7 @@ export const Text = styled.div`
       
     
     > h1{
+        
         font-size: 2rem;
         text-align: center;
         text-shadow: .1px 2px 8px rgba(0, 0, 0, 0.797);
@@ -82,7 +108,7 @@ export const Text = styled.div`
         }
     }
 
-    @media screen and (min-width: 320px) and (max-width: 600px){
+    @media screen and (max-width: 600px){
         h1{
             font-size: 1.5rem;
             width: 80%;
@@ -92,6 +118,20 @@ export const Text = styled.div`
         p{
             width: 95%;
             font-size: 17px;
+            margin: .8rem auto;
+        }
+    }
+
+    @media screen and (min-width: 360px) and (max-width: 600px){
+        h1{
+            font-size: 1.1rem;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        p{
+            width: 95%;
+            font-size: 15px;
             margin: .8rem auto;
         }
     }

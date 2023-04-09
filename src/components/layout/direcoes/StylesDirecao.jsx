@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const containerContainer = styled.main `
-   margin-top: 5rem;
    width: 95%;
    margin: 0 auto;
+   margin-top: 1rem;
 `
 
 export const containerMain = styled.section`
@@ -20,25 +20,19 @@ export const textoImagem = styled.section`
 
 export const texto = styled.div`
     width: 30rem;
-    h1{
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        margin-bottom: 0;
-        margin-bottom: 2rem;
-        border-bottom: 3px solid red;
-        line-height: 3rem;
-    }
-
+    
     div{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        width: 7rem;
         flex-wrap: wrap;
+        margin: 0 auto;
     }
     
     img{
-        width: 9rem;
-        text-align: right;
+        width: 100%;
+        height: 100%;
     }
     > p{
         color: #0000009f;

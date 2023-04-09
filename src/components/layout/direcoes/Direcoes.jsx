@@ -11,8 +11,7 @@ function Direcoes() {
                 <S.textoImagem>
                     <S.texto>
                     <div>
-                        <h1>Direcções</h1>
-                        <S.imagem src={imgDir3} alt = "Imagem de localização"/>
+                        <S.imagem src={imgDir3} alt = "Imagem de localizaçã o"/>
                     </div>
                         <p>Segue as nossas direcções para chegar ao seu destino. Com a ajuda do Google Maps, fornecemos instruções precias e fáceis de seguir para que você possa navegar pela cidade com confiança <br/> <br />
                         Confira as coordenadas na tabela de Direcções abaixo </p>
@@ -33,7 +32,8 @@ function Direcoes() {
                     <S.line key={index}>
                         <S.colunm>{item.nome}</S.colunm>
                         <S.colunm>{item.localizacao}</S.colunm>
-                        <S.colunm> <S.link href={item.link}> {item.cooredenada}</S.link> </S.colunm>
+                        <S.colunm> <S.link href={item.link} target='_blank'> {item.cooredenada}</S.link> 
+                        </S.colunm>
                     </S.line> 
                     ))}
                 </S.tabela>

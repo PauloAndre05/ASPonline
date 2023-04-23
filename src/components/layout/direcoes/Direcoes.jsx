@@ -1,7 +1,7 @@
 import { dataTable } from './data'
 import * as S from './StylesDirecao'
-import imgDir2 from  '../../../images/imgDir2.jpg'
 import imgDir3 from '../../../images/imgDir3.jpg'
+import imgDirection from  '../../../images/direction6.png'
 
 function Direcoes() {
     return(
@@ -13,12 +13,12 @@ function Direcoes() {
                     <div>
                         <S.imagem src={imgDir3} alt = "Imagem de localizaçã o"/>
                     </div>
-                        <p>Segue as nossas direcções para chegar ao seu destino. Com a ajuda do Google Maps, fornecemos instruções precias e fáceis de seguir para que você possa navegar pela cidade com confiança <br/> <br />
+                        <p>Segue as nossas direcções para chegar ao seu destino. Com a ajuda do Google Maps, fornecemos instruções precias e fáceis de seguir para que você possa navegar pela cidade com confiança <br/>
                         Confira as coordenadas na tabela de Direcções abaixo </p>
                     </S.texto>
 
                     <S.cardImagem>
-                        <S.imagem src={imgDir2} alt = "Imagem de direcções"/>
+                        <S.imagem src={imgDirection} alt = "Imagem de direcções"/>
                     </S.cardImagem> 
                 </S.textoImagem>
 

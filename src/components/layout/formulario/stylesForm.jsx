@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const containerContainer = styled.main`
+    background-color: #d6d6d649;
     *{
-        padding: 0;
         margin: 0;
         box-sizing: border-box;
     }
@@ -33,6 +33,7 @@ export const containerForm = styled.section`
         margin-top: 2rem;
         border-radius: .5rem;
         box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.133);
+        background-color: #fff;
         
         p{
             text-align: left;
@@ -46,6 +47,7 @@ export const containerForm = styled.section`
 
     @media screen  and (max-width: 600px){
         width: 100%;
+        border-radius: 0 ;
     }
 
   
@@ -54,16 +56,20 @@ export const containerForm = styled.section`
 export const form = styled.form`
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 5rem;
+
+    @media screen and (max-width: 768px){
+        gap: 1rem;
+    }
 `
 
 export const inputs = styled.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
     
     > div{
         display: flex;
@@ -75,6 +81,13 @@ export const inputs = styled.div`
         color: red;
     }
 
+    >div >p{
+        padding: 0;
+        font-size: .9rem;
+        text-align: center;
+        margin-top: .1rem;
+    }
+
     input,select{
         border: 1px solid rgba(111, 111, 111, 0.5) ;
         border-radius: .2rem;
@@ -84,19 +97,32 @@ export const inputs = styled.div`
         padding-left: .6rem;    
     }  
 
-    input: focus{
+    input:focus{
         border: 1px solid rgba(0, 0, 0, 0.5) ;
     }  
 
-    select: focus{
+    select:focus{
         border: 1px solid rgba(0, 0, 0, 0.5) ;
     }
     
 `
 
-export const containerButton = styled.div`
 
+
+export const containerButton = styled.div`
+position: relative;
     button{
-        
+        background-color: #061d38;
+        color: #fff;
+        width: 7.5rem;
+        height: 1.7rem;
+        padding-bottom: .2rem;
+        font-size: .9rem;
+        position: absolute;
+        right: 0;
+    }
+    button:hover{
+        background-color: #0a2f59;
+        box-shadow: none;
     }
 `

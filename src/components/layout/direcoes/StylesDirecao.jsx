@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const containerContainer = styled.main `
-   width: 95%;
+   
    margin: 0 auto;
-   margin-top: 1rem;
+   padding-top: 1rem;
 `
 
 export const containerMain = styled.section`
-    
+    width: 95%;
+    margin: 0 auto;
 `
 
 export const textoImagem = styled.section`
@@ -36,7 +37,7 @@ export const texto = styled.div`
     }
     > p{
         color: #0000009f;
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         width: 100%;
     }
 
@@ -46,7 +47,7 @@ export const texto = styled.div`
 `
 
 export const cardImagem = styled.div`
-    width: 25rem;
+    width: 18rem;
     height: 100%;
 `
 

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import * as S from './stylesForm'
 import { Input } from '../input/Input'
@@ -36,7 +36,22 @@ function Formulario() {
     function biCedula(e) {
         setServicoSelecionado(e.target.value)
     }
-
+    
+    useEffect(() => {
+        {/*fetch("https://angolaapi.herokuapp.com/api/v1/validate/passport/n1234566}", {*/}
+        
+        fetch("https://api.gov.ao/consultarBI/v2/007578210LA044",{
+            method: 'GET',
+            mode: 'no-cors',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+    }, []) 
     
     return(
         <S.containerContainer>
@@ -47,6 +62,10 @@ function Formulario() {
                     <p>Por favor, forneça os seus detalhes no formulário abaixo para proceder com o agendamento.</p>
                     <S.form>
                         <S.inputs>
+                            <div>
+                                <label htmlFor="nome"> Nome Completo <span>*</span></label>
+                                <Input type="text" name="telefone" id="telefone" required max={1} placeholder="EX: 944 617 903"  />
+                            </div>
                             <div>
                                 <label htmlFor="servico">Serviço <span>*</span></label>
                                 <select 
@@ -105,11 +124,12 @@ function Formulario() {
                             <div>
                                 <label htmlFor="emailConfirmar">Confirmar Email <span>*</span></label>
                                 <Input type="email" name="emailConfirmar" id="emailConfirmar" required placeholder="EX: pauloasamuel011@gmail.com"/>
+                                <p>(<span>*</span>) identifica campo obrigatório</p>
                             </div>
 
 
                             <S.containerButton>
-                                <Botao name="Submeter"/>
+                                <Botao name="Seguinte"/>
                             </S.containerButton>
                         </S.inputs>
                         

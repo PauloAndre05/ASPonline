@@ -28,7 +28,17 @@ export const Banner = styled.main`
         height: 50vh;
     }
 
-`;
+    @keyframes moveBanner{
+        0%{
+            transform: translateY(10rem) rotateY(-30deg);
+        }
+        100%{
+            transform: translateY(0) rotateY(0);
+            opacity: 1;
+    }
+}
+
+`
 
 export const ImageBanner = styled.div`
     background-color: rgb(0, 0, 0);
@@ -80,6 +90,8 @@ export const Text = styled.div`
         font-size: 2rem;
         text-align: center;
         text-shadow: .1px 2px 8px rgba(0, 0, 0, 0.797);
+        opacity: 0;
+        animation: moveBanner 1s 0.5s forwards;
     }
 
     p{
@@ -89,6 +101,8 @@ export const Text = styled.div`
         justify-content: center;
         font-size: 1.3rem;
         margin: 1.5rem auto;
+        opacity: 0;
+        animation: moveBanner 1s 0.9s forwards;
     }
 
     @media screen  and (max-width: 992px) {
@@ -140,6 +154,8 @@ export const Text = styled.div`
  export const ButtonContainer=styled.div`
     display: flex;
     justify-content: center;
+    opacity: 0;
+    animation: moveBanner 1s 1.5s forwards;
     
     a{
         text-decoration: none;

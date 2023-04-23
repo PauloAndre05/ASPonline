@@ -1,15 +1,12 @@
-import bi from '../../../images/bi.png'
-import contribuinte from '../../../images/contribuinte.png'
-import recenseamento from '../../../images/recenseamento.png'
-import paulo from '../../../images/imgDir.jpg'
+import {IdentificationCard, Cardholder, FileText, IdentificationBadge, Keyboard} from 'phosphor-react'
 
 import { } from 'react-icons/hi'
 
 export const dataCard = [
     {
         id: 1,
-        img: bi,
-        servico: "Bilhete",
+        img: <IdentificationCard size={50} weight="thin" />,
+        servico: "Bilhete de identidade",
         desc: "Requisitos:",
         a: "Ter idade mínima de 6 anos",
         b: "Titular da certidão de Cópia integral do Asento de Nascimento",
@@ -22,7 +19,7 @@ export const dataCard = [
     },  
     {
         id: 2,
-        img: contribuinte,
+        img: <IdentificationBadge size={50} weight="thin" />,
         servico: "Cartão de Contribuinte",
         desc: "Requisitos:",
         a: "Bilhete de Identidade Original",
@@ -34,40 +31,43 @@ export const dataCard = [
     },
     {
         id: 3,
-        img: paulo,
+        img: <FileText size={50}  weight="thin"/>,
         servico: "Recenseamento Militar",
         desc: "Requisitos:",
         a: "Bilhete de Identidade Original",
-        b: "",
+        b: "Dclaração de Habilitação",
+        c: "4 Fotografias",
+        d: "Cópia da Cédula",
+        e: ""
     },
     {
         id: 4,
-        img: paulo,
+        img: <Keyboard size={50} weight="thin" />,
         servico: "Cartão de Munícipe",
         desc: "Requisitos:",
         a: "Bilhete de Identidade Original",
     },
     {
         id: 5,
-        img: recenseamento,
+        img: <FileText size={50}  weight="thin"/>,
         servico: "Atestado de Residência",
         desc: "Requisitos:",
     },
     {
         id: 6,
-        img: recenseamento,
+        img: <Cardholder size={48} weight="thin" />,
         servico: "Cartão de Contribuinte",
         desc: "Requisitos:",
     },
     {
         id: 7,
-        img: recenseamento,
+        img: <Cardholder size={48} weight="thin" />,
         servico: "Bilhete",
         desc: "Requisitos",
     },
     {
         id: 8,
-        img: recenseamento,
+        img: <IdentificationCard size={50} weight="thin" />,
         servico: "Cartão de Contribuinte",
         desc: "Requisitos:",
     }

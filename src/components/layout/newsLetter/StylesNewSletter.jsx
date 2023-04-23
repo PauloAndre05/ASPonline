@@ -31,9 +31,9 @@ export const texto = styled.div`
     h1{
         text-transform: uppercase;
         font-size: 1.8rem;
-        color: #6d5929;
+        color: #DC9833;
         width:100%;
-        box-shadow: 1px 0px 5px rgba(0, 0, 0, 1);
+        text-align: center;
     }
 
     p{
@@ -104,19 +104,18 @@ export const containerLabelInput = styled.div`
 `
 
 export const buttonNewsLetter = styled.div`
-    align: right;
+    text-align: right;
     width:100%;
     button{
         background-color: transparent;
         width: 10rem;
         height: 2rem;
-        color: #fff;
+        color: #82b6e0;
         font-size: 1.1rem;
+        background-color: #263f4f;
     }
 
     button:hover{
-        background-color: #185090e4;
-        color: #000;
         border-color: #ffffff7c;
         border: none;
     }
@@ -125,6 +124,7 @@ export const buttonNewsLetter = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        
         button{
             width: 15rem;
         }

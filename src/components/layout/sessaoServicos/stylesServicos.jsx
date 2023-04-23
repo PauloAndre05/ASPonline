@@ -23,20 +23,31 @@ export const titleSection = styled.h1`
 
 export const container = styled.div`
     width: 60%;
-    margin: 0 auto;  
-    
+    margin: 0 auto; 
     @media screen and (min-width: 320px) and (max-width: 600px){
         width: 45%;
     }
 `
-export const card = styled.div`
+
+export const containerCard =styled.div`
     border: 6px solid transparent;
+`
+export const card = styled.div`
     border-radius: 5px;
     overflow: hidden;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff83;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
 `
 
 export const cardTop = styled.div`
-    height: 8rem;
+    div{
+        display: flex;
+        justify-content: center;
+        color: #DC9833;
+    }
 `
 export const cardBottom = styled.div`
     display: flex;
@@ -44,7 +55,7 @@ export const cardBottom = styled.div`
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding: 2rem 0;
+    padding-bottom: 1rem;
 `
 export const imagem = styled.img`
     width: 100%;

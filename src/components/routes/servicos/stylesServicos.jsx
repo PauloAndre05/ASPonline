@@ -20,6 +20,7 @@ export const containerCards = styled.section`
 
     a{
         text-decoration: none;
+        color: #a5a5a5;
     }
     h1{
         font-size: 1.3rem;

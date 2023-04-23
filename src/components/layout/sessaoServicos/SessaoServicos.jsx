@@ -4,11 +4,10 @@ import "slick-carousel/slick/slick-theme.css";
 import * as S from './stylesServicos'
 import { Botao } from '../../layout/botao/Botao'
 import { dataCard } from "./Dados";
-import { Link } from "react-router-dom";
 
 function SessaoServicos() {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 1500,
         slidesToShow: 3,
@@ -43,23 +42,26 @@ function SessaoServicos() {
       };
     return(
       <S.containerContainer>
+        <S.titleSection>Serviços</S.titleSection>
         <S.container>
-          <S.titleSection>Serviços</S.titleSection>
+          
           <Slider {...settings}>
           {dataCard.map((item, index) => (
-          <S.card key={index}>
-            <S.cardTop>
-              <S.imagem src={item.img} alt={item.servico}/>
-            </S.cardTop>
-            <S.cardBottom>
-              <S.title>{item.servico}</S.title>
-              <S.containerbutton>
-                <Link to="/agendar">
-                  <Botao name="Agendar"/>
-                </Link>
-              </S.containerbutton>
-            </S.cardBottom>
-          </S.card>
+          <S.containerCard>
+            <S.card key={index}>
+              <S.cardTop>
+                <div>{item.img}</div>
+              </S.cardTop>
+              <S.cardBottom>
+                <S.title>{item.servico}</S.title>
+                <S.containerbutton>
+                  <a href="/agendar">
+                    <Botao name="Agendar"/>
+                  </a>                  
+                </S.containerbutton>
+              </S.cardBottom>
+            </S.card>
+          </S.containerCard>
           ))}
           </Slider>
         

@@ -66,7 +66,7 @@ export const imagem = styled.img`
 export const title = styled.h3`
     font-size: .9rem;
     text-transform: uppercase;
-
+    text-align: center;
     @media screen and (max-width: 768px) {
         font-size: .8rem;
     } 

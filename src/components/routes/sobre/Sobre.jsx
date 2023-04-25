@@ -28,14 +28,11 @@ function Sobre() {
                     <div>
                         <img src={banner} alt="image banner" />
                     </div>
-
-                    
                 </S.banner>
                 <S.text>
                     <h1>Quem Somos</h1>
                     <p>Saiba mais sobre o ASPonline</p>
                 </S.text>
-                
             </S.header>
 
             <S.content>
@@ -50,7 +47,7 @@ function Sobre() {
 
             
             <S.more>
-                
+                <h1>ASPonline</h1>
                     <S.carrossel>
                         <Slider {...settings}>
                         <div>

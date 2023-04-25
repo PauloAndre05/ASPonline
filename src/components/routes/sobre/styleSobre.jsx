@@ -123,6 +123,10 @@ export const more = styled.section`
             margin: 0;
     }
 
+    h1{
+        color: #82B6E0;
+    }
+
     @media screen and (max-width: 600px) {
         h6{
             font-size: .8rem;
@@ -135,7 +139,7 @@ export const carrossel = styled.div`
     flex-direction: column;
     width: 30%;
     overflow: hidden;
-    box-shadow: inset 0px 0px 20px rgba(237, 237, 237, 0.35);
+    /* box-shadow: inset 0px 0px 20px rgba(237, 237, 237, 0.35); */
     border-radius: 10px;
 
     @media screen and (max-width: 600px) {

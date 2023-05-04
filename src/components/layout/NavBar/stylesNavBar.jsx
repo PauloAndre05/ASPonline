@@ -161,15 +161,6 @@ export const lista = styled.ul`
     } 
 `
 
-{/* <Lightbulb size={48} weight="thin" />
-<Bell size={48} weight="thin" />
-<CheckCircle size={48} weight="thin" />
-<IdentificationBadge size={48} weight="thin" />
-<Keyboard size={48} weight="thin" />
-<LightbulbFilament size={48} weight="thin" />
-<SealCheck size={48} weight="thin" />
-<UserRectangle size={48} weight="thin" />
-*/}
 
 export const lista2 = styled.ul`
     width: 100%;

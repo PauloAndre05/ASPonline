@@ -38,7 +38,6 @@ function Formulario() {
     }
     
     useEffect(() => {
-        {/*fetch("https://angolaapi.herokuapp.com/api/v1/validate/passport/n1234566}", {*/}
         
         fetch("https://api.gov.ao/consultarBI/v2/007578210LA044",{
             method: 'GET',

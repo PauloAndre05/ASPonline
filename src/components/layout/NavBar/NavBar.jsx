@@ -15,8 +15,8 @@ function NavBar() {
             <S.containerLogo>
                 <div><img src={logoAngola} alt="" /></div>
                 <S.icons>
-                    <a href="#"><i> <TwitterLogo /> </i></a>
-                    <a href="#"><i> <LinkedinLogo /> </i></a>
+                    <a href="/"><i> <TwitterLogo /> </i></a>
+                    <a href="/"><i> <LinkedinLogo /> </i></a>
                 </S.icons>            
             </S.containerLogo>
             <S.menu>

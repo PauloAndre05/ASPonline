@@ -11,7 +11,6 @@ function Inicio() {
             <S.container >
                 <Banner/>
                 <SessaoServicos/>
-                <Formulario/>
                 <Direcoes/>
                 <QuemSomos/>
             </S.container>

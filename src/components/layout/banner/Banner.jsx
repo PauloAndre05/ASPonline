@@ -4,10 +4,10 @@ import { Botao } from '../botao/Botao'
 
 import banner from '../../../images/recenseamento.png'
 import banner2 from '../../../images/banner2.png'
-import banner3 from '../../../images/contribuinte.png'
 import banner4 from '../../../images/recenseamentoMob.png'
 import banner5 from '../../../images/bannerMob.png'
 import banner6 from '../../../images/contribuinteMob.png'
+import banner7 from '../../../images/banner3_.jpg'
 
 import * as S from './stylesBanner';
 import Slider from 'react-slick';
@@ -26,11 +26,11 @@ function Banner() {
             id: 2,
             image: banner
         },
-
+        
         {
-            id: 3,
-            image: banner3
-        }
+            id: 4,
+            image: banner7
+        },
 
 ]
 
@@ -58,7 +58,7 @@ function Banner() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 6000,
         pauseOnHover: false,
     };
 
@@ -89,7 +89,7 @@ function Banner() {
             </S.ImageBanner2>
                 
             <S.Text>
-                <h1>AGENDAMENTO DE SERVIÇOS PÚBLICOS ONLINE</h1>
+                <h1>Agendamento de Serviços Públicos Online</h1>
                 <p>Agende online, imprima o recibo evite filas enormes. Fácil, rápido e conveniente!</p>
                 <S.ButtonContainer>
                     <Link to="agendar">

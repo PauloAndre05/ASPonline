@@ -6,7 +6,7 @@ export const dataCard = [
     {
         id: 1,
         img: <IdentificationCard size={50} weight="thin" />,
-        servico: "Bilhete de identidade",
+        servico: "Bilhete 1ª via",
         desc: "Requisitos:",
         a: "Ter idade mínima de 6 anos",
         b: "Titular da certidão de Cópia integral do Asento de Nascimento",
@@ -62,7 +62,7 @@ export const dataCard = [
     {
         id: 7,
         img: <Cardholder size={48} weight="thin" />,
-        servico: "Bilhete",
+        servico: "Bilhete 2ª Via",
         desc: "Requisitos",
     },
     {

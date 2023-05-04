@@ -6,9 +6,11 @@ import { Servicos } from './components/routes/servicos/Servicos';
 import { Sobre } from './components/routes/sobre/Sobre';
 import { Footer } from './components/layout/footer/Footer'
 
+import * as S from './stylesApp'
+
 function App() {
   return (
-    <div>
+    <S.container>
      
       <BrowserRouter>
         <NavBar/>
@@ -24,7 +26,7 @@ function App() {
       <Footer/>
       </BrowserRouter> 
   
-    </div>
+    </S.container>
     
   );
 }

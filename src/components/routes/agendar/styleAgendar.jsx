@@ -9,12 +9,12 @@ export const main = styled.main`
 `
 
 export const banner = styled.section`
-    
-    overflow: hidden;
+   
     >div{
         width: 100%;
         height: 400px;
-        background-color: #000;
+        background-color: #000; 
+        overflow: hidden;
     }
 
     img{
@@ -35,14 +35,27 @@ export const text = styled.div`
     color: #fff;
 
     h1{
+        text-transform: uppercase;
         font-size: 1.5rem;
         opacity: 0;
-        animation: moveBanner 1s 0.5s forwards;
+        animation: moveH1 1.5s 0.5s forwards;
+        text-shadow: 1px 2px 8px #000;
     }
 
     p{
         opacity: 0;
-        animation: moveBanner 1s 0.7s forwards;
+        animation: moveBanner 2s 0.7s forwards;
+        text-shadow: 1px 2px 8px #000;
+    }
+
+    @keyframes moveH1{
+        0%{
+            transform: translateX(-10rem) rotateY(-30deg);
+        }
+        100%{
+            transform: translateX(0) rotateY(0);
+            opacity: 1;
+        }
     }
 
     @keyframes moveBanner{

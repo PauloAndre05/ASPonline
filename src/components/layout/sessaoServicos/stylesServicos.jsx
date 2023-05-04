@@ -6,27 +6,97 @@ export const containerContainer = styled.main`
         margin: 0;
         box-sizing: border-box;
     }
-    background-color: #6275795a;
-    padding: 2rem 0 3rem 0;
 `
 export const titleSection = styled.h1`
-    margin-bottom: 1rem;
     text-align: center;
-    color: #061d38;
-    display: inline-block;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.5rem;
-    padding-bottom: .5rem;
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    padding: 1.5rem;
     width: 100%;
+    height: 100%;
+`
+
+export const content = styled.div`
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+    background-color: #eeeeee;
+    gap: 5rem;  
+`
+
+export const contImage = styled.div`
+    width: 22rem;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 3px #00000028;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @media screen and (max-with: 768px) {
+        width: 2rem;
+    }
+`
+
+export const paragrafo = styled.div`
+    width: 30rem;
+    border-bottom: 1px solid #69696993;
+    padding-bottom: 3rem;
+
+    p{
+        font-size: 1.2rem;
+        color: #45707a;
+    }
+`
+
+export const area2 = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+`
+
+export const text2 = styled.div`
+    width: 55rem;
+
+    p{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+`
+
+export const ContainerImage2 = styled.div`
+    width: 10rem;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
 `
 
 export const container = styled.div`
     width: 60%;
-    margin: 0 auto; 
+    margin: 0 auto;
+
     @media screen and (min-width: 320px) and (max-width: 600px){
         width: 45%;
     }
+`
+
+export const containerContainerS = styled.div` 
+    background-color: #0c809740;    
+    padding: 2rem;
 `
 
 export const containerCard =styled.div`
@@ -38,7 +108,7 @@ export const card = styled.div`
     gap: .5rem;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff83;
+    background-color: #ffffffdd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
 `
 
@@ -73,15 +143,21 @@ export const title = styled.h3`
 `
 
 export const containerbutton =styled.div`
-
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
     a{
         text-decoration: none;
+        text-align: center;
     }
 
     button{
-        background-color: #061d38;
-        border: 1px solid #ffffff31;
-        color: #fff;
+        background-color: transparent;
+        border: 1px solid #00000022;
+        color: #000;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -90,9 +166,15 @@ export const containerbutton =styled.div`
         padding-bottom: .2rem;
         text-decoration: none;
         font-size: .9rem;
+        border-radius: 0;
     }
     button:hover{
-        background-color: #fff;
-        color: #000;
+        box-shadow: none;
+        background-color: #000;
+        color: #fff;
     }
+`
+
+export const a = styled.a`
+        
 `

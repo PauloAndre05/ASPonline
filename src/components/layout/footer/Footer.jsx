@@ -31,7 +31,7 @@ function Footer() {
                     <div>
                         <h2>Serviços</h2>
                     </div>
-                    <p>Atendimento do cliente online</p>
+                    <p>Agendamento online</p>
                     
                 </S.colunas>
                 <S.coluna >

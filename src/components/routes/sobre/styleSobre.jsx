@@ -14,14 +14,14 @@ export const header= styled.header`
 export const banner = styled.main`
     > div{
         width: 100%;
-        height: 350px;
+        height: 72vh;
         background-color: black;
     }
     img{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        opacity: .4;
+        opacity: .3;
     }
 `
 
@@ -35,6 +35,7 @@ export const text = styled.div`
     color: #fff;
 
     h1{
+        text-transform: uppercase;
         font-size: 1.5rem;
         opacity: 0;
         animation: moveBanner 1s 0.5s forwards;

@@ -6,9 +6,9 @@ export const footer = styled.footer`
         margin: 0;
         box-sizing: border-box;
     }
-    background-color: #1d262d;
+    background-color: #1D262D;
     bottom: 0;
-    padding: 1rem 0 0 0;
+    padding: 2rem 0 0 0;
 
      @media screen and (min-width: 320px) and (max-width: 600px){
    

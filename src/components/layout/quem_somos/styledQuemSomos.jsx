@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const container = styled.main`
     background-color: #000000;
     width: 100%;
-    height: 35rem;
+    height: 100vh;
     position: relative;
 
     div{
@@ -44,7 +44,7 @@ export const background = styled.img`
     object-fit: cover;
     width: 100%;
     height: 100%;
-    opacity: .3;
+    opacity: .2;
 `
 
 export const texto = styled.section` 
@@ -76,7 +76,7 @@ export const texto = styled.section`
     }
 
     @media screen and (max-width: 600px){
-        idth:90%;
+        width:90%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);   

@@ -8,7 +8,7 @@ export const Banner = styled.main`
     box-sizing: border-box  ;
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
-    height: 350px;
+    height: 80vh;
     width: 100%;
     position: relative;
 
@@ -21,11 +21,11 @@ export const Banner = styled.main`
     }
 
     @media screen and (max-width: 600px){
-        height: 40vh;
+        height: 200px;
     }
 
     @media screen and (max-width: 400px){
-        height: 50vh;
+        height: 200px;
     }
 
     @keyframes moveBanner{
@@ -34,6 +34,16 @@ export const Banner = styled.main`
         }
         100%{
             transform: translateY(0) rotateY(0);
+            opacity: 1;
+    }
+}
+
+    @keyframes moveButton{
+        0%{
+            transform: translateX(10rem) rotateX(-30deg);
+        }
+        100%{
+            transform: translateX(0) rotateX(0);
             opacity: 1;
     }
 }
@@ -70,6 +80,7 @@ export const Imagem=styled.img`
     height: 100%;
     opacity: .4;
     object-fit: cover;
+    object-position: center;
 
     @media screen and (max-width: 600px){
         object-fit: contain;
@@ -86,11 +97,12 @@ export const Text = styled.div`
       
     
     > h1{
-        
         font-size: 2rem;
         text-align: center;
-        text-shadow: .1px 2px 8px rgba(0, 0, 0, 0.797);
+        text-transform: uppercase;
+        text-shadow: 1px 2px 8px #000;
         opacity: 0;
+        color: #e2e2e2;
         animation: moveBanner 1s 0.5s forwards;
     }
 
@@ -101,8 +113,10 @@ export const Text = styled.div`
         justify-content: center;
         font-size: 1.3rem;
         margin: 1.5rem auto;
+        color: #d1d1d1;
         opacity: 0;
         animation: moveBanner 1s 0.9s forwards;
+        text-shadow: 1px 2px 8px #000;
     }
 
     @media screen  and (max-width: 992px) {
@@ -136,6 +150,16 @@ export const Text = styled.div`
         }
     }
 
+    @media screen and (max-width: 600px){
+        p{
+            display: none;
+        }
+        
+        h1{
+            font-size: 1rem;
+        }
+      }
+
     @media screen and (min-width: 360px) and (max-width: 600px){
         h1{
             font-size: 1.1rem;
@@ -155,7 +179,7 @@ export const Text = styled.div`
     display: flex;
     justify-content: center;
     opacity: 0;
-    animation: moveBanner 1s 1.5s forwards;
+    animation: moveButton 1s 1.5s forwards;
     
     a{
         text-decoration: none;
@@ -163,13 +187,13 @@ export const Text = styled.div`
 
      button{
         border: 1px solid #ffffff31;
-        box-shadow: 1px 2px 5px #000000;
-        color: #fff;
+        color: #9b9b9b;
         display: flex;
         align-items: center;
         width: 12rem;
         height: 2rem;
         background-color: #000;
+        background: linear-gradient(to right,#000000ef, #122f47dc);
         text-decoration: none;
 
     }
@@ -183,6 +207,10 @@ export const Text = styled.div`
             width: 10.5rem;
             font-size: .9rem;
         }  
+    }
+
+    @media screen and (max-width: 600px){
+      display: none;
     }
 
     @media screen and (min-width: 320px) and (max-width: 600px){

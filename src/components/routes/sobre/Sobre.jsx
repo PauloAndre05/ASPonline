@@ -1,7 +1,7 @@
 import { NewsLetter } from "../../layout/newsLetter/NewsLetter"
 import * as S from './styleSobre'
 
-import banner from '../../../images/bgQuemSomos.png'
+import banner from '../../../images/bgAgendar1.jpg'
 import imgSobre from '../../../images/direction9.png'
 
 import {Lightbulb, Bell, CheckCircle} from 'phosphor-react'
@@ -55,7 +55,7 @@ function Sobre() {
                             <h6>Transparência</h6>
                         </div>
                         <div>
-                            <Bell size={40} weight="thin" color="#fff" />
+                            <Bell size={40} weight="thin" color="#82B6E0" />
                             <h6>Responsabilidade</h6>
                         </div>
                         <div>

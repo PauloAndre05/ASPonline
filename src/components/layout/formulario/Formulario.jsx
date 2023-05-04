@@ -63,8 +63,8 @@ function Formulario() {
                     <S.form>
                         <S.inputs>
                             <div>
-                                <label htmlFor="nome"> Nome Completo <span>*</span></label>
-                                <Input type="text" name="telefone" id="telefone" required max={1} placeholder="EX: 944 617 903"  />
+                                <label htmlFor="nome"> Nome Completo</label>
+                                <Input type="text" name="nome" id="nome" required max={1} placeholder="Nome Completo"  />
                             </div>
                             <div>
                                 <label htmlFor="servico">Serviço <span>*</span></label>
@@ -94,9 +94,9 @@ function Formulario() {
                                     
                             {servicoSelecionado !== "1" &&(
                                 <div>
-                                <label htmlFor="bi">Nº do bilhete de identidade <span>*</span></label>
-                                <Input type="text" name="bi" id="bi" required max={14} placeholder="EX: 009999999LA000"/>
-                            </div>
+                                    <label htmlFor="bi">Nº do bilhete de identidade <span>*</span></label>
+                                    <Input type="text" name="bi" id="bi" required max={14} placeholder="EX: 009999999LA000"/>
+                                </div>
                             )}
 
                             {servicoSelecionado === "1" &&(
@@ -124,7 +124,7 @@ function Formulario() {
                             <div>
                                 <label htmlFor="emailConfirmar">Confirmar Email <span>*</span></label>
                                 <Input type="email" name="emailConfirmar" id="emailConfirmar" required placeholder="EX: pauloasamuel011@gmail.com"/>
-                                <p>(<span>*</span>) identifica campo obrigatório</p>
+                                <p>(<span>*</span>) indica campo obrigatório</p>
                             </div>
 
 

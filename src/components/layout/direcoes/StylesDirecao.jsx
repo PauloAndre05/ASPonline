@@ -7,7 +7,7 @@ export const containerContainer = styled.main `
 `
 
 export const containerMain = styled.section`
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
 `
 

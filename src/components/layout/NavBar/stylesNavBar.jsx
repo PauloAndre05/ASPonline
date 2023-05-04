@@ -44,6 +44,9 @@ export const lotipo = styled.a`
         width: 100%;
     }
 
+@media screen and (max-width: 768px){
+    width: 4rem;
+}
 `
 
 export const icons = styled.article`
@@ -128,7 +131,7 @@ export const menu = styled.nav`
     
 
     @media screen and (max-width: 768px) {
-        padding: .6rem 3rem .9rem 3rem;
+        padding: .5rem 2rem .5rem 2rem;
     } 
 
     @media screen and (min-width: 768px) and (max-width: 992px){

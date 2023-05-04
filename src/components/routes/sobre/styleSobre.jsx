@@ -69,13 +69,7 @@ export const content = styled.section`
         overflow: hidden;
         opacity: 0;
         animation: moveBanner 1s 0.7s forwards;
-    }
-
-    img{
-        width: 100%;
-    }
-
-    
+    }   
 
     p{
         font-size: 1.2rem;
@@ -103,6 +97,10 @@ export const content = styled.section`
             opacity: 1;
     }
 }
+`
+
+export const img = styled.img`
+    width: 100%;
 `
 
 export const more = styled.section`

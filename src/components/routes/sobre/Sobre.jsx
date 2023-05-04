@@ -26,7 +26,7 @@ function Sobre() {
             <S.header>
                 <S.banner>
                     <div>
-                        <img src={banner} alt="image banner" />
+                        <S.img src={banner} alt="image banner" />
                     </div>
                 </S.banner>
                 <S.text>
@@ -37,7 +37,7 @@ function Sobre() {
 
             <S.content>
                 <div>
-                    <img src={imgSobre} alt="Image about" />
+                    <S.img src={imgSobre} alt="Image about" />
                 </div>  
 
                 <div>

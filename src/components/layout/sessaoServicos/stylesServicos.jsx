@@ -79,10 +79,11 @@ export const ContainerImage2 = styled.div`
     overflow: hidden;
     border-radius: 50%;
 
-    img{
-        width: 100%;
-        object-fit: cover;
-    }
+`
+
+export const img = styled.img`
+    width: 100%;
+    object-fit: cover; 
 `
 
 export const container = styled.div`

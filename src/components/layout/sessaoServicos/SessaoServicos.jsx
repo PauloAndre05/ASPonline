@@ -57,7 +57,7 @@ function SessaoServicos() {
         <S.titleSection>Serviços</S.titleSection>
         <S.content>
             <S.contImage>
-              <img src={imageServico} alt="image servico" />
+              <S.img src={imageServico} alt="image servico" />
             </S.contImage>
 
             <S.paragrafo>
@@ -70,7 +70,7 @@ function SessaoServicos() {
               </S.text2>
 
               <S.ContainerImage2>
-                <img src={imageServico2} alt="image servico" />
+                <S.img src={imageServico2} alt = "image servico" />
               </S.ContainerImage2>
             </S.area2>
         </S.content>

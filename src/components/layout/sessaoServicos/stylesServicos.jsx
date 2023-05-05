@@ -113,7 +113,7 @@ export const container = styled.div`
     margin: 0 auto;
 
     @media screen and  (max-width: 600px){
-        width: 45%;
+        width: 63%;
     }
 `
 

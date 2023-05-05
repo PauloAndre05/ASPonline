@@ -155,10 +155,10 @@ export const sideBar = styled.div`
     align-items: center;
     /* max-height: ${({isOpen}) => isOpen?'40vh':'0'}; */
     background: linear-gradient(to right,#000000ef, #122f47dc, #000000ef );
-    transition: all 1s;
+    transition: all .6s;
 
     ${({ isOpen }) => isOpen && css`
-        height: 200px;
+        height: 300px;
         visibility: visible;
     `}
     

@@ -18,6 +18,12 @@ export const titleSection = styled.h1`
     padding: 1.5rem;
     width: 100%;
     height: 100%;
+
+    @media screen and (max-width: 768px){
+        background-color: transparent;
+        font-size: 1.12rem;
+        color: #000;
+    }
 `
 
 export const content = styled.div`
@@ -28,6 +34,12 @@ export const content = styled.div`
     flex-wrap: wrap;
     background-color: #eeeeee;
     gap: 5rem;  
+    text-align: justify;
+    line-height: 1.7rem;
+
+    @media screen and (max-width: 768px){
+        gap: 3rem;
+    } 
 `
 
 export const contImage = styled.div`
@@ -41,9 +53,9 @@ export const contImage = styled.div`
         object-fit: cover;
     }
 
-    @media screen and (max-with: 768px) {
-        width: 2rem;
-    }
+    @media screen and (max-width: 768px){
+        width: 15rem;
+    }   
 `
 
 export const paragrafo = styled.div`
@@ -55,6 +67,12 @@ export const paragrafo = styled.div`
         font-size: 1.2rem;
         color: #45707a;
     }
+
+    @media screen and (max-width: 768px){
+        p{
+            font-size: 1rem;
+        }
+    } 
 `
 
 export const area2 = styled.div`
@@ -70,8 +88,14 @@ export const text2 = styled.div`
 
     p{
         width: 100%;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
+
+    @media screen and (max-width: 768px){
+        p{
+            font-size: 1rem;
+        }
+    } 
 `
 
 export const ContainerImage2 = styled.div`
@@ -90,8 +114,8 @@ export const container = styled.div`
     width: 60%;
     margin: 0 auto;
 
-    @media screen and (min-width: 320px) and (max-width: 600px){
-        width: 45%;
+    @media screen and  (max-width: 600px){
+        width: 70%;
     }
 `
 
@@ -107,10 +131,10 @@ export const card = styled.div`
     border-radius: 5px;
     overflow: hidden;
     gap: .5rem;
-    display: flex;
     flex-direction: column;
     background-color: #ffffffdd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
+    height: 100%;
 `
 
 export const cardTop = styled.div`

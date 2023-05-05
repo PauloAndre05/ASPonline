@@ -8,6 +8,7 @@ import banner4 from '../../../images/recenseamentoMob.png'
 import banner5 from '../../../images/bannerMob.png'
 import banner6 from '../../../images/contribuinteMob.png'
 import banner7 from '../../../images/banner3_.jpg'
+import banner8 from '../../../images/banner3Mob.jpg'
 
 import * as S from './stylesBanner';
 import Slider from 'react-slick';
@@ -48,7 +49,12 @@ function Banner() {
     {
         id: 6,
         image: banner6
-    }
+    },
+
+    {
+        id: 6,
+        image: banner8
+    },
 ]
 
 

@@ -21,7 +21,8 @@ export const textoImagem = styled.section`
 
 export const texto = styled.div`
     width: 30rem;
-    
+    text-align: justify;
+    line-height: 1.7rem;
     div{
         display: flex;
         align-items: center;
@@ -41,8 +42,10 @@ export const texto = styled.div`
         width: 100%;
     }
 
-    @media screen and (max-width: 992px){
-       
+    @media screen and (max-width: 768px){
+       p{
+        font-size: 1rem;
+       }
     }
 `
 
@@ -60,11 +63,12 @@ export const imagem = styled.img`
 export const tabela = styled.table`
     margin: 5rem auto;
     text-transform: uppercase;
-    width:90%;
+    width:98%;
 
     @media screen and (max-width: 425px){
         display: block;
         overflow-x: scroll;
+        width: 100%;
     }
 `
 
@@ -77,6 +81,7 @@ export const line = styled.tr`
     a{
         color: blue;
     }
+
 `
 export const title = styled.th`
     text-align: center;
@@ -84,7 +89,10 @@ export const title = styled.th`
 `
 
 export const colunm = styled.td`
-    padding: .9rem;
+    padding: .6rem;
+    @media screen and (max-width: 768px){
+       font-size: .7rem;
+    }
 `
 
 export const link = styled.a`

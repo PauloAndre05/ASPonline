@@ -144,13 +144,11 @@ export const menu = styled.nav`
 `
 
 export const sideBar = styled.div`
-    display: flex;
     align-items: center;
-    justify-content: center;
     height: 50vh;
-    background-color: #4A4F52;
-    display: none;
-    
+    max-height: ${({isOpen}) => isOpen?'50vh':'0'};
+    background: linear-gradient(to right,#000000ef, #122f47dc, #000000ef );
+    transition: all 1s;
 `
 
 export const lista = styled.ul`

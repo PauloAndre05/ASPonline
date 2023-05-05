@@ -1,5 +1,4 @@
 import { Banner } from "../../layout/banner/Banner"
-import { Direcoes } from "../../layout/direcoes/Direcoes"
 import { QuemSomos } from "../../layout/quem_somos/QuemSomos"
 import { SessaoServicos } from "../../layout/sessaoServicos/SessaoServicos"
 import * as S from './styles.inicio'
@@ -10,7 +9,6 @@ function Inicio() {
             <S.container >
                 <Banner/>
                 <SessaoServicos/>
-                <Direcoes/>
                 <QuemSomos/>
             </S.container>
     )

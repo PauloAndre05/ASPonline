@@ -28,14 +28,14 @@ function NavBar() {
                     <S.itens> <Link to="/agendar"> Agendar </Link> </S.itens>
                     <S.itens> <Link to="/sobre"> Sobre </Link> </S.itens>
                 </S.lista>
-                <S.hamburguer onClick={ () => setIsOpen(true)}>
+                <S.hamburguer onClick={() => setIsOpen(!isOpen)}>
                     <S.line1></S.line1>
                     <S.line2></S.line2>
                     <S.line3></S.line3>
                 </S.hamburguer>
             </S.menu>
 
-            <S.sideBar isMenuOpen={isOpen}>
+            <S.sideBar isOpen={isOpen}>
                 <S.lista2 >
                     <S.itens2> <Link to="/"> Inicio </Link> </S.itens2>
                     <S.itens2> <Link to="/servicos"> Serviços </Link> </S.itens2>

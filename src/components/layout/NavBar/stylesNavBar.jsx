@@ -146,7 +146,7 @@ export const menu = styled.nav`
 export const sideBar = styled.div`
     align-items: center;
     height: 50vh;
-    max-height: ${({isOpen}) => isOpen?'50vh':'0'};
+    max-height: ${({isOpen}) => isOpen?'40vh':'0'};
     background: linear-gradient(to right,#000000ef, #122f47dc, #000000ef );
     transition: all 1s;
 `
@@ -167,7 +167,6 @@ export const lista2 = styled.ul`
     width: 100%;
     height: 100%;
     display: flex;
-    margin-top: 3rem;
     flex-direction: column;
     align-items: center;
     text-align: center;

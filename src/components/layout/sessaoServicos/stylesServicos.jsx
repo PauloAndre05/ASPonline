@@ -12,18 +12,16 @@ export const titleSection = styled.h1`
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: #fff;
-    background-color: #000;
+    color: #000;
     display: inline-block;
-    padding: 1.5rem;
+    margin: 1.5rem 0;
     width: 100%;
     height: 100%;
 
     @media screen and (max-width: 768px){
-        background-color: transparent;
-        font-size: 1.12rem;
-        color: #000;
+        font-size: 1.1rem;
     }
+
 `
 
 export const content = styled.div`
@@ -111,7 +109,7 @@ export const img = styled.img`
 `
 
 export const container = styled.div`
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
 
     @media screen and  (max-width: 600px){

@@ -8,7 +8,7 @@ export const Banner = styled.main`
     box-sizing: border-box  ;
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
-    height: 80vh;
+    height: 430px;
     width: 100%;
     position: relative;
 
@@ -20,12 +20,8 @@ export const Banner = styled.main`
         height: 250px;
     }
 
-    @media screen and (max-width: 600px){
-        height: 200px;
-    }
-
-    @media screen and (max-width: 400px){
-        height: 200px;
+    @media screen and (max-width: 600px) {
+        height: 100%;
     }
 
     @keyframes moveBanner{
@@ -56,8 +52,8 @@ export const ImageBanner = styled.div`
     width: 100%;
     height: 100%;
     @media screen and (max-width: 600px){
-        display: none;
-}
+       display: none;
+    }
 `
 
 export const ImageBanner2 = styled.div`
@@ -65,7 +61,7 @@ export const ImageBanner2 = styled.div`
     background-color: rgb(0, 0, 0);
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 290px;
     @media screen and (max-width: 600px){
         display: block;
     }
@@ -138,25 +134,22 @@ export const Text = styled.div`
 
     @media screen and (max-width: 600px){
         h1{
-            font-size: 1.5rem;
+            font-size: 1rem;
             width: 80%;
             margin: 0 auto;
         }
 
         p{
             width: 95%;
-            font-size: 17px;
+            font-size: .8rem;
             margin: .8rem auto;
         }
     }
 
     @media screen and (max-width: 600px){
-        p{
-            display: none;
-        }
         
         h1{
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
       }
 

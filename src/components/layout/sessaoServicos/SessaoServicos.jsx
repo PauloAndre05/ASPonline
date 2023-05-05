@@ -55,25 +55,7 @@ function SessaoServicos() {
     return(
       <S.containerContainer>
         <S.titleSection>Serviços</S.titleSection>
-        <S.content>
-            <S.contImage>
-              <S.img src={imageServico} alt="image servico" />
-            </S.contImage>
-
-            <S.paragrafo>
-                <p>Bem-vindo à página de serviços do sistema de agendamento de serviços públicos online. Aqui, você encontrará todos os serviços disponíveis para agendamento oferecidos pelo governo. Os serviços estão organizados em categorias para facilitar a navegação e o acesso às informações necessárias para realizar o agendamento.</p>
-            </S.paragrafo>
-
-            <S.area2>
-              <S.text2>
-                  <p>Bem-vindo à página de serviços do sistema de agendamento de serviços públicos online. Aqui, você encontrará todos os serviços disponíveis para agendamento oferecidos pelo governo. Os serviços estão organizados em categorias para facilitar a navegação e o acesso às informações necessárias para realizar o agendamento.</p>
-              </S.text2>
-
-              <S.ContainerImage2>
-                <S.img src={imageServico2} alt = "image servico" />
-              </S.ContainerImage2>
-            </S.area2>
-        </S.content>
+        
         <S.containerContainerS>
           <S.container>
           
@@ -100,6 +82,25 @@ function SessaoServicos() {
           
           </S.container>
         </S.containerContainerS>
+        <S.content>
+
+            <S.paragrafo>
+                <p>Bem-vindo à página de serviços do sistema de agendamento de serviços públicos online. Aqui, você encontrará todos os serviços disponíveis para agendamento oferecidos pelo governo. Os serviços estão organizados em categorias para facilitar a navegação e o acesso às informações necessárias para realizar o agendamento.</p>
+            </S.paragrafo>
+
+            <S.contImage>
+              <S.img src={imageServico} alt="image servico" />
+            </S.contImage>
+            <S.area2>
+              <S.text2>
+                  <p>Bem-vindo à página de serviços do sistema de agendamento de serviços públicos online. Aqui, você encontrará todos os serviços disponíveis para agendamento oferecidos pelo governo. Os serviços estão organizados em categorias para facilitar a navegação e o acesso às informações necessárias para realizar o agendamento.</p>
+              </S.text2>
+
+              <S.ContainerImage2>
+                <S.img src={imageServico2} alt = "image servico" />
+              </S.ContainerImage2>
+            </S.area2>
+        </S.content>
       </S.containerContainer>
     )
 }

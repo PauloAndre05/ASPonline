@@ -6,7 +6,6 @@ import banner from '../../../images/recenseamento.png'
 import banner2 from '../../../images/banner2.png'
 import banner4 from '../../../images/recenseamentoMob.png'
 import banner5 from '../../../images/bannerMob.png'
-import banner6 from '../../../images/contribuinteMob.png'
 import banner7 from '../../../images/banner3_.jpg'
 import banner8 from '../../../images/banner3Mob.jpg'
 
@@ -46,10 +45,7 @@ function Banner() {
         image: banner5
     },
 
-    {
-        id: 6,
-        image: banner6
-    },
+    
 
     {
         id: 6,

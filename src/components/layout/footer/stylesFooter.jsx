@@ -8,7 +8,7 @@ export const footer = styled.footer`
     }
         /* background-color: #1D262D; */
 
-        background: linear-gradient(to bottom, #1D262D, #000);
+        background: linear-gradient(to bottom, #1D262D, #000000ea);
         bottom: 0;
         padding: 2.5rem 0 0 0;
      @media screen and (min-width: 320px) and (max-width: 600px){
@@ -40,7 +40,7 @@ export const colunas = styled.div`
 
     h2{
         font-size: 1.1rem;
-        color: #096eccbb;
+        color: #d6d321ed;
     }
 
     p{  
@@ -84,7 +84,7 @@ export const coluna = styled.div`
     flex-direction: column;
     
     h2{
-        color: #096eccbb;
+        color: #d6d321ed;
         font-size: 1.1rem;
     }
 

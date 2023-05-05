@@ -77,7 +77,7 @@ export const area2 = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 2.5rem;
     width: 100%;
 `
 

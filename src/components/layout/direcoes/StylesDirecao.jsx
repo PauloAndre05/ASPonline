@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const containerContainer = styled.main `
    
    margin: 0 auto;
-   padding-top: 1rem;
+   padding-top: 4rem;
+   background-color: #f7f7f7;
 `
 
 export const containerMain = styled.section`

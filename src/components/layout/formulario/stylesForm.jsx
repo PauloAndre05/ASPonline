@@ -83,15 +83,17 @@ export const inputs = styled.div`
         font-size: .9rem;
         text-align: center;
         margin-top: .1rem;
+        border-radius: .5rem;
     }
 
     input,select{
         border: 1px solid rgba(111, 111, 111, 0.5) ;
-        border-radius: .2rem;
+        border-radius: .4rem;
         outline: none;
-        height: 2rem;
+        height: 2.5rem;
         width: 23rem;
-        padding-left: .6rem;    
+        padding-left: .6rem; 
+        font-size: .95rem;
     }  
 
     input:focus{
@@ -104,10 +106,17 @@ export const inputs = styled.div`
     
     @media screen and (max-width: 375px){
         width: 100%;
-        padding: .2rem;
+        padding: 0 .5rem;
         input,select{
             width: 100%;
-            border-radius: 0;
+        }
+
+        
+    }
+
+    @media screen and (max-width: 600px){
+        label{
+            font-size: .95rem;
         }
     }
 `
@@ -119,8 +128,8 @@ position: relative;
     button{
         background-color: #061d38;
         color: #fff;
-        width: 7.5rem;
-        height: 1.7rem;
+        width: 7.8rem;
+        height: 2rem;
         padding-bottom: .2rem;
         font-size: .9rem;
         position: absolute;
@@ -133,7 +142,6 @@ position: relative;
 
     @media screen and (max-width: 768px){
         width: 100%;
-
         button{
             width: 100%;
         }

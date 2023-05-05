@@ -41,9 +41,9 @@ function Footer() {
                         <h2>Redes Sociais</h2>
                         </div>
                         <S.icon>
-                            <i> <FaFacebook/> </i>
-                            <i> <FaInstagram/> </i>
-                            <i> <FaLinkedinIn/> </i>
+                            <a href="/"><i> <FaFacebook/> </i></a>
+                            <a href="/"><i> <FaInstagram/> </i></a>
+                            <a href="/"><i> <FaLinkedinIn/> </i></a>
                         </S.icon>
 
                     </S.containerIcons>

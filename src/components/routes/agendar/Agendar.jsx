@@ -18,9 +18,6 @@ function Agendar() {
                 </S.text>
             </S.header>
             <div>
-                <div>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laborum delectus eius nostrum! Hic animi, nobis quo recusandae itaque quibusdam quis? Rerum optio cumque eligendi ullam excepturi molestias quasi quo.</p> 
-                </div>
                 <Formulario/>
                 <Direcoes/>
             </div>

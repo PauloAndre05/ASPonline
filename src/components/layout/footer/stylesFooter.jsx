@@ -6,10 +6,11 @@ export const footer = styled.footer`
         margin: 0;
         box-sizing: border-box;
     }
-    background-color: #1D262D;
-    bottom: 0;
-    padding: 2rem 0 0 0;
+        /* background-color: #1D262D; */
 
+        background: linear-gradient(to bottom, #1D262D, #000);
+        bottom: 0;
+        padding: 2.5rem 0 0 0;
      @media screen and (min-width: 320px) and (max-width: 600px){
    
     }
@@ -17,10 +18,18 @@ export const footer = styled.footer`
 
 export const container = styled.div`
     display: flex;
-    justify-content: center;
     align-items: start;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
 `
 
 export const colunas = styled.div`
@@ -31,13 +40,13 @@ export const colunas = styled.div`
 
     h2{
         font-size: 1.1rem;
-        color: #ffffffbc;
+        color: #096eccbb;
     }
 
     p{  
         font-size: 1rem;
         line-height: 1.6rem;
-        color: #6a849e;
+        color: #e4e4e4;
         width:7rem;
     }
 
@@ -50,8 +59,14 @@ export const colunas = styled.div`
     }
 
     @media screen and (max-width: 600px){
+
+        h2{
+            font-size: 1rem;
+        }
+
         p{
-            width: 10rem;
+            width: 8rem;
+            font-size: .9rem;
         }
     }
 
@@ -69,20 +84,23 @@ export const coluna = styled.div`
     flex-direction: column;
     
     h2{
-        color: #ffffffbc;
+        color: #096eccbb;
         font-size: 1.1rem;
     }
 
     @media screen and (max-width: 609px){
        width: 100%;
+       h2{
+        font-size: 1rem;
+       }
     }
 `
 
 
 export const containerIcons = styled.div`
    div > h2{
-    margin-bottom: .5rem;
-    text-align: center;
+        margin-bottom: .5rem;
+        text-align: center;
    }
 `
 
@@ -92,6 +110,10 @@ export const icon = styled.div`
     display: flex;
     justify-content: center;
     gap: 1rem;
+    
+    @media screen and (max-width: 600px) {
+        font-size: 1.3rem;
+    }
 `
 
 export const input = styled.div`
@@ -135,4 +157,8 @@ export const copy = styled.p`
     color: #6a849e;
     text-align: center;
     padding: 2rem 0 .8rem 0;
+
+    @media screen and (max-width: 600px) {
+        font-size: .75rem;
+    }
 `

@@ -63,7 +63,7 @@ function Formulario() {
                         <S.inputs>
                             <div>
                                 <label htmlFor="nome"> Nome Completo</label>
-                                <Input type="text" name="nome" id="nome" required max={1} placeholder="Nome Completo"  />
+                                <Input type="text" name="nome" id="nome" required="true" placeholder="Nome Completo"  />
                             </div>
                             <div>
                                 <label htmlFor="servico">Serviço <span>*</span></label>

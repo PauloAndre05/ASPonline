@@ -83,7 +83,6 @@ function SessaoServicos() {
           </S.container>
         </S.containerContainerS>
         <S.content>
-
             <S.paragrafo>
                 <p>Bem-vindo à página de serviços do sistema de agendamento de serviços públicos online. Aqui, você encontrará todos os serviços disponíveis para agendamento oferecidos pelo governo. Os serviços estão organizados em categorias para facilitar a navegação e o acesso às informações necessárias para realizar o agendamento.</p>
             </S.paragrafo>

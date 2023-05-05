@@ -12,7 +12,7 @@ export const banner = styled.section`
    
     >div{
         width: 100%;
-        height: 400px;
+        height: 72vh;
         background-color: #000; 
         overflow: hidden;
     }
@@ -33,6 +33,7 @@ export const text = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    width: 90%;
 
     h1{
         text-transform: uppercase;

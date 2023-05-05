@@ -31,7 +31,8 @@ export const texto = styled.div`
     h1{
         text-transform: uppercase;
         font-size: 1.8rem;
-        color: #DC9833;
+        color: #000;
+        text-shadow: 0 1px 2px #000000b5;
         width:100%;
         text-align: center;
     }
@@ -39,6 +40,7 @@ export const texto = styled.div`
     p{
         font-size: 1.1rem;
         color: #fff;
+        text-align: justify;
     }
 
     @media screen and (max-width: 600px){

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const container = styled.main`
     display: flex;
@@ -27,7 +27,11 @@ export const containerLogo = styled.div`
     }
 
     @media screen  and (min-width: 425px) and (max-width: 600px) {
-        padding: .5rem 4rem;
+        padding: .5rem 2rem;
+        
+        >div{
+            width: 7rem;
+        }
     } 
 
 
@@ -45,7 +49,7 @@ export const lotipo = styled.a`
     }
 
 @media screen and (max-width: 768px){
-    width: 4rem;
+    width: 4.5rem;
 }
 `
 
@@ -69,13 +73,7 @@ export const icons = styled.article`
 
    
 
-    @media screen and (min-width: 768px) and (max-width: 992px){
-        
-    } 
-
-    @media screen and (min-width: 768px) and (max-width: 992px){
-       
-    } 
+   
 `
 
 export const hamburguer = styled.div`
@@ -104,7 +102,11 @@ export const hamburguer = styled.div`
 `
 
 export const containrHamburguer = styled.section`
-
+    ${({ isOpen }) => isOpen && css`
+        > div >{
+            display: none;
+        }
+    `}
 `
 
 export const line1 = styled.div`
@@ -112,6 +114,7 @@ export const line1 = styled.div`
 `
 
 export const line2 = styled.div`
+
 `
 
 export const line3 = styled.div`
@@ -144,11 +147,22 @@ export const menu = styled.nav`
 `
 
 export const sideBar = styled.div`
+    height: 0;
+    visibility: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 50vh;
-    max-height: ${({isOpen}) => isOpen?'40vh':'0'};
+    /* max-height: ${({isOpen}) => isOpen?'40vh':'0'}; */
     background: linear-gradient(to right,#000000ef, #122f47dc, #000000ef );
     transition: all 1s;
+
+    ${({ isOpen }) => isOpen && css`
+        height: 200px;
+        visibility: visible;
+    `}
+    
+
 `
 
 export const lista = styled.ul`
@@ -164,13 +178,14 @@ export const lista = styled.ul`
 
 
 export const lista2 = styled.ul`
-    width: 100%;
+    text-align: center;
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    list-style: none;
+    width: 100%;
+    
 
     a{
         color: black;
@@ -200,13 +215,11 @@ export const itens2 = styled.li`
     justify-content: center;
     align-items: center;
     width: 100%;
+    text-transform: uppercase;
 
-    :hover{
-        background-color: #82b6e0a5;
-    }
-
+    
     :active{
-        background-color: #1d1c33ba;
+        background-color: #82b6e0a5;
     }
     a{
         
@@ -215,6 +228,7 @@ export const itens2 = styled.li`
         font-size: 1rem;
         color: #82B6E0;
         text-decoration: none;
+        font-size: .9rem;
     }
 
     a:hover{

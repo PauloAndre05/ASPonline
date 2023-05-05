@@ -179,20 +179,22 @@ export const Text = styled.div`
     }
 
      button{
-        border: 1px solid #ffffff31;
-        color: #9b9b9b;
+        border: 1px solid #ffffff90;
+        color: #cacaca;
         display: flex;
         align-items: center;
         width: 12rem;
-        height: 2rem;
-        background-color: #000;
-        background: linear-gradient(to right,#000000ef, #122f47dc);
+        height: 2.2rem;
+        background-color: #03242b;
         text-decoration: none;
+        border-radius: .7rem;
 
     }
 
     button:hover{
-        background-color: #131313;
+        background-color: #021418;;
+        color: #fff;
+        box-shadow: none;
     }
 
     @media screen and (min-width: 601px) and (max-width: 768px) {

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const containerContainer = styled.main `
-   
    margin: 0 auto;
    padding-top: 4rem;
 `
@@ -23,6 +22,7 @@ export const texto = styled.div`
     width: 30rem;
     text-align: justify;
     line-height: 1.7rem;
+    
     div{
         display: flex;
         align-items: center;

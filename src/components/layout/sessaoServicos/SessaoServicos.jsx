@@ -12,7 +12,7 @@ function SessaoServicos() {
     const settings = {
         dots: false,
         infinite: false,
-        speed: 1500,
+        speed: 900,
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,

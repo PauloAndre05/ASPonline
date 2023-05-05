@@ -5,6 +5,7 @@ export const container = styled.main`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #ebebeb;
 `
 
 export const header= styled.header`
@@ -14,7 +15,7 @@ export const header= styled.header`
 export const banner = styled.main`
     > div{
         width: 100%;
-        height: 72vh;
+        height: 430px;
         background-color: black;
     }
     img{
@@ -22,6 +23,17 @@ export const banner = styled.main`
         height: 100%;
         object-fit: cover;
         opacity: .3;
+    }
+
+    @media screen and (max-width: 992px){
+       height: 300px;
+    }
+    @media screen and (min-width: 601px) and (max-width: 768px) {
+        height: 250px;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 100%;
     }
 `
 
@@ -55,21 +67,26 @@ export const text = styled.div`
             opacity: 1;
     }
 }
+
+    @media screen and (max-width: 768px){
+        h1{
+            font-size: 1.1rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+    }   
 `
 
 export const content = styled.section`
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 2rem;
-        margin: 3rem 2rem;
-    > div{
-        width: 23rem;
-        overflow: hidden;
-        opacity: 0;
-        animation: moveBanner 1s 0.7s forwards;
-    }   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem 2rem;
+    text-align: justify;
 
     p{
         font-size: 1.2rem;
@@ -97,6 +114,17 @@ export const content = styled.section`
             opacity: 1;
     }
 }
+
+
+@media screen and (max-width: 768px){
+        h1{
+            font-size: 1.1rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+    }  
 `
 
 export const img = styled.img`
@@ -104,13 +132,14 @@ export const img = styled.img`
 `
 
 export const more = styled.section`
-    background-color: #4A4F52;
+    background-color: #1d262d;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 4rem;
     padding: 1rem 0;
+    border-bottom: 1px solid #ffffff14;
 
     div{
         display: flex;
@@ -120,10 +149,6 @@ export const more = styled.section`
     h6{
             color: #dedede;
             margin: 0;
-    }
-
-    h1{
-        color: #82B6E0;
     }
 
     @media screen and (max-width: 600px) {
@@ -144,5 +169,15 @@ export const carrossel = styled.div`
     @media screen and (max-width: 600px) {
         width: 50%;
     }
+`
+
+
+export const containerImg = styled.div`
+    border: 1px solid red;
+    width: 23rem;
+    overflow: hidden;
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
+    display: none;
 `
 

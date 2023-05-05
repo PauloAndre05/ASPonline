@@ -2,8 +2,6 @@ import { NewsLetter } from "../../layout/newsLetter/NewsLetter"
 import * as S from './styleSobre'
 
 import banner from '../../../images/bgAgendar1.jpg'
-import imgSobre from '../../../images/direction9.png'
-
 import {Lightbulb, Bell, CheckCircle} from 'phosphor-react'
 
 import Slider from "react-slick"
@@ -35,19 +33,18 @@ function Sobre() {
                 </S.text>
             </S.header>
 
-            <S.content>
-                <div>
+            {/* <S.content>
+                <S.containerImg>
                     <S.img src={imgSobre} alt="Image about" />
-                </div>  
+                </S.containerImg>  
 
                 <div>
                     <p>Estamos aqui para atender às necessidades da comunidade e tornar a vida mais fácil para todos. Conheça mais sobre nós e nossa equipe, e saiba como podemos ajudá-lo a obter acesso a nossos serviços de maneira simples e fácil."</p>
                 </div>
-            </S.content>
+            </S.content> */}
 
             
             <S.more>
-                <h1>ASPonline</h1>
                     <S.carrossel>
                         <Slider {...settings}>
                         <div>

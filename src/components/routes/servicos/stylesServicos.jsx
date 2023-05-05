@@ -1,15 +1,10 @@
 import styled from "styled-components";
 
 export const container = styled.main`
-  
+    z-index: 100;
 `
 
 export const containerCards = styled.section`
-  *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

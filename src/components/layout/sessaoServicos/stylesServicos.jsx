@@ -113,13 +113,16 @@ export const container = styled.div`
     margin: 0 auto;
 
     @media screen and  (max-width: 600px){
-        width: 70%;
+        width: 45%;
     }
 `
 
 export const containerContainerS = styled.div` 
     background-color: #0c809740;    
-    padding: 2rem;
+    padding: 2rem 0;
+    @media screen and (max-width: 600px) {
+        padding: 4.5rem 0;
+    }
 `
 
 export const containerCard =styled.div`
@@ -133,9 +136,15 @@ export const card = styled.div`
     background-color: #ffffffdd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
     height: 100%;
+
+    @media screen and (max-width: 768px) {
+        padding: 1.5rem 0;
+    } 
 `
 
 export const cardTop = styled.div`
+    margin-bottom: .5rem;
+
     div{
         display: flex;
         justify-content: center;
@@ -178,9 +187,10 @@ export const containerbutton =styled.div`
     }
 
     button{
-        background-color: transparent;
+        background-color: #000000dd;
         border: 1px solid #00000022;
-        color: #000;
+        border-radius: .3rem;
+        color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -189,7 +199,6 @@ export const containerbutton =styled.div`
         padding-bottom: .2rem;
         text-decoration: none;
         font-size: .9rem;
-        border-radius: 0;
     }
     button:hover{
         box-shadow: none;

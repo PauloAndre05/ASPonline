@@ -12,7 +12,7 @@ export const banner = styled.section`
    
     >div{
         width: 100%;
-        height: 72vh;
+        height: 430px;
         background-color: #000; 
         overflow: hidden;
     }
@@ -22,6 +22,17 @@ export const banner = styled.section`
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    @media screen and (max-width: 992px){
+       height: 300px;
+    }
+    @media screen and (min-width: 601px) and (max-width: 768px) {
+        height: 250px;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 100%;
     }
 `
 
@@ -68,4 +79,14 @@ export const text = styled.div`
             opacity: 1;
         }
     }
+
+    @media screen and (max-width: 768px){
+        h1{
+            font-size: 1.1rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+    }  
 `

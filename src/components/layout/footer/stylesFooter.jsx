@@ -8,7 +8,7 @@ export const footer = styled.footer`
     }
         /* background-color: #1D262D; */
 
-        background: linear-gradient(to bottom, #1D262D, #000000ea);
+        background: linear-gradient(to bottom, #1D262D, #000000f2);
         bottom: 0;
         padding: 2.5rem 0 0 0;
      @media screen and (min-width: 320px) and (max-width: 600px){

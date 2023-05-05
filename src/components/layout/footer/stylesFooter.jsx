@@ -40,13 +40,13 @@ export const colunas = styled.div`
 
     h2{
         font-size: 1.1rem;
-        color: #d6d321ed;
+        color: #d4d4d4;
     }
 
     p{  
         font-size: 1rem;
         line-height: 1.6rem;
-        color: #e4e4e4;
+        color: #aaaaaae2;
         width:7rem;
     }
 
@@ -84,7 +84,7 @@ export const coluna = styled.div`
     flex-direction: column;
     
     h2{
-        color: #d6d321ed;
+        color: #d4d4d4;
         font-size: 1.1rem;
     }
 
@@ -105,12 +105,19 @@ export const containerIcons = styled.div`
 `
 
 export const icon = styled.div`
-    color: #fff;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
+
+    a{
+        color: #aaaaaae2;
+    }
     
+    a:hover{
+        color: #000;
+    }
+
     @media screen and (max-width: 600px) {
         font-size: 1.3rem;
     }

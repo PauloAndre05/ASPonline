@@ -165,7 +165,9 @@ export const lista = styled.ul`
 
 export const lista2 = styled.ul`
     width: 100%;
+    height: 100%;
     display: flex;
+    margin-top: 3rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -211,8 +213,7 @@ export const itens2 = styled.li`
         
         padding: .7rem 0;
         width: 100%;
-        height: 100%;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #82B6E0;
         text-decoration: none;
     }

@@ -9,7 +9,6 @@ export const button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;    
-    letter-spacing: .15rem; 
     border-radius: 5px;
     border: none;
     transition: all .5s;

@@ -1,23 +1,71 @@
 import styled from "styled-components";
 
 export const containerContainer = styled.main`
-    background-color: #d6d6d62b;
-    background: linear-gradient(to right,#000000ef, #122f47dc, #000000ef );
+    background-color: #C2DFE5;
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    padding: 2rem 0 5rem 0;
+    padding: 0 0 5rem 0;
 `
 export const text = styled.section`
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right,#000000ef, #212222dc, #000000ef );
+    width: 100%;
+    height: 25rem;
+    gap: 1rem;
+    
     h1{
         font-size: 1.5rem;
-        color: #FFF;
-        text-align: center;
-        font-weight: bold;
+        color: #ffffffdc;
+        margin-top: 2rem;
+        text-transform: uppercase;
     }
+
+    p{
+        font-weight: lighter;
+        color: #ffffffdc;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 600px) {
+        h1{
+            font-size: 1rem;
+        }
+
+        p{
+            font-size: .9rem;
+        }
+    }
+`
+
+export const containerBorder = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    >div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+        color: #fff;
+    }
+`
+
+export const line = styled.div`
+    width: 10rem;
+    height: .4rem;
+    background-color: #ffffffd5;
+    color: #fff;
+    border-radius: 50px;
 `
 
 export const containerForm = styled.section`
@@ -27,11 +75,11 @@ export const containerForm = styled.section`
         flex-direction: column;
         flex-wrap: wrap;
         padding: 3rem 0;
-        width: 77%;
+        width: 75%;
         margin: 0 auto;
-        margin-top: 2rem;
+        margin-top: -7rem;
         border-radius: .5rem;
-        box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.133);
+        box-shadow: 1px 0px 10px  rgba(0, 0, 0, 0.133);
         background-color: #ffffff;
         
         p{
@@ -43,8 +91,7 @@ export const containerForm = styled.section`
    
 
     @media screen  and (max-width: 600px){
-        width: 100%;
-        border-radius: 0 ;
+        width: 98%;
     }
 
   
@@ -53,7 +100,8 @@ export const containerForm = styled.section`
 export const form = styled.form`
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
     flex-wrap: wrap;
 
     @media screen and (max-width: 768px){
@@ -65,7 +113,7 @@ export const inputs = styled.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 
     
     > div{
@@ -87,21 +135,32 @@ export const inputs = styled.div`
     }
 
     input,select{
-        border: 1px solid rgba(111, 111, 111, 0.5) ;
-        border-radius: .4rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.212) ;
         outline: none;
         height: 2.5rem;
         width: 23rem;
-        padding-left: .6rem; 
+        padding-left: .4rem; 
         font-size: .95rem;
+        background-color: transparent;
+        overflow: hidden;
     }  
 
+    select{
+        color: #4b4b4b;
+        padding-left: 0;
+        border: none;
+        border-bottom: 1px solid rgba(111, 111, 111, 0.5) ;
+    }
+
     input:focus{
-        border: 1px solid rgba(0, 0, 0, 0.5) ;
+        background-color: transparent;
+        border-bottom: 1px solid #C2DFE5;
     }  
 
     select:focus{
-        border: 1px solid rgba(0, 0, 0, 0.5) ;
+        color: #000000;
+        background-color: transparent;
+        border-bottom: 1px solid #C2DFE5 ;
     }
     
     @media screen and (max-width: 375px){
@@ -124,16 +183,16 @@ export const inputs = styled.div`
 
 
 export const containerButton = styled.div`
-position: relative;
     button{
-        background-color: #061d38;
+        overflow: hidden;
+        background-color: #122f47dc;
         color: #fff;
-        width: 7.8rem;
-        height: 2rem;
+        width: 100%;
+        height: 2.5rem;
         padding-bottom: .2rem;
-        font-size: .9rem;
-        position: absolute;
+        font-size: 1rem;
         right: 0;
+        border-radius: 50px;
     }
     button:hover{
         background-color: #0a2f59;

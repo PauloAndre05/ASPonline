@@ -10,7 +10,7 @@ export const container = styled.main`
 
 export const texto = styled.section`
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     width: 50%;
     max-height: 100%;
     margin: 0 auto;

@@ -10,6 +10,7 @@ export const container = styled.main`
 
 export const header= styled.header`
     position: relative;
+    background-attachment: fixed;
 `
 
 export const banner = styled.main`

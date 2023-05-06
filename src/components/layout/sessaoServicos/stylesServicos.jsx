@@ -61,8 +61,19 @@ export const paragrafo = styled.div`
     width: 30rem;
     border-bottom: 1px solid #69696993;
     padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h1{
+        text-align: start;
+        font-size: 2rem;
+        font-weight: lighter;
+    }
 
     p{
+        line-height: 1.8rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 1.2rem;
         color: #45707a;
     }
@@ -203,7 +214,7 @@ export const containerbutton =styled.div`
         justify-content: center;
         width: 7.5rem;
         height: 1.7rem;
-        padding-bottom: .2rem;
+        padding-bottom: .1rem;
         text-decoration: none;
         font-size: .9rem;
     }

@@ -94,7 +94,7 @@ export const Text = styled.div`
     
     > h1{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: lighter;
+        font-weight: normal;
         font-size: 2rem;
         text-align: center;
         text-transform: uppercase;
@@ -107,7 +107,7 @@ export const Text = styled.div`
 
     p{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: lighter;
+        font-weight: normal;
         text-align: center;
         width: 50%;
         display: flex;
@@ -183,7 +183,7 @@ export const Text = styled.div`
         height: 2.2rem;
         background-color: #03242ba4;
         text-decoration: none;
-        border-radius: .7rem;
+        border-radius: 1rem;
 
     }
 

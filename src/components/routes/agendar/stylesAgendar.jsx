@@ -51,16 +51,53 @@ export const containerBorder = styled.div`
     gap: 1rem;
     flex-wrap: wrap;
 
-    >div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: .5rem;
-        color: #fff;
+`
+
+export const containerLine1 = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    color: #fff;
+
+    p{
+        color: #14d603d2;
     }
 `
 
-export const line = styled.div`
+export const containerLine2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    color: #fff;
+`
+
+export const containerLine3 = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    color: #fff;
+`
+
+export const line1 = styled.div`
+    width: 10rem;
+    height: .4rem;
+    background-color: #0b6b02d4;
+    color: #fff;
+    border-radius: 50px;
+`
+
+export const line2 = styled.div`
+    width: 10rem;
+    height: .4rem;
+    background-color: #ffffffd5;
+    color: #fff;
+    border-radius: 50px;
+`
+
+export const line3 = styled.div`
     width: 10rem;
     height: .4rem;
     background-color: #ffffffd5;

@@ -194,6 +194,8 @@ export const lista2 = styled.ul`
 
 export const itens = styled.li`
     a{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
         font-size: 1rem;                
         text-decoration: none;
         transition: all .4s;

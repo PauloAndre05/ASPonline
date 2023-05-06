@@ -74,7 +74,7 @@ export const ImageBanner2 = styled.div`
 export const Imagem=styled.img`
     width: 100%;
     height: 100%;
-    opacity: .4;
+    opacity: .5;
     object-fit: cover;
     object-position: center;
 
@@ -93,6 +93,8 @@ export const Text = styled.div`
       
     
     > h1{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
         font-size: 2rem;
         text-align: center;
         text-transform: uppercase;
@@ -100,9 +102,12 @@ export const Text = styled.div`
         opacity: 0;
         color: #e2e2e2;
         animation: moveBanner 1s 0.5s forwards;
+        margin: 0 auto;
     }
 
     p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
         text-align: center;
         width: 50%;
         display: flex;
@@ -121,49 +126,40 @@ export const Text = styled.div`
         }
     }
 
-    @media screen and (min-width: 601px) and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         h1{
-            font-size: 1.3rem;
+            text-align: start;
+            width: 80%;
         }
 
         p{
             font-size: 1.1rem;
-            width: 70%;
+            width: 80%;
+            text-align: start;
         }
     }
 
+
     @media screen and (max-width: 600px){
         h1{
-            font-size: 1rem;
+            text-align: start;
+            font-size: 1.5rem;
             width: 80%;
             margin: 0 auto;
         }
 
         p{
-            width: 95%;
-            font-size: .8rem;
+            text-align: start;
+            width: 80%;
+            font-size: 1rem;
             margin: .8rem auto;
         }
     }
 
-    @media screen and (max-width: 600px){
-        
+    @media screen and (max-width: 320px) {
         h1{
             font-size: 1.1rem;
-        }
-      }
-
-    @media screen and (min-width: 360px) and (max-width: 600px){
-        h1{
-            font-size: 1.1rem;
-            width: 90%;
             margin: 0 auto;
-        }
-
-        p{
-            width: 95%;
-            font-size: 15px;
-            margin: .8rem auto;
         }
     }
 `
@@ -185,14 +181,14 @@ export const Text = styled.div`
         align-items: center;
         width: 12rem;
         height: 2.2rem;
-        background-color: #03242b;
+        background-color: #03242ba4;
         text-decoration: none;
         border-radius: .7rem;
 
     }
 
     button:hover{
-        background-color: #021418;;
+        background-color: #03242b;;
         color: #fff;
         box-shadow: none;
     }
@@ -204,17 +200,15 @@ export const Text = styled.div`
         }  
     }
 
-    @media screen and (max-width: 600px){
-      display: none;
-    }
-
-    @media screen and (min-width: 320px) and (max-width: 600px){
-        button{
+    @media screen and (max-width: 768px){ 
+           button{
             width: 10rem;
-            height: 1.6rem;
-            font-size: 14px;  
+            height: 2rem;
+            font-size: .9rem; 
         } 
     }
+
+   
 `
 
 export const toTop = styled.a`

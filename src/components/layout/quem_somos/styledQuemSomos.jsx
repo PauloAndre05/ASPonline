@@ -1,88 +1,30 @@
 import styled from "styled-components";
 
 export const container = styled.main`
-    background-color: #000000;
     width: 100%;
-    height: 100vh;
-    position: relative;
-
-    div{
-        position: absolute;
-        right: 6rem;
-        bottom: 5rem;
-        width:20rem; 
-    }
-    div>img{
-        width:100%;
-        height: 100%;
-    }
-
-    @media screen and (max-width: 768px){
-        div{
-            width:13rem;
-        }
-    }
-
-    @media screen and (min-width: 320px) and (max-width: 600px){
-        div{
-            width:13rem;
-            right: 3rem;
-            bottom: 2rem;
-        }
-    }
-
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
-export const containerImg = styled.section` 
-    background-color: rgb(0, 0, 0);
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-`
-
-export const background = styled.img`
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: .2;
-`
-
-export const texto = styled.section` 
-    position: absolute;
+export const texto = styled.section`
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
     width: 50%;
     max-height: 100%;
     margin: 0 auto;
-    top: 4rem;
-    left: 4rem;
 
     h2{
-        color: #d5d5d5;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
         font-size: 1.5rem;
         text-transform: uppercase;
     }
     
-    p{  
-    color: #ffffffbe;
+    p{
     font-size: 1.1rem;
     margin-top: 2rem;
     text-align: justify;
-    }
-
-    @media screen and (max-width: 768px){
-        width:90%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    @media screen and (max-width: 600px){
-        width:90%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);   
-        
-        p{
-            margin-top: 1rem;     
-        }
     }
 `   

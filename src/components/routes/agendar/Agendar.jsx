@@ -58,7 +58,7 @@ function Agendar() {
                     <h1>
                         Agendar
                     </h1>
-                    <p>Preencha o formulário abaixo para proceder aou agendamento</p>
+                    <p>Preencha o formulário abaixo para proceder com o agendamento</p>
                     <S.containerBorder>
                         <div>
                             <p>Passo 1</p>

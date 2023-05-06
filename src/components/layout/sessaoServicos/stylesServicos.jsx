@@ -8,8 +8,9 @@ export const containerContainer = styled.main`
     }
 `
 export const titleSection = styled.h1`
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
     text-align: center;
-    font-weight: bold;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: #000;
@@ -152,6 +153,8 @@ export const cardTop = styled.div`
     }
 `
 export const cardBottom = styled.div`
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,6 +169,8 @@ export const imagem = styled.img`
     border-radius: 10px;
 `
 export const title = styled.h3`
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
     font-size: .9rem;
     text-transform: uppercase;
     text-align: center;
@@ -187,6 +192,8 @@ export const containerbutton =styled.div`
     }
 
     button{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
         background-color: #000000dd;
         border: 1px solid #00000022;
         border-radius: .3rem;

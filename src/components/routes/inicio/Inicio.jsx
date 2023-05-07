@@ -27,7 +27,7 @@ function Inicio() {
                         <Artigo img={adminCacuaco} alt="Imagem admin maianga" target="_blank" nome="Administracão da Maianga" local="57Q4+GGG, Rua de Antonio Enes, Luanda" mapa="https://www.google.com/maps/place/Administra%C3%A7%C3%A3o+Municipal+de+Cacuaco/@-8.776638,13.3679027,17z/data=!3m1!4b1!4m6!3m5!1s0x1a51faadf44fee9b:0x32493c3bddea0979!8m2!3d-8.776638!4d13.3700914!16s%2Fg%2F11f_n91qz7?hl=pt-PT"/>
                     </S.content>
 
-                    <S.buttom href="/tabelaDirecoes">Ver Mais</S.buttom>
+                    <S.buttom href="/tabelaDirecoes">Ver mais</S.buttom>
                 </S.containerContent>
                 
                 <QuemSomos/>

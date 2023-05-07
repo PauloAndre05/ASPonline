@@ -7,7 +7,7 @@ function Artigo( {img, alt, nome, local, mapa, target} ){
             <S.cardBotton>
                 <h3>{nome}</h3>
                 <p>{local}</p>
-                <a href={mapa} target={target}>Ver no Mapa</a>
+                <a href={mapa} target={target}>Ver no mapa</a>
             </S.cardBotton>
         </article>
     )

@@ -5,6 +5,7 @@ import { Inicio } from './components/routes/inicio/Inicio';
 import { Servicos } from './components/routes/servicos/Servicos';
 import { Sobre } from './components/routes/sobre/Sobre';
 import { Footer } from './components/layout/footer/Footer'
+import { Direcoes } from './components/layout/direcoes/Direcoes'
 
 import * as S from './stylesApp'
 
@@ -20,7 +21,7 @@ function App() {
           <Route path='/servicos' element={<Servicos/>} />
           <Route path='/agendar' element={<Agendar/>} />
           <Route path='/sobre' element={<Sobre/>} />
-
+          <Route path='/tabelaDirecoes' element={<Direcoes/>} />
         </Routes>
 
       <Footer/>

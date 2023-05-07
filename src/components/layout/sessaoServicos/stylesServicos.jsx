@@ -8,7 +8,6 @@ export const containerContainer = styled.main`
     }
 `
 export const titleSection = styled.h1`
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
@@ -73,8 +72,8 @@ export const paragrafo = styled.div`
 
     p{
         line-height: 1.8rem;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 1.2rem;
+        font-weight: 300;
         color: #45707a;
     }
 
@@ -145,7 +144,7 @@ export const card = styled.div`
     overflow: hidden;
     gap: .5rem;
     flex-direction: column;
-    background-color: #ffffffdd;
+    background-color: #f5f5f5;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
     height: 100%;
 
@@ -155,7 +154,7 @@ export const card = styled.div`
 `
 
 export const cardTop = styled.div`
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 
     div{
         display: flex;
@@ -164,13 +163,12 @@ export const cardTop = styled.div`
     }
 `
 export const cardBottom = styled.div`
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: lighter;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: .8rem;
     padding-bottom: 1rem;
 `
 export const imagem = styled.img`
@@ -180,7 +178,6 @@ export const imagem = styled.img`
     border-radius: 10px;
 `
 export const title = styled.h3`
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bolder;
     font-size: .9rem;
     text-transform: uppercase;
@@ -193,7 +190,7 @@ export const title = styled.h3`
 export const containerbutton =styled.div`
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .4rem;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -203,8 +200,6 @@ export const containerbutton =styled.div`
     }
 
     button{
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: lighter;
         background-color: #000000dd;
         border: 1px solid #00000022;
         border-radius: .3rem;

@@ -115,7 +115,7 @@ export const containerForm = styled.section`
         width: 75%;
         margin: 0 auto;
         margin-top: -7rem;
-        border-radius: 1.5rem;
+        border-radius: 1.2rem;
         box-shadow: 5px 3px 20px  rgba(0, 0, 0, 0.295);
         background-color: #ffffff;
         
@@ -128,6 +128,10 @@ export const containerForm = styled.section`
    
 
     @media screen  and (max-width: 600px){
+        width: 95%;
+    }
+
+    @media screen  and (max-width: 320px){
         width: 98%;
     }
 

@@ -18,7 +18,7 @@ export const containerLogo = styled.div`
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #0000004e;
-    >div {
+    >a {
         width: 10rem;
         height: 100%;
     }
@@ -26,11 +26,15 @@ export const containerLogo = styled.div`
         width: 100%;
     }
 
-    @media screen  and (min-width: 425px) and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
+        padding: .6rem 4rem .9rem 4rem;
+    } 
+
+    @media screen  and (max-width: 600px) {
         padding: .5rem 2rem;
         
-        >div{
-            width: 7rem;
+        >a{
+            width: 6rem;
         }
     } 
 

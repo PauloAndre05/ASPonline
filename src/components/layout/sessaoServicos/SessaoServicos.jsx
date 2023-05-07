@@ -58,7 +58,7 @@ function SessaoServicos() {
         <S.content>
             <S.paragrafo>
               <h1>Bem-vindo à sessão de serviços do sistema de agendamento de serviços públicos online.</h1>
-              <p> Abaixo estão listados alguns serviços de acesso rápido disponíveis para você. Para obter informações sobre os requisitos para o tratamento presencial desses serviços, por favor, acesse a página de serviços para mais detalhes.</p>
+              <p> Mas baixo estão listados alguns serviços de acesso rápido disponíveis para você. Para obter informações sobre os requisitos para o tratamento presencial desses serviços, por favor, acesse a página de serviços para mais detalhes.</p>
             </S.paragrafo>
 
             <S.contImage>

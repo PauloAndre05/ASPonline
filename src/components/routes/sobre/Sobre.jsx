@@ -1,12 +1,12 @@
 import { NewsLetter } from "../../layout/newsLetter/NewsLetter"
 import * as S from './styleSobre'
-
-import banner from '../../../images/bgAgendar1.jpg'
 import {Lightbulb, Bell, CheckCircle} from 'phosphor-react'
 
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+
+import style from './style.module.css' 
 
 function Sobre() {
     const settings = {
@@ -21,17 +21,11 @@ function Sobre() {
       };
     return(
         <S.container>
-            <S.header>
-                <S.banner>
-                    <div>
-                        <S.img src={banner} alt="image banner" />
-                    </div>
-                </S.banner>
-                <S.text>
-                    <h1>Quem Somos</h1>
-                    <p>Saiba mais sobre o ASPonline</p>
-                </S.text>
-            </S.header>
+            <div className={style.container3}>
+                    <S.text>
+                        <p>Nós somos uma plataforma online que permite que você agende serviços públicos de forma rápida e fácil. Oferecemos serviços como bilhete de identidade, atestado de residência, cartão de munícipe, recenseamento militar e muito mais. Nosso objetivo é tornar o processo de agendamento de serviços públicos simples e acessível para todos </p>
+                    </S.text>
+            </div>
 
             {/* <S.content>
                 <S.containerImg>

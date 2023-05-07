@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const header = styled.header`
     position: relative;
+    display: none;
 `
 
 export const main = styled.main`

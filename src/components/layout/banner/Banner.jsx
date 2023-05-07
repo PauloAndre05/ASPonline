@@ -3,10 +3,10 @@ import { AiOutlineArrowUp } from 'react-icons/ai'
 import { Botao } from '../botao/Botao'
 
 import banner from '../../../images/recenseamento.png'
+import banner1 from '../../../images/banner3_.jpg'
 import banner2 from '../../../images/banner2.png'
 import banner4 from '../../../images/recenseamentoMob.png'
 import banner5 from '../../../images/bannerMob.png'
-import banner7 from '../../../images/banner3_.jpg'
 import banner8 from '../../../images/banner3Mob.jpg'
 
 import * as S from './stylesBanner';
@@ -19,24 +19,30 @@ function Banner() {
     const carousel1 = [
         {
             id: 1,
-            image: banner2
+            image: banner1
         },
 
         {
             id: 2,
+            image: banner2
+        },
+
+        {
+            id: 3,
             image: banner
         },
         
-        {
-            id: 4,
-            image: banner7
-        },
 
 ]
 
-    const carousel2 = [
+const carousel2 = [
     {
         id: 4,
+        image: banner8
+    },
+    
+    {
+        id: 6,
         image: banner4
     },
 
@@ -47,10 +53,6 @@ function Banner() {
 
     
 
-    {
-        id: 6,
-        image: banner8
-    },
 ]
 
 

@@ -46,5 +46,13 @@ export const dataTable = [
         localizacao: "56C8+4J8, Luanda",
         link: "https://www.google.com/maps/place/Administra%C3%A7%C3%A3o+Municipal+de+Viana/@-8.8449692,13.0868583,12z/data=!4m10!1m2!2m1!1sadministra%C3%A7%C3%B5es+de+luanda!3m6!1s0x1a51f8319add2057:0xcc48a23ac12452ff!8m2!3d-8.9078398!4d13.372574!15sChphZG1pbmlzdHJhw6fDtWVzIGRlIGx1YW5kYZIBCWNpdHlfaGFsbOABAA!16s%2Fg%2F11bzt7vcx8",
         cooredenada: "Ver coordenadas da instituição"
-    }
+    },
+
+    {
+        id: 7,
+        nome: "Administração Municipal de Cacuaco",
+        localizacao: "69FC+82W, Cacuaco",
+        link: "https://www.google.com/maps/place/Administra%C3%A7%C3%A3o+Municipal+de+Cacuaco/@-8.776638,13.3679027,17z/data=!3m1!4b1!4m6!3m5!1s0x1a51faadf44fee9b:0x32493c3bddea0979!8m2!3d-8.776638!4d13.3700914!16s%2Fg%2F11f_n91qz7?hl=pt-PT",
+        cooredenada: "Ver coordenadas da instituição"
+    },
 ]

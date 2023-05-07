@@ -39,7 +39,7 @@ export const texto = styled.div`
 
     p{
         font-size: 1.1rem;
-        color: #fff;
+        color: #e7e7e7;
         text-align: justify;
     }
 

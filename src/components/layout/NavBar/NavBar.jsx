@@ -13,7 +13,10 @@ function NavBar() {
     return(
         <S.container>
             <S.containerLogo>
-                <div><img src={logoAngola} alt="" /></div>
+                <a href="/tabelaDirecoes">
+                    <img src={logoAngola} alt="" />
+                </a>
+                
                 <S.icons>
                     <a href="/"><i> <TwitterLogo /> </i></a>
                     <a href="/"><i> <LinkedinLogo /> </i></a>

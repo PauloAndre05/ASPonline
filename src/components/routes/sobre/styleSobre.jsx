@@ -9,52 +9,26 @@ export const container = styled.main`
 `
 
 export const header= styled.header`
-    position: relative;
-    background-attachment: fixed;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
-export const banner = styled.main`
-    > div{
-        width: 100%;
-        height: 430px;
-        background-color: black;
-    }
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: .3;
-    }
 
-    @media screen and (max-width: 992px){
-       height: 300px;
-    }
-    @media screen and (min-width: 601px) and (max-width: 768px) {
-        height: 250px;
-    }
-
-    @media screen and (max-width: 600px) {
-        height: 100%;
-    }
-`
 
 export const text = styled.div`
-    position: absolute;
-    text-align: center ;
+    width: 60%;
     opacity: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #fff;
-
-    h1{
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        opacity: 0;
-        animation: moveBanner 1s 0.5s forwards;
-    }
+    padding: 0 1rem;
 
     p{
+        width: 100%;
+        height: 100%;
+        font-size: 1.4rem;
+        font-weight: lighter;
         opacity: 0;
         animation: moveBanner 1s 0.7s forwards;
     }
@@ -69,67 +43,25 @@ export const text = styled.div`
     }
 }
 
-    @media screen and (max-width: 768px){
-        h1{
-            font-size: 1.1rem;
-        }
-
-        p{
-            font-size: 1rem;
-        }
+    @media screen and (max-width: 910px){
+        width: 80%;
     }   
-`
 
-export const content = styled.section`
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin: 3rem 2rem;
-    text-align: justify;
-
-    p{
-        font-size: 1.2rem;
+    @media screen and (max-width: 768px){
+        width: 90%;
+    }
+    
+    @media screen and (max-width: 600px){
         width: 100%;
-        opacity: 0;
-        animation: moveAbout 1s 0.7s forwards;
-    }
+        
+    }   
 
-    @keyframes moveAbout{
-        0%{
-            transform: translateX(10rem) rotateX(-30deg);
-        }
-        100%{
-            transform: translateX(0) rotateX(0);
-            opacity: 1;
-        }
-    }
-
-    @keyframes moveAboutImg{
-        0%{
-            transform: translateY(10rem) rotateY(-30deg);
-        }
-        100%{
-            transform: translateY(0) rotateY(0);
-            opacity: 1;
-    }
-}
-
-
-@media screen and (max-width: 768px){
-        h1{
-            font-size: 1.1rem;
-        }
-
+    @media screen and (max-width: 350px){
+        width: 100%;
         p{
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
-    }  
-`
-
-export const img = styled.img`
-    width: 100%;
+    } 
 `
 
 export const more = styled.section`

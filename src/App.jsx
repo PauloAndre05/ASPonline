@@ -8,6 +8,8 @@ import { Footer } from './components/layout/footer/Footer'
 import { Direcoes } from './components/layout/direcoes/Direcoes'
 
 import * as S from './stylesApp'
+import { ActualizarAgenda } from './components/routes/actualizarAgenda/ActualizarAgenda';
+import { ConsultarAgenda } from './components/routes/consultarAgenda/ConsultarAgenda';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path='/agendar' element={<Agendar/>} />
           <Route path='/sobre' element={<Sobre/>} />
           <Route path='/tabelaDirecoes' element={<Direcoes/>} />
+          <Route path='/actualizarAgenda'element={<ActualizarAgenda/>} />
+          <Route path='/consultarAgenda'element={<ConsultarAgenda/>} />
         </Routes>
 
       <Footer/>

@@ -17,11 +17,6 @@ export const titleSection = styled.h1`
     margin: 1.5rem 0;
     width: 100%;
     height: 100%;
-
-    @media screen and (max-width: 768px){
-        font-size: 1.1rem;
-    }
-
 `
 
 export const content = styled.div`
@@ -78,6 +73,10 @@ export const paragrafo = styled.div`
     }
 
     @media screen and (max-width: 768px){
+        h1{
+            font-size: 1.5rem;
+        }
+
         p{
             font-size: 1rem;
         }
@@ -111,7 +110,6 @@ export const ContainerImage2 = styled.div`
     width: 10rem;
     overflow: hidden;
     border-radius: 50%;
-
 `
 
 export const img = styled.img`
@@ -221,5 +219,5 @@ export const containerbutton =styled.div`
 `
 
 export const a = styled.a`
-        
+
 `

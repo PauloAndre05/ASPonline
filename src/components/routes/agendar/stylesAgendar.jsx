@@ -7,7 +7,7 @@ export const containerContainer = styled.main`
         padding: 0;
         box-sizing: border-box;
     }
-    padding: 0 0 5rem 0;
+    padding: 0 0 2rem 0;
 `
 export const text = styled.section`
     display: flex;
@@ -179,7 +179,7 @@ export const inputs = styled.div`
         border-bottom: 1px solid rgba(0, 0, 0, 0.212) ;
         outline: none;
         height: 2.5rem;
-        width: 23rem;
+        width: 22rem;
         padding-left: .4rem; 
         font-size: .95rem;
         background-color: transparent;
@@ -214,11 +214,6 @@ export const inputs = styled.div`
         
     }
 
-    @media screen and (max-width: 600px){
-        label{
-            font-size: .95rem;
-        }
-    }
 `
 
 

@@ -6,6 +6,7 @@ export const container = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 `
 
 export const texto = styled.section`
@@ -15,7 +16,6 @@ export const texto = styled.section`
     margin: 1rem auto;
     color: #FFf;
     padding: 2.5rem 1rem;
-    box-shadow:  0 0 10px rgba(0, 0, 0, .2);
     border-radius: .3rem;
 
     h2{

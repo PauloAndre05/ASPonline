@@ -19,7 +19,7 @@ export const containerLogo = styled.div`
     align-items: center;
     border-bottom: 1px solid #0000004e;
     >a {
-        width: 10rem;
+        width: 8.5rem;
         height: 100%;
     }
     img{
@@ -198,22 +198,69 @@ export const lista2 = styled.ul`
 
 export const itens = styled.li`
     a{
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: lighter;
         font-size: 1rem;                
         text-decoration: none;
-        transition: all .4s;
+        transition: all .2s;
         color: #fff;
+        padding-bottom: .4rem;
     }
 
     a:hover{
-        color: #DC9833;
+        border-bottom: 3px solid #DC9833;
+        
     }
 
     a:active{
         color: #DC9833;
+        border-bottom: 3px solid #DC9833;
     }
 `
+
+export const itemService = styled.li`
+    position: relative;
+    
+    a{
+        font-size: 1rem;                
+        text-decoration: none;
+        transition: all .2s;
+        color: #fff;
+        padding-bottom: .4rem;
+    }
+`
+
+export const dropDown = styled.div`
+    background-color: #fff;
+    position: absolute;
+    top: 3rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s;
+    padding: .2rem;
+
+    ${({isMenuDropDown} ) => isMenuDropDown && css`
+        opacity: 1;
+    `}
+
+    a{
+        width:100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: .7rem;
+        color: #000;
+        padding: .5rem;
+    }
+
+    a:hover{
+        color: #fff;
+        background: linear-gradient(to right,#000000ef, #122f47dc, #000000ef );
+    }
+`
+
+
 
 export const itens2 = styled.li`
     display: flex;

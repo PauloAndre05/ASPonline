@@ -1,6 +1,5 @@
 import styled from "styled-components";
 export const button = styled.button`
-
     *{
         padding: 0;
         margin: 0;

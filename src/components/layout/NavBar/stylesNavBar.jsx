@@ -32,6 +32,9 @@ export const containerLogo = styled.div`
 
     @media screen  and (max-width: 600px) {
         padding: .5rem 2rem;
+        ${({ isOpen }) => isOpen && css`
+        justify-content: center;
+    `}
         
         >a{
             width: 6rem;
@@ -59,13 +62,16 @@ export const lotipo = styled.a`
 
 export const icons = styled.article`
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
+
+    ${({ isOpen }) => isOpen && css`
+        display: none;
+    `}
 
     a{
-        color: #ee1010;
+        color: #ca2323;
         width: 2rem;
         height: 2rem;
-        border: 1px solid #ffee00;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -75,9 +81,6 @@ export const icons = styled.article`
         object-fit: cover;
     }
 
-   
-
-   
 `
 
 export const hamburguer = styled.div`
@@ -96,21 +99,19 @@ export const hamburguer = styled.div`
         border-radius: .2rem;
 
         div{
-            width: 2rem;
+            width: 1.7rem;
             height: 2rem;
             background-color: #ffffffd5;
         }
-    }
-
-    
+        :active{
+            
+        border: 3px solid #ffffff58;
+        }
+    }    
 `
 
 export const containrHamburguer = styled.section`
-    ${({ isOpen }) => isOpen && css`
-        > div >{
-            display: none;
-        }
-    `}
+
 `
 
 export const line1 = styled.div`
@@ -153,16 +154,15 @@ export const menu = styled.nav`
 export const sideBar = styled.div`
     height: 0;
     visibility: hidden;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: visibility 0;
     /* max-height: ${({isOpen}) => isOpen?'40vh':'0'}; */
     background: linear-gradient(to right,#000000ef, #122f47dc, #000000ef );
-    transition: all .6s;
-
+    transition: height .7s;
     ${({ isOpen }) => isOpen && css`
-        height: 300px;
+        height: 370px;
         visibility: visible;
     `}
     
@@ -182,11 +182,10 @@ export const lista = styled.ul`
 
 
 export const lista2 = styled.ul`
-    text-align: center;
     height: 100%;
     display: flex;
+    padding: 3rem 2rem;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     
@@ -202,12 +201,6 @@ export const itens = styled.li`
         text-decoration: none;
         transition: all .2s;
         color: #fff;
-        padding-bottom: .4rem;
-    }
-
-    a:hover{
-        border-bottom: 3px solid #DC9833;
-        
     }
 
     a:active{
@@ -216,16 +209,54 @@ export const itens = styled.li`
     }
 `
 
+
+export const itens2 = styled.li`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+
+    
+    :active{
+        background-color: #82b6e0a5;
+    }
+    a{
+        
+        padding: .7rem 0;
+        width: 100%;
+        font-size: 1rem;
+        color: #ffffff;
+        text-decoration: none;
+        border-bottom: 1px solid #ffffff44;
+    }
+
+    a:hover{
+        color: #000;
+        background-color: #ffffff44;
+    }
+    
+
+    a:active{
+        background-color: #ffffff44;
+        color: #000;
+        
+    }
+`
+
 export const itemService = styled.li`
     position: relative;
+    list-style: none;
+    text-align: center;
     
     a{
         font-size: 1rem;                
         text-decoration: none;
-        transition: all .2s;
         color: #fff;
         padding-bottom: .4rem;
     }
+    
 `
 
 export const dropDown = styled.div`
@@ -238,7 +269,7 @@ export const dropDown = styled.div`
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: all .5s;
+    transition: all .2s;
     padding: .2rem;
 
     ${({isMenuDropDown} ) => isMenuDropDown && css`
@@ -262,32 +293,116 @@ export const dropDown = styled.div`
 
 
 
-export const itens2 = styled.li`
+/* ============================== MENU DROPDOWN 2 =================================== */
+
+export const itemService2 = styled.li`
+    position: relative;
+    list-style: none;
+    text-align: center;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    text-transform: uppercase;
+    border-bottom: 1px solid #ffffff44;
+
+    >div{
+        padding: .5rem 0;
+        width: 100%;
+        display: flex;
+        align-items: top;
+        gap: .3rem;
+    }
 
     
-    :active{
-        background-color: #82b6e0a5;
-    }
+    
     a{
-        
-        padding: .7rem 0;
-        width: 100%;
-        font-size: 1rem;
-        color: #82B6E0;
+        font-size: 1rem;                
         text-decoration: none;
-        font-size: .9rem;
+        color: #fff;
+        text-transform: uppercase;
     }
 
     a:hover{
-        color: #fff;
+        color: #000;
     }
 
-    a:active{
+    >div:hover{
+        cursor: pointer;
+        background-color: #ffffff44;
+        color: #000;
+    }
+
+    >div:active{
+        background-color: #ffffff44;
+        color: #000;
     }
 `
+
+export const dropDown2 = styled.div`
+    background: linear-gradient(to right,#000000, #122f47dc, #000000 );
+    top: 5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    background-color: #fff;
+
+    ${({isMenuDropDown} ) => isMenuDropDown && css`
+        height: 120px;
+        opacity: 1;
+        visibility: visible;
+    `}
+
+    a{
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+        padding: .5rem 1rem;
+        font-size: .8rem;
+    }
+
+    a:hover{
+        color: #f8f8f7;
+        background-color: #ffffff44;
+    }
+
+    :active{
+        color: #f8f8f7;
+        background-color: #ffffff44;
+    }
+  
+`
+
+
+export const icons2 = styled.article`
+    margin-top: 8rem;
+    display: flex;
+    gap: 1rem;
+
+    a{  padding: .5rem;
+        background-color: #0000009d;
+        color: #ffee0058;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        text-align: center;
+        
+    }
+    a:hover{
+        color: #ffee00e2;
+    }
+
+    margin-bottom: .5rem;
+`
+
+

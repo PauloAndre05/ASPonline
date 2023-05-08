@@ -34,18 +34,8 @@ function ConsultarAgenda() {
             <h1>
                 Consulta de Agenda
             </h1>
-            <p>Entre com o número do Comprovativo ou Identificação </p>
-            <S.containerBorder>
-                <S.containerLine1>
-                    <p>Passo 1</p>
-                    <S.line1></S.line1>
-                </S.containerLine1>
-                
-                <S.containerLine3>
-                    <p> Concluído</p>
-                    <S.line3></S.line3>
-                </S.containerLine3>
-            </S.containerBorder>
+            <p>Entre com o número do Comprovativo do agendamento ou Identificação </p>
+            
         </S.text>
         <S.containerForm>
             

@@ -61,7 +61,7 @@ export const containerLine1 = styled.div`
     color: #fff;
 
     p{
-        color: #14d603d2;
+        color: #07a0dd;
     }
 `
 
@@ -84,7 +84,7 @@ export const containerLine3 = styled.div`
 export const line1 = styled.div`
     width: 10rem;
     height: .4rem;
-    background-color: #0b6b02d4;
+    background-color: #0686b9;
     color: #fff;
     border-radius: 50px;
 `
@@ -111,7 +111,7 @@ export const containerForm = styled.section`
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 3rem 0;
+        padding: 3rem 1rem;
         width: 75%;
         margin: 0 auto;
         margin-top: -7rem;
@@ -146,7 +146,7 @@ export const form = styled.form`
     flex-wrap: wrap;
 
     @media screen and (max-width: 768px){
-        gap: 1rem;
+        gap: 2rem;
     }
 `
 
@@ -179,7 +179,7 @@ export const inputs = styled.div`
         border-bottom: 1px solid rgba(0, 0, 0, 0.212) ;
         outline: none;
         height: 2.5rem;
-        width: 22rem;
+        width: 21rem;
         padding-left: .4rem; 
         font-size: .95rem;
         background-color: transparent;
@@ -204,6 +204,12 @@ export const inputs = styled.div`
         border-bottom: 1px solid #C2DFE5 ;
     }
     
+    @media screen and (max-width: 600px) {
+        input,select{
+        font-size: .9rem;
+    } 
+    }
+
     @media screen and (max-width: 375px){
         width: 100%;
         padding: 0 .5rem;
@@ -221,7 +227,7 @@ export const inputs = styled.div`
 export const containerButton = styled.div`
     button{
         overflow: hidden;
-        background-color: #122f47dc;
+        background-color: #0a2f59;
         color: #fff;
         width: 100%;
         height: 2.5rem;
@@ -231,14 +237,15 @@ export const containerButton = styled.div`
         border-radius: 50px;
     }
     button:hover{
-        background-color: #0a2f59;
+        background-color: #01346e;
         box-shadow: none;
     }
 
     @media screen and (max-width: 768px){
         width: 100%;
         button{
-            width: 100%;
+            width: 60%;
+            margin: 0 auto;
         }
        
     }

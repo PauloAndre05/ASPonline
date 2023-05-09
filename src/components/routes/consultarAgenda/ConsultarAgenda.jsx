@@ -5,7 +5,7 @@ import { Botao } from '../../layout/botao/Botao'
 
 const options = [
     {
-        name: "Número de Comprovativo",
+        name: "Número do Comprovativo de Agendamento",
         value: 1
     },
     {

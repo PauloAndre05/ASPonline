@@ -272,7 +272,7 @@ export const dropDown = styled.div`
     transition: all .2s;
     padding: .2rem;
 
-    ${({isMenuDropDown} ) => isMenuDropDown && css`
+    ${({isMenuDropDown2} ) => isMenuDropDown2 && css`
         opacity: 1;
     `}
 

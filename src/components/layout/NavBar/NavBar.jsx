@@ -1,15 +1,20 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+
 import * as S from './stylesNavBar'
+
 import logo from '../../../images/logo.svg'
+
 import  logoAngola  from '../../../images/logo-angola.png'
 import { TwitterLogo, LinkedinLogo,  CaretDown, EyeClosed } from 'phosphor-react'
 
-import { useState } from 'react'
+
 
 function NavBar() {
 
     const [isOpen, setIsOpen] = useState(false)
     const [isMenuDropDown, setIsMenuDropDown] = useState(false)
+    const [isMenuDropDown2, setIsMenuDropDown2] = useState(false)
 
     return(
         <S.container>
@@ -29,14 +34,13 @@ function NavBar() {
                 <S.lista >
                     <S.itens> <Link to=""> Início </Link> </S.itens>
                     <S.itemService> 
-                        <Link onClick={() => setIsMenuDropDown(!isMenuDropDown)}> Serviços <CaretDown size={10} weight="thin" /> </Link>
-                        <S.dropDown isMenuDropDown = {isMenuDropDown} onClick={() => setIsMenuDropDown(false)}>
+                        <Link onClick={() => setIsMenuDropDown2(!isMenuDropDown2)}> Serviços <CaretDown size={10} weight="thin" /> </Link>
+                        <S.dropDown isMenuDropDown2 = {isMenuDropDown2} onClick={() => setIsMenuDropDown2(false)}>
                             <Link to="/agendar"> Agendamento </Link>
                             <Link to="/consultarAgenda"> Consultar Agenda </Link>
                             <Link to="/actualizarAgenda"> Actualizar Agenda </Link>
                         </S.dropDown>
                     </S.itemService>
-                    {/* <S.itens> <Link to="/agendar"> Agendar </Link> </S.itens> */}
                     <S.itens> <Link to="/sobre"> Sobre </Link> </S.itens>
                 </S.lista>
                 <S.hamburguer onClick={() => setIsOpen(!isOpen)}>

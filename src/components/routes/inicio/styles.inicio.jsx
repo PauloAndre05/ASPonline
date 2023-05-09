@@ -54,7 +54,7 @@ export const content = styled.section`
 
 export const cardTop = styled.section`
     width: 100%;
-    height: 10.5rem;
+    height: 10rem;
     overflow: hidden;
     border-radius: .5rem;
     position: relative;

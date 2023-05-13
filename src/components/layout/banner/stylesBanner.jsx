@@ -51,6 +51,11 @@ export const ImageBanner = styled.div`
     overflow: hidden;
     width: 100%;
     height: 100%;
+
+    img{
+        object-fit: cover;
+        opacity: .3;
+    }
     @media screen and (max-width: 600px){
        display: none;
     }
@@ -61,13 +66,14 @@ export const ImageBanner2 = styled.div`
     background-color: rgb(0, 0, 0);
     overflow: hidden;
     width: 100%;
-    height: 290px;
+    height: 67vh;
     @media screen and (max-width: 600px){
         display: block;
     }
 
     img{
         object-fit: contain;
+        opacity: .3;
     }
 `;
 

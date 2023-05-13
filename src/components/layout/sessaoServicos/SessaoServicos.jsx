@@ -5,8 +5,9 @@ import * as S from './stylesServicos'
 import { Botao } from '../../layout/botao/Botao'
 import { dataCard } from "./Dados";
 
-import imageServico from '../../../images/imageServico.jpg'
-/* import imageServico2 from '../../../images/imageServico2.jpg' */
+import imageServico from '../../../images/bi.png'
+
+import imageServico2 from '../../../images/Banner.jpg'
 
 function SessaoServicos() {
     const settings = {
@@ -56,28 +57,46 @@ function SessaoServicos() {
       <S.containerContainer>
         <S.titleSection>Serviços</S.titleSection>
         <S.content>
-            <S.paragrafo>
-              <h1>Bem-vindo à sessão de serviços do sistema de agendamento de serviços públicos online.</h1>
-              <p> Mas baixo estão listados alguns serviços de acesso rápido disponíveis para você. Para obter informações sobre os requisitos para o tratamento presencial desses serviços, por favor, acesse a página de serviços para mais detalhes.</p>
-            </S.paragrafo>
+            <S.area1>
+              <S.paragrafo>
+                <h1>Agendamento</h1>
+                <p> Mas baixo estão listados alguns serviços de acesso rápido disponíveis para você. Para obter informações sobre os requisitos para o tratamento presencial desses serviços, por favor, acesse a página de serviços para mais detalhes.</p>
+                <a href="/agendar2">Ir para o agendamento</a>
+              </S.paragrafo>
+              <S.contImage>
+                <S.img src={imageServico} alt="image servico" />
+              </S.contImage>
+            </S.area1> 
 
-            <S.contImage>
-              <S.img src={imageServico} alt="image servico" />
-            </S.contImage>
-            {/* <S.area2>
+            <S.area2>
+              <S.containerImage2>
+                <S.img src={imageServico2} alt = "image servico" />
+              </S.containerImage2>
               <S.text2>
-                  <p>Bem-vindo à página de serviços do sistema de agendamento de serviços públicos online. Aqui, você encontrará todos os serviços disponíveis para agendamento oferecidos pelo governo. Os serviços estão organizados em categorias para facilitar a navegação e o acesso às informações necessárias para realizar o agendamento.</p>
+                  <h1>Consultar Agenda</h1>
+                  <p>Consulte a sua agenda e actualize-se do dia agendado</p>
+                  <a href="/consultarAgenda">Consultar Agenda</a>
               </S.text2>
 
-              <S.ContainerImage2>
+            </S.area2> 
+
+
+            <S.area3>
+              <S.text3>
+                  <h1>Actualizar Agenda</h1>
+                  <p>Actualize a sua agenda, e imprima o novo comprovativo de agendametno </p>
+                  <a href="/actualizarAgenda">Actualizar Agenda</a>
+              </S.text3>
+
+              <S.containerImage3>
                 <S.img src={imageServico2} alt = "image servico" />
-              </S.ContainerImage2>
-            </S.area2> */}
+              </S.containerImage3>
+            </S.area3> 
         </S.content>
 
         <S.containerContainerS>
           <S.container>
-          
+            <h1>Agendar Documento </h1>
             <Slider {...settings}>
             {dataCard.map((item, index) => (
             <S.containerCard key={index}>
@@ -91,7 +110,7 @@ function SessaoServicos() {
                     <a href="/agendar">
                       <Botao name="Agendar"/>
                     </a>
-                    <S.a href="/servicos">Saiba Mais</S.a>
+                    <S.a href="/servicos">Mais Informações</S.a>
                   </S.containerbutton>
                 </S.cardBottom>
               </S.card>

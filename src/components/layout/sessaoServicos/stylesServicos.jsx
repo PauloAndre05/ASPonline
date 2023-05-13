@@ -20,44 +20,14 @@ export const titleSection = styled.h1`
 `
 
 export const content = styled.div`
+    width: 100%;
     display: flex;
-    justify-content: space-evenly; 
+    flex-direction: column; 
     align-items: center;
-    padding: 3rem;
+    padding: 5rem 2rem;
     flex-wrap: wrap;
     background-color: #eeeeee;
-    gap: 5rem;  
-    text-align: justify;
     line-height: 1.7rem;
-
-    @media screen and (max-width: 768px){
-        gap: 3rem;
-    } 
-`
-
-export const contImage = styled.div`
-    width: 22rem;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 0 3px #00000028;
-
-    img{
-        width: 100%;
-        object-fit: cover;
-    }
-
-    @media screen and (max-width: 768px){
-        width: 15rem;
-    }   
-`
-
-export const paragrafo = styled.div`
-    width: 30rem;
-    border-bottom: 1px solid #69696993;
-    padding-bottom: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
 
     h1{
         text-align: start;
@@ -69,9 +39,15 @@ export const paragrafo = styled.div`
         line-height: 1.8rem;
         font-size: 1.2rem;
         font-weight: 300;
-        color: #45707a;
+        color: #1b1b1b;
     }
 
+    a{
+        text-decoration: none;
+        padding: .5rem 0;
+        display: block;
+    }
+    
     @media screen and (max-width: 768px){
         h1{
             font-size: 1.5rem;
@@ -81,18 +57,66 @@ export const paragrafo = styled.div`
             font-size: 1rem;
         }
     } 
+
+    @media screen and (max-width: 768px){
+        gap: 3rem;
+    } 
+`
+
+export const area1 = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+`
+
+export const paragrafo = styled.div`  
+    width: 30rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    @media screen and (max-width: 768px){
+        width: 90%;
+        margin: 0 auto;
+    } 
+`
+export const contImage = styled.div`
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 2rem 0 2rem 0;
+    width: 25rem;
+
+    img{
+        height: 100%;
+        object-fit: cover;
+        opacity: .6;
+    }
+
+    @media screen and (max-width: 768px){
+        width: 15rem;
+    }   
 `
 
 export const area2 = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 2.5rem;
     width: 100%;
+    margin: 3rem 0;
 `
 
 export const text2 = styled.div`
-    width: 55rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 20rem;
+    padding-bottom: 2rem;
 
     p{
         width: 100%;
@@ -106,10 +130,60 @@ export const text2 = styled.div`
     } 
 `
 
-export const ContainerImage2 = styled.div`
-    width: 10rem;
+
+export const area3 = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+    
+`
+
+export const text3 = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 30rem;
+    padding-bottom: 2rem;
+
+    p{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 768px){
+        p{
+            font-size: 1rem;
+        }
+    } 
+`
+
+
+export const containerImage2 = styled.div`
+    width: 18rem;
+    background-color: #000;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: .5rem;
+    margin: 2rem 0;
+    img{
+        opacity: .6;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 768px){
+        width: 15rem;
+    }
+`
+
+export const containerImage3 = styled.div`
+    width: 25rem;
+
+    @media screen and (max-width: 768px){
+        width: 15rem;
+    }
 `
 
 export const img = styled.img`
@@ -117,22 +191,34 @@ export const img = styled.img`
     object-fit: cover; 
 `
 
+export const containerContainerS = styled.div` 
+    background-color: #0c8097;    
+    background: linear-gradient(to right,#131313, #122f47dc, #131313);
+    padding: 2rem 0;
+    @media screen and (max-width: 600px) {
+        padding: 4.5rem 0;
+    }
+`
 export const container = styled.div`
     width: 65%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    h1{
+        font-size: 1.2rem;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
 
     @media screen and  (max-width: 600px){
         width: 63%;
     }
 `
 
-export const containerContainerS = styled.div` 
-    background-color: #0c809740;    
-    padding: 2rem 0;
-    @media screen and (max-width: 600px) {
-        padding: 4.5rem 0;
-    }
-`
 
 export const containerCard =styled.div`
     border: 6px solid transparent;
@@ -144,7 +230,11 @@ export const card = styled.div`
     flex-direction: column;
     background-color: #f5f5f5;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 13rem;
 
     @media screen and (max-width: 768px) {
         padding: 1.5rem 0;

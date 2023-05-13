@@ -134,7 +134,7 @@ export const menu = styled.nav`
     background: linear-gradient(to right,#131313, #122f47dc);
     color: #fff;
     z-index: 100;
-    box-shadow: 1px 5px 8px rgba(0, 0, 0, .3);
+    /*   */
     
     
 
@@ -159,7 +159,7 @@ export const sideBar = styled.div`
     align-items: center;
     transition: visibility 0;
     /* max-height: ${({isOpen}) => isOpen?'40vh':'0'}; */
-    background: linear-gradient(to right,#000000ef, #122f47dc, #000000ef );
+    background: linear-gradient(to right,#000000ef, #122f47dc);
     transition: height .7s;
     ${({ isOpen }) => isOpen && css`
         height: 370px;
@@ -245,6 +245,8 @@ export const itens2 = styled.li`
     }
 `
 
+/* ============================== MENU DROPDOWN 1 =================================== */
+
 export const itemService = styled.li`
     position: relative;
     list-style: none;
@@ -258,6 +260,7 @@ export const itemService = styled.li`
     }
     
 `
+
 
 export const dropDown = styled.div`
     background-color: #fff;

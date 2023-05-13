@@ -13,7 +13,7 @@ export const container = styled.main`
 
 export const containerLogo = styled.div`
     background-color: #FFFFFF;
-    padding:.5rem 7rem;
+    padding:.5rem 11.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,9 +129,9 @@ export const menu = styled.nav`
     display: flex;  
     align-items: center;
     justify-content: space-between;
-    padding: .9rem 16rem;
+    padding: .9rem 20rem;
     background-color: #f3f3f3dc;
-    background: linear-gradient(to right,#000000ef, #122f47dc, #000000ef );
+    background: linear-gradient(to right,#131313, #122f47dc);
     color: #fff;
     z-index: 100;
     box-shadow: 1px 5px 8px rgba(0, 0, 0, .3);
@@ -364,7 +364,7 @@ export const dropDown2 = styled.div`
         width: 100%;
         text-align: center;
         font-weight: bold;
-        color: #000;
+        color: #fff;
         padding: .5rem 1rem;
         font-size: .8rem;
     }
@@ -389,7 +389,7 @@ export const icons2 = styled.article`
 
     a{  padding: .5rem;
         background-color: #0000009d;
-        color: #ffee0058;
+        color: #ca2323a9;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -399,7 +399,7 @@ export const icons2 = styled.article`
         
     }
     a:hover{
-        color: #ffee00e2;
+        color: #ca2323;
     }
 
     margin-bottom: .5rem;

@@ -9,26 +9,25 @@ export const containerCards = styled.section`
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 5rem 0;
-    background-color: #000;
+    padding: 5rem 3rem;
+    background-color: #000000c8;
     color: #ffffff9a;
+    
 
     a{
         text-decoration: none;
         color: #a5a5a5;
     }
-    h1{
-        font-size: 1.3rem;
-        color: #bd5500a2; 
-    }    
 `
 
 export const card = styled.article`
-    width: 15rem;
+    width: 16rem;
+    height: 22rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: .6rem;
+    justify-content: top;
+    padding-top: 1rem;
     border: .3px solid #ffffff14;
     border-radius: 5px;
     transition: all .5s;
@@ -37,17 +36,22 @@ export const card = styled.article`
         box-shadow: 0px 0px 3px #fff;
     } 
     h1{
-        font-size: 1.3rem;
-        color: #bd5500a2; 
+        text-align: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #00bd9df4; 
     }
     p{
-        width: 100%;
         font-weight: bolder;
-        margin: 1rem 0 .5rem 0;
-        color: #fff;
+        color: #ebebeb;
     }
 
     ul{
+        list-style: none;
+        width: 100%;
+    }
+
+    li{
         list-style: none;
     }
 

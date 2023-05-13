@@ -1,6 +1,17 @@
 import styled from "styled-components";
+import img from '../../../images/quemSomos.jpg'
 
 export const container = styled.main`
+    width: 100%;
+    height: 100%;
+    background: url(${img});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, .6);
+    box-shadow: inset  0 0 10px rgba(0, 0, 0, .6);
     width: 100%;
     color: #000;
     display: flex;

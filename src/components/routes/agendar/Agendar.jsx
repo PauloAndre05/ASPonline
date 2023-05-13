@@ -5,6 +5,7 @@ import { Input } from '../../layout/input/Input'
 import { Botao } from '../../layout/botao/Botao'
 import {dataTable} from '../../layout/direcoes/data'
 
+
 const options = [
     {
         name: "Bilhete 1ª via",
@@ -29,8 +30,10 @@ const options = [
         value: 5
     },
 ]
+
+
 function Agendar() {
-    const [servicoSelecionado, setServicoSelecionado] = useState()
+    const [servicoSelecionado, setServicoSelecionado] = useState() 
     
     function biCedula(e) {
         setServicoSelecionado(e.target.value)

@@ -1,0 +1,10 @@
+.etapas{
+    display: flex;
+    justofy-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.active{
+    background-color: red;
+}

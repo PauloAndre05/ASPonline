@@ -99,7 +99,6 @@ export const Text = styled.div`
       
     
     > h1{
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: normal;
         font-size: 2rem;
         text-align: center;
@@ -112,8 +111,7 @@ export const Text = styled.div`
     }
 
     p{
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: normal;
+        font-weight: lighter;
         text-align: center;
         width: 50%;
         display: flex;
@@ -134,29 +132,24 @@ export const Text = styled.div`
 
     @media screen and (max-width: 768px) {
         h1{
-            text-align: start;
             width: 80%;
         }
 
         p{
             font-size: 1.1rem;
             width: 80%;
-            text-align: start;
         }
     }
 
 
     @media screen and (max-width: 600px){
         h1{
-            text-align: start;
-            font-size: 1.5rem;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
         }
 
         p{
-            text-align: start;
-            width: 80%;
+            width: 90%;
             font-size: 1rem;
             margin: .8rem auto;
         }

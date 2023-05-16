@@ -7,7 +7,7 @@ import { dataCard } from "./Dados";
 
 import imageServico from '../../../images/bi.png'
 
-import imageServico2 from '../../../images/Banner.jpg'
+import imageServico2 from '../../../images/contribuinte.png'
 
 function SessaoServicos() {
     const settings = {

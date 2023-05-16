@@ -6,88 +6,217 @@ export const containerContainer = styled.main`
         margin: 0;
         box-sizing: border-box;
     }
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;    
 `
 export const titleSection = styled.h1`
     font-weight: normal;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #000;
     display: inline-block;
-    margin: 1.5rem 0;
     width: 100%;
-    height: 100%;
 `
 
 export const content = styled.div`
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column; 
+    gap: 2rem;
     align-items: center;
-    padding: 5rem 2rem;
+    padding: 2rem 0;
+    margin: auto;
     flex-wrap: wrap;
-    background-color: #eeeeee;
-    line-height: 1.7rem;
 
     h1{
         text-align: start;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: lighter;
     }
 
     p{
         line-height: 1.8rem;
-        font-size: 1.2rem;
-        font-weight: 300;
+        font-weight: lighter;
         color: #1b1b1b;
     }
 
     a{
         text-decoration: none;
         padding: .5rem 0;
-        display: block;
+        color: #133d8d;
+        font-size: 1.1rem;
+    }
+
+    a:hover{
+        text-decoration: underline;
     }
     
     @media screen and (max-width: 768px){
+        width: 98%;
+    } 
+
+    @media screen and (max-width: 1024px) {
         h1{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
-
+        
         p{
-            font-size: 1rem;
+            font-size: .9rem;
         }
-    } 
 
-    @media screen and (max-width: 768px){
-        gap: 3rem;
-    } 
+        a{
+            font-size: .9rem;
+        }
+    }
+
 `
 
 export const area1 = styled.div`
+    width: 100%;
+    height: 17rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3rem;
+
+    @media screen and (max-width:768px) {
+        height: 100%;
+    }
 `
 
 export const paragrafo = styled.div`  
-    width: 30rem;
-    padding-bottom: 2rem;
+    background-color: #F5F5F5;
+    width: 50%;
+    height: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } 
+`
+export const contImage = styled.div`
+    width: 50%; 
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .6;
+    }
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
+    
+    @media screen and (max-width: 600px){
+        height: 12rem;
+    }
+`
+
+export const area2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3rem 0;
+`
+
+export const text2 = styled.div`
+    background-color: #F5F5F5;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
+    width: 50%;
     @media screen and (max-width: 768px){
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     } 
 `
-export const contImage = styled.div`
+
+
+export const area3 = styled.div`
+    width: 100%;
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:768px) {
+        height: 100%;
+    }
+    
+`
+
+export const text3 = styled.div`
+    background-color: #eee;
+    width: 50%;
+    height: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media screen and (max-width: 768px){
+        order: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } 
+`
+
+
+export const containerImage2 = styled.div`
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+
+    img{
+        opacity: .6;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
+
+    @media screen and (max-width: 600px){
+        height: 12rem;
+    }
+`
+
+export const containerImage3 = styled.div`
+    width: 50%; 
+    height: 100%;
     overflow: hidden;
     background-color: #000;
-    border-radius: 2rem 0 2rem 0;
-    width: 25rem;
 
     img{
         height: 100%;
@@ -96,93 +225,11 @@ export const contImage = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        width: 15rem;
-    }   
-`
-
-export const area2 = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-    width: 100%;
-    margin: 3rem 0;
-`
-
-export const text2 = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 20rem;
-    padding-bottom: 2rem;
-
-    p{
         width: 100%;
-        font-size: 1.2rem;
-    }
-
-    @media screen and (max-width: 768px){
-        p{
-            font-size: 1rem;
-        }
     } 
-`
 
-
-export const area3 = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-    width: 100%;
-    
-`
-
-export const text3 = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 30rem;
-    padding-bottom: 2rem;
-
-    p{
-        width: 100%;
-        font-size: 1.2rem;
-    }
-
-    @media screen and (max-width: 768px){
-        p{
-            font-size: 1rem;
-        }
-    } 
-`
-
-
-export const containerImage2 = styled.div`
-    width: 18rem;
-    background-color: #000;
-    overflow: hidden;
-    border-radius: .5rem;
-    margin: 2rem 0;
-    img{
-        opacity: .6;
-        object-fit: cover;
-    }
-
-    @media screen and (max-width: 768px){
-        width: 15rem;
-    }
-`
-
-export const containerImage3 = styled.div`
-    width: 25rem;
-
-    @media screen and (max-width: 768px){
-        width: 15rem;
+    @media screen and (max-width: 600px){
+        height: 12rem;
     }
 `
 
@@ -192,8 +239,7 @@ export const img = styled.img`
 `
 
 export const containerContainerS = styled.div` 
-    background-color: #0c8097;    
-    background: linear-gradient(to right,#131313, #122f47dc, #131313);
+    background-color: #373d42;
     padding: 2rem 0;
     @media screen and (max-width: 600px) {
         padding: 4.5rem 0;
@@ -228,7 +274,7 @@ export const card = styled.div`
     overflow: hidden;
     gap: .5rem;
     flex-direction: column;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
     display: flex;
     flex-direction: column;
@@ -278,7 +324,7 @@ export const title = styled.h3`
 export const containerbutton =styled.div`
     display: flex;
     flex-direction: column;
-    gap: .4rem;
+    gap: .5rem;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -297,7 +343,6 @@ export const containerbutton =styled.div`
         justify-content: center;
         width: 7.5rem;
         height: 1.7rem;
-        padding-bottom: .1rem;
         text-decoration: none;
         font-size: .9rem;
     }

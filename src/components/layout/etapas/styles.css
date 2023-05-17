@@ -5,6 +5,17 @@
     gap: 1rem;
 }
 
+
 .active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
     background-color: red;
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+. active p{
+    padding: 1rem;
 }

@@ -9,6 +9,8 @@ import imageServico from '../../../images/bi.png'
 
 import imageServico2 from '../../../images/contribuinte.png'
 
+import imageServico3 from '../../../images/bgAgendar2.jpg'
+
 function SessaoServicos() {
     const settings = {
         dots: false,
@@ -56,40 +58,54 @@ function SessaoServicos() {
     return(
       <S.containerContainer>
         <S.titleSection>Serviços</S.titleSection>
+        
         <S.content>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cum beatae, nobis voluptatibus quis eveniet inventore numquam quae placeat. Veritatis excepturi voluptates sapiente ut corporis praesentium optio modi quae corrupti.</p>
             <S.area1>
               <S.paragrafo>
                 <h1>Agendamento</h1>
-                <p> Mas baixo estão listados alguns serviços de acesso rápido disponíveis para você. Para obter informações sobre os requisitos para o tratamento presencial desses serviços, por favor, acesse a página de serviços para mais detalhes.</p>
+                <p> Agende serviços públicos como, Bilhete de Identidade, Contribuinte, Atestado de Residência e muitos outros serviços de agendamento disponíveis para si</p>
                 <a href="/agendar2">Ir para o agendamento</a>
               </S.paragrafo>
               <S.contImage>
                 <S.img src={imageServico} alt="image servico" />
               </S.contImage>
             </S.area1> 
-
-            <S.area2>
-              <S.containerImage2>
-                <S.img src={imageServico2} alt = "image servico" />
-              </S.containerImage2>
-              <S.text2>
-                  <h1>Consultar Agenda</h1>
-                  <p>Consulte a sua agenda e actualize-se do dia agendado</p>
-                  <a href="/consultarAgenda">Consultar Agenda</a>
-              </S.text2>
-
-            </S.area2> 
-
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cum beatae, nobis voluptatibus quis eveniet inventore numquam quae placeat. Veritatis excepturi voluptates sapiente ut corporis praesentium optio modi quae corrupti.</p>
+            <S.containerArea2>
+            
+              <S.area2_1>
+                <S.containerImage2>
+                  <S.img src={imageServico2} alt = "image servico" />
+                </S.containerImage2>
+                <S.text2>
+                    <h1>Consultar Agenda</h1>
+                    <p>Consulte a sua agenda e actualize-se do dia agendado</p>
+                    <a href="/consultarAgenda">Consultar Agenda</a>
+                </S.text2>
+              </S.area2_1>
+              <S.area2_2>
+                <S.text2>
+                    <h1>Consultar Agenda</h1>
+                    <p>Consulte a sua agenda e actualize-se do dia agendado</p>
+                    <a href="/consultarAgenda">Consultar Agenda</a>
+                </S.text2>
+                <S.containerImage2>
+                  <S.img src={imageServico2} alt = "image servico" />
+                </S.containerImage2>
+              </S.area2_2>
+            </S.containerArea2> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cum beatae, nobis voluptatibus quis eveniet inventore numquam quae placeat..</p>
 
             <S.area3>
               <S.text3>
                   <h1>Actualizar Agenda</h1>
-                  <p>Actualize a sua agenda, e imprima o novo comprovativo de agendametno </p>
+                  <p>Actualize a sua agenda, e imprima um novo comprovativo de agendametno </p>
                   <a href="/actualizarAgenda">Actualizar Agenda</a>
               </S.text3>
 
               <S.containerImage3>
-                <S.img src={imageServico2} alt = "image servico" />
+                <S.img src={imageServico3} alt = "image servico" />
               </S.containerImage3>
             </S.area3> 
         </S.content>

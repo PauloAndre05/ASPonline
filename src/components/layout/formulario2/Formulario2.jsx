@@ -1,8 +1,11 @@
+import * as S from './styleFormulario2'
+
 function Formulario2({ data }) {
     return(
-        <div>
-            <h1>Formulário 2</h1>
-        </div>
+        <S.containerInputs>
+            <input type="date" required placeholder='Selecione Uma Data'/>
+            <input type="time" required placeholder='Selecione Uma Hora'/>
+        </S.containerInputs>
     )
 }
 

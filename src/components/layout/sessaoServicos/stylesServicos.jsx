@@ -28,6 +28,11 @@ export const content = styled.div`
     padding: 2rem 0;
     margin: auto;
     flex-wrap: wrap;
+    
+    >p{
+        width: 70%;
+        text-align: center;
+    }
 
     h1{
         text-align: start;
@@ -53,7 +58,7 @@ export const content = styled.div`
     }
     
     @media screen and (max-width: 768px){
-        width: 98%;
+        width: 100%;
     } 
 
     @media screen and (max-width: 1024px) {
@@ -79,6 +84,8 @@ export const area1 = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #eeeeee;
 
     @media screen and (max-width:768px) {
         height: 100%;
@@ -128,14 +135,27 @@ export const contImage = styled.div`
     }
 `
 
-export const area2 = styled.div`
+export const containerArea2 = styled.div`
+    width: 100%;
+    display: flex;
+`
+
+export const area2_1 = styled.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 3rem 0;
+    width: 50%;
+`
+
+export const area2_2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 `
 
 export const text2 = styled.div`
@@ -145,7 +165,8 @@ export const text2 = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
-    width: 50%;
+    width: 100%;
+
     @media screen and (max-width: 768px){
         width: 100%;
         display: flex;
@@ -163,6 +184,8 @@ export const area3 = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 2rem;
+    border-top: 2px solid #eeeeee;
 
     @media screen and (max-width:768px) {
         height: 100%;
@@ -193,8 +216,7 @@ export const text3 = styled.div`
 
 
 export const containerImage2 = styled.div`
-    width: 50%;
-    height: 100%;
+    width: 100%;
     background-color: #000;
     overflow: hidden;
 

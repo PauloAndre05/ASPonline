@@ -8,7 +8,7 @@ export const Banner = styled.main`
     box-sizing: border-box  ;
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
-    height: 430px;
+    height: 400px;
     width: 100%;
     position: relative;
 
@@ -80,7 +80,6 @@ export const ImageBanner2 = styled.div`
 export const Imagem=styled.img`
     width: 100%;
     height: 100%;
-    opacity: .5;
     object-fit: cover;
     object-position: center;
 
@@ -105,7 +104,7 @@ export const Text = styled.div`
         text-transform: uppercase;
         text-shadow: 1px 2px 8px #000;
         opacity: 0;
-        color: #e2e2e2;
+        color: #ffffff;
         animation: moveBanner 1s 0.5s forwards;
         margin: 0 auto;
     }
@@ -117,8 +116,8 @@ export const Text = styled.div`
         display: flex;
         justify-content: center;
         font-size: 1.3rem;
-        margin: 1.5rem auto;
-        color: #d1d1d1;
+        margin: 2rem auto;
+        color: #ffffff;
         opacity: 0;
         animation: moveBanner 1s 0.9s forwards;
         text-shadow: 1px 2px 8px #000;
@@ -151,7 +150,6 @@ export const Text = styled.div`
         p{
             width: 90%;
             font-size: 1rem;
-            margin: .8rem auto;
         }
     }
 
@@ -174,20 +172,21 @@ export const Text = styled.div`
     }
 
      button{
-        border: 1px solid #ffffff90;
-        color: #cacaca;
-        display: flex;
-        align-items: center;
+        padding: 0;
+        padding-bottom: .2rem;
+        color: #000;
         width: 12rem;
         height: 2.2rem;
-        background-color: #03242ba4;
+        background-color: #ffffff96;
+        border: 1px solid #ffffff96;
         text-decoration: none;
         border-radius: 1rem;
+        box-shadow: 0 0 10px #000;
 
     }
 
     button:hover{
-        background-color: #03242b;;
+        background-color: transparent;;
         color: #fff;
         box-shadow: none;
     }

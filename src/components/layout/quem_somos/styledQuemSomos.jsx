@@ -38,13 +38,13 @@ export const texto = styled.section`
     }
     
     p{        
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: lighter;
         margin-top: 2rem;
         text-align: justify;
         text-shadow: 1px 3px 5px #000000ae;
     }
-
+    
     @media screen and (max-width: 600px) {
         width: 90%;
     }

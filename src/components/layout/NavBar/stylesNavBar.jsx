@@ -13,6 +13,7 @@ export const container = styled.main`
 
 export const containerLogo = styled.div`
     background-color: #FFFFFF;
+    background: linear-gradient(to left, #000, #fff);
     padding:.5rem 11.5rem;
     display: flex;
     justify-content: space-between;
@@ -129,11 +130,12 @@ export const menu = styled.nav`
     display: flex;  
     align-items: center;
     justify-content: space-between;
-    padding: .9rem 20rem;
-    background-color: #f3f3f3dc;
-    background: linear-gradient(to right,#131313, #122f47dc);
+    padding: .9rem 15rem;
+    background-color: #000000;/* 
+    background: linear-gradient(to right,#131313, #122f47dc); */
     color: #fff;
     z-index: 100;
+    border-bottom: 3px solid #ff000090;
     /*   */
     
     
@@ -159,7 +161,7 @@ export const sideBar = styled.div`
     align-items: center;
     transition: visibility 0;
     /* max-height: ${({isOpen}) => isOpen?'40vh':'0'}; */
-    background: linear-gradient(to right,#000000ef, #122f47dc);
+    background-color: #000;
     transition: height .7s;
     ${({ isOpen }) => isOpen && css`
         height: 370px;
@@ -343,8 +345,7 @@ export const itemService2 = styled.li`
 `
 
 export const dropDown2 = styled.div`
-    background: linear-gradient(to right,#000000, #122f47dc, #000000 );
-    top: 5rem;
+    top: 5.5rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -355,7 +356,7 @@ export const dropDown2 = styled.div`
     opacity: 0;
     visibility: hidden;
     transition: all .5s;
-    background-color: #fff;
+    background-color: #ffffff44;
 
     ${({isMenuDropDown} ) => isMenuDropDown && css`
         height: 120px;

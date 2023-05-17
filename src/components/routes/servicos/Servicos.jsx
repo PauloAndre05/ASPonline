@@ -1,15 +1,13 @@
 import { dataCard } from '../../layout/sessaoServicos/Dados'
-import { SessaoServicos } from '../../layout/sessaoServicos/SessaoServicos'
 import * as S from './stylesServicos'
 
 function Servicos() {
     return(
         <S.container>
-            <SessaoServicos/>
 
                 <S.containerCards>   
                     {dataCard.map((item) => (
-                    <a href="/agendar">
+                    <a href="/agendar2">
                         <S.card>
                                 <h1>{item.servico}</h1>
                                 <p>{item.desc}</p>

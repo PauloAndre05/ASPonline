@@ -36,7 +36,7 @@ function NavBar() {
                     <S.itemService> 
                         <Link onClick={() => setIsMenuDropDown2(!isMenuDropDown2)}> Serviços <CaretDown size={10} weight="thin" /> </Link>
                         <S.dropDown isMenuDropDown2 = {isMenuDropDown2} onClick={() => setIsMenuDropDown2(false)}>
-                            <Link to="/agendar"> Agendamento </Link>
+                            <Link to="/agendar2"> Agendamento </Link>
                             <Link to="/consultarAgenda"> Consultar Agenda </Link>
                             <Link to="/actualizarAgenda"> Actualizar Agenda </Link>
                         </S.dropDown>
@@ -58,7 +58,7 @@ function NavBar() {
                             <Link > Serviços</Link> <EyeClosed  size={24} weight="bold" color='#fff'/> 
                         </div>
                         <S.dropDown2 isMenuDropDown = {isMenuDropDown} onClick={() => setIsMenuDropDown(false)}>
-                            <Link to="/agendar" onClick={() => setIsOpen(false)}> Agendamento </Link>
+                            <Link to="/agendar2" onClick={() => setIsOpen(false)}> Agendamento </Link>
                             <Link to="/consultarAgenda" onClick={() => setIsOpen(false)}> Consultar Agenda </Link>
                             <Link to="/actualizarAgenda" onClick={() => setIsOpen(false)}> Actualizar Agenda </Link>
                         </S.dropDown2>

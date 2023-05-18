@@ -4,7 +4,7 @@ import { Formulario3 } from "../../layout/formulario3/Formulario3"
 import { Etapa } from "../../layout/etapas/Etapa"
 
 import { UseForm } from "../../../hooks/UseForm"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import * as S from './StyleAgendar2'
 
@@ -22,6 +22,26 @@ const formTemplate = {
 }
 
 function Agendar2() {
+
+    useEffect(() => {
+        
+        fetch("http://localhost:3001",{
+            method: 'GET',
+            mode: 'no-cors',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+            }
+        })
+        .then(response => {
+            response.json()
+            console.log(response);
+        })
+        .then(data => {
+            console.log(data);
+        })
+    }, []) 
+        
+
         const [data, setData] = useState(formTemplate)
         
         const updateFieldHandler = (key, value) => {

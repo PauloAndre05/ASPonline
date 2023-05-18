@@ -52,8 +52,7 @@ function Agendar() {
         .then(data => {
             console.log(data);
         })
-    }, []) 
-    
+    }, [])  
     return(
         <S.containerContainer>
             <S.text>

@@ -8,7 +8,7 @@ export const containerContainer = styled.main`
     }
     width: 100%;
     margin: 0 auto;
-    padding: 2rem 0;    
+    padding-top: 4rem;    
 `
 export const titleSection = styled.h1`
     font-weight: normal;
@@ -17,21 +17,24 @@ export const titleSection = styled.h1`
     color: #000;
     display: inline-block;
     width: 100%;
+
+    @media screen and (max-width: 768px){
+       font-size: 1.5rem;
+    } 
 `
 
 export const content = styled.div`
     width: 90%;
-    display: flex;
-    flex-direction: column; 
     gap: 2rem;
-    align-items: center;
-    padding: 2rem 0;
     margin: auto;
     flex-wrap: wrap;
     
     >p{
         width: 70%;
-        text-align: center;
+        font-size: 1.4rem;
+        padding: 2rem 1rem;
+        box-shadow: 0 0 2px #00000060;
+        border-radius: 1rem;
     }
 
     h1{
@@ -46,19 +49,68 @@ export const content = styled.div`
         color: #1b1b1b;
     }
 
-    a{
+ 
+    @media screen and (max-width: 768px){
+        width: 100%;
+
+    } 
+ 
+
+    @media screen and (max-width: 1024px) {
+        h1{
+            font-size: 1.2rem;
+        }
+
+        >p {
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        p{
+            font-size: .9rem;
+        }
+    }
+
+`
+
+export const area1 = styled.div`
+    margin: 2rem 0;
+    width: 100%;
+    height: 17rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+   a{
+        background-color: #258d84;
         text-decoration: none;
         padding: .5rem 0;
-        color: #133d8d;
-        font-size: 1.1rem;
+        color: #fff;
+        font-size: 1rem;
+        opacity: .89;
+        width: 17rem;
+        text-align: center;
+        border-radius: .3rem;
     }
 
     a:hover{
-        text-decoration: underline;
+        opacity: 1;
     }
     
     @media screen and (max-width: 768px){
         width: 100%;
+
+        a{
+            width: 95%;
+        }
+    } 
+
+    @media screen and (max-width: 768px){
+        a{
+            width: 98%;
+            font-size: .9rem;
+        }
     } 
 
     @media screen and (max-width: 1024px) {
@@ -71,21 +123,10 @@ export const content = styled.div`
         }
 
         a{
-            font-size: .9rem;
+            font-size: .85rem;
         }
     }
 
-`
-
-export const area1 = styled.div`
-    width: 100%;
-    height: 17rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid #eeeeee;
 
     @media screen and (max-width:768px) {
         height: 100%;
@@ -138,6 +179,52 @@ export const contImage = styled.div`
 export const containerArea2 = styled.div`
     width: 100%;
     display: flex;
+    margin: 4rem 0;
+
+    a{
+        background-color: #258d84;
+        text-decoration: none;
+        padding: .5rem 0;
+        color: #fff;
+        font-size: 1rem;
+        opacity: .89;
+        width: 17rem;
+        text-align: center;
+        border-radius: .3rem;
+    }
+
+    a:hover{
+        opacity: 1;
+    }
+    
+    @media screen and (max-width: 768px){
+        width: 100%;
+
+        a{
+            width: 95%;
+        }
+    } 
+
+    @media screen and (max-width: 768px){
+        a{
+            width: 98%;
+            font-size: .9rem;
+        }
+    } 
+
+    @media screen and (max-width: 1024px) {
+        h1{
+            font-size: 1.2rem;
+        }
+        
+        p{
+            font-size: .9rem;
+        }
+
+        a{
+            font-size: .85rem;
+        }
+    }
 `
 
 export const area2_1 = styled.div`
@@ -147,6 +234,8 @@ export const area2_1 = styled.div`
     justify-content: center;
     align-items: center;
     width: 50%;
+
+   
 `
 
 export const area2_2 = styled.div`
@@ -156,6 +245,7 @@ export const area2_2 = styled.div`
     justify-content: center;
     align-items: center;
     width: 50%;
+    
 `
 
 export const text2 = styled.div`
@@ -163,6 +253,7 @@ export const text2 = styled.div`
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
@@ -178,19 +269,64 @@ export const text2 = styled.div`
 
 
 export const area3 = styled.div`
+    margin: 4rem 0;
     width: 100%;
     height: 17rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 2rem;
-    border-top: 2px solid #eeeeee;
+    
 
     @media screen and (max-width:768px) {
         height: 100%;
     }
     
+
+    a{
+        background-color: #258d84;
+        text-decoration: none;
+        padding: .5rem 0;
+        color: #fff;
+        font-size: 1rem;
+        opacity: .89;
+        width: 17rem;
+        text-align: center;
+        border-radius: .3rem;
+    }
+
+    a:hover{
+        opacity: 1;
+    }
+    
+    @media screen and (max-width: 768px){
+        width: 100%;
+
+        a{
+            width: 95%;
+        }
+    } 
+
+    @media screen and (max-width: 768px){
+        a{
+            width: 98%;
+            font-size: .9rem;
+        }
+    } 
+
+    @media screen and (max-width: 1024px) {
+        h1{
+            font-size: 1.2rem;
+        }
+        
+        p{
+            font-size: .9rem;
+        }
+
+        a{
+            font-size: .85rem;
+        }
+    }
 `
 
 export const text3 = styled.div`
@@ -261,10 +397,12 @@ export const img = styled.img`
 `
 
 export const containerContainerS = styled.div` 
-    background-color: #373d42;
-    padding: 2rem 0;
-    @media screen and (max-width: 600px) {
-        padding: 4.5rem 0;
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+    border-radius: 0rem;
+
+
+    @media screen and (max-width: 600px) {  
     }
 `
 export const container = styled.div`
@@ -283,7 +421,7 @@ export const container = styled.div`
     }
 
     @media screen and  (max-width: 600px){
-        width: 63%;
+        width: 89%;
     }
 `
 
@@ -297,7 +435,7 @@ export const card = styled.div`
     gap: .5rem;
     flex-direction: column;
     background-color: #ffffff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
+    box-shadow: 0 0 2px #00000060;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -306,6 +444,7 @@ export const card = styled.div`
 
     @media screen and (max-width: 768px) {
         padding: 1.5rem 0;
+        min-height: 16rem;
     } 
 `
 
@@ -352,7 +491,7 @@ export const containerbutton =styled.div`
     flex-wrap: wrap;
     a{
         text-decoration: none;
-        text-align: center;
+        text-align: center  ;
     }
 
     button{
@@ -376,5 +515,7 @@ export const containerbutton =styled.div`
 `
 
 export const a = styled.a`
-
+    margin-top: .7rem;
+    color: #009;
+    font-size: .9rem;
 `

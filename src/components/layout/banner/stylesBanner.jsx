@@ -6,7 +6,6 @@ export const Banner = styled.main`
     padding: 0;
     margin: 0;
     box-sizing: border-box  ;
-    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
     height: 400px;
     width: 100%;
@@ -23,26 +22,6 @@ export const Banner = styled.main`
     @media screen and (max-width: 600px) {
         height: 100%;
     }
-
-    @keyframes moveBanner{
-        0%{
-            transform: translateY(10rem) rotateY(-30deg);
-        }
-        100%{
-            transform: translateY(0) rotateY(0);
-            opacity: 1;
-    }
-}
-
-    @keyframes moveButton{
-        0%{
-            transform: translateX(10rem) rotateX(-30deg);
-        }
-        100%{
-            transform: translateX(0) rotateX(0);
-            opacity: 1;
-    }
-}
 
 `
 
@@ -103,9 +82,8 @@ export const Text = styled.div`
         text-align: center;
         text-transform: uppercase;
         text-shadow: 1px 2px 8px #000;
-        opacity: 0;
+        opacity: 1;
         color: #ffffff;
-        animation: moveBanner 1s 0.5s forwards;
         margin: 0 auto;
     }
 
@@ -118,8 +96,7 @@ export const Text = styled.div`
         font-size: 1.3rem;
         margin: 2rem auto;
         color: #ffffff;
-        opacity: 0;
-        animation: moveBanner 1s 0.9s forwards;
+        opacity: 1;
         text-shadow: 1px 2px 8px #000;
     }
 
@@ -143,12 +120,13 @@ export const Text = styled.div`
 
     @media screen and (max-width: 600px){
         h1{
-            width: 90%;
+            width: 98%;
             margin: 0 auto;
+            font-size: 1.4rem;
         }
 
         p{
-            width: 90%;
+            width: 70%;
             font-size: 1rem;
         }
     }
@@ -164,8 +142,7 @@ export const Text = styled.div`
  export const ButtonContainer=styled.div`
     display: flex;
     justify-content: center;
-    opacity: 0;
-    animation: moveButton 1s 1.5s forwards;
+    transition: all .6s;
     
     a{
         text-decoration: none;
@@ -173,20 +150,18 @@ export const Text = styled.div`
 
      button{
         padding: 0;
-        padding-bottom: .2rem;
-        color: #000;
+        color: #fff;
         width: 12rem;
         height: 2.2rem;
-        background-color: #ffffff96;
-        border: 1px solid #ffffff96;
+        background-color: #258d845e;
         text-decoration: none;
         border-radius: 1rem;
-        box-shadow: 0 0 10px #000;
-
+        
     }
 
     button:hover{
         background-color: transparent;;
+        border: 1px solid #258d84;
         color: #fff;
         box-shadow: none;
     }

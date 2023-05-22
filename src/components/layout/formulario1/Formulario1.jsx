@@ -1,7 +1,5 @@
 import * as S from './stylesFormulario1'
 import { useState } from 'react'
-import { dataCard } from '../../layout/sessaoServicos/Dados'
-import { dataTable } from '../direcoes/data'
 
 function Formulario1 ({data, updateFieldHandler}) {
 
@@ -10,18 +8,41 @@ function Formulario1 ({data, updateFieldHandler}) {
         setServicoSelecionado(e.target.value)
     }
 
+    const [dataService, setDataService] = useState([])
+    const [dataPosto, setDataPosto] = useState([])
+
+    /* ==================== REQUEST SERVICO ========================= */
+
+    fetch("http://localhost:3001/servico")
+    .then(response => response.json())
+    .then(data => {
+        setDataService(data)
+    })
+
+    /* ==================== REQUEST POSTO DE ATENDIMENTO =======================0 */
+
+    fetch("http://localhost:3001/posto")
+    .then(response => response.json())
+    .then(data => {
+        setDataPosto(data)
+    })
+
+
+    /* ================================== REQUEST IDENTIFICATION ====================================== */
+       
+
     return(
         <S.containerForm>
             <S.inputs>
             <div>
                 <input 
-                type="text" 
-                name="nome" 
-                id="nome" 
-                required="true " 
-                placeholder="Nome Completo *"  
-                value = {data.nome || ""} 
-                onChange={(e) => updateFieldHandler("nome", e.target.value)} 
+                    type="text" 
+                    name="nome" 
+                    id="nome" 
+                    required="true " 
+                    placeholder="Nome Completo *"  
+                    value = {data.nome || ""} 
+                    onChange={(e) => updateFieldHandler("nome", e.target.value)} 
                 />
             </div>
             <div>
@@ -32,10 +53,10 @@ function Formulario1 ({data, updateFieldHandler}) {
                     required
                     value={servicoSelecionado} onChange={biCedula}>
                         
-                    <option>Selecione o serviço  *</option>
-                    {dataCard.map(option => (
+                    <option value="">Selecione o serviço  *</option>
+                    {dataService.map(option => (
                         <option key={option.id}  value={option.id}>
-                            {option.servico}
+                            {option.nome}
                         </option> 
                     ))}
                 </select>
@@ -45,8 +66,13 @@ function Formulario1 ({data, updateFieldHandler}) {
                 
                 <select name="servico" id="servico"  required   >
                     <option selected>Posto de atendimento (seleção automática) </option>
-                    {dataTable.map(option => (
-                        <option value={option.id} key={option.id}>{option.nome}</option>
+                    {dataPosto.map(option => (
+                        <option value={option.id} key={option.id}
+                            selected = {data.servico}
+                            onChange={(e) => updateFieldHandler("servico",e.target.value)}
+                        >
+                            {option.nome}
+                        </option>
                         ))}
                 </select>
             </div>
@@ -82,13 +108,13 @@ function Formulario1 ({data, updateFieldHandler}) {
         
             <div>
                 <input 
-                type="text" 
-                name="telefone" 
-                id="telefone" 
-                required max={12} 
-                placeholder="Telefone *"  
-                value = {data.telefone || ""}
-                onChange={(e) => updateFieldHandler("telefone", e.target.value)}
+                    type="text" 
+                    name="telefone" 
+                    id="telefone" 
+                    required max={12} 
+                    placeholder="Telefone *"  
+                    value = {data.telefone || ""}
+                    onChange={(e) => updateFieldHandler("telefone", e.target.value)}
                 />
             </div>
 
@@ -97,7 +123,8 @@ function Formulario1 ({data, updateFieldHandler}) {
                     type="email" 
                     name="email" 
                     id="email" 
-                    required placeholder="E-mail *"
+                    required 
+                    placeholder="E-mail *"
                     value = {data.email || ""}
                     onChange={(e) => updateFieldHandler("email", e.target.value)}        
                 />
@@ -107,9 +134,10 @@ function Formulario1 ({data, updateFieldHandler}) {
             
                 <input 
                     type="email" 
-                    name="emailConfirmar" 
-                    id="emailConfirmar" 
-                    required placeholder="Confirmar e-mail *"
+                    name="confirmarEmail" 
+                    id="confirmarEmail" 
+                    required 
+                    placeholder="Confirmare-mail *"
                     value = {data.confirmarEmail || ""}
                     onChange={(e) => updateFieldHandler("confirmarEmail", e.target.value)}
                 />

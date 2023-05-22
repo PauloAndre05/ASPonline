@@ -13,8 +13,8 @@ import imageServico3 from '../../../images/bgAgendar2.jpg'
 
 function SessaoServicos() {
     const settings = {
-        dots: false,
-        infinite: false,
+        dots: true,
+        infinite: true,
         speed: 900,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -41,8 +41,8 @@ function SessaoServicos() {
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
+              slidesToShow: 2,
+              slidesToScroll: 2,
               initialSlide: 2
             }
           },
@@ -60,7 +60,6 @@ function SessaoServicos() {
         <S.titleSection>Serviços</S.titleSection>
         
         <S.content>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cum beatae, nobis voluptatibus quis eveniet inventore numquam quae placeat. Veritatis excepturi voluptates sapiente ut corporis praesentium optio modi quae corrupti.</p>
             <S.area1>
               <S.paragrafo>
                 <h1>Agendamento</h1>
@@ -71,7 +70,33 @@ function SessaoServicos() {
                 <S.img src={imageServico} alt="image servico" />
               </S.contImage>
             </S.area1> 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cum beatae, nobis voluptatibus quis eveniet inventore numquam quae placeat. Veritatis excepturi voluptates sapiente ut corporis praesentium optio modi quae corrupti.</p>
+
+            <S.containerContainerS>
+          <S.container>
+            <Slider {...settings}>
+            {dataCard.map((item, index) => (
+            <S.containerCard key={index}>
+              <S.card >
+                <S.cardTop>
+                  <div>{item.img}</div>
+                </S.cardTop>
+                <S.cardBottom>
+                  <S.title>{item.servico}</S.title>
+                  <S.containerbutton>
+                    <a href="/agendar2">
+                      <Botao name="Agendar"/>
+                    </a>
+                    <S.a href="/servicos">Mais Informações</S.a>
+                  </S.containerbutton>
+                </S.cardBottom>
+              </S.card>
+            </S.containerCard>
+            ))}
+            </Slider>
+          
+          </S.container>
+        </S.containerContainerS>
+            <p>Gerencie o seu agendamento. Você pode consultar, cancelar e até mesmo actualizar o seu agendamento de forma mais simples.</p>
             <S.containerArea2>
             
               <S.area2_1>
@@ -84,18 +109,18 @@ function SessaoServicos() {
                     <a href="/consultarAgenda">Consultar Agenda</a>
                 </S.text2>
               </S.area2_1>
-              <S.area2_2>
+               <S.area2_2>
+                <S.containerImage2>
+                  <S.img src={imageServico2} alt = "image servico" />
+                </S.containerImage2>
                 <S.text2>
                     <h1>Consultar Agenda</h1>
                     <p>Consulte a sua agenda e actualize-se do dia agendado</p>
                     <a href="/consultarAgenda">Consultar Agenda</a>
                 </S.text2>
-                <S.containerImage2>
-                  <S.img src={imageServico2} alt = "image servico" />
-                </S.containerImage2>
-              </S.area2_2>
+              </S.area2_2> 
             </S.containerArea2> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cum beatae, nobis voluptatibus quis eveniet inventore numquam quae placeat..</p>
+            <p>Você pode actualizar o seu agendamento alterando a data e hora agendada, serviço agendado e até mesmo o posto de atendimento escolhido</p>
 
             <S.area3>
               <S.text3>
@@ -110,32 +135,7 @@ function SessaoServicos() {
             </S.area3> 
         </S.content>
 
-        <S.containerContainerS>
-          <S.container>
-            <h1>Agendar Documento </h1>
-            <Slider {...settings}>
-            {dataCard.map((item, index) => (
-            <S.containerCard key={index}>
-              <S.card >
-                <S.cardTop>
-                  <div>{item.img}</div>
-                </S.cardTop>
-                <S.cardBottom>
-                  <S.title>{item.servico}</S.title>
-                  <S.containerbutton>
-                    <a href="/agendar">
-                      <Botao name="Agendar"/>
-                    </a>
-                    <S.a href="/servicos">Mais Informações</S.a>
-                  </S.containerbutton>
-                </S.cardBottom>
-              </S.card>
-            </S.containerCard>
-            ))}
-            </Slider>
-          
-          </S.container>
-        </S.containerContainerS>
+        
       </S.containerContainer>
     )
 }

@@ -51,13 +51,14 @@ export const containerLogo = styled.div`
 export const lotipo = styled.a`
     display: inline-block;
     overflow: hidden;
+    width: 4rem;
     img{
         height: 100%;
         width: 100%;
     }
 
 @media screen and (max-width: 768px){
-    width: 4.5rem;
+    width: 4rem;
 }
 `
 
@@ -131,12 +132,10 @@ export const menu = styled.nav`
     align-items: center;
     justify-content: space-between;
     padding: .9rem 15rem;
-    background-color: #000000;/* 
-    background: linear-gradient(to right,#131313, #122f47dc); */
+    background-color: #000000;
     color: #fff;
     z-index: 100;
     border-bottom: 3px solid #ff000090;
-    /*   */
     
     
 
@@ -182,6 +181,19 @@ export const lista = styled.ul`
     } 
 `
 
+export const itens = styled.li`
+    a{
+        font-size: .95rem;                
+        text-decoration: none;
+        transition: all .2s;
+        color: #258d84;
+    }
+
+    a:active{
+        color: #DC9833;
+        border-bottom: 3px solid #DC9833;
+    }
+`
 
 export const lista2 = styled.ul`
     height: 100%;
@@ -197,19 +209,6 @@ export const lista2 = styled.ul`
     }
 `
 
-export const itens = styled.li`
-    a{
-        font-size: 1rem;                
-        text-decoration: none;
-        transition: all .2s;
-        color: #fff;
-    }
-
-    a:active{
-        color: #DC9833;
-        border-bottom: 3px solid #DC9833;
-    }
-`
 
 
 export const itens2 = styled.li`
@@ -255,9 +254,9 @@ export const itemService = styled.li`
     text-align: center;
     
     a{
-        font-size: 1rem;                
+        font-size: .95rem;                
         text-decoration: none;
-        color: #fff;
+        color: #258d84;
         padding-bottom: .4rem;
     }
     

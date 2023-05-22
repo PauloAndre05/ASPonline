@@ -33,6 +33,7 @@ export const container = styled.div`
 `
 
 export const colunas = styled.div`
+    text-align: center;
     margin-bottom: 1rem; 
     > div{
         margin-bottom: 1rem;
@@ -44,7 +45,7 @@ export const colunas = styled.div`
     }
 
     p{  
-        font-size: 1rem;
+        font-size: .9rem;
         line-height: 1.6rem;
         color: #aaaaaae2;
         width:7rem;
@@ -55,7 +56,7 @@ export const colunas = styled.div`
     }
 
     a>p:hover{
-        color: #000000;
+        color: #ffffff;
     }
 
     @media screen and (max-width: 600px){
@@ -115,7 +116,7 @@ export const icon = styled.div`
     }
     
     a:hover{
-        color: #000;
+        color: #ffffff;
     }
 
     @media screen and (max-width: 600px) {
@@ -164,6 +165,7 @@ export const copy = styled.p`
     color: #6a849e;
     text-align: center;
     padding: 2rem 0 .8rem 0;
+    font-size: .9rem;
 
     @media screen and (max-width: 600px) {
         font-size: .75rem;

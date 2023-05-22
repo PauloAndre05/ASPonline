@@ -19,37 +19,39 @@ function Banner() {
     const carousel1 = [
         {
             id: 1,
+            image: banner
+        },
+        
+        {
+            id: 2,
             image: banner1
         },
 
         {
-            id: 2,
+            id: 3,
             image: banner2
         },
 
-        {
-            id: 3,
-            image: banner
-        },
-        
 
 ]
 
 const carousel2 = [
     {
         id: 4,
-        image: banner8
-    },
-    
-    {
-        id: 6,
         image: banner4
     },
 
     {
         id: 5,
+        image: banner8
+    },
+
+    {
+        id: 6,
         image: banner5
     },
+    
+
 
     
 

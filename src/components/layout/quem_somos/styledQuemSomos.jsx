@@ -10,7 +10,7 @@ export const container = styled.main`
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: color;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0.788);
     box-shadow: inset  0 0 10px rgba(0, 0, 0, .6);
     width: 100%;
     color: #000;
@@ -21,7 +21,7 @@ export const container = styled.main`
 `
 
 export const texto = styled.section`
-    font-weight: normal;
+    font-weight: lighter;
     width: 50%;
     max-height: 100%;
     margin: 1rem auto;
@@ -31,7 +31,7 @@ export const texto = styled.section`
 
     h2{
         text-align: center;
-        font-weight: normal;
+        font-weight: lighter;
         font-size: 1.5rem;
         text-transform: uppercase;
         text-shadow: 1px 3px 5px #000;

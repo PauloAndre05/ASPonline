@@ -39,20 +39,7 @@ function Agendar() {
         setServicoSelecionado(e.target.value)
     }
     
-    useEffect(() => {
-        
-        fetch("https://api.gov.ao/consultarBI/v2/007578210LA044",{
-            method: 'GET',
-            mode: 'no-cors',
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-        })
-    }, [])  
+  
     return(
         <S.containerContainer>
             <S.text>

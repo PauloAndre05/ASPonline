@@ -4,7 +4,7 @@ import { Formulario3 } from "../../layout/formulario3/Formulario3"
 import { Etapa } from "../../layout/etapas/Etapa"
 
 import { UseForm } from "../../../hooks/UseForm"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 import * as S from './StyleAgendar2'
 
@@ -17,30 +17,34 @@ const formTemplate = {
     cedula: "",
     telefone: "",
     email: "",
-    confirmarEmanil: "",
-    dataHora: "",
+    confirmarEmail: "",
+    data: "",
+    hora: "",
 }
 
 function Agendar2() {
 
-    useEffect(() => {
-        
-        fetch("http://localhost:3001",{
-            method: 'GET',
-            mode: 'no-cors',
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-            }
+    
+       /*  fetch("http://localhost:3001/identificacao/listar",{
+            method:"GET"
         })
-        .then(response => {
+        .then(response => response.json())
+        .then((data)=>console.log(data));
+ */
+
+        
+/* 
+        async function agendar() {
+            const response = await fetch("http://localhost:3001/agendamento", {
+                method: "POST",
+                body: JSON.stringify({data}),
+                headers: {'Content-Type': 'aplication/json'}
+            })
             response.json()
-            console.log(response);
-        })
-        .then(data => {
-            console.log(data);
-        })
-    }, []) 
-        
+            const agenda = response;
+            console.log(agenda);
+        }
+         */
 
         const [data, setData] = useState(formTemplate)
         
@@ -54,7 +58,6 @@ function Agendar2() {
             <Formulario2 data={data} />, 
             <Formulario3 data={data} />
         ]
-
         const { currentSteps, currentComponets, changeStep, isLastStep, isFirstStep } = UseForm(formComponents)
 
         return(
@@ -79,7 +82,7 @@ function Agendar2() {
                             {!isLastStep ? (
                                 <button type="submit">Seguinte</button>
                             ) : (
-                                <button type="submit">Agendar</button>
+                                <button type="submit" >Agendar</button>
                             )}
                         </S.containerButton>
                     </form>

@@ -96,7 +96,7 @@ function SessaoServicos() {
           
           </S.container>
         </S.containerContainerS>
-            <p>Gerencie o seu agendamento. Você pode consultar, cancelar e até mesmo actualizar o seu agendamento de forma mais simples.</p>
+            <p>Gerencie o seu agendamento. Você pode consultar, cancelar e até mesmo actualizar o seu agendamento de forma mais simples</p>
             <S.containerArea2>
             
               <S.area2_1>

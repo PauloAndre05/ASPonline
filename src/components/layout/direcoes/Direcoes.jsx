@@ -2,10 +2,13 @@ import { dataTable } from './data'
 import * as S from './StylesDirecao'
 import imgDir3 from '../../../images/imgDir3.jpg'
 import imgDirection from  '../../../images/direction6.png'
+import { NavBar } from '../NavBar/NavBar'
+import { Footer } from '../footer/Footer'
 
 function Direcoes() {
     return(
         <S.containerContainer>
+            <NavBar/>
             <S.containerMain>
                 
                 <S.textoImagem>
@@ -39,6 +42,7 @@ function Direcoes() {
                 </S.tabela>
 
             </S.containerMain>
+            <Footer/>
         </S.containerContainer>
     )
 }

@@ -8,7 +8,8 @@ export const containerContainer = styled.main`
     }
     width: 100%;
     margin: 0 auto;
-    padding-top: 4rem;    
+    padding-top: 4rem;   
+    background-color: #ffffff;
 `
 export const titleSection = styled.h1`
     font-weight: normal;
@@ -31,9 +32,10 @@ export const content = styled.div`
     
     >p{
         width: 70%;
+        margin: 0 auto;
         font-size: 1.4rem;
         padding: 2rem 1rem;
-        box-shadow: 0 0 2px #00000060;
+        text-align: center;
         border-radius: 1rem;
     }
 
@@ -433,7 +435,6 @@ export const card = styled.div`
     border-radius: 5px;
     overflow: hidden;
     gap: .5rem;
-    flex-direction: column;
     background-color: #ffffff;
     box-shadow: 0 0 2px #00000060;
     display: flex;

@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import style from './style.module.css' 
+import { NavBar } from "../../layout/NavBar/NavBar";
+import { Footer } from "../../layout/footer/Footer";
 
 function Sobre() {
     const settings = {
@@ -21,6 +23,7 @@ function Sobre() {
       };
     return(
         <S.container>
+            <NavBar/>
             <div className={style.container3}>
                     <S.text>
                         <p>Nós somos uma plataforma online que permite que você agende serviços públicos de forma rápida e fácil. Oferecemos serviços como bilhete de identidade, atestado de residência, cartão de munícipe, recenseamento militar e muito mais. Nosso objetivo é tornar o processo de agendamento de serviços públicos simples e acessível para todos </p>
@@ -61,6 +64,7 @@ function Sobre() {
             
 
             <NewsLetter/>
+            <Footer/>
         </S.container>
     )
 }

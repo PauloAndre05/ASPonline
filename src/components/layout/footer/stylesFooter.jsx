@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const footer = styled.footer`
+    width: 100%;
     *{
         padding: 0;
         margin: 0;
@@ -8,8 +9,7 @@ export const footer = styled.footer`
     }
         /* background-color: #1D262D; */
 
-        background: linear-gradient(to bottom, #1D262D, #000000f2);
-        bottom: 0;
+        background: #2b2b2b;
         padding: 2.5rem 0 0 0;
      @media screen and (min-width: 320px) and (max-width: 600px){
    

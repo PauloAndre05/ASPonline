@@ -7,6 +7,7 @@ import { UseForm } from "../../../hooks/UseForm"
 import { useState } from "react"
 
 import * as S from './StyleAgendar2'
+import { Footer } from "../../layout/footer/Footer"
 
 
 const formTemplate = {
@@ -24,43 +25,84 @@ const formTemplate = {
 
 function Agendar2() {
 
-    
-       /*  fetch("http://localhost:3001/identificacao/listar",{
-            method:"GET"
-        })
-        .then(response => response.json())
-        .then((data)=>console.log(data));
- */
-
-        
-/* 
-        async function agendar() {
-            const response = await fetch("http://localhost:3001/agendamento", {
-                method: "POST",
-                body: JSON.stringify({data}),
-                headers: {'Content-Type': 'aplication/json'}
-            })
-            response.json()
-            const agenda = response;
-            console.log(agenda);
-        }
-         */
-
         const [data, setData] = useState(formTemplate)
+        let validation = ["", "", "", "", "", ""]
         
-        const updateFieldHandler = (key, value) => {
-            setData((prev) => {
-                return { ...prev, [key]: value}
-            })
+        function validateBI(value){
+            const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+            const ref = ["LA", "UE"]
+
+            if(value.length !==  13){
+                validation[6] = "BI inválido"
+                return false
+            }//  0 0 0 0 0 0 0 0 0 LA 0 0 0
+
+            else{
+                validation[6] = ""
+            }
+
+            for(var i = 0; i < value.length; i++){
+                if(!ref.contains(value[9]+''+value[10])){
+                    validation[6] = "BI inválido"
+                    return false
+                }
+                    validation[6] = ""
+
+                if(i !== 9 && i !== 10) {
+                    if(!num.contains(value[i])){
+                        validation[6] = "BI inválido"
+                        return false
+                    }
+
+                    validation[6] = ""
+
+                }
+            }
+
+            validation[6] = ""
+            return true
         }
+
+        /* async function reqBI(value) {
+            const resp = await fetch("http://localhost:3001/identificacao", value).then((response) => response.json()).catch((e) => {
+                    validation[6] = "BI não existe"
+                    return false
+                }
+            )
+
+            if(resp.bi !== value && resp.nome !== data.nome) {
+                validation[6] = "BI não compatível"
+                return false
+            }
+
+            return true
+        } */
+
+        const updateFieldHandler = (key, value) => {
+
+            if(key === 'bi'){
+                if(validateBI(value)) {
+                    setData((prev) => {
+                        return { ...prev, [key]: value}
+                    })
+                    validation[6] = ""
+                }
+            } else {
+                setData((prev) => {
+                    return { ...prev, [key]: value}
+                })
+            }
+        }
+
         const formComponents = [
-            <Formulario1 data={data} updateFieldHandler={updateFieldHandler}/>, 
+            <Formulario1 data={data} validation={validation} updateFieldHandler={updateFieldHandler}/>, 
             <Formulario2 data={data} />, 
             <Formulario3 data={data} />
         ]
         const { currentSteps, currentComponets, changeStep, isLastStep, isFirstStep } = UseForm(formComponents)
 
         return(
+            <>
             <S.containerContainer>
 
                 <S.text>
@@ -71,7 +113,7 @@ function Agendar2() {
                 <S.container>
                     
                     <form onSubmit={(e) => changeStep(currentSteps + 1, e)}>
-                        <div className="inputContainer">
+                            <div className="inputContainer">
                             {currentComponets}
                         </div>
                 
@@ -81,14 +123,18 @@ function Agendar2() {
                             )}
                             {!isLastStep ? (
                                 <button type="submit">Seguinte</button>
-                            ) : (
+                            ) : ( 
                                 <button type="submit" >Agendar</button>
                             )}
                         </S.containerButton>
                     </form>
 
                 </S.container>
+               
             </S.containerContainer>
+          
+             <Footer />
+            </>
     )
 }
 

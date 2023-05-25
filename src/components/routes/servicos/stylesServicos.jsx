@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const container = styled.main`
-    z-index: 100;
+    
 `
 
 export const containerCards = styled.section`

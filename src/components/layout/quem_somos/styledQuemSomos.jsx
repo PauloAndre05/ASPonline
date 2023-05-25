@@ -1,16 +1,16 @@
 import styled from "styled-components";
-import img from '../../../images/quemSomos.jpg'
+import img from '../../../images/bandeira-de-angola.jpg'
 
 export const container = styled.main`
     width: 100%;
-    height: 100%;
+    height: 400px;
     background: url(${img});
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: color;
-    background-color: rgba(0, 0, 0, 0.788);
+    background-color: rgba(0, 0, 0, 0.199);
     box-shadow: inset  0 0 10px rgba(0, 0, 0, .6);
     width: 100%;
     color: #000;

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const containerContainer = styled.main `
    margin: 0 auto;
-   padding-top: 4rem;
 `
 
 export const containerMain = styled.section`

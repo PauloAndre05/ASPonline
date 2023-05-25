@@ -10,7 +10,7 @@ export const containerContainer = styled.main`
     }
 
     background-color: #f7f7f7;
-    padding-bottom: 5rem;
+    margin-bottom: 5rem;
 `
 
 export const container = styled.section`
@@ -46,7 +46,6 @@ export const container = styled.section`
 
 export const text = styled.div`
     background-image: url(${img});
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0000006c;

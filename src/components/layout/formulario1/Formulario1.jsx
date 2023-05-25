@@ -1,9 +1,10 @@
 import * as S from './stylesFormulario1'
 import { useState } from 'react'
 
-function Formulario1 ({data, updateFieldHandler}) {
+function Formulario1 ({data, validation, updateFieldHandler}) {
 
     const [servicoSelecionado, setServicoSelecionado] = useState()
+    const [bi, setBi] = useState("")
     function biCedula(e) {
         setServicoSelecionado(e.target.value)
     }
@@ -13,23 +14,23 @@ function Formulario1 ({data, updateFieldHandler}) {
 
     /* ==================== REQUEST SERVICO ========================= */
 
-    fetch("http://localhost:3001/servico")
+/*     fetch("http://localhost:3001/servico")
     .then(response => response.json())
     .then(data => {
-        setDataService(data)
-    })
+    })  */
+    setDataService(data)
 
     /* ==================== REQUEST POSTO DE ATENDIMENTO =======================0 */
 
-    fetch("http://localhost:3001/posto")
+   /*  fetch("http://localhost:3001/posto")
     .then(response => response.json())
     .then(data => {
-        setDataPosto(data)
-    })
-
+})*/
+setDataPosto(data)
+ 
 
     /* ================================== REQUEST IDENTIFICATION ====================================== */
-       
+    
 
     return(
         <S.containerForm>
@@ -84,9 +85,13 @@ function Formulario1 ({data, updateFieldHandler}) {
                         name="bi" id="bi" 
                         required max={14} 
                         placeholder="Nº do bilhete *"
-                        value = {data.bi || ""}
-                        onChange={(e) => updateFieldHandler("bi", e.target.value)}
+                        value = {bi || ""}
+                        onChange={(e) => {
+                            setBi(e.target.value)
+                            updateFieldHandler("bi", bi)
+                        }}
                     />
+                    <span>{validation}</span>
                 </div>
             )}
 

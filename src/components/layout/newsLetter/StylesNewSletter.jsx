@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const container =  styled.main`
-    background-color: #1d262d;
+    background-color: #000;
     padding: 2.5rem 0;
     display: flex; 
     justify-content: center;
@@ -31,7 +31,7 @@ export const texto = styled.div`
     h1{
         text-transform: uppercase;
         font-size: 1.8rem;
-        color: #000;
+        color: #258d84;
         text-shadow: 0 1px 2px #000000b5;
         width:100%;
         text-align: center;
@@ -109,12 +109,11 @@ export const buttonNewsLetter = styled.div`
     text-align: right;
     width:100%;
     button{
-        background-color: transparent;
         width: 10rem;
         height: 2rem;
-        color: #82b6e0;
+        color: #ffffff;
         font-size: 1.1rem;
-        background-color: #263f4f;
+        background-color: #258d84;
     }
 
     button:hover{

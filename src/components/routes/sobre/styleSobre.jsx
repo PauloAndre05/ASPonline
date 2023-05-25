@@ -65,7 +65,7 @@ export const text = styled.div`
 `
 
 export const more = styled.section`
-    background-color: #1d262d;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;

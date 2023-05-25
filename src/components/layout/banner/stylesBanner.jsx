@@ -7,7 +7,7 @@ export const Banner = styled.main`
     margin: 0;
     box-sizing: border-box  ;
 }
-    height: 400px;
+    height: 520px;
     width: 100%;
     position: relative;
 
@@ -33,7 +33,7 @@ export const ImageBanner = styled.div`
 
     img{
         object-fit: cover;
-        opacity: .3;
+        opacity: .5;
     }
     @media screen and (max-width: 600px){
        display: none;
@@ -78,7 +78,7 @@ export const Text = styled.div`
     
     > h1{
         font-weight: normal;
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
         text-transform: uppercase;
         text-shadow: 1px 2px 8px #000;
@@ -93,7 +93,7 @@ export const Text = styled.div`
         width: 50%;
         display: flex;
         justify-content: center;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin: 2rem auto;
         color: #ffffff;
         opacity: 1;
@@ -189,7 +189,7 @@ export const toTop = styled.a`
     right: 1rem;
     bottom: 1rem;
     width: 2rem;
-    background-color: #061d38;
+    background-color: #258d84;
     color: #fff;
     display: flex;
     justify-content: center;

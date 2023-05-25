@@ -16,45 +16,38 @@ import Slider from 'react-slick';
 
 function Banner() {
 
-    const carousel1 = [
-        {
-            id: 1,
-            image: banner
-        },
-        
-        {
-            id: 2,
-            image: banner1
-        },
+const carousel1 = [
+    {
+        id: 1,
+        image: banner,
+    },
+    
+    {
+        id: 2,
+        image: banner1,
+    },
 
-        {
-            id: 3,
-            image: banner2
-        },
-
-
+    {
+        id: 3,
+        image: banner2,
+    },
 ]
 
 const carousel2 = [
     {
         id: 4,
-        image: banner4
+        image: banner4,
     },
 
     {
         id: 5,
-        image: banner8
+        image: banner8,
     },
 
     {
         id: 6,
-        image: banner5
+        image: banner5,
     },
-    
-
-
-    
-
 ]
 
 
@@ -95,10 +88,10 @@ const carousel2 = [
             </S.ImageBanner2>
                 
             <S.Text>
-                <h1>Agendamento de Serviços Públicos Online</h1>
-                <p>Agende online, imprima o recibo evite filas enormes. Fácil, rápido e conveniente!</p>
+                <h1>Agendamento de Serviços Públicos</h1>
+                <p>Agende online, imprima o recibo e evite filas enormes. Fácil, rápido e conveniente! </p>
                 <S.ButtonContainer>
-                    <Link to="agendar">
+                    <Link to="agendar2">
                         <Botao name="Agendar Agora"/>
                     </Link>
                 </S.ButtonContainer>

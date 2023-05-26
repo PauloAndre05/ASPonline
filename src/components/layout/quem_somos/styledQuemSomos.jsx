@@ -50,7 +50,28 @@ export const texto = styled.section`
         text-shadow: 1px 3px 5px #000000ae;
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 930px) {
+        width: 70%;
+    }
+
+    @media screen and (max-width: 768px) {
         width: 90%;
+    }
+
+    @media screen and (max-width: 600px) {
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 367px) {
+        width: 95%;
+        p{
+            font-size: .9rem;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 95%;
     }
 `   

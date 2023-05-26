@@ -67,6 +67,7 @@ function SessaoServicos() {
               </S.contImage>
             </S.area1> 
 
+              <S.titleSection><h1>Escolha um Serviço</h1></S.titleSection>
             <S.containerContainerS>
           <S.container>
             <Slider {...settings}>

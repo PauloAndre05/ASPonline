@@ -14,19 +14,19 @@ function Formulario1 ({data, validation, updateFieldHandler}) {
 
     /* ==================== REQUEST SERVICO ========================= */
 
-/*     fetch("http://localhost:3001/servico")
+    fetch("http://localhost:3001/servico")
     .then(response => response.json())
     .then(data => {
-    })  */
     setDataService(data)
+    }) 
 
     /* ==================== REQUEST POSTO DE ATENDIMENTO =======================0 */
 
-   /*  fetch("http://localhost:3001/posto")
+     fetch("http://localhost:3001/posto")
     .then(response => response.json())
     .then(data => {
-})*/
-setDataPosto(data)
+    setDataPosto(data)
+})
  
 
     /* ================================== REQUEST IDENTIFICATION ====================================== */

@@ -11,12 +11,11 @@ export const containerContainer = styled.main`
     padding-top: 4rem;   
     background-color: #ffffff;
 `
-export const titleSection = styled.h1`
-    font-weight: normal;
+export const titleSection = styled.div`
+    font-weight: lighter;
     text-align: center;
-    font-size: 2rem;
-    color: #000;
-    display: inline-block;
+    font-size: 1.5rem;
+    color: #28a590;
     width: 100%;
 
     @media screen and (max-width: 768px){
@@ -31,11 +30,11 @@ export const content = styled.div`
     flex-wrap: wrap;
     
     >p{
-        width: 70%;
-        margin: 0 auto;
+        width: 45%;
         font-size: 1.4rem;
-        text-align: center;
-        border-radius: 1rem;
+        text-align: justify;
+        border-bottom: 3px solid #999c02;
+        padding-bottom: 2rem;
     }
 
     h1{
@@ -399,7 +398,7 @@ export const img = styled.img`
 
 export const containerContainerS = styled.div` 
     margin-bottom: 4rem;
-    padding: 3rem 0;
+    padding: 1rem 0;
     border-radius: 0rem;
 
 

@@ -28,7 +28,7 @@ export const container2 = styled.section`
     }
 
     @media screen and (max-width: 391px ){
-        width: 90%;
+        width: 82%;
     }
 `
             
@@ -89,6 +89,10 @@ export const cardTop = styled.section`
             object-position: left;
             opacity: .7;
         }
+    }
+
+    @media screen and (max-width: 380px ){
+        height: 9.3rem;
     }
 
     @media screen and (max-width: 348px ){
@@ -156,11 +160,9 @@ export const cardBotton = styled.section`
         min-height: 15rem;
         padding: 1.5rem .7rem;
 
-       
-
         p{
             width: 100%;
-            text-align: left;
+            text-align: center;
             font-size: .9rem;
             color: #d1d1d1;
         }
@@ -176,6 +178,10 @@ export const cardBotton = styled.section`
             text-align: center;
         }
         }
+
+    @media screen and (max-width: 380px ){
+        height: 15.7rem;
+    }
 
         
     @media screen and (max-width: 348px ){

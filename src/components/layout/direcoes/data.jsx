@@ -36,8 +36,8 @@ export const dataTable = [
         cooredenada: "Ver coordenadas da instituição" ,
         img: require('../../../images/adminMaianga.jpg'),
     },
-
-    /* {
+    
+    {
         id: 5,
         nome: "Administração municipal de viana",
         localizacao: "39RF+V28, R. 11 de Novembro, Luanda",
@@ -53,5 +53,5 @@ export const dataTable = [
         link: "https://www.google.com/maps/place/Administra%C3%A7%C3%A3o+Municipal+de+Cacuaco/@-8.776638,13.3679027,17z/data=!3m1!4b1!4m6!3m5!1s0x1a51faadf44fee9b:0x32493c3bddea0979!8m2!3d-8.776638!4d13.3700914!16s%2Fg%2F11f_n91qz7?hl=pt-PT",
         cooredenada: "Ver coordenadas da instituição",
         img: require('../../../images/adminCacuaco.jpg'),
-    }, */
+    }, 
 ]

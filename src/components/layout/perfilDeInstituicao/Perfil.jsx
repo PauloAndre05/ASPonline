@@ -11,8 +11,6 @@ function Perfil() {
     
     const time = new Date()
     const hours = time.getHours()
-
-    
     
 
     if (!instituicao) {
@@ -34,7 +32,7 @@ function Perfil() {
                     <S.fechado>Fechado</S.fechado>
                    )}
                </S.containerEstado>
-               <Link to={data.link}>Ver no mapa</Link>
+               <Link to={data.link} target='_blanck'>Ver no mapa</Link>
            </S.containerMain>
         </S.container>
     )

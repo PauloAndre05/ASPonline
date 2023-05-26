@@ -93,7 +93,7 @@ function SessaoServicos() {
           </S.container>
         </S.containerContainerS>
             <p>Gerencie a sua agenda. Consulte o estado da sua agenda, faça actualização ou cancele a sua agenda</p>
-            <S.containerArea2>
+           {/*  <S.containerArea2>
             
               <S.area2_1>
                 <S.containerImage2>
@@ -115,7 +115,7 @@ function SessaoServicos() {
                     <a href="/consultarAgenda">Consultar Agenda</a>
                 </S.text2>
               </S.area2_2> 
-            </S.containerArea2> 
+            </S.containerArea2>  */}
            
 
             <S.area3>

@@ -2,9 +2,15 @@ import styled from "styled-components";
 
 
 export const container = styled.main`
+    display: flex;
+
     width: 100%;
     height: 100%;
     background-color: #000000c8;;
+`
+
+export const mapa = styled.div`
+    
 `
 
 export const containerMain = styled.section`
@@ -52,7 +58,6 @@ export const containerMain = styled.section`
         text-decoration: none;
         background-color: #fff;
         color: #000;
-        margin-top: 3rem;
         border-radius: 0%.3rem;
         padding: .3rem 1rem;
     }

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import * as S from '../../routes/agendar/stylesAgendar'
 import { Input } from '../../layout/input/Input'

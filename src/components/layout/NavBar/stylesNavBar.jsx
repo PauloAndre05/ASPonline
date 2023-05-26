@@ -12,7 +12,7 @@ export const container = styled.main`
 `
 
 export const containerLogo = styled.div`
-    background-color: #258d84;
+    background-color: #258d84c8;
     padding:.3rem 0 .2rem 0;
     display: flex;
     justify-content: center;

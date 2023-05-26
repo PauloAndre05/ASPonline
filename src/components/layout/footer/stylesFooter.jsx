@@ -7,7 +7,6 @@ export const footer = styled.footer`
         margin: 0;
         box-sizing: border-box;
     }
-        /* background-color: #1D262D; */
 
         background: #2b2b2b;
         padding: 2.5rem 0 0 0;

@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import img from '../../../images/bandeira-de-angola.jpg'
 
-export const container = styled.main`
+
+export const containerContainer = styled.main`
+    
+`
+
+export const container = styled.section`
     width: 100%;
     height: 400px;
     background: url(${img});

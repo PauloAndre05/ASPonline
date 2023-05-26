@@ -114,7 +114,7 @@ export const cardBotton = styled.section`
     h3{
         width: 100%;
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         color: #d1d1d1;
     }
 
@@ -123,6 +123,7 @@ export const cardBotton = styled.section`
         text-align: left;
         text-align: center;
         color: #d1d1d1;
+        font-size: .9rem;
     }
 
     div{
@@ -155,12 +156,7 @@ export const cardBotton = styled.section`
         min-height: 15rem;
         padding: 1.5rem .7rem;
 
-        h3{
-            width: 100%;
-            text-align: left;
-            font-size: 1.1rem;
-            color: #d1d1d1;
-        }
+       
 
         p{
             width: 100%;

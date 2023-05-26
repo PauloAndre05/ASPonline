@@ -34,7 +34,6 @@ export const content = styled.div`
         width: 70%;
         margin: 0 auto;
         font-size: 1.4rem;
-        padding: 2rem 1rem;
         text-align: center;
         border-radius: 1rem;
     }

@@ -7,6 +7,7 @@ export const containerContainer = styled.main`
 `
 
 export const container = styled.section`
+    margin-top: 4rem;
     width: 100%;
     height: 400px;
     background: url(${img});

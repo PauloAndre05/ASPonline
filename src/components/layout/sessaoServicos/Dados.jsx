@@ -35,7 +35,7 @@ export const dataCard = [
         servico: "Recenseamento Militar",
         desc: "Requisitos",
         a: "Bilhete de Identidade Original",
-        b: "Dclaração de Habilitação",
+        b: "Declaração de Habilitação",
         c: "4 Fotografias",
         d: "Cópia da Cédula",
         e: ""

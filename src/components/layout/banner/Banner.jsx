@@ -2,9 +2,11 @@ import { Link } from 'react-router-dom'
 import { AiOutlineArrowUp } from 'react-icons/ai'
 import { Botao } from '../botao/Botao'
 
-import banner from '../../../images/recenseamento.png'
-import banner1 from '../../../images/banner3_.jpg'
-import banner2 from '../../../images/banner2.png'
+import banner from '../../../images/b4.jpg'
+import banner2 from '../../../images/b2.jpg'
+import b6 from '../../../images/b6.jpg'
+import b7 from '../../../images/b7.jpg'
+import b8 from '../../../images/b8.jpg'
 import banner4 from '../../../images/recenseamentoMob.png'
 import banner5 from '../../../images/bannerMob.png'
 import banner8 from '../../../images/banner3Mob.jpg'
@@ -21,15 +23,23 @@ const carousel1 = [
         id: 1,
         image: banner,
     },
-    
-    {
-        id: 2,
-        image: banner1,
-    },
 
     {
         id: 3,
         image: banner2,
+    },
+
+    {
+        id: 5,
+        image: b6,
+    },
+    {
+        id: 6,
+        image: b7,
+    },
+    {
+        id: 7,
+        image: b8,
     },
 ]
 
@@ -57,6 +67,7 @@ const carousel2 = [
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
+        speed: 2500,
         autoplaySpeed: 6000,
         pauseOnHover: false,
     };

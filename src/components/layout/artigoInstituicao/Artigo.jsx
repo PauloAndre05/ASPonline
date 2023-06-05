@@ -14,6 +14,7 @@ function Artigo(  ){
         swipeToSlide: true,
         speed: 900
       };
+    
     return(
         <S.containerContainer>
                 <S.container2>

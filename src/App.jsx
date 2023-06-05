@@ -12,11 +12,13 @@ import { ConsultarAgenda } from './components/routes/consultarAgenda/ConsultarAg
 import { Agendar2 } from './components/routes/agendar2/Agendar2';
 import { Perfil } from './components/layout/perfilDeInstituicao/Perfil';
 import { PaginDeErro } from './components/routes/paginaDeErro/PaginaDeErro';
+import { ToastContainer } from 'react-toastify';
+import  'react-toastify/dist/ReactToastify.css' ;
 
 function App() {
   return (
     <S.container>
-     
+      <ToastContainer theme='dark'/>
       <BrowserRouter>
         
         <Routes>

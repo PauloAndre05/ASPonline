@@ -8,8 +8,6 @@ export const containerContainer = styled.main`
         margin: 0;
         box-sizing: border-box;
     }
-
-    background-color: #f7f7f7;
     margin-bottom: 5rem;
 `
 

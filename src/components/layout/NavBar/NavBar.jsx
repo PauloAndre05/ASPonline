@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import * as S from './stylesNavBar'
 
-import logo from '../../../images/logo.svg'
+    import logo from '../../../images/logo.svg'
 
 import  logoAngola  from '../../../images/logo-angola.png'
 import { TwitterLogo, LinkedinLogo,  CaretDown, EyeClosed } from 'phosphor-react'
@@ -18,21 +18,25 @@ function NavBar() {
 
     return(
         <S.container>
-            <S.containerLogo isOpen = {isOpen}>
+            {/* <S.containerLogo isOpen = {isOpen}>
                 <a href="/">
-                    <img src={logoAngola} alt="" />
+                    <img src={logoAngola} alt="logo" />
                 </a>
                 
                 <S.icons isOpen = {isOpen}>
                     <a href="/"><i> <TwitterLogo size={21} weight="fill" /> </i></a>
                     <a href="/"><i> <LinkedinLogo size={21} weight="fill" /> </i></a>
                 </S.icons>            
-            </S.containerLogo>
+            </S.containerLogo> */}
             <S.menu>
-                
-                <S.lotipo href='/'> <img src={logo} alt="logo" /> </S.lotipo>
+                <S.containerLogo2>
+                    <S.angola href="/">
+                        <img src={logoAngola} alt="logo" />
+                    </S.angola>
+                    <S.lotipo href='/'> <img src={logo} alt="logo" /> </S.lotipo>
+                </S.containerLogo2>
                 <S.lista >
-                    <S.itens> <Link to="/"> Início </Link> </S.itens>
+                    <S.itens> <Link to="/"> Inicio </Link> </S.itens>
                     <S.itemService> 
                         <Link onClick={() => setIsMenuDropDown2(!isMenuDropDown2)}> Serviços <CaretDown size={10} weight="thin" /> </Link>
                         <S.dropDown isMenuDropDown2 = {isMenuDropDown2} onClick={() => setIsMenuDropDown2(false)}>
@@ -44,6 +48,12 @@ function NavBar() {
                     <S.itens> <Link to="/sobre"> Sobre </Link> </S.itens>
                     <S.itens> <Link to="/servicos"> Informe-se</Link> </S.itens>
                 </S.lista>
+
+                <S.icons isOpen = {isOpen}>
+                    <a href="/"><i> <TwitterLogo size={21} weight="fill" /> </i></a>
+                    <a href="/"><i> <LinkedinLogo size={21} weight="fill" /> </i></a>
+                    aspo@gmail.com
+                </S.icons>
                 <S.hamburguer onClick={() => setIsOpen(!isOpen)}>
                     <S.line1 ></S.line1>
                     <S.line2></S.line2>

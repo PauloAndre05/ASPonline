@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const container = styled.main`
-    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 `
 
 export const containerCards = styled.section`
@@ -9,7 +13,7 @@ export const containerCards = styled.section`
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 5rem 3rem;
+    padding: 3rem 0; 
     background-color: #000000c8;
     color: #ffffff9a;
     
@@ -47,21 +51,17 @@ export const card = styled.article`
     }
 
     ul{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem;
         list-style: none;
         width: 100%;
+        
     }
 
     li{
         list-style: none;
-    }
-
-    button{
-        font-size: .8rem;
-        background-color: #000;
-        color: #fff;
-        border: 1px solid #ffffff9a;
-        width:100%;
-        height: 2.5rem;
-        border-radius: none;
     }
 `

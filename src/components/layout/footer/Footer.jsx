@@ -19,7 +19,7 @@ function Footer() {
                         <a href="/servicos">
                             <p>Serviços</p>
                         </a >
-                        <a  href="/agendar">
+                        <a  href="/agendar2">
                             <p>Agendar</p>
                         </a>
                         <a  href="/sobre">
@@ -60,7 +60,7 @@ function Footer() {
                 </S.coluna>
             </S.container>
 
-            <S.copy>Copyrigth &copy; Todos os direitos reservados</S.copy>
+            <S.copy>Copyrigth &copy; Todos os direitos reservados 2023</S.copy>
 
         </S.footer>
     )

@@ -12,7 +12,7 @@ export const container = styled.main`
 `
 
 export const containerLogo = styled.div`
-    background-color: #258d84c8;
+    background-color: #0c2c29c6;
     padding:.3rem 0 .2rem 0;
     display: flex;
     justify-content: center;
@@ -63,13 +63,14 @@ export const lotipo = styled.a`
 export const icons = styled.article`
     display: flex;
     gap: .3rem;
+    align-items: center;
 
     ${({ isOpen }) => isOpen && css`
         display: none;
     `}
 
     a{
-        color: #000;
+        color: #248B84;
         width: 2rem;
         height: 2rem;
         border-radius: 50%;
@@ -82,7 +83,7 @@ export const icons = styled.article`
     }
 
     a:hover{
-        color: #ff0000c7;
+        color: #ff0000c7#5442af;
     }
 
 `
@@ -128,13 +129,32 @@ export const line2 = styled.div`
 
 export const line3 = styled.div`
 `
+export const containerLogo2 =styled.div`
+    display: flex;
+    gap: 1rem;
+`
+
+export const angola = styled.a`
+    display: inline-block;
+    overflow: hidden;
+    width: 8rem;
+    padding-right: 1rem;
+    border-right: 1.5px solid #cacaca;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+`
+
+
 
 export const menu = styled.nav`
     display: flex;  
     align-items: center;
     justify-content: space-between;
-    padding: .9rem 15rem;
-    background: #2b2b2b;
+    padding: .9rem 10rem;
+    background-color: #FFFFFF;
+    /* background: linear-gradient(to right, #ffffff, #000000, #000000); */
     z-index: 100;
     
     
@@ -183,10 +203,11 @@ export const lista = styled.ul`
 
 export const itens = styled.li`
     a{
-        font-size: .95rem;                
+        font-size: 1rem;                
         text-decoration: none;
         transition: all .2s;
-        color: #ffffffd5;
+        color: #000;
+        font-weight: bold;
     }
 
     a:active{
@@ -241,7 +262,6 @@ export const itens2 = styled.li`
         color: #000;
         background-color: #ffffff44;
     }
-    
 
     a:active{
         background-color: #ffffff44;
@@ -257,10 +277,10 @@ export const itemService = styled.li`
     list-style: none;
     text-align: center;
     
-    a{
-        font-size: .95rem;                
+    a{  
+        font-weight: bold;               
         text-decoration: none;
-        color: #ffffffd5;
+        color: #000;
         padding-bottom: .4rem;
         transition: all .2s;
     }
@@ -277,7 +297,7 @@ export const itemService = styled.li`
 
 
 export const dropDown = styled.div`
-    background-color: #ffffffd5;
+    background-color: #ffffffa4;
     position: absolute;
     top: 3rem;
     width: 10rem;
@@ -295,7 +315,7 @@ export const dropDown = styled.div`
     a{
         width:100%;
         text-align: center;
-        font-weight: lighter;
+        font-weight: bold;
         font-size: .7rem;
         color: #000;
         padding: .5rem;
@@ -304,7 +324,7 @@ export const dropDown = styled.div`
     a:hover{
         border: none;
         color: #fff;
-        background-color: #2b2b2b;
+        background-color: #473892;
     }
 `
 

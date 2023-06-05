@@ -1,8 +1,8 @@
 import * as S from './stylesButton'
 
-function Botao({name}) {
+function Botao({name, type}) {
     return(
-        <S.button> {name} </S.button>
+        <S.button type={type}> {name} </S.button>
     )
 }
 

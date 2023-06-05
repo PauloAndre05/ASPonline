@@ -1,15 +1,13 @@
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import * as S from './stylesServicos'
-import { Botao } from '../../layout/botao/Botao'
-import { dataCard } from "./Dados";
+import * as S from './stylesServicos';
 
-import imageServico from '../../../images/bi.png'
-import imageServico4 from '../../../images/bgAgendar2.jpg'
+
+import b5 from '../../../images/b5..jpg'
+import b1 from '../../../images/b.jpg'
 
 function SessaoServicos() {
-    const settings = {
+/*     const settings = {
         dots: true,
         infinite: true,
         speed: 900,
@@ -51,24 +49,26 @@ function SessaoServicos() {
             }
           }
         ]
-      };
+      }; */
     return(
       <S.containerContainer>
         
+        <h1>Faça um agendamento</h1>
+
         <S.content>
             <S.area1>
-              <S.paragrafo>
+              <S.contImage>
+                <S.img src={b5} alt="image servico" />
+              </S.contImage>
+              <S.text1>
                 <h1>Agendamento</h1>
                 <p> Agende serviços públicos como, Bilhete de Identidade, Contribuinte, Atestado de Residência e muitos outros serviços de agendamento disponíveis para si</p>
-                <a href="/agendar2">Ir para o agendamento</a>
-              </S.paragrafo>
-              <S.contImage>
-                <S.img src={imageServico} alt="image servico" />
-              </S.contImage>
+                <a href="/agendar2">Fazer agendamento</a>
+              </S.text1>
             </S.area1> 
 
-              <S.titleSection><h1>Escolha um Serviço</h1></S.titleSection>
-            <S.containerContainerS>
+          {/*     <S.titleSection><h1>Escolha um Serviço</h1></S.titleSection>
+          <S.containerContainerS>
           <S.container>
             <Slider {...settings}>
             {dataCard.map((item, index) => (
@@ -92,8 +92,8 @@ function SessaoServicos() {
             </Slider>
           
           </S.container>
-        </S.containerContainerS>
-            <p>Gerencie a sua agenda. Consulte o estado da sua agenda, faça actualização ou cancele a sua agenda</p>
+        </S.containerContainerS> 
+            <p>Gerencie a sua agenda. Consulte o estado da sua agenda, faça actualização ou cancele a sua agenda</p>*/}
            {/*  <S.containerArea2>
             
               <S.area2_1>
@@ -119,15 +119,15 @@ function SessaoServicos() {
             </S.containerArea2>  */}
            
 
+           <S.titleSection> <h1>Consulte o estado da sua agenda</h1> </S.titleSection>
             <S.area3>
               <S.text3>
-                  <h1>Actualizar Agenda</h1>
-                  <p>Actualize a sua agenda, e imprima um novo comprovativo de agendametno </p>
-                  <a href="/actualizarAgenda">Actualizar Agenda</a>
+                  <p>Faça a sua consulta na plataforma e imprima o novo comprovativo de agendamento</p>
+                  <a href="/actualizarAgenda">Consultar</a>
               </S.text3>
 
               <S.containerImage3>
-                <S.img src={imageServico4} alt = "image servico" />
+                <S.img src={b1} alt = "image servico" />
               </S.containerImage3>
             </S.area3> 
         </S.content>

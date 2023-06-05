@@ -7,7 +7,7 @@ export const Banner = styled.main`
     margin: 0;
     box-sizing: border-box  ;
 }
-    height: 520px;
+    height: 580px;
     width: 100%;
     position: relative;
 
@@ -33,7 +33,7 @@ export const ImageBanner = styled.div`
 
     img{
         object-fit: cover;
-        opacity: .5;
+        opacity: .4;
     }
     @media screen and (max-width: 600px){
        display: none;
@@ -77,27 +77,24 @@ export const Text = styled.div`
       
     
     > h1{
-        font-weight: normal;
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         text-align: center;
-        text-transform: uppercase;
-        text-shadow: 1px 2px 8px #000;
         opacity: 1;
         color: #ffffff;
         margin: 0 auto;
+        font-weight: 700;
     }
 
     p{
-        font-weight: lighter;
         text-align: center;
         width: 50%;
         display: flex;
         justify-content: center;
         font-size: 1.2rem;
-        margin: 2rem auto;
+        margin: 0 auto;
+        margin-top: .5rem;
         color: #ffffff;
         opacity: 1;
-        text-shadow: 1px 2px 8px #000;
     }
 
     @media screen  and (max-width: 992px) {
@@ -149,20 +146,19 @@ export const Text = styled.div`
     }
 
      button{
-        padding: 0;
-        color: #fff;
+        margin-top: 2rem;
+        padding: 1.2rem 0;
+        color: #ffffff;
         width: 12rem;
         height: 2.2rem;
-        background-color: #258d845e;
         text-decoration: none;
-        border-radius: 1rem;
+        border-radius: .6rem;
+        background-color: #613bc2;
         
     }
-
+    
     button:hover{
-        background-color: transparent;;
-        border: 1px solid #258d84;
-        color: #fff;
+        color: #000000;
         box-shadow: none;
     }
 

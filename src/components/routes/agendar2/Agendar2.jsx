@@ -3,11 +3,14 @@ import { Formulario2 } from "../../layout/formulario2/Formulario2"
 import { Formulario3 } from "../../layout/formulario3/Formulario3"
 import { Etapa } from "../../layout/etapas/Etapa"
 
+import * as yup from 'yup'
+
 import { UseForm } from "../../../hooks/UseForm"
 import { useState } from "react"
 
 import * as S from './StyleAgendar2'
 import { Footer } from "../../layout/footer/Footer"
+import { useFormik } from "formik"
 
 
 const formTemplate = {
@@ -25,10 +28,29 @@ const formTemplate = {
 
 function Agendar2() {
 
+    
+    const formik = useFormik({
+        initialValues:{
+            formTemplate
+        },
+
+        validationSchema: yup.object({
+            none: yup.string().required("Nome obrigatorio"),
+            telefone: yup.number().required().max(12, 'Informe um número válido'),
+            email: yup.string().required("Campo obrigatório").email("Informe um email válido"),
+            servico: yup.string().required("Selecione o serviço"),
+            data: yup.date().required(""),
+        }),
+
+        onSubmit: async (data) =>{
+            console.log(data);
+        }
+    })
+
         const [data, setData] = useState(formTemplate)
-        let validation = ["", "", "", "", "", ""]
+       /* let validation = ["", "", "", "", "", ""]
         
-        function validateBI(value){
+         function validateBI(value){
             const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
             const ref = ["LA", "UE"]
 
@@ -62,7 +84,7 @@ function Agendar2() {
             validation[6] = ""
             return true
         }
-
+ */
         /* async function reqBI(value) {
             const resp = await fetch("http://localhost:3001/identificacao", value).then((response) => response.json()).catch((e) => {
                     validation[6] = "BI não existe"
@@ -78,24 +100,29 @@ function Agendar2() {
             return true
         } */
 
-        const updateFieldHandler = (key, value) => {
+        const updateFieldHandler = async (key, value) => {
+             
+             setData((prev) => {
+                return { ...prev, [key]: value}
+            })
+            
 
-            if(key === 'bi'){
+           
+
+            /* if(key === 'bi'){
                 if(validateBI(value)) {
-                    setData((prev) => {
-                        return { ...prev, [key]: value}
-                    })
+                   
                     validation[6] = ""
                 }
             } else {
                 setData((prev) => {
                     return { ...prev, [key]: value}
                 })
-            }
+            } */
         }
 
         const formComponents = [
-            <Formulario1 data={data} validation={validation} updateFieldHandler={updateFieldHandler}/>, 
+            <Formulario1 data={data} updateFieldHandler={updateFieldHandler} formik={formik}/>, 
             <Formulario2 data={data} />, 
             <Formulario3 data={data} />
         ]
@@ -112,17 +139,17 @@ function Agendar2() {
 
                 <S.container>
                     
-                    <form onSubmit={(e) => changeStep(currentSteps + 1, e)}>
+                    <form onSubmit={formik.handleReset  }>
                             <div className="inputContainer">
                             {currentComponets}
-                        </div>
+                            </div>
                 
-                        <S.containerButton>
+                        <S.containerButton >
                             {!isFirstStep && (
                                 <button type="button" onClick={() => changeStep(currentSteps - 1)}>Voltar</button>
                             )}
                             {!isLastStep ? (
-                                <button type="submit">Seguinte</button>
+                                <button type="submit" >Seguinte</button>
                             ) : ( 
                                 <button type="submit" >Agendar</button>
                             )}

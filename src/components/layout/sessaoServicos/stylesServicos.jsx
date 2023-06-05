@@ -6,21 +6,30 @@ export const containerContainer = styled.main`
         margin: 0;
         box-sizing: border-box;
     }
+
     width: 100%;
     margin: 0 auto;
     padding-top: 4rem;   
     background-color: #ffffff;
+    
+    >h1{
+        text-align: center;
+    }
+
 `
 export const titleSection = styled.div`
     font-weight: lighter;
     text-align: center;
-    font-size: 1.5rem;
-    color: #28a590;
+    color: #0f0f0f;
     width: 100%;
-
-    @media screen and (max-width: 768px){
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    
+   /*  @media screen and (max-width: 768px){
        font-size: 1.5rem;
-    } 
+    }  */
+
 `
 
 export const content = styled.div`
@@ -28,76 +37,99 @@ export const content = styled.div`
     gap: 2rem;
     margin: auto;
     flex-wrap: wrap;
-    
-    >p{
-        width: 45%;
-        font-size: 1.4rem;
+
+    p{
+        line-height: 1.7rem;
+        color: #1b1b1b;
+        width: 25rem;
         text-align: justify;
-        border-bottom: 3px solid #999c02;
-        padding-bottom: 2rem;
+        margin: 1rem 0;
+    }
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    } 
+ 
+    @media screen and (max-width: 1024px) {
+      
+        >p {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        div >p{
+            font-size: .9rem;
+        }
+
+    }
+
+    @media screen and (max-width: 768px){
+        >p {
+            width: 80%;
+            padding-bottom: 0;
+            font-size: 1.2rem;           
+        }
+    }    
+    
+    @media screen and (max-width: 600px){
+        >p {
+            width: 90%;
+            font-size: 1.1rem;  
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        >p {
+            width: 95%;
+        }
+    }    
+
+`
+
+export const area1 = styled.div`
+    margin: 4rem auto;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+   a{
+        background-color: #613bc2;
+        text-decoration: none;
+        padding: .7rem 0;
+        color: #fff;
+        font-size: 1rem;
+        opacity: .89;
+        width: 15rem;
+        text-align: center;
+        border-radius: .3rem;
+        animation: pisca 8s linear infinite;
     }
 
     h1{
         text-align: start;
         font-size: 1.5rem;
-        font-weight: lighter;
-    }
-
-    p{
-        line-height: 1.8rem;
-        font-weight: lighter;
-        color: #1b1b1b;
-    }
-
- 
-    @media screen and (max-width: 768px){
-        width: 100%;
-
-    } 
- 
-
-    @media screen and (max-width: 1024px) {
-        h1{
-            font-size: 1.2rem;
-        }
-
-        >p {
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        p{
-            font-size: .9rem;
-        }
-    }
-
-`
-
-export const area1 = styled.div`
-    margin: 2rem 0;
-    width: 100%;
-    height: 17rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
-   a{
-        background-color: #258d84;
-        text-decoration: none;
-        padding: .5rem 0;
-        color: #fff;
-        font-size: 1rem;
-        opacity: .89;
-        width: 17rem;
-        text-align: center;
-        border-radius: .3rem;
     }
 
     a:hover{
         opacity: 1;
+        animation: pisca none;
     }
-    
+
+    @keyframes pisca{
+        0% {
+        }
+        50% {
+            background-color: #000;
+            color: #fff;
+        }
+        100% {
+            
+        }
+    }
+
     @media screen and (max-width: 768px){
         width: 100%;
 
@@ -133,36 +165,16 @@ export const area1 = styled.div`
     }
 `
 
-export const paragrafo = styled.div`  
-    background-color: #F5F5F5;
-    width: 50%;
-    height: 100%;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-    
-
-    @media screen and (max-width: 768px){
-        width: 100%;
-        order: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    } 
-`
-export const contImage = styled.div`
-    width: 50%; 
+export const contImage = styled.div` 
     height: 100%;
     overflow: hidden;
+    border-radius: 1rem;
     background-color: #000;
 
     img{
         width: 100%;
         height: 100%;
+        object-position: top;
         object-fit: cover;
         opacity: .6;
     }
@@ -232,10 +244,7 @@ export const area2_1 = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: 50%;
-
-   
+    align-items: center;   
 `
 
 export const area2_2 = styled.div`
@@ -246,6 +255,26 @@ export const area2_2 = styled.div`
     align-items: center;
     width: 50%;
     
+`
+
+export const text1 = styled.div`  
+    height: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } 
 `
 
 export const text2 = styled.div`
@@ -269,34 +298,35 @@ export const text2 = styled.div`
 
 
 export const area3 = styled.div`
-    margin: 4rem 0;
+    margin: 2rem auto;
     width: 100%;
-    height: 17rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     
-
-    @media screen and (max-width:768px) {
-        height: 100%;
-    }
-    
-
     a{
-        background-color: #258d84;
+        background-color: #000;
         text-decoration: none;
-        padding: .5rem 0;
+        padding: .7rem 0;
         color: #fff;
         font-size: 1rem;
-        opacity: .89;
         width: 17rem;
         text-align: center;
         border-radius: .3rem;
     }
-
+    
     a:hover{
-        opacity: 1;
+        background-color: #613bc2;
+    }
+    
+    h1{
+        text-align: start;
+        font-size: 1.5rem;
+    }
+    
+    @media screen and (max-width:768px) {
+        height: 100%;
     }
     
     @media screen and (max-width: 768px){
@@ -330,10 +360,8 @@ export const area3 = styled.div`
 `
 
 export const text3 = styled.div`
-    background-color: #eee;
-    width: 50%;
     height: 100%;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -371,7 +399,7 @@ export const containerImage2 = styled.div`
 `
 
 export const containerImage3 = styled.div`
-    width: 50%; 
+    width: 40%; 
     height: 100%;
     overflow: hidden;
     background-color: #000;
@@ -401,9 +429,6 @@ export const containerContainerS = styled.div`
     padding: 1rem 0;
     border-radius: 0rem;
 
-
-    @media screen and (max-width: 600px) {  
-    }
 `
 export const container = styled.div`
     width: 65%;
@@ -511,6 +536,9 @@ export const containerbutton =styled.div`
         background-color: #000;
         color: #fff;
     }
+
+
+    
 `
 
 export const a = styled.a`

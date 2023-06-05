@@ -38,8 +38,7 @@ export const texto = styled.div`
     }
 
     p{
-        font-size: 1.1rem;
-        color: #e7e7e7;
+        color: #b1b1b1;
         text-align: justify;
     }
 
@@ -92,7 +91,8 @@ export const containerLabelInput = styled.div`
         margin-bottom: .3rem;
     }
 
-    label > span {
+    span {
+        font-size: .9rem;
         color: rgba(255, 0, 0, 0.6);
     }
 

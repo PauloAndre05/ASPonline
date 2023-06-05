@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import * as S from './stylesServicos';
 
 
-import b5 from '../../../images/b5..jpg'
+import b5 from '../../../images/b5.jpg'
 import b1 from '../../../images/b.jpg'
 
 function SessaoServicos() {

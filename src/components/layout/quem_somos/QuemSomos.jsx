@@ -1,14 +1,15 @@
-import { NewsLetter } from '../newsLetter/NewsLetter'
 import * as S from './styledQuemSomos'
+import img from '../../../images/b9.jpg'
 
 function QuemSomos() {
     return(
         
             <S.containerContainer>
-                
-                <NewsLetter/>
 
                 <S.container>
+                        <S.imagem>
+                            <img src={img} alt="Iamage quem somos" />
+                        </S.imagem>
                         <S.texto>
                             <h2>Quem  Somos</h2>
                             <p>O ASPO é um sistema que lhe permite agendar serviços públicos sem sair de casa, você não precisa estar registado para utilizar a plataforma. Somos uma equipe dedicada a tornar a vida dos cidadãos mais fácil e prática. Nosso sistema de agendamento de serviços públicos online permite que você agende seus compromissos com rapidez e facilidade, sem a necessidade de esperar em longas filas ou enfrentar burocracias desnecessárias.</p>

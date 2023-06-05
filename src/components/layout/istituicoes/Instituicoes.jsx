@@ -5,7 +5,6 @@ import { Artigo } from '../artigoInstituicao/Artigo'
 function Isntituicoes() {
     return(
                 <S.containerContent>
-                    <h1>Postos de Atendimento</h1>
                     <S.content>
                        <Artigo />
                     </S.content>

@@ -96,7 +96,7 @@ function Agendar2() {
                 validation[6] = "BI não compatível"
                 return false
             }
-
+            
             return true
         } */
 

@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 import * as S from './stylesNavBar'
-
-    import logo from '../../../images/logo.svg'
-
+import logo from '../../../images/logo.svg'
 import  logoAngola  from '../../../images/logo-angola.png'
 import { TwitterLogo, LinkedinLogo,  CaretDown, EyeClosed } from 'phosphor-react'
 
@@ -33,7 +31,7 @@ function NavBar() {
                     <S.angola href="/">
                         <img src={logoAngola} alt="logo" />
                     </S.angola>
-                    <S.lotipo href='/'> <img src={logo} alt="logo" /> </S.lotipo>
+                    <S.logotipo href='/'> <img src={logo} alt="logo" /> </S.logotipo>
                 </S.containerLogo2>
                 <S.lista >
                     <S.itens> <Link to="/"> Inicio </Link> </S.itens>

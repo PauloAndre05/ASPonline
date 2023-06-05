@@ -2,16 +2,12 @@ import styled from "styled-components";
 
 export const footer = styled.footer`
     width: 100%;
+    background: #2c1a58;
+    padding: 2.5rem 0 0 0;
     *{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-    }
-
-        background: #2b2b2b;
-        padding: 2.5rem 0 0 0;
-     @media screen and (min-width: 320px) and (max-width: 600px){
-   
     }
 `
 
@@ -32,7 +28,6 @@ export const container = styled.div`
 `
 
 export const colunas = styled.div`
-    text-align: center;
     margin-bottom: 1rem; 
     > div{
         margin-bottom: 1rem;
@@ -158,6 +153,38 @@ export const input = styled.div`
     @media screen and (max-width: 420px){
        width: 95%;
     }
+`
+
+export const containerLogo2 =styled.div`
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+`
+
+export const angola = styled.a`
+    display: inline-block;
+    overflow: hidden;
+    width: 8rem;
+    padding-right: 1rem;
+    border-right: 1.5px solid #cacaca;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+`
+
+export const logotipo = styled.a`
+    display: inline-block;
+    overflow: hidden;
+    width: 6rem;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+
+@media screen and (max-width: 768px){
+    width: 4rem;
+}
 `
 
 export const copy = styled.p`

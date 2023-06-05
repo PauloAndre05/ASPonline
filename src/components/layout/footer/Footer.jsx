@@ -1,6 +1,6 @@
 import { FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
-import { Botao } from '../botao/Botao'
-import { Input } from '../input/Input'
+import logo from '../../../images/logo.svg'
+import logoAngola from '../../../images/logo-angola.png'
 
 import *  as S from './stylesFooter'
 
@@ -37,6 +37,17 @@ function Footer() {
                     <p>Eliminar</p>
                     
                 </S.colunas>
+
+                <S.colunas >
+                    <div>
+                        <h2>Contacto</h2>
+                    </div>
+                    <p>aspo@gmail.com</p>
+                    <p>Luanda-Angola</p>
+                    <p>944617903</p>
+                    <p>Aspo</p>
+                    
+                </S.colunas>
                 <S.coluna >
                     
                     <S.containerIcons>
@@ -49,14 +60,13 @@ function Footer() {
                             <a href="/"><i> <FaLinkedinIn/> </i></a>
                         </S.icon>
 
+                        <S.containerLogo2>
+                            <S.angola href="/">
+                                <img src={logoAngola} alt="logo" />
+                            </S.angola>
+                            <S.logotipo href='/'> <img src={logo} alt="logo" /> </S.logotipo>
+                        </S.containerLogo2>
                     </S.containerIcons>
-                    <S.input>
-                        <form action="">
-                            <Input type="email" name="email" id="email" placeholder = {"Seu email..."} required/>
-                            <Botao name="Enviar"/>
-                        </form>
-                    </S.input>
-                
                 </S.coluna>
             </S.container>
 

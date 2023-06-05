@@ -166,9 +166,10 @@ export const area1 = styled.div`
 `
 
 export const contImage = styled.div` 
-    height: 100%;
+    height: 25rem;
+    width: 40rem;
     overflow: hidden;
-    border-radius: 1rem;
+    border-radius: .7rem;
     background-color: #000;
 
     img{

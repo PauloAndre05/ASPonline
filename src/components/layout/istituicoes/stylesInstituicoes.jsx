@@ -1,10 +1,7 @@
 import styled from "styled-components";
-import bg from '../../../images/direction8.png'
 
 export const containerContent = styled.main`
-    background-image: url(${bg});
     background-repeat: no-repeat;
-    background-size: calc(50rem);
     background-position: left bottom;
     background-blend-mode: color;
     display: flex;
@@ -12,18 +9,10 @@ export const containerContent = styled.main`
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 4rem 0;
-    background-color: #09292499;
+    padding: 3rem 0;
+    background-color: #e2e2e2;
     margin-bottom: 4rem;
-    height: 100vh;
-
-    h1{
-        color: #ffffff;
-        font-weight: normal;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-    }   
+    margin-top: 3rem;
 `
 
 export const content = styled.section`

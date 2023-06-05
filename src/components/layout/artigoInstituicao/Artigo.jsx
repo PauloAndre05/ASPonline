@@ -7,14 +7,46 @@ function Artigo(  ){
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        vertical: true,
-        verticalSwiping: true,
-        swipeToSlide: true,
-        speed: 900
+        speed: 900,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        responsive: [
+          {
+              breakpoint: 1024,
+              settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinitbe: true,
+              dots: true
+            }
+          },
+
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              initialSlide: 1,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       };
-    
     return(
         <S.containerContainer>
                 <S.container2>

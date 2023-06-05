@@ -1,7 +1,5 @@
-import { useFormik } from 'formik'
 import * as S from './stylesFormulario1'
 import { useState, useEffect } from 'react'
-import * as yup from "yup"
 
 
 function Formulario1 ({data, updateFieldHandler, formik}) {

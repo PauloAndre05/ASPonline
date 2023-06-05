@@ -1,54 +1,53 @@
 import styled from "styled-components";
-import img from '../../../images/bandeira-de-angola.jpg'
 
 
 export const containerContainer = styled.main`
-    
-`
-
-export const container = styled.section`
-    margin-top: 4rem;
     width: 100%;
-    height: 400px;
-    background: url(${img});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: color;
-    background-color: rgba(0, 0, 0, 0.199);
-    box-shadow: inset  0 0 10px rgba(0, 0, 0, .6);
-    width: 100%;
-    color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
+`
+
+export const container = styled.section`
+    width: 100%;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5rem;
+`
+
+export const imagem = styled.div`
+    width: 30rem;
+    height: 30rem;
+    background-color: #000;
     overflow: hidden;
+    border-radius: 50%;
+    img{
+        height: 100%;
+        width: 100%;
+        opacity: .5;
+        object-fit: cover;
+    }
 `
 
 export const texto = styled.section`
     font-weight: lighter;
-    width: 50%;
-    max-height: 100%;
-    margin: 1rem auto;
-    color: #FFf;
-    padding: 2.5rem 1rem;
-    border-radius: .3rem;
+    color: #000000;
+    width: 30rem;
 
     h2{
         text-align: center;
-        font-weight: lighter;
+        font-weight: bold;
         font-size: 1.5rem;
-        text-transform: uppercase;
-        text-shadow: 1px 3px 5px #000;
     }
     
     p{        
         font-size: 1.2rem;
-        font-weight: lighter;
+        font-weight: normal;
         margin-top: 2rem;
         text-align: justify;
-        text-shadow: 1px 3px 5px #000000ae;
     }
     
     @media screen and (max-width: 930px) {

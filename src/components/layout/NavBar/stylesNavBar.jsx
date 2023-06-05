@@ -46,7 +46,7 @@ export const containerLogo = styled.div`
     } 
 `
 
-export const lotipo = styled.a`
+export const logotipo = styled.a`
     display: inline-block;
     overflow: hidden;
     width: 6rem;

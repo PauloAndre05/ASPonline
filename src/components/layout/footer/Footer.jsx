@@ -19,7 +19,7 @@ function Footer() {
                         <a href="/servicos">
                             <p>Serviços</p>
                         </a >
-                        <a  href="/agendar2">
+                        <a  href="/agendar">
                             <p>Agendar</p>
                         </a>
                         <a  href="/sobre">
@@ -32,7 +32,6 @@ function Footer() {
                         <h2>Serviços</h2>
                     </div>
                     <p>Agendamento</p>
-                    <p>Actualizar</p>
                     <p>Consultar</p>
                     <p>Eliminar</p>
                     

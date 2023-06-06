@@ -1,4 +1,4 @@
-import * as S from '../agendar/stylesAgendar'
+/* import * as S from '../agendar/stylesAgendar'
 import { Input } from '../../layout/input/Input'
 import { useState } from 'react'
 import { Botao } from '../../layout/botao/Botao'
@@ -63,7 +63,7 @@ function ConsultarAgenda() {
                             
                     {idSelecionado === "1" &&(
                         <div>
-                            {/* <label htmlFor="bi">Nº do bilhete de identidade <span>*</span></label> */}
+                            <label htmlFor="bi">Nº do bilhete de identidade <span>*</span></label> 
                             <Input type="text" name="numeroDeComprovativo" id="numeroDeComprovativo" required max={6} placeholder="Nº do Comprovativo de Agendamento *"/>
                         </div>
                     )}
@@ -74,7 +74,7 @@ function ConsultarAgenda() {
 
                     {idSelecionado === "3" &&(
                         <div>
-                        {/* <label htmlFor="cedula">Nº de cédula <span>*</span></label> */}
+                        <label htmlFor="cedula">Nº de cédula <span>*</span></label> }
                         <Input type="text" name="cedula" id="cedula" required placeholder="Nº de cédula pessoal ou Asento *"/>
                     </div>
                     )}
@@ -91,4 +91,4 @@ function ConsultarAgenda() {
     )
 }
 
-export { ConsultarAgenda }
+export { ConsultarAgenda } */

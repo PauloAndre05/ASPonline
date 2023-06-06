@@ -38,9 +38,9 @@ function NavBar() {
                     <S.itemService> 
                         <Link onClick={() => setIsMenuDropDown2(!isMenuDropDown2)}> Serviços <CaretDown size={10} weight="thin" /> </Link>
                         <S.dropDown isMenuDropDown2 = {isMenuDropDown2} onClick={() => setIsMenuDropDown2(false)}>
-                            <Link to="/agendar2"> Agendamento </Link>
+                            <Link to="/agendar"> Agendamento </Link>
                             <Link to="/consultarAgenda"> Consultar Agenda </Link>
-                            <Link to="/actualizarAgenda"> Actualizar Agenda </Link>
+                            <Link to="/cancelarAgenda"> Cancelar Agenda </Link>
                         </S.dropDown>
                     </S.itemService>
                     <S.itens> <Link to="/sobre"> Sobre </Link> </S.itens>
@@ -50,7 +50,7 @@ function NavBar() {
                 <S.icons isOpen = {isOpen}>
                     <a href="/"><i> <TwitterLogo size={21} weight="fill" /> </i></a>
                     <a href="/"><i> <LinkedinLogo size={21} weight="fill" /> </i></a>
-                    aspo@gmail.com
+                    onlineaspo@gmail.com
                 </S.icons>
                 <S.hamburguer onClick={() => setIsOpen(!isOpen)}>
                     <S.line1 ></S.line1>
@@ -67,9 +67,9 @@ function NavBar() {
                             <Link > Serviços</Link> <EyeClosed  size={24} weight="bold" color='#fff'/> 
                         </div>
                         <S.dropDown2 isMenuDropDown = {isMenuDropDown} onClick={() => setIsMenuDropDown(false)}>
-                            <Link to="/agendar2" onClick={() => setIsOpen(false)}> Agendamento </Link>
+                            <Link to="/agendar" onClick={() => setIsOpen(false)}> Agendamento </Link>
                             <Link to="/consultarAgenda" onClick={() => setIsOpen(false)}> Consultar Agenda </Link>
-                            <Link to="/actualizarAgenda" onClick={() => setIsOpen(false)}> Actualizar Agenda </Link>
+                            <Link to="/cancelarAgenda" onClick={() => setIsOpen(false)}> Cancelar Agenda </Link>
                         </S.dropDown2>
                     </S.itemService2>
                     <S.itens2> <Link to="/sobre" onClick={() => setIsOpen(false)}> Sobre </Link> </S.itens2>

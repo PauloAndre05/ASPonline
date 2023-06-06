@@ -7,9 +7,10 @@ import banner2 from '../../../images/b2.jpg'
 import b6 from '../../../images/b6.jpg'
 import b7 from '../../../images/b7.jpg'
 import b8 from '../../../images/b8.jpg'
-import banner4 from '../../../images/recenseamentoMob.png'
-import banner5 from '../../../images/bannerMob.png'
-import banner8 from '../../../images/banner3Mob.jpg'
+import banner4 from '../../../images/b6Mob.jpg'
+import banner8 from '../../../images/b8Mob.jpg'
+import banner6 from '../../../images/b4Mob.jpg'
+import banner7 from '../../../images/b7Mob.jpg'
 
 import * as S from './stylesBanner';
 import Slider from 'react-slick';
@@ -25,38 +26,43 @@ const carousel1 = [
     },
 
     {
-        id: 3,
+        id: 2,
         image: banner2,
     },
 
     {
-        id: 5,
+        id: 3,
         image: b6,
     },
     {
-        id: 6,
+        id: 4,
         image: b7,
     },
     {
-        id: 7,
+        id: 5,
         image: b8,
     },
 ]
 
 const carousel2 = [
     {
-        id: 4,
+        id: 1,
         image: banner4,
     },
 
     {
-        id: 5,
+        id: 2,
         image: banner8,
+    },
+    
+    {
+        id: 4,
+        image: banner6,
     },
 
     {
-        id: 6,
-        image: banner5,
+        id: 5,
+        image: banner7,
     },
 ]
 
@@ -102,7 +108,7 @@ const carousel2 = [
                 <h1>Agendamento de Serviços Públicos</h1>
                 <p>Agende online, imprima o recibo e evite filas enormes. Fácil, rápido e conveniente! </p>
                 <S.ButtonContainer>
-                    <Link to="agendar2">
+                    <Link to="agendar">
                         <Botao name="Agendar Agora"/>
                     </Link>
                 </S.ButtonContainer>

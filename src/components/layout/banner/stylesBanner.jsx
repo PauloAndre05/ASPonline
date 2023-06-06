@@ -45,14 +45,14 @@ export const ImageBanner2 = styled.div`
     background-color: rgb(0, 0, 0);
     overflow: hidden;
     width: 100%;
-    height: 67vh;
+    height: 90vh;
     @media screen and (max-width: 600px){
         display: block;
     }
 
     img{
         object-fit: contain;
-        opacity: .3;
+        opacity: .4;
     }
 `;
 
@@ -117,9 +117,9 @@ export const Text = styled.div`
 
     @media screen and (max-width: 600px){
         h1{
-            width: 98%;
+            width: 99%;
             margin: 0 auto;
-            font-size: 1.4rem;
+            font-size: 2.4rem;
         }
 
         p{

@@ -1,146 +1,244 @@
-import { useState } from 'react'
-
-import * as S from '../../routes/agendar/stylesAgendar'
-import { Input } from '../../layout/input/Input'
-import { Botao } from '../../layout/botao/Botao'
-import {dataTable} from '../../layout/direcoes/data'
-
-
-const options = [
-    {
-        name: "Bilhete 1ª via",
-        value: 1
-    },
-    {
-        name: "Bilhete 2ª via",
-        value: 2
-    },
-    {
-        name: "Cartão de contribuinte",
-        value: 3
-    },
-
-    {
-        name: "Recenseamento Militar",
-        value: 4
-    },
-
-    {
-        name: "Cartão de munícipe",
-        value: 5
-    },
-]
+import { useFormik } from 'formik'
+import * as S from './stylesAgendar'
+import * as yup from 'yup'
+import { useEffect, useState } from 'react'
 
 
 function Agendar() {
-    const [servicoSelecionado, setServicoSelecionado] = useState() 
-    
-    function biCedula(e) {
-        setServicoSelecionado(e.target.value)
-    }
-    
-  
-    return(
-        <S.containerContainer>
-            <S.text>
-                <h1>
-                    Agendar
-                </h1>
-                <p>Preencha o formulário abaixo para proceder com o agendamento</p>
-                <S.containerBorder>
-                    <S.containerLine1>
-                        <p>Passo 1</p>
-                        <S.line1></S.line1>
-                    </S.containerLine1>
-                    
-                    <S.containerLine2>
-                        <p>Passo 2</p>
-                        <S.line2></S.line2>
-                    </S.containerLine2>
 
-                    <S.containerLine3>
-                        <p> Concluído</p>
-                        <S.line3></S.line3>
-                    </S.containerLine3>
-                </S.containerBorder>
+    const urlService = "http://localhost:3001/servico"
+    const urlPosto = "http://localhost:3001/posto"
+
+    const [dataService, setDataService] = useState([])
+    const [dataPosto, setDataPosto] = useState([])
+
+    /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» COLLING FUNCTIONS REQUEST ««««««««««««««««««««««««««««««««««««««««««««««««« */
+
+    useEffect(() => {
+        getService()
+        getPosto()
+    }, [])
+    
+
+    /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» REQUEST SERVICE ««««««««««««««««««««««««««««««««««««««««««««««««« */
+
+    const getService = async () => {
+        try{
+            const response = await fetch(urlService)
+            const responseData = await response.json()
+            setDataService(responseData)
+        }
+        catch (error){
+            console.log(error);
+        }
+    }
+
+    /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» REQUEST POSTO ««««««««««««««««««««««««««««««««««««««««««««««««« */
+
+    const getPosto = async () => {
+        try{
+            const response = await fetch(urlPosto)
+            const responseData = await response.json()
+            setDataPosto(responseData)
+        }
+        catch (error){
+            console.log(error);
+        }
+    }
+
+    /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» VALIDATION ««««««««««««««««««««««««««««««««««««««««««««««««« */
+
+
+    const formik = useFormik({
+        initialValues:{
+            nome: '',
+            telefone: '',
+            email: '',
+            servicoId: '',
+            bi: '',
+            cedula:'',
+            postoId: '',
+            data: '',
+            hora: '',
+        },
+
+        validationSchema: yup.object({
+            nome: yup.string().required('Por favor, digite o seu nome'),
+            telefone: yup.string().required('O número de telefone é obrigatório').min(9, 'Digite um número válido de angola').max(12, 'Digite um numero validos'),
+            email: yup.string().required('O email é obrigatório').email('Email inválido'),
+            servicoId: yup.string().required('Selecione um serviço'),
+            bi: yup.string().required('Informe o número do seu documento').min(14, 'Bi inválido'),
+            cedula: yup.string().required('Informe o número do seu documento').min(6, 'Identificação inválida')
+        }),
+
+        onSubmit: async(data) => {
+            console.log(data);
+        }
+    })
+
+
+    return(
+        <S.container>
+            <S.text>
+                <h1>Formulario de Agendamento</h1>
+                <p>Entre com os dados no formulario abaixo para proceder com o agendamento</p>
             </S.text>
             <S.containerForm>
-                
-                <S.form>
-                    <S.inputs>
-                        <div>
-                            {/* <label htmlFor="nome"> Nome Completo</label> */}
-                            <Input type="text" name="nome" id="nome" required="true " placeholder="Nome Completo *"  />
-                        </div>
-                        <div>
-                            {/* <label htmlFor="servico">Serviço <span>*</span></label> */}
-                            <select 
-                                name="servico" 
-                                id="servico" 
-                                required
-                                value={servicoSelecionado} onChange={biCedula}>
-                                    
-                                <option value="">Selecione o serviço  *</option>
-                                {options.map(option => (
-                                    <option key={option.value}  value={option.value} >{option.name}</option> 
-                                ))}
-                            </select>
-                        </div>
+                <form onSubmit={formik.handleSubmit}>
 
-                        <div>
-                            {/* <label htmlFor="servico">Posto de atendimento</label> */}
-                            <select name="servico" id="servico" >
-                                <option selected>Posto de atendimento (seleção automática) </option>
-                                
-                                {dataTable.map(option => (
-                                    <option value={option.id} key={option.id}>{option.nome}</option>
-                                    ))}
-                            </select>
-                        </div>
-                                
-                        {servicoSelecionado !== "1" &&(
+                    <S.sessao1>
+                        <S.inputs>
                             <div>
-                                {/* <label htmlFor="bi">Nº do bilhete de identidade <span>*</span></label> */}
-                                <Input type="text" name="bi" id="bi" required max={14} placeholder="Nº do bilhete *"/>
+                                <input
+                                    type="text"
+                                    name="nome"
+                                    id="nome"
+                                    placeholder="Nome Completo "
+                                    value = {formik.values.nome}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                />
+                                <div>
+                                    {formik.touched.nome && formik.errors.nome ? (
+                                        <span> {formik.errors.nome} </span>
+                                    ):null}
+                                </div>
                             </div>
-                        )}
-
-                        {servicoSelecionado === "1" &&(
                             <div>
-                            {/* <label htmlFor="cedula">Nº de cédula <span>*</span></label> */}
-                            <Input type="text" name="cedula" id="cedula" required placeholder="Nº de cédula pessoal ou ertidão de nascimento *"/>
-                        </div>
-                        )}
+                                <input
+                                    type="text"
+                                    name="telefone"
+                                    id="telefone"
+                                    placeholder="Telefone "
+                                    value = {formik.values.telefone}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                />
+                                <div>
+                                    {formik.touched.telefone && formik.errors.telefone ? (
+                                        <span> {formik.errors.telefone} </span>
+                                    ):null}
+                                </div>
+                            </div>
+                            <div>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="E-mail "
+                                    value = {formik.values.email}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                />
+                                <div>
+                                    {formik.touched.email && formik.errors.email ? (
+                                        <span> {formik.errors.email} </span>
+                                    ):null}
+                                </div>
+                            </div>
+                        </S.inputs>
                         
-
-                    </S.inputs>
-
-                    <S.inputs>
+                        <S.inputs>
+                            <div>
+                                <select
+                                    name="servicoId"
+                                    id="servicoId"
+                                    value={formik.values.servico }
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                >
+                                    <option value="" disabled>Selecione o serviço *</option>
+                                    {dataService.map((option) => (
+                                    <option key={option.id} value={option.id}>
+                                        {option.nome}
+                                    </option>
+                                    ))}
+                                </select>
                         
-                        <div>
-                            {/* <label htmlFor="telefone"> Telefone <span>*</span></label> */}
-                            <Input type="text" name="telefone" id="telefone" required max={12} placeholder="Telefone *"  />
-                        </div>
+                                <div>
+                                    {formik.touched.servicoId && formik.errors.servicoId ? (
+                                        <span> {formik.errors.servicoId} </span>
+                                    ):null}
+                                </div>
+                            </div>
+                        
+                            {dataService.servico !== "de15629f-b447-480d-a778-60d2b984f8a3" &&(
+                                <div>
+                                    <input
+                                        type="text"
+                                        name="bi" id="bi"
+                                        placeholder="Nº do bilhete "
+                                        value = {formik.values.bi}
+                                        onChange={formik.handleChange}
+                                        onBlur={formik.handleBlur}
+                                    />
+                        
+                                    <div>
+                                        {formik.touched.bi && formik.errors.bi ? (
+                                            <span> {formik.errors.bi} </span>
+                                        ):null}
+                                    </div>
+                                </div>
+                            )}
+                            {dataService.servico === "de15629f-b447-480d-a778-60d2b984f8a3" &&(
+                                <div>
+                                <input
+                                    type="text"
+                                    name="cedula"
+                                    id="cedula"
+                                    required placeholder="Nº de cédula pessoal ou certidão de nascimento *"
+                                    value = {formik.values.cedula}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                />
+                        
+                                <div>
+                                    {formik.touched.cedula && formik.errors.cedula ? (
+                                        <span> {formik.errors.cedula} </span>
+                                    ):null}
+                                </div>
+                            </div>
+                            )}
 
+                            <div>
+                                <select
+                                    name="postoId"
+                                    id="postoId"
+                                    value={formik.values.posto}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    >
+                                    <option value="" disabled>Posto de atendimento (seleção automática)</option>
+                                    {dataPosto.map((option) => (
+                                    <option value={option.id} key={option.id}>
+                                        {option.nome}
+                                    </option>
+                                    ))}
+                                </select>
+                                    <div> </div>
+                        
+                            </div>
+                        </S.inputs>
+                    </S.sessao1>
+                                        
+                    <S.sessao2>
                         <div>
-                            {/* <label htmlFor="email">Email <span>*</span></label> */}
-                            <Input type="email" name="email" id="email" required placeholder="E-mail *"/>
+                            <input
+                                type="datetime-local"
+                                name="data"
+                                id="data"
+                                placeholder=""
+                                value = {formik.values.nome}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                            />
                         </div>
-
-                        <div>
-                            {/* <label htmlFor="emailConfirmar">Confirmar Email <span>*</span></label> */}
-                            <Input type="email" name="emailConfirmar" id="emailConfirmar" required placeholder="Confirmar e-mail *"/>
-                            
-                        </div>
-                        <p>(<span>*</span>) indica campo obrigatório</p>
-                        <S.containerButton>
-                            <Botao name="Seguinte" />
-                    </S.containerButton>
-                    </S.inputs>
-                    
-                </S.form>       
+                    </S.sessao2>
+                        
+                    <button type='submit'>Submeter</button>
+                </form>
             </S.containerForm>
-        </S.containerContainer>
+        </S.container>
     )
 }
 

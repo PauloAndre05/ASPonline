@@ -16,6 +16,7 @@ export const container = styled.section`
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 5rem;
+    gap: 1.5rem;
 `
 
 export const imagem = styled.div`
@@ -30,10 +31,19 @@ export const imagem = styled.div`
         opacity: .5;
         object-fit: cover;
     }
+
+    @media screen and (max-width: 768px){
+        width: 25rem;
+        height: 25rem;
+    }
+
+    @media screen and (max-width: 600px){
+        width: 20rem;
+        height: 20rem;
+    }
 `
 
 export const texto = styled.section`
-    font-weight: lighter;
     color: #000000;
     width: 30rem;
 

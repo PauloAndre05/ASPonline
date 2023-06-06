@@ -7,49 +7,7 @@ import b5 from '../../../images/b5.jpg'
 import b1 from '../../../images/b.jpg'
 
 function SessaoServicos() {
-/*     const settings = {
-        dots: true,
-        infinite: true,
-        speed: 900,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        initialSlide: 0,
-        responsive: [
-          {
-              breakpoint: 1024,
-              settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinitbe: true,
-              dots: true
-            }
-          },
 
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      }; */
     return(
       <S.containerContainer>
         
@@ -63,7 +21,7 @@ function SessaoServicos() {
               <S.text1>
                 <h1>Agendamento</h1>
                 <p> Agende serviços públicos como, Bilhete de Identidade, Contribuinte, Atestado de Residência e muitos outros serviços de agendamento disponíveis para si</p>
-                <a href="/agendar2">Fazer agendamento</a>
+                <a href="/agendar">Fazer agendamento</a>
               </S.text1>
             </S.area1> 
 
@@ -123,7 +81,7 @@ function SessaoServicos() {
             <S.area3>
               <S.text3>
                   <p>Faça a sua consulta na plataforma e imprima o novo comprovativo de agendamento</p>
-                  <a href="/actualizarAgenda">Consultar</a>
+                  <a href="/consultarAgenda">Consultar</a>
               </S.text3>
 
               <S.containerImage3>

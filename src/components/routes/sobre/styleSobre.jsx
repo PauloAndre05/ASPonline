@@ -65,7 +65,7 @@ export const text = styled.div`
 `
 
 export const more = styled.section`
-    background-color: #000000;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +80,7 @@ export const more = styled.section`
     }
 
     h6{
-            color: #dedede;
+            color: #000000;
             margin: 0;
     }
 

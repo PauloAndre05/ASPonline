@@ -1,4 +1,4 @@
-import { Formulario1 } from "../../layout/formulario1/Formulario1"
+/* import { Formulario1 } from "../../layout/formulario1/Formulario1"
 import { Formulario2 } from "../../layout/formulario2/Formulario2"
 import { Formulario3 } from "../../layout/formulario3/Formulario3"
 import { Etapa } from "../../layout/etapas/Etapa"
@@ -48,7 +48,7 @@ function Agendar2() {
     })
 
         const [data, setData] = useState(formTemplate)
-       /* let validation = ["", "", "", "", "", ""]
+   let validation = ["", "", "", "", "", ""]
         
          function validateBI(value){
             const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -57,7 +57,7 @@ function Agendar2() {
             if(value.length !==  13){
                 validation[6] = "BI inválido"
                 return false
-            }//  0 0 0 0 0 0 0 0 0 LA 0 0 0
+            }
 
             else{
                 validation[6] = ""
@@ -84,8 +84,8 @@ function Agendar2() {
             validation[6] = ""
             return true
         }
- */
-        /* async function reqBI(value) {
+
+     async function reqBI(value) {
             const resp = await fetch("http://localhost:3001/identificacao", value).then((response) => response.json()).catch((e) => {
                     validation[6] = "BI não existe"
                     return false
@@ -98,7 +98,7 @@ function Agendar2() {
             }
             
             return true
-        } */
+        } 
 
         const updateFieldHandler = async (key, value) => {
              
@@ -108,8 +108,7 @@ function Agendar2() {
             
 
            
-
-            /* if(key === 'bi'){
+ if(key === 'bi'){
                 if(validateBI(value)) {
                    
                     validation[6] = ""
@@ -118,7 +117,7 @@ function Agendar2() {
                 setData((prev) => {
                     return { ...prev, [key]: value}
                 })
-            } */
+            } 
         }
 
         const formComponents = [
@@ -165,4 +164,4 @@ function Agendar2() {
     )
 }
 
-export { Agendar2 }
+export { Agendar2 } */

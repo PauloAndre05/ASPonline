@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const container =  styled.main`
-    background-color: #2b2b2b;
+    background-color: #161616;
     padding: 2.5rem 0;
     display: flex; 
     justify-content: center;
@@ -31,8 +31,8 @@ export const texto = styled.div`
     h1{
         text-transform: uppercase;
         font-size: 1.8rem;
-        color: #258d84;
-        text-shadow: 0 1px 2px #000000b5;
+        color: #ffffff;
+        text-shadow: 0 1px 2px #0f0f0fb5;
         width:100%;
         text-align: center;
     }
@@ -40,6 +40,7 @@ export const texto = styled.div`
     p{
         color: #b1b1b1;
         text-align: justify;
+        font-size: 1.1rem;
     }
 
     @media screen and (max-width: 600px){
@@ -61,13 +62,23 @@ export const containerFormulario = styled.div`
 export const form =  styled.form`
         display: flex;
         flex-direction: column;
-        gap: 1rem;
         width:100%;
+
+        div > div{
+            min-height: 1.5rem;
+            text-align: right;
+        }
+
+        div > div > span{
+            height: 100%;
+            font-size: .8rem;
+        }
 `
 
 export const containerLabelInput = styled.div`
     display: flex;
     flex-direction: column;
+    
     input, textarea{
         background-color: transparent;
         border: none;
@@ -77,13 +88,13 @@ export const containerLabelInput = styled.div`
         color: #fff;
         font-size: 1.1rem;
         width: 30rem;
-        background: none;
-
+        background: none;    
     }
 
     textarea{
-        max-height: 5rem;
-        min-height: 3.4rem;
+        overflow: hidden;
+        max-height: 0;
+        padding-bottom: 2.5rem;
     }
 
     label{

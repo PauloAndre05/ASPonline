@@ -86,6 +86,9 @@ export const icons = styled.article`
         color: #ff0000c7#5442af;
     }
 
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `
 
 export const hamburguer = styled.div`
@@ -99,18 +102,18 @@ export const hamburguer = styled.div`
         justify-content: center;
         gap: .4rem;
         align-items: center;
-        border: 1px solid #ffffff58;
+        border: 1px solid #248B84;
         padding: .4rem;
         border-radius: .2rem;
 
         div{
             width: 1.7rem;
             height: 2rem;
-            background-color: #ffffffd5;
+            background-color: #248B84;
         }
         :active{
             
-        border: 3px solid #ffffff58;
+        border: 3px solid #248B84;
         }
     }    
 `
@@ -144,6 +147,10 @@ export const angola = styled.a`
         height: 100%;
         width: 100%;
     }
+
+    @media screen and (max-width: 600px){
+        width: 7rem;
+    } 
 `
 
 
@@ -170,6 +177,10 @@ export const menu = styled.nav`
     @media screen and (min-width: 768px) and (max-width: 992px){
         padding: .6rem 4rem .9rem 4rem;
     } 
+
+    @media screen and (max-width: 600px){
+        padding: .6rem 1rem .9rem 1rem;
+    } 
 `
 
 export const sideBar = styled.div`
@@ -180,7 +191,7 @@ export const sideBar = styled.div`
     align-items: center;
     transition: visibility 0;
     /* max-height: ${({isOpen}) => isOpen?'40vh':'0'}; */
-    background-color: #2b2b2b;
+    background-color: #ffffff;
     transition: height .7s;
     ${({ isOpen }) => isOpen && css`
         height: 370px;
@@ -230,7 +241,7 @@ export const lista2 = styled.ul`
     
 
     a{
-        color: black;
+        color: #000000;
     }
 `
 
@@ -249,13 +260,13 @@ export const itens2 = styled.li`
         background-color: #82b6e0a5;
     }
     a{
-        
+        font-weight: bold;
         padding: .7rem 0;
         width: 100%;
         font-size: 1rem;
-        color: #ffffffd5;
+        color: #000000d4;
         text-decoration: none;
-        border-bottom: 1px solid #ffffff44;
+        border-bottom: 1px solid #000000da;
     }
 
     a:hover{
@@ -341,7 +352,7 @@ export const itemService2 = styled.li`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #ffffff44;
+    border-bottom: 1px solid #000000da;
 
     >div{
         padding: .5rem 0;
@@ -354,9 +365,10 @@ export const itemService2 = styled.li`
     
     
     a{
+        font-weight: bold;
         font-size: 1rem;                
         text-decoration: none;
-        color: #ffffffd5;
+        color: #000000d4;
         text-transform: uppercase;
     }
 
@@ -377,7 +389,7 @@ export const itemService2 = styled.li`
 `
 
 export const dropDown2 = styled.div`
-    top: 5.5rem;
+    top: 5.8rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -398,14 +410,15 @@ export const dropDown2 = styled.div`
         width: 100%;
         text-align: center;
         font-weight: lighter;
-        color: #ffffffd5;
+        color: #000000d4;
         padding: .5rem 1rem;
         font-size: .8rem;
+        font-weight: bold;
     }
 
     a:hover{
-        color: #258d84;
-        background-color: #2d2d2d;
+        color: #ffffff;
+        background-color: #000000;
     }
   
 `
@@ -417,7 +430,7 @@ export const icons2 = styled.article`
     gap: 1rem;
 
     a{  padding: .5rem;
-        color: #000;
+        color: #284b48;
         border-radius: 50%;
         display: flex;
         justify-content: center;

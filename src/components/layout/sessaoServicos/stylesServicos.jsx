@@ -47,42 +47,17 @@ export const content = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        width: 100%;
-    } 
- 
-    @media screen and (max-width: 1024px) {
-      
-        >p {
-            width: 70%;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        div >p{
-            font-size: .9rem;
-        }
-
-    }
-
-    @media screen and (max-width: 768px){
-        >p {
-            width: 80%;
-            padding-bottom: 0;
-            font-size: 1.2rem;           
+        p{
+            margin: .5rem 0;
         }
     }    
     
     @media screen and (max-width: 600px){
-        >p {
-            width: 90%;
-            font-size: 1.1rem;  
-        }
+        
     }
 
     @media screen and (max-width: 450px){
-        >p {
-            width: 95%;
-        }
+        
     }    
 
 `
@@ -90,12 +65,12 @@ export const content = styled.div`
 export const area1 = styled.div`
     margin: 4rem auto;
     width: 100%;
-    height: 30rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-   a{
+   
+    a{
         background-color: #613bc2;
         text-decoration: none;
         padding: .7rem 0;
@@ -110,7 +85,7 @@ export const area1 = styled.div`
 
     h1{
         text-align: start;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     a:hover{
@@ -130,22 +105,15 @@ export const area1 = styled.div`
         }
     }
 
+    
     @media screen and (max-width: 768px){
-        width: 100%;
-
+        margin: 2rem 0;
         a{
-            width: 95%;
+            width: 60%;
         }
     } 
 
-    @media screen and (max-width: 768px){
-        a{
-            width: 98%;
-            font-size: .9rem;
-        }
-    } 
-
-    @media screen and (max-width: 1024px) {
+  /*   @media screen and (max-width: 1024px) {
         h1{
             font-size: 1.2rem;
         }
@@ -158,11 +126,32 @@ export const area1 = styled.div`
             font-size: .85rem;
         }
     }
-
+ */
 
     @media screen and (max-width:768px) {
         height: 100%;
     }
+`
+
+export const text1 = styled.div`  
+    height: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    } 
 `
 
 export const contImage = styled.div` 
@@ -180,123 +169,11 @@ export const contImage = styled.div`
         opacity: .6;
     }
 
-    @media screen and (max-width: 768px){
-        width: 100%;
-    }
-    
+   
     @media screen and (max-width: 600px){
-        height: 12rem;
+        height: 30rem;
     }
 `
-
-export const containerArea2 = styled.div`
-    width: 100%;
-    display: flex;
-    margin: 4rem 0;
-
-    a{
-        background-color: #258d84;
-        text-decoration: none;
-        padding: .5rem 0;
-        color: #fff;
-        font-size: 1rem;
-        opacity: .89;
-        width: 17rem;
-        text-align: center;
-        border-radius: .3rem;
-    }
-
-    a:hover{
-        opacity: 1;
-    }
-    
-    @media screen and (max-width: 768px){
-        width: 100%;
-
-        a{
-            width: 95%;
-        }
-    } 
-
-    @media screen and (max-width: 768px){
-        a{
-            width: 98%;
-            font-size: .9rem;
-        }
-    } 
-
-    @media screen and (max-width: 1024px) {
-        h1{
-            font-size: 1.2rem;
-        }
-        
-        p{
-            font-size: .9rem;
-        }
-
-        a{
-            font-size: .85rem;
-        }
-    }
-`
-
-export const area2_1 = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;   
-`
-
-export const area2_2 = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    
-`
-
-export const text1 = styled.div`  
-    height: 100%;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-    
-
-    @media screen and (max-width: 768px){
-        width: 100%;
-        order: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    } 
-`
-
-export const text2 = styled.div`
-    background-color: #F5F5F5;
-    padding: 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 100%;
-
-    @media screen and (max-width: 768px){
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } 
-`
-
 
 export const area3 = styled.div`
     margin: 2rem auto;
@@ -326,37 +203,19 @@ export const area3 = styled.div`
         font-size: 1.5rem;
     }
     
-    @media screen and (max-width:768px) {
-        height: 100%;
-    }
-    
     @media screen and (max-width: 768px){
-        width: 100%;
-
         a{
-            width: 95%;
+            width: 60%;
         }
     } 
 
     @media screen and (max-width: 768px){
         a{
-            width: 98%;
-            font-size: .9rem;
+            width: 60%;
         }
     } 
 
     @media screen and (max-width: 1024px) {
-        h1{
-            font-size: 1.2rem;
-        }
-        
-        p{
-            font-size: .9rem;
-        }
-
-        a{
-            font-size: .85rem;
-        }
     }
 `
 
@@ -380,30 +239,13 @@ export const text3 = styled.div`
 `
 
 
-export const containerImage2 = styled.div`
-    width: 100%;
-    background-color: #000;
-    overflow: hidden;
-
-    img{
-        opacity: .6;
-        object-fit: cover;
-    }
-
-    @media screen and (max-width: 768px){
-        width: 100%;
-    }
-
-    @media screen and (max-width: 600px){
-        height: 12rem;
-    }
-`
 
 export const containerImage3 = styled.div`
     width: 40%; 
-    height: 100%;
+    height: 25rem;
     overflow: hidden;
     background-color: #000;
+    border-radius: .5rem;
 
     img{
         height: 100%;
@@ -411,12 +253,9 @@ export const containerImage3 = styled.div`
         opacity: .6;
     }
 
-    @media screen and (max-width: 768px){
-        width: 100%;
-    } 
-
     @media screen and (max-width: 600px){
-        height: 12rem;
+        width: 100%;
+        height: 30rem;
     }
 `
 

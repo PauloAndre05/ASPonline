@@ -56,8 +56,8 @@ function NewsLetter(){
         <S.container>
             <S.containerMain>
                 <S.texto>
-                    <h1>Assine aqui</h1>
-                    <p>Inscreva-se e receba nossas novidades e ofertas exclusivas. Garantimos privacidade e conteúdos úteis para aproveitar ao máximo nossos serviços.</p>
+                    <h1>Feed Back</h1>
+                    <p>Deixa a sua mensagem para contribuir no desnvolvimento da plataforma. Garantimos privacidade e conteúdos úteis para aproveitar ao máximo nossos serviços.</p>
                 </S.texto>
                 <S.containerFormulario >
                     <S.form onSubmit={formik.handleSubmit}>
@@ -73,9 +73,11 @@ function NewsLetter(){
                                 onBlur={formik.handleBlur}
                             />
 
-                            {formik.touched.nome && formik.errors.nome ? (
-                                <span>{formik.errors.nome}</span>
-                            ):null}
+                            <div>
+                                {formik.touched.nome && formik.errors.nome ? (
+                                    <span>{formik.errors.nome}</span>
+                                ):null}
+                            </div>
 
                         </S.containerLabelInput>
 
@@ -90,9 +92,11 @@ function NewsLetter(){
                                 onBlur={formik.handleBlur}
                             />
 
-                            {formik.touched.email && formik.errors.email ? (
-                                <span>{formik.errors.email}</span>
-                            ): null}
+                            <div>
+                                {formik.touched.email && formik.errors.email ? (
+                                    <span>{formik.errors.email}</span>
+                                ): null}
+                            </div>
 
                         </S.containerLabelInput>
 
@@ -108,9 +112,11 @@ function NewsLetter(){
                                 onBlur={formik.handleBlur}>
                             </textarea>
 
-                                {formik.touched.mensagem && formik.errors.mensagem ?(
-                                    <span>{formik.errors.mensagem}</span>
-                                ):null}
+                                <div>
+                                    {formik.touched.mensagem && formik.errors.mensagem ?(
+                                        <span>{formik.errors.mensagem}</span>
+                                    ):null}
+                                </div>
 
                         </S.containerLabelInput>
 

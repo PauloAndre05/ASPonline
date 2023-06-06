@@ -40,6 +40,10 @@ export const imagem = styled.div`
     @media screen and (max-width: 600px){
         width: 20rem;
         height: 20rem;
+        img{
+            width: 100%;
+            height: 100%;
+        }
     }
 `
 

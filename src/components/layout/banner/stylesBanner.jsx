@@ -45,15 +45,20 @@ export const ImageBanner2 = styled.div`
     background-color: rgb(0, 0, 0);
     overflow: hidden;
     width: 100%;
-    height: 90vh;
-    @media screen and (max-width: 600px){
-        display: block;
-    }
+    height: 500px;
 
     img{
         object-fit: contain;
         opacity: .4;
     }
+    @media screen and (max-width: 600px){
+        display: block;
+    }
+
+    @media screen and (max-width: 320px){
+        height: 420px;
+    }
+
 `;
 
 export const Imagem=styled.img`

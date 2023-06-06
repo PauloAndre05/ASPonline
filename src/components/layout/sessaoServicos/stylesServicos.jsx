@@ -49,6 +49,8 @@ export const content = styled.div`
     @media screen and (max-width: 768px){
         p{
             margin: .5rem 0;
+            text-align: center;
+            width: 90%;
         }
     }    
     
@@ -113,21 +115,6 @@ export const area1 = styled.div`
         }
     } 
 
-  /*   @media screen and (max-width: 1024px) {
-        h1{
-            font-size: 1.2rem;
-        }
-        
-        p{
-            font-size: .9rem;
-        }
-
-        a{
-            font-size: .85rem;
-        }
-    }
- */
-
     @media screen and (max-width:768px) {
         height: 100%;
     }
@@ -164,14 +151,14 @@ export const contImage = styled.div`
     img{
         width: 100%;
         height: 100%;
-        object-position: top;
         object-fit: cover;
         opacity: .6;
     }
 
    
     @media screen and (max-width: 600px){
-        height: 30rem;
+        width: 100%;
+        height: 28rem;
     }
 `
 
@@ -255,7 +242,7 @@ export const containerImage3 = styled.div`
 
     @media screen and (max-width: 600px){
         width: 100%;
-        height: 30rem;
+        height: 28rem;
     }
 `
 

@@ -29,6 +29,7 @@ export const buttom = styled.a`
     background-color: #000000d1;
     color: #e7e7e7;
     box-shadow: 1px 2px 8px #00000053;
+    opacity: .7;
 
     :hover{
         background-color:#000;

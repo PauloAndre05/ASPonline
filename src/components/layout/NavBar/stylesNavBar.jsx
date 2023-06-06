@@ -161,6 +161,7 @@ export const menu = styled.nav`
     justify-content: space-between;
     padding: .9rem 10rem;
     background-color: #FFFFFF;
+    padding: .5rem 6rem .5rem 6rem;
     /* background: linear-gradient(to right, #ffffff, #000000, #000000); */
     z-index: 100;
     

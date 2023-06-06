@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom'
 import * as S from './stylesArtigo'
 import { dataTable } from '../direcoes/data'
+import {  } from '../../layout/direcoes/data'
 import Slider from 'react-slick'
 
 function Artigo(  ){
+
+    const time = new Date()
+    const hours = time.getHours()
+
     const settings = {
         dots: true,
         infinite: true,
@@ -60,9 +65,16 @@ function Artigo(  ){
                                     <S.cardBotton>
                                         <h3>{instituicao.nome}</h3>
                                         <p>{instituicao.localizacao}</p>
-                
+                                        <S.containerEstado>
+                                          <p>Estado: </p>
+                                            {hours >= 8 && hours <= 15 ? (
+                                              <S.aberto>Aberto</S.aberto>
+                                            ): (
+                                              <S.fechado>Fechado</S.fechado>
+                                            )}
+                                        </S.containerEstado>
                                         <div>
-                                            <Link to={`/perfil/${instituicao.id}`}>Ver Perfil</Link>
+                                            <Link to={instituicao.link} target='_blanck'>Ver no mapa</Link>
                                         </div>
                                     </S.cardBotton>
                                 </S.article>

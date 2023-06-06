@@ -272,9 +272,7 @@ export const container = styled.div`
         color: #ffffff;
     }
 
-    @media screen and  (max-width: 600px){
-        width: 89%;
-    }
+   
 `
 
 

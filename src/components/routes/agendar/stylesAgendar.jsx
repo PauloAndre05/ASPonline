@@ -40,7 +40,7 @@ export const containerForm = styled.section`
     overflow-y: auto;
     background-color: #ffffff;
     border-radius: .5rem;
-    padding: 3rem 6rem;
+    padding: 3rem 4rem;
     box-shadow: 0 0 1rem #0000002d;
     
     ::-webkit-scrollbar {
@@ -74,6 +74,14 @@ export const containerForm = styled.section`
         border-radius: .3rem;
     }
 
+    select:focus{
+        border: 1px solid #604dbd88;
+    }
+
+    input:focus{
+        border: 1px solid #604dbd88;
+    }
+
     option :disabled{
         color: #000;
     }
@@ -94,8 +102,9 @@ export const containerForm = styled.section`
     }
 
     @media screen and (max-width: 768px){
-        width: 95%;
+        width: 98%;
         padding: 3rem 2rem;
+        min-height: 85vh;
     }
 
     @media screen and (max-width: 600px){

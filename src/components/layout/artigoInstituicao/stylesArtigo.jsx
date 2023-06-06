@@ -15,6 +15,10 @@ export const container2 = styled.section`
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
+    @media screen and (max-width: 600px){
+        width: 85%;
+    }
 `
             
 export const containerArticle = styled.section`
@@ -32,12 +36,10 @@ export const article = styled.article`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 13rem;
     background-color: #fffffffb;
 
         @media screen and (max-width: 600px){
         article{
-            height: 22rem;
         }        
     }
 `
@@ -129,6 +131,7 @@ export const cardBotton = styled.section`
         text-decoration: none;
         color: #ffffff; 
         border-radius: .3rem;
+        opacity: .9;
     }
 
     a:hover{
@@ -143,7 +146,7 @@ export const cardBotton = styled.section`
             width: 100%;
             text-align: center;
             font-size: .9rem;
-            color: #d1d1d1;
+            color: #000000;
         }
 
         div{
@@ -170,4 +173,18 @@ export const cardBotton = styled.section`
     @media screen and (max-width: 321px ){
         height: 16rem;
     }
+`
+
+export const containerEstado = styled.article`
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+`
+
+export const aberto = styled.span`
+    color: #00bd9df4    
+`
+
+export const fechado = styled.span`
+    color: #ff1100; 
 `

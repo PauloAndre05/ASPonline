@@ -41,7 +41,7 @@ function Footer() {
                     <div>
                         <h2>Contacto</h2>
                     </div>
-                    <p>aspo@gmail.com</p>
+                    <p>onlineaspo@gmail.com</p>
                     <p>Luanda-Angola</p>
                     <p>944617903</p>
                     <p>Aspo</p>

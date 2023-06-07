@@ -161,7 +161,7 @@ export const menu = styled.nav`
     justify-content: space-between;
     padding: .9rem 10rem;
     background-color: #FFFFFF;
-    padding: .5rem 6rem .5rem 6rem;
+    padding: .8rem 6rem .8rem 6rem;
     /* background: linear-gradient(to right, #ffffff, #000000, #000000); */
     z-index: 100;
     
@@ -261,13 +261,12 @@ export const itens2 = styled.li`
         background-color: #82b6e0a5;
     }
     a{
-        font-weight: bold;
         padding: .7rem 0;
         width: 100%;
         font-size: 1rem;
         color: #000000d4;
         text-decoration: none;
-        border-bottom: 1px solid #000000da;
+        border-bottom: 1px solid #0000004b;
     }
 
     a:hover{
@@ -354,6 +353,7 @@ export const itemService2 = styled.li`
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #000000da;
+    border-bottom: 1px solid #0000004b;
 
     >div{
         padding: .5rem 0;
@@ -366,7 +366,6 @@ export const itemService2 = styled.li`
     
     
     a{
-        font-weight: bold;
         font-size: 1rem;                
         text-decoration: none;
         color: #000000d4;

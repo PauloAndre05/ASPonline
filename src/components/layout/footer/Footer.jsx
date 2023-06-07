@@ -17,7 +17,7 @@ function Footer() {
                             <p>Inicio</p>
                         </a>
                         <a href="/servicos">
-                            <p>Serviços</p>
+                            <p>Informe-se</p>
                         </a >
                         <a  href="/agendar">
                             <p>Agendar</p>

@@ -19,7 +19,6 @@ function SessaoServicos() {
                 <S.img src={b5} alt="image servico" />
               </S.contImage>
               <S.text1>
-                <h1>Agendamento</h1>
                 <p> Agende serviços públicos como, Bilhete de Identidade, Contribuinte, Atestado de Residência e muitos outros serviços de agendamento disponíveis para si</p>
                 <a href="/agendar">Fazer agendamento</a>
               </S.text1>

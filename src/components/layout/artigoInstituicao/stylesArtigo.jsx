@@ -146,7 +146,7 @@ export const cardBotton = styled.section`
             width: 100%;
             text-align: center;
             font-size: .9rem;
-            color: #000000;
+            color: #000000; 
         }
 
         div{

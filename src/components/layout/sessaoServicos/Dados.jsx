@@ -9,7 +9,7 @@ export const dataCard = [
         servico: "Bilhete 1ª via",
         desc: "Requisitos",
         a: "Ter idade mínima de 6 anos",
-        b: "Titular da certidão de Cópia integral do Asento de Nascimento",
+        b: "Titular da certidão de Cópia integral do Assento de Nascimento",
         c: "",
         d: " ",
         e: " ",
@@ -35,7 +35,7 @@ export const dataCard = [
         servico: "Recenseamento Militar",
         desc: "Requisitos",
         a: "Bilhete de Identidade Original",
-        b: "Declaração de Habilitação",
+        b: "Certificado de Habilitação",
         c: "4 Fotografias",
         d: "Cópia da Cédula",
         e: ""

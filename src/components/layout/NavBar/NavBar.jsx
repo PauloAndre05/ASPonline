@@ -4,7 +4,7 @@ import { useState } from 'react'
 import * as S from './stylesNavBar'
 import logo from '../../../images/logo.svg'
 import  logoAngola  from '../../../images/logo-angola.png'
-import { TwitterLogo, LinkedinLogo,  CaretDown, EyeClosed } from 'phosphor-react'
+import { TwitterLogo, LinkedinLogo,  CaretDown} from 'phosphor-react'
 
 
 
@@ -64,7 +64,7 @@ function NavBar() {
                     <S.itens2 onClick={() => setIsOpen(false)}> <Link to="/"> Início </Link> </S.itens2>
                     <S.itemService2 onClick={() => setIsMenuDropDown(!isMenuDropDown)}> 
                         <div>
-                            <Link > Serviços</Link> <EyeClosed  size={24} weight="bold" color='#fff'/> 
+                            <Link > Serviços</Link>
                         </div>
                         <S.dropDown2 isMenuDropDown = {isMenuDropDown} onClick={() => setIsMenuDropDown(false)}>
                             <Link to="/agendar" onClick={() => setIsOpen(false)}> Agendamento </Link>

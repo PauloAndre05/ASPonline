@@ -12,7 +12,7 @@ function Artigo(  ){
     const settings = {
         dots: true,
         infinite: true,
-        speed: 900,
+        speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,
@@ -30,6 +30,7 @@ function Artigo(  ){
           {
             breakpoint: 768,
             settings: {
+              speed: 500,
               slidesToShow: 2,
               slidesToScroll: 2,
               initialSlide: 2
@@ -38,6 +39,7 @@ function Artigo(  ){
           {
             breakpoint: 600,
             settings: {
+              speed: 500,
               slidesToShow: 1,
               slidesToScroll: 1,
               initialSlide: 1,
@@ -46,6 +48,7 @@ function Artigo(  ){
           {
             breakpoint: 480,
             settings: {
+              speed: 500,
               slidesToShow: 1,
               slidesToScroll: 1
             }

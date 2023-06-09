@@ -48,19 +48,27 @@ export const assineAqui = styled.div`
 
     @media screen and (max-width: 600px){
         form input{
-            width: 17rem;
+            width: 20rem;
             height: 2.5rem;
         } 
 
         form input, button{
             height: 2.5rem;
         }
+
+        form button{
+            width: 5rem;
+        }
     }
 
     @media screen and (max-width: 450px){
         form input{
-        width: 10rem;
+        width: 13rem;
         } 
+
+        form button{
+            width: 5rem;
+        }
     }
 `
 

@@ -73,6 +73,7 @@ function NavBar() {
                         </S.dropDown2>
                     </S.itemService2>
                     <S.itens2> <Link to="/sobre" onClick={() => setIsOpen(false)}> Sobre </Link> </S.itens2>
+                    <S.itens2> <Link to="/servicos" onClick={() => setIsOpen(false)}> Informe-se </Link> </S.itens2>
                     <S.icons2>
                     <a href="/"><i> <TwitterLogo size={25} weight="fill" /> </i></a>
                     <a href="/"><i> <LinkedinLogo size={25} weight="fill" /> </i></a>

@@ -202,7 +202,7 @@ export const sideBar = styled.div`
     background-color: #ffffff;
     transition: height .7s;
     ${({ isOpen }) => isOpen && css`
-        height: 370px;
+        height: 420px;
         visibility: visible;
     `}
     
@@ -252,8 +252,6 @@ export const lista2 = styled.ul`
         color: #000000;
     }
 `
-
-
 
 export const itens2 = styled.li`
     display: flex;
@@ -359,7 +357,6 @@ export const itemService2 = styled.li`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #000000da;
     border-bottom: 1px solid #0000004b;
 
     >div{
@@ -396,7 +393,7 @@ export const itemService2 = styled.li`
 `
 
 export const dropDown2 = styled.div`
-    top: 5.8rem;
+    top: 9rem;
     position: absolute;
     display: flex;
     flex-direction: column;

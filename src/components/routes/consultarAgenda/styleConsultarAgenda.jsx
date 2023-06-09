@@ -50,13 +50,15 @@ export const containerForm = styled.div`
     }
 
     form button{
-        background-color: #604dbd88;
+        background-color: #604dbdca;
+        opacity: .8;
         height: 2.5rem;
         border: none;
         color: #ffffff;
     }
 
     form button:hover{
+        opacity: 1;
         color: #000;
     }
     @media screen and (min-width: 768px){

@@ -48,7 +48,7 @@ export const assineAqui = styled.div`
 
     @media screen and (max-width: 600px){
         form input{
-            width: 16rem;
+            width: 17rem;
             height: 2.5rem;
         } 
 

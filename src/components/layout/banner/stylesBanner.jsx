@@ -104,13 +104,14 @@ export const Text = styled.div`
 
     @media screen  and (max-width: 992px) {
             h1{
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
     }
 
     @media screen and (max-width: 768px) {
         h1{
             width: 80%;
+            font-size: 1.3rem;
         }
 
         p{
@@ -124,12 +125,12 @@ export const Text = styled.div`
         h1{
             width: 99%;
             margin: 0 auto;
-            font-size: 2.4rem;
+            font-size: 1.7rem;
         }
 
         p{
-            width: 70%;
-            font-size: 1rem;
+            width: 90%;
+            font-size: 1.2rem;
         }
     }
 

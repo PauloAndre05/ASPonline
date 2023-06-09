@@ -90,7 +90,7 @@ export const icons = styled.article`
         display: none;
     }
 
-    @media screen and (max-width: 876px) {
+    @media screen and (max-width: 1080px) {
         p{
             display: none;
         }    
@@ -157,6 +157,7 @@ export const angola = styled.a`
 
     @media screen and (max-width: 600px){
         width: 7rem;
+        padding-right: .5rem;
     } 
 `
 
@@ -316,7 +317,7 @@ export const dropDown = styled.div`
     background-color: #ffffffa4;
     position: absolute;
     top: 3rem;
-    width: 10rem;
+    width: 12rem;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -32,8 +32,8 @@ function Footer() {
                         <h2>Serviços</h2>
                     </div>
                     <p>Agendamento</p>
-                    <p>Consultar</p>
-                    <p>Eliminar</p>
+                    <p>Consultar </p>
+                    <p>Cancelar </p>
                     
                 </S.colunas>
 

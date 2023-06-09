@@ -33,8 +33,7 @@ export const titleSection = styled.div`
 `
 
 export const content = styled.div`
-    width: 90%;
-    gap: 2rem;
+    width: 98%;
     margin: auto;
     flex-wrap: wrap;
 
@@ -42,14 +41,12 @@ export const content = styled.div`
         line-height: 1.7rem;
         color: #1b1b1b;
         width: 25rem;
-        text-align: justify;
         margin: 1rem 0;
     }
 
     @media screen and (max-width: 768px){
         p{
             margin: .5rem 0;
-            text-align: center;
             width: 90%;
         }
     }    
@@ -73,16 +70,14 @@ export const area1 = styled.div`
     flex-wrap: wrap;
    
     a{
-        background-color: #613bc2;
+        background-color: #248B84;
         text-decoration: none;
-        padding: .7rem 0;
+        padding: .7rem 1rem;
         color: #fff;
         font-size: 1rem;
         opacity: .89;
-        width: 15rem;
         text-align: center;
         border-radius: .3rem;
-        animation: pisca 8s linear infinite;
     }
 
     h1{
@@ -109,10 +104,7 @@ export const area1 = styled.div`
 
     
     @media screen and (max-width: 768px){
-        margin: 2rem 0;
-        a{
-            width: 60%;
-        }
+        
     } 
 
     @media screen and (max-width:768px) {
@@ -121,8 +113,8 @@ export const area1 = styled.div`
 `
 
 export const text1 = styled.div`  
+    padding: 1rem;
     height: 100%;
-    padding: 1rem 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -135,15 +127,15 @@ export const text1 = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        text-align: center;
+        align-items: start;
+        text-align: justify;
 
     } 
 `
 
 export const contImage = styled.div` 
-    height: 25rem;
-    width: 40rem;
+    height: 17rem;
+    width: 33rem;
     overflow: hidden;
     border-radius: .7rem;
     background-color: #000;
@@ -158,12 +150,12 @@ export const contImage = styled.div`
    
     @media screen and (max-width: 600px){
         width: 100%;
-        height: 28rem;
+        height: 13rem;
     }
 `
 
 export const area3 = styled.div`
-    margin: 2rem auto;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -171,18 +163,18 @@ export const area3 = styled.div`
     flex-wrap: wrap;
     
     a{
-        background-color: #000;
+        background-color: #248B84;
         text-decoration: none;
-        padding: .7rem 0;
+        padding: .7rem 1rem;
         color: #fff;
         font-size: 1rem;
-        width: 17rem;
         text-align: center;
+        opacity:  .89;
         border-radius: .3rem;
     }
     
     a:hover{
-        background-color: #613bc2;
+        opacity: 1;
     }
     
     h1{
@@ -191,15 +183,11 @@ export const area3 = styled.div`
     }
     
     @media screen and (max-width: 768px){
-        a{
-            width: 60%;
-        }
+       
     } 
 
     @media screen and (max-width: 768px){
-        a{
-            width: 60%;
-        }
+       
     } 
 
     @media screen and (max-width: 1024px) {
@@ -207,8 +195,8 @@ export const area3 = styled.div`
 `
 
 export const text3 = styled.div`
+    padding: 1rem;
     height: 100%;
-    padding: 1rem 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -219,22 +207,22 @@ export const text3 = styled.div`
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        align-items: end;
+        text-align: right;
     } 
 `
 
 
 
 export const containerImage3 = styled.div`
-    width: 40%; 
-    height: 25rem;
+    height: 17rem;
+    width: 33rem;
     overflow: hidden;
     background-color: #000;
     border-radius: .5rem;
 
     img{
+        width: 100%;
         height: 100%;
         object-fit: cover;
         opacity: .6;
@@ -242,9 +230,104 @@ export const containerImage3 = styled.div`
 
     @media screen and (max-width: 600px){
         width: 100%;
-        height: 28rem;
+        height: 13rem;
     }
 `
+
+export const area4 = styled.div`
+    margin: 4rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    a{
+        background-color: #248B84;
+        text-decoration: none;
+        padding: .7rem 1rem;
+        color: #fff;
+        font-size: 1rem;
+        opacity: .89;
+        text-align: center;
+        border-radius: .3rem;
+    }
+
+    h1{
+        text-align: start;
+        font-size: 1.8rem;
+    }
+
+    a:hover{
+        opacity: 1;
+        animation: pisca none;
+    }
+
+    @keyframes pisca{
+        0% {
+        }
+        50% {
+            background-color: #000;
+            color: #fff;
+        }
+        100% {
+            
+        }
+    }
+
+    
+    @media screen and (max-width: 768px){
+        
+    } 
+
+    @media screen and (max-width:768px) {
+        height: 100%;
+    }
+`
+
+export const contImage4 = styled.div`
+    height: 17rem;
+    width: 33rem;
+    overflow: hidden;
+    border-radius: .7rem;
+    background-color: #000;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .6;
+    }
+
+   
+    @media screen and (max-width: 600px){
+        width: 100%;
+        height: 13rem;
+    }
+    
+`
+export const text4 = styled.div`
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        text-align: justify;
+
+    } 
+
+`
+
 
 export const img = styled.img`
     width: 100%;

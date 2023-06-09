@@ -11,8 +11,6 @@ export const containerContent = styled.main`
     gap: 2rem;
     padding: 3rem 0;
     background-color: #e2e2e2;
-    margin-bottom: 4rem;
-    margin-top: 3rem;
 `
 
 export const content = styled.section`

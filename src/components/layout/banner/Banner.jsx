@@ -75,7 +75,7 @@ const carousel2 = [
         slidesToScroll: 1,
         autoplay: true,
         speed: 2500,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 8000,
         pauseOnHover: false,
     };
 

@@ -4,8 +4,59 @@ import styled from "styled-components";
 export const containerContainer = styled.main`
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+`
+
+export const assineAqui = styled.div`
+    width: 100%;
+    background-color: #634939;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 1rem;
+    justify-content: center;
+
+    h2{
+        color: #fff;
+    }
+
+    form input, button{
+        border: none;
+        height: 3rem;
+    }
+
+    form input{
+        outline: none;
+        width: 25rem;
+        padding-left: 1rem;
+        border-radius: .3rem 0 0 .3rem;
+    }
+
+    form button{
+        width: 8rem;
+        border-radius: 0 .3rem .3rem 0;
+        background-color: #5d3ab4;
+        color: #ffffff;
+    }
+
+    form button:hover{
+        color: #000000;
+    }
+
+    @media screen and (max-width: 600px){
+        form input{
+        width: 20rem;
+        } 
+    }
+
+    @media screen and (max-width: 450px){
+        form input{
+        width: 15rem;
+        } 
+    }
 `
 
 export const container = styled.section`
@@ -15,7 +66,7 @@ export const container = styled.section`
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 5rem;
+    margin: 3rem 0;
     gap: 1.5rem;
 `
 

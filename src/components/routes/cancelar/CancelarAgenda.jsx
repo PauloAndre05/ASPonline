@@ -11,7 +11,7 @@ export const CancelarAgenda = () => {
         <>
             <NavBar />
             <S.main>
-                <h2>Consultar Agendamento</h2>
+                <h2>Cancelar Agendamento</h2>
                 <S.containerForm>
                     
                     <form >
@@ -20,7 +20,7 @@ export const CancelarAgenda = () => {
                             id="tipoConsulta"
                             required
                             value={data} onChange={ID}>
-                            <option value="" disabled selected>Consultar Por</option>
+                            <option value="" disabled selected>Pesquise por</option>
                             <option value="Bilhete">Nº do Bilhete</option>
                             <option value="Comprovativo">Nº do comprovativo de agendamento</option>
                         </select>

@@ -89,6 +89,13 @@ export const icons = styled.article`
     @media screen and (max-width: 768px) {
         display: none;
     }
+
+    @media screen and (max-width: 876px) {
+        p{
+            display: none;
+        }    
+    }
+
 `
 
 export const hamburguer = styled.div`

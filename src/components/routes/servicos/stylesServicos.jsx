@@ -44,38 +44,6 @@ export const containerCards = styled.section`
     
 `
 
-export const cards = styled.div`
-    display: flex;
-    justify-content: center;
-
-`
-
-export const card = styled.article`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 0;
-    border: .3px solid #272727c7;
-    border-radius: 5px;
-    transition: all .5s;
-
-    :hover{
-        cursor: pointer;
-        box-shadow: 0px 0px 3px #5f5f5f;
-    } 
-    h1{
-        text-align: center;
-        font-size: 1rem;
-        text-transform: uppercase;
-        color: #248d84; 
-    }
-    p{
-        font-weight: bolder;
-        color: #ebebeb;
-    }
-`
-
 /* =============================== SLIDER ======================================= */
 
 export const containerSlider = styled.div`
@@ -88,6 +56,32 @@ export const containerSlider = styled.div`
 
 export const coment = styled.div`
     width: 60%;
+`
+
+export const card = styled.article`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    border: .3px solid #9b9b9bc5;
+    border-radius: 5px;
+    transition: all .5s;
+
+    :hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 5px #5f5f5f;
+    } 
+    h1{
+        text-align: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #248d84; 
+    }
+    p{
+        font-weight: bolder;
+        color: #ebebeb;
+    }
 `
 
 export const containerCard = styled.div`

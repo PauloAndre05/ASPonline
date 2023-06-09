@@ -50,7 +50,7 @@ function NavBar() {
                 <S.icons isOpen = {isOpen}>
                     <a href="/"><i> <TwitterLogo size={21} weight="fill" /> </i></a>
                     <a href="/"><i> <LinkedinLogo size={21} weight="fill" /> </i></a>
-                    onlineaspo@gmail.com
+                    <p>onlineaspo@gmail.com</p>
                 </S.icons>
                 <S.hamburguer onClick={() => setIsOpen(!isOpen)}>
                     <S.line1 ></S.line1>

@@ -84,9 +84,9 @@ const carousel2 = [
                 <Slider {...settings}>
                     {carousel1.map((image) => (
                         <S.Imagem 
+                            key={image.id}
                             src={image.image} 
                             alt="Imagem do banner"
-                            key={image.id}
                         /> 
                     ))}
                 </Slider>

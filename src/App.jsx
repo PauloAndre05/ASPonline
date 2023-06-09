@@ -10,6 +10,8 @@ import { Perfil } from './components/layout/perfilDeInstituicao/Perfil';
 import { PaginDeErro } from './components/routes/paginaDeErro/PaginaDeErro';
 import { ToastContainer } from 'react-toastify';
 import  'react-toastify/dist/ReactToastify.css' ;
+import { ConsultarAgenda } from './components/routes/consultarAgenda/ConsultarAgenda';
+import { CancelarAgenda } from './components/routes/cancelar/CancelarAgenda';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path='/perfil/:id' element={<Perfil/>} />
           <Route path='*' element={<PaginDeErro/>} />
           <Route path='/agendar' element={<Agendar/>} />
+          <Route path='/consultarAgenda' element={<ConsultarAgenda />} />
+          <Route path='/cancelarAgenda' element={<CancelarAgenda />} />
 
         </Routes>
         

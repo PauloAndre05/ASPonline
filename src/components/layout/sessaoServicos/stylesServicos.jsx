@@ -9,7 +9,7 @@ export const containerContainer = styled.main`
 
     width: 100%;
     margin: 0 auto;
-    padding-top: 4rem;   
+    padding-top: 3rem;   
     background-color: #ffffff;
     
     >h1{
@@ -25,11 +25,6 @@ export const titleSection = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 4rem;
-    
-   /*  @media screen and (max-width: 768px){
-       font-size: 1.5rem;
-    }  */
-
 `
 
 export const content = styled.div`

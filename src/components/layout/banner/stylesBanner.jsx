@@ -74,7 +74,7 @@ export const Imagem=styled.img`
 
 export const Text = styled.div`
     width: 100%;
-    color: #fff;
+    color: #ffffffea;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -85,7 +85,7 @@ export const Text = styled.div`
         font-size: 2.8rem;
         text-align: center;
         opacity: 1;
-        color: #ffffff;
+        color: #fffffffb;
         margin: 0 auto;
         font-weight: 700;
     }
@@ -98,7 +98,7 @@ export const Text = styled.div`
         font-size: 1.2rem;
         margin: 0 auto;
         margin-top: .5rem;
-        color: #ffffff;
+        color: #ffffffdf;
         opacity: 1;
     }
 
@@ -130,7 +130,7 @@ export const Text = styled.div`
 
         p{
             width: 90%;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
     }
 
@@ -160,11 +160,12 @@ export const Text = styled.div`
         text-decoration: none;
         border-radius: .6rem;
         background-color: #613bc2;
-        
+        border: .5px solid ;
     }
     
     button:hover{
-        color: #000000;
+        color: #ffffffdf;
+        background-color: #613bc289;
         box-shadow: none;
     }
 

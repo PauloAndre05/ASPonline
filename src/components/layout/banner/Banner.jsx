@@ -2,15 +2,15 @@ import { Link } from 'react-router-dom'
 import { AiOutlineArrowUp } from 'react-icons/ai'
 import { Botao } from '../botao/Botao'
 
-import banner from '../../../images/b4.jpg'
 import banner2 from '../../../images/b2.jpg'
 import b6 from '../../../images/b6.jpg'
 import b7 from '../../../images/b7.jpg'
 import b8 from '../../../images/b8.jpg'
 import banner4 from '../../../images/b6Mob.jpg'
 import banner8 from '../../../images/b8Mob.jpg'
-import banner6 from '../../../images/b4Mob.jpg'
 import banner7 from '../../../images/b7Mob.jpg'
+import b13 from "../../../images/B13.jpeg"
+import b13Mob from "../../../images/B13Mob.jpeg"
 
 import * as S from './stylesBanner';
 import Slider from 'react-slick';
@@ -20,9 +20,10 @@ import Slider from 'react-slick';
 function Banner() {
 
 const carousel1 = [
+    
     {
         id: 1,
-        image: banner,
+        image: b13,
     },
 
     {
@@ -47,21 +48,21 @@ const carousel1 = [
 const carousel2 = [
     {
         id: 1,
+        image: b13Mob,
+    },
+    
+    {
+        id: 2,
         image: banner4,
     },
 
     {
-        id: 2,
+        id: 3,
         image: banner8,
-    },
-    
-    {
-        id: 4,
-        image: banner6,
     },
 
     {
-        id: 5,
+        id: 4,
         image: banner7,
     },
 ]

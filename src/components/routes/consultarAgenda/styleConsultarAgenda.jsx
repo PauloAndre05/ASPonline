@@ -5,7 +5,7 @@ export const main = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     gap: 1rem;
     background-color: #f3f3f3;
@@ -63,6 +63,7 @@ export const containerForm = styled.div`
     }
     @media screen and (min-width: 768px){
         width: 50%;
+        
     }
 
     @media screen and (max-width: 768px){

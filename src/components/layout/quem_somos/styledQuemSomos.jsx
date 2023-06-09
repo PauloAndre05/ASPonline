@@ -11,7 +11,7 @@ export const containerContainer = styled.main`
 
 export const assineAqui = styled.div`
     width: 100%;
-    background-color: #634939;
+    background: linear-gradient(to right, #248b84, #000);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,13 +48,18 @@ export const assineAqui = styled.div`
 
     @media screen and (max-width: 600px){
         form input{
-        width: 20rem;
+            width: 16rem;
+            height: 2.5rem;
         } 
+
+        form input, button{
+            height: 2.5rem;
+        }
     }
 
     @media screen and (max-width: 450px){
         form input{
-        width: 15rem;
+        width: 10rem;
         } 
     }
 `

@@ -39,6 +39,7 @@ function Artigo(  ){
           {
             breakpoint: 600,
             settings: {
+              arrows: false,
               speed: 500,
               slidesToShow: 1,
               slidesToScroll: 1,

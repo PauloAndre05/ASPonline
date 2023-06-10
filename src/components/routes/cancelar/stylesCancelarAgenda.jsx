@@ -8,7 +8,7 @@ export const main = styled.main`
     height: 100vh;
     width: 100%;
     gap: 1rem;
-    background-color: #f3f3f3;
+    background-color: #d3d3d3;
 `
 
 export const containerForm = styled.div`

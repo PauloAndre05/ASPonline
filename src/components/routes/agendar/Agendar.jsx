@@ -1,10 +1,13 @@
 import { useFormik } from 'formik'
 import * as S from './stylesAgendar'
+import * as C from '../../layout/modal/stylesModal'
 import * as yup from 'yup'
 import { useContext, useEffect, useState } from 'react'
 import { NavBar } from '../../layout/NavBar/NavBar'
 import { UserContext } from '../../UseContext'
 import { Comprovativo } from '../../layout/comprovativo/Comprovativo'
+import { Modal } from '../../layout/modal/Modal'
+import { CheckCircle } from 'phosphor-react'
 
 function Agendar() {
 
@@ -14,7 +17,7 @@ function Agendar() {
     const [dataService, setDataService] = useState([])
     const [dataPosto, setDataPosto] = useState([])
     const [dataHorario, setDataHorario] = useState([])
-    
+    const [openModal, setOpenModal] = useState (false)
     const {setUserData}  = useContext(UserContext)
 
     /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» COLLING FUNCTIONS REQUEST ««««««««««««««««««««««««««««««««««««««««««««««««« */
@@ -276,9 +279,15 @@ function Agendar() {
                             </S.containerHoras>
                         </S.sessao2>
                             
-                        <button type='submit'>Submeter</button>
+                        <button type='submit' onClick={() => setOpenModal(true)}>Submeter</button>
                     </form>
-                        <button onClick={Comprovativo} type='button'> Baixar Comprovativo</button>
+                        <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
+                            <C.contentModal>
+                                <CheckCircle size={52} color='green'/>
+                                <p>SUCESSO</p>
+                                <button onClick={Comprovativo} type='button'> Baixar Comprovativo</button>
+                            </C.contentModal>
+                        </Modal>
                 </S.containerForm>
             </S.container>
         </>

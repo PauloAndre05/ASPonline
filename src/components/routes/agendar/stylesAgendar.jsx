@@ -163,3 +163,10 @@ export const horas = styled.div`
     align-items: center;
     width: 3rem;
 `
+
+export const contentModal = styled.div`
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+`

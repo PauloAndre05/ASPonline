@@ -5,10 +5,11 @@ export const main = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
     width: 100%;
+    height: 100vh;
     gap: 1rem;
-    background-color: #f3f3f3;
+    background-color: #d3d3d3;
+    padding: 2rem 0;
 `
 
 export const containerForm = styled.div`

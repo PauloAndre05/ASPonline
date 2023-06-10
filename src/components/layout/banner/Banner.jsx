@@ -20,28 +20,29 @@ import Slider from 'react-slick';
 function Banner() {
 
 const carousel1 = [
+    {
+        id: 5,
+        image: b8,
+    },
     
     {
-        id: 1,
-        image: b13,
+        id: 4,
+        image: b7,
     },
-
+    
+    
     {
         id: 2,
         image: banner2,
     },
-
+    
     {
         id: 3,
         image: b6,
     },
     {
-        id: 4,
-        image: b7,
-    },
-    {
-        id: 5,
-        image: b8,
+        id: 1,
+        image: b13,
     },
 ]
 

@@ -12,11 +12,15 @@ import { ToastContainer } from 'react-toastify';
 import  'react-toastify/dist/ReactToastify.css' ;
 import { ConsultarAgenda } from './components/routes/consultarAgenda/ConsultarAgenda';
 import { CancelarAgenda } from './components/routes/cancelar/CancelarAgenda';
+import { Comprovativo } from './components/layout/comprovativo/Comprovativo';
+import { UserProvider } from './components/UseContext';
 
 function App() {
   return (
     <S.container>
       <ToastContainer theme='dark'/>
+
+      <UserProvider>
       <BrowserRouter>
         
         <Routes>
@@ -30,10 +34,13 @@ function App() {
           <Route path='/agendar' element={<Agendar/>} />
           <Route path='/consultarAgenda' element={<ConsultarAgenda />} />
           <Route path='/cancelarAgenda' element={<CancelarAgenda />} />
+          <Route path='/comprovativo' element={<Comprovativo />} />
 
         </Routes>
         
       </BrowserRouter> 
+      </UserProvider>
+      
     </S.container>
     
   );

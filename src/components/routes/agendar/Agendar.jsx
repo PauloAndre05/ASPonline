@@ -1,17 +1,21 @@
 import { useFormik } from 'formik'
 import * as S from './stylesAgendar'
 import * as yup from 'yup'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { NavBar } from '../../layout/NavBar/NavBar'
-
+import { UserContext } from '../../UseContext'
+import { Comprovativo } from '../../layout/comprovativo/Comprovativo'
 
 function Agendar() {
 
     const urlService = "http://localhost:3001/servico"
     const urlPosto = "http://localhost:3001/posto"
-
+    const urlHorario = "http://localhost:3001/hora"
     const [dataService, setDataService] = useState([])
     const [dataPosto, setDataPosto] = useState([])
+    const [dataHorario, setDataHorario] = useState([])
+    
+    const {setUserData}  = useContext(UserContext)
 
     /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» COLLING FUNCTIONS REQUEST ««««««««««««««««««««««««««««««««««««««««««««««««« */
 
@@ -47,6 +51,21 @@ function Agendar() {
         }
     }
 
+    /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» REQUEST HORARIO ««««««««««««««««««««««««««««««««««««««««««««««««« */
+
+    const getHorario = async () => {
+        try{
+            const response = await fetch(urlHorario)
+            const responseData = await response.json()
+            setDataHorario(responseData)
+        }   
+
+        catch (error){
+            console.log(error);
+        }
+    }
+
+    getHorario()
     /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» VALIDATION ««««««««««««««««««««««««««««««««««««««««««««««««« */
 
 
@@ -69,11 +88,14 @@ function Agendar() {
             email: yup.string().required('O email é obrigatório').email('Email inválido'),
             servicoId: yup.string().required('Selecione um serviço'),
             bi: yup.string().required('Informe o número do seu documento').min(14, 'Bi inválido'),
-            cedula: yup.string().required('Informe o número do seu documento').min(6, 'Identificação inválida')
+            cedula: yup.string().required('Informe o número do seu documento').min(6, 'Identificação inválida'),
+            data: yup.string().required("Selecione uma data"),
+            hora: yup.string().required("Selecione o seu horário"),
         }),
 
         onSubmit: async(data) => {
             console.log(data);
+            setUserData(data)
         }
     })
 
@@ -211,7 +233,7 @@ function Agendar() {
                                         onChange={formik.handleChange}
                                         onBlur={formik.handleBlur}
                                         >
-                                        <option value="" disabled>Posto de atendimento (seleção automática)</option>
+                                        <option value="" disabled selected>Posto de atendimento (seleção automática)</option>
                                         {dataPosto.map((option) => (
                                         <option value={option.id} key={option.id}>
                                             {option.nome}
@@ -227,19 +249,36 @@ function Agendar() {
                         <S.sessao2>
                             <div>
                                 <input
-                                    type="datetime-local"
+                                    type="date"
                                     name="data"
                                     id="data"
                                     placeholder=""
-                                    value = {formik.values.nome}
+                                    value = {formik.values.data}
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                <div>
+                                    {formik.touched.data && formik.errors.data ? (
+                                        <span> {formik.errors.data} </span>
+                                    ):null}
+                                </div>
                             </div>
+
+                            <S.containerHoras>
+                                {
+                                    dataHorario.map((horas) => (
+                                        <S.horas key={horas.id}>
+                                            <label htmlFor={horas.hora}>{horas.hora}</label>
+                                            <input type="radio" name="hora" id={horas.hora} value={horas.hora} placeholder={horas.hora}/>
+                                        </S.horas>
+                                    ))
+                                }
+                            </S.containerHoras>
                         </S.sessao2>
                             
                         <button type='submit'>Submeter</button>
                     </form>
+                        <button onClick={Comprovativo} type='button'> Baixar Comprovativo</button>
                 </S.containerForm>
             </S.container>
         </>

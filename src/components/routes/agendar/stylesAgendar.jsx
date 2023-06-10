@@ -6,8 +6,8 @@ export const container = styled.main`
         margin: 0;
         box-sizing: border-box;
     }
+
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -36,14 +36,12 @@ export const text = styled.div`
 
 export const containerForm = styled.section`
     width: 70%;
-    max-height: 30rem;
-    overflow-y: auto;
     background-color: #ffffff;
     border-radius: .5rem;
     padding: 3rem 4rem;
     box-shadow: 0 0 1rem #0000002d;
     
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
     width: 8px;
     }
 
@@ -58,7 +56,7 @@ export const containerForm = styled.section`
 
     ::-webkit-scrollbar-thumb:hover {
     background-color: #ffffff;
-    }
+    } */
 
     form{
         display: flex;
@@ -143,5 +141,25 @@ export const inputs = styled.div`
 `
 
 export const sessao2 = styled.div`
-    
+    span{
+        color: red;
+        font-size: .8rem;
+    } 
+`
+
+export const containerHoras = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1rem;
+`
+export const horas = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
 `

@@ -76,7 +76,7 @@ export const ConsultarAgenda = () => {
                             </A.respostaConsulta>
                         </Modal>
                     </form>
-c
+
                 </S.containerForm>
 
             </S.main>

@@ -47,11 +47,11 @@ export const content = styled.div`
     }    
     
     @media screen and (max-width: 600px){
-        
+        font-size: .9rem;
     }
 
     @media screen and (max-width: 450px){
-        
+        font-size: .9rem;
     }    
 
 `
@@ -97,10 +97,13 @@ export const area1 = styled.div`
         }
     }
 
+    @media screen and (max-width: 600px) {
+        a{
+            padding: .5rem 1rem;
+            font-size: .9rem;
+        }
     
-    @media screen and (max-width: 768px){
-        
-    } 
+    }
 
     @media screen and (max-width:768px) {
         height: 100%;
@@ -124,7 +127,6 @@ export const text1 = styled.div`
         justify-content: center;
         align-items: start;
         text-align: justify;
-
     } 
 `
 
@@ -176,16 +178,13 @@ export const area3 = styled.div`
         text-align: start;
         font-size: 1.5rem;
     }
+
+    @media screen and (max-width: 600px) {
+        a{
+            padding: .5rem 1rem;
+            font-size: .9rem;
+        }
     
-    @media screen and (max-width: 768px){
-       
-    } 
-
-    @media screen and (max-width: 768px){
-       
-    } 
-
-    @media screen and (max-width: 1024px) {
     }
 `
 
@@ -270,11 +269,13 @@ export const area4 = styled.div`
         }
     }
 
+    @media screen and (max-width: 600px) {
+        a{
+            padding: .5rem 1rem;
+            font-size: .9rem;
+        }
     
-    @media screen and (max-width: 768px){
-        
-    } 
-
+    }
     @media screen and (max-width:768px) {
         height: 100%;
     }
@@ -350,6 +351,9 @@ export const container = styled.div`
         color: #ffffff;
     }
 
+    @media screen and (max-width: 600px){
+        width: 50%;
+    }
    
 `
 
@@ -438,10 +442,7 @@ export const containerbutton =styled.div`
         box-shadow: none;
         background-color: #000;
         color: #fff;
-    }
-
-
-    
+    }    
 `
 
 export const a = styled.a`

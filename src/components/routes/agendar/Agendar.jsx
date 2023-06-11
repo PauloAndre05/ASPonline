@@ -259,6 +259,7 @@ function Agendar() {
                                     value = {formik.values.data}
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
+                                    min={new Date().toISOString().split("T")[0]}
                                 />
                                 <div>
                                     {formik.touched.data && formik.errors.data ? (

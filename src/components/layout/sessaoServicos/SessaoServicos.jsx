@@ -44,7 +44,7 @@ function SessaoServicos() {
               </S.contImage4>
               <S.text4>
               <h1>Cancele o seu agendamento</h1>
-                <p>Cancele o se agendamento de forma mais rápido e simples</p>
+                <p>Cancele o seu agendamento de forma mais rápido e simples</p>
                 <a href="/cancelarAgenda">Cancelar agendamento</a>
               </S.text4>
             </S.area4> 

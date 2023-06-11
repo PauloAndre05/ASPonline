@@ -15,7 +15,6 @@ export const containerForm = styled.div`
     width: 40%;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
     background-color: #ffffff;
     border-radius: .5rem;
     padding: 3rem 4rem;

@@ -139,3 +139,20 @@ export const contentModal = styled.div`
     }
 
 `
+
+
+export const respostaConsulta = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    p{
+        color: #248307;
+    }
+
+    button{
+        padding: .5rem 1rem;
+        border-radius: .3rem;
+    }
+`

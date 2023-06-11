@@ -3,14 +3,14 @@ import * as S from "./styleConsultarAgenda"
 import { NavBar } from "../../layout/NavBar/NavBar"
 import { useFormik } from "formik"
 import * as yup from 'yup'
-import * as C from '../../layout/modal/stylesModal'
+import * as A from '../../layout/modal/stylesModal' 
 
 import { Comprovativo } from "../../layout/comprovativo/Comprovativo"
 import { Modal } from "../../layout/modal/Modal"
 
 export const ConsultarAgenda = () => {
-    const [data, setData] = useState() 
-    const [item, setItem] = useState({}) 
+    const [data, setData] = useState() /* 
+    const [item, setItem] = useState({})  */
     const [openModal, setOpenModal] = useState (false)
 
     const formik = useFormik({
@@ -25,8 +25,8 @@ export const ConsultarAgenda = () => {
         }),
 
         onSubmit: async(dados) => {
-            console.log(dados);
-            setItem(dados)
+            console.log(dados);/* 
+            setItem(dados) */
         }
     })
 
@@ -62,7 +62,7 @@ export const ConsultarAgenda = () => {
                             type="submit"
                             onClick={() => {
                                 if (formik.isValid && formik.dirty) {
-                                    formik.handleSubmit(); // Submeter o formulário
+                                     // Submeter o formulário
                                     setOpenModal(true);
                                 }
                             }}
@@ -70,13 +70,13 @@ export const ConsultarAgenda = () => {
                             Consultar
                     </button>
                         <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} >
-                            <C.respostaConsulta>
+                            <A.respostaConsulta>
                                 <p>Agendamento em andamento</p>
                                 <button onClick={Comprovativo} type='button'> Baixar novo comprovativo</button>
-                            </C.respostaConsulta>
+                            </A.respostaConsulta>
                         </Modal>
                     </form>
-
+c
                 </S.containerForm>
 
             </S.main>

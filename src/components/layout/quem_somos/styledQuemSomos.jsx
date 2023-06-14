@@ -122,6 +122,7 @@ export const texto = styled.section`
     }
     
     p{        
+        color: #5f5f5f;
         font-size: 1.2rem;
         font-weight: normal;
         margin-top: 2rem;

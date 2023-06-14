@@ -5,24 +5,24 @@ import * as S from './stylesServicos'
 import Slider from 'react-slick'
 
 function Servicos() {
-    const urlServico = "http://localhost:3001/servico"
+    const urlServico = "http://localhost:5555/servico"
     const [dataService, setDataService] = useState([])
     const [openDesc, setOpenDesc] = useState(false)
-
-    useEffect(() => {
-        getService()
-    }, [])
-
+    
     const getService = async () => {
-        try{
-            const response = await fetch(urlServico)
-            const responseData = await response.json()
-            setDataService(responseData)
-        }
-        catch (error){
-            console.log(error);
-        }
-    }
+      try{
+        const response = await fetch(urlServico)
+        const responseData = await response.json()
+        setDataService(responseData)
+      }
+      catch (error){
+        console.log(error);
+      }
+    } 
+      
+    useEffect(() => {
+      getService()
+    }, [])
 
     const settings = {
         dots: true,

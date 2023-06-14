@@ -24,8 +24,7 @@ export const dataTable = [
         localizacao: "Avenida AL7 Largo do Condomínio Riviera Talatona, Luanda",
         link: "https://www.google.com/maps/place/Administra%C3%A7%C3%A3o+Municipal+do+Talatona/@-8.8449692,13.0868583,12z/data=!4m10!1m2!2m1!1sadministra%C3%A7%C3%B5es+de+luanda!3m6!1s0x1a51f52dfd724397:0x99439495b91ce9a2!8m2!3d-8.9189024!4d13.1797928!15sChphZG1pbmlzdHJhw6fDtWVzIGRlIGx1YW5kYVocIhphZG1pbmlzdHJhw6fDtWVzIGRlIGx1YW5kYZIBF2xvY2FsX2dvdmVybm1lbnRfb2ZmaWNlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJMZVhGSVVsQm5FQUXgAQA!16s%2Fg%2F11cn5ktg7g",
         cooredenada: "Ver coordenadas da instituição" ,
-        img: require('../../../images/adminMaianga.jpg'),
-        
+        img: require('../../../images/adminTalatona.jpg'),
     },
 
     {

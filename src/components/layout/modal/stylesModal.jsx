@@ -6,13 +6,13 @@ export const containerModal = styled.main`
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgb(0, 0, 0, .7);
+    background-color: rgb(0, 0, 0, .8);
     z-index: 1000;
 `
 
 export const modal = styled.div`
     position: fixed;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;

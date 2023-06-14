@@ -2,23 +2,26 @@ import { useFormik } from 'formik'
 import * as S from './stylesAgendar'
 import * as C from '../../layout/modal/stylesModal'
 import * as yup from 'yup'
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavBar } from '../../layout/NavBar/NavBar'
-import { UserContext } from '../../UseContext'
 import { Comprovativo } from '../../layout/comprovativo/Comprovativo'
 import { Modal } from '../../layout/modal/Modal'
 import { CheckCircle } from 'phosphor-react'
+import { toast } from 'react-toastify'
 
 function Agendar() {
 
-    const urlService = "http://localhost:3001/servico"
-    const urlPosto = "http://localhost:3001/posto"
-    const urlHorario = "http://localhost:3001/hora"
+    /* const urlIdentificacao = "http://localhost:3002/" */
+    const urlService = "http://localhost:5555/servico"
+    const urlPosto = "http://localhost:5555/posto"
+    /* const urlHorario = "http://localhost:3001/hora" */
     const [dataService, setDataService] = useState([])
     const [dataPosto, setDataPosto] = useState([])
-    const [dataHorario, setDataHorario] = useState([])
+    /* const [dataHorario, setDataHorario] = useState([]) */
     const [openModal, setOpenModal] = useState (false)
-    const {setUserData}  = useContext(UserContext)
+    const [horariosDisponiveis, setHorariosDisponiveis] = useState([]);
+    const urlAgendamento = "http://localhost:5555/agendamento"
+
 
     /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» COLLING FUNCTIONS REQUEST ««««««««««««««««««««««««««««««««««««««««««««««««« */
 
@@ -54,21 +57,13 @@ function Agendar() {
         }
     }
 
-    /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» REQUEST HORARIO ««««««««««««««««««««««««««««««««««««««««««««««««« */
+    /* ««««««««««««««««««««««««««««««««««««««««« REQUEST HORARIODISPONIVEL »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
 
-    const getHorario = async () => {
-        try{
-            const response = await fetch(urlHorario)
-            const responseData = await response.json()
-            setDataHorario(responseData)
-        }   
+   
 
-        catch (error){
-            console.log(error);
-        }
-    }
-
-    getHorario()
+      
+/* 
+    getHorario() */
     /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» VALIDATION ««««««««««««««««««««««««««««««««««««««««««««««««« */
 
 
@@ -81,26 +76,69 @@ function Agendar() {
             bi: '',
             cedula:'',
             postoId: '',
-            data: '',
-            hora: '',
+            dataAgenda: '',
+            horaId: '',
         },
 
         validationSchema: yup.object({
-            nome: yup.string().required('Por favor, digite o seu nome'),
-            telefone: yup.string().required('O número de telefone é obrigatório').min(9, 'Digite um número válido de angola').max(12, 'Digite um numero validos'),
-            email: yup.string().required('O email é obrigatório').email('Email inválido'),
-            servicoId: yup.string().required('Selecione um serviço'),
-            bi: yup.string().required('Informe o número do seu documento').min(14, 'Bi inválido'),
-            cedula: yup.string().required('Informe o número do seu documento').min(6, 'Identificação inválida'),
-            data: yup.string().required("Selecione uma data"),
-            hora: yup.string().required("Selecione o seu horário"),
+            nome: yup.string().required("O nome é obrigatório").min(6, "O nome deve ter no mínimo 6 caracteres"),
+            telefone: yup.string().required("Digite o número de telefone").matches(/^[0-9]+$/, 'Digite apenas números').min(9, "Digite um número válido de angola").max(12, "Digite um número válido de angola"),
+            email: yup.string().email("Digite email válido"),
+            servicoId: yup.string().required("Selecione um serviço"),
+            bi: yup.string().required("Informe o número do documento"),
+            cedula: yup.string(),
+            dataAgenda: yup.string().required("Escolha a data"),
+            horaId: yup.string().required("Selecione um horário"),
         }),
 
         onSubmit: async(data) => {
             console.log(data);
-            setUserData(data)
+            try{
+                const response = await fetch(urlAgendamento, {
+                    method: "POST",
+                    headers:{
+                        "Content-type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                })
+    
+                if (response.ok) {
+                    const responseData = await response.json()
+                    toast.success("Agendado com sucesso!")
+                    console.log("Dados enviados no back");
+                    console.log("Resultado: ", responseData);
+                }
+
+                else {
+                    console.log("Erro ao enviar dados no servidor");
+                }
+            }
+
+            catch (error){
+                console.log(error);
+            }
         }
     })
+
+    const fetchHorariosDisponiveis = async (postoId, dataAgenda) => {
+        try {
+          const response = await fetch(`http://localhost:5555/posto/${postoId}/${dataAgenda}`, {
+            method: "GET"
+          });
+          const responseData = await response.json();
+          console.log(responseData);
+          setHorariosDisponiveis(responseData.horariosDisponiveis);
+        } catch (error) {
+          toast.error(error.response.data.message)
+        }
+      };
+
+    useEffect(() => {
+        if (formik.values.postoId && formik.values.dataAgenda) {
+          fetchHorariosDisponiveis(formik.values.postoId, formik.values.dataAgenda);
+        }
+      }, [formik.values.postoId, formik.values.dataAgenda]);
+      console.log(horariosDisponiveis);
 
 
     return(
@@ -108,7 +146,7 @@ function Agendar() {
             <NavBar /> 
             <S.container>
                 <S.text>
-                    <h1>Formulario de Agendamento</h1>
+                    <h1>Formulário de Agendamento</h1>
                     <p>Entre com os dados no formulario abaixo para proceder com o agendamento</p>
                 </S.text>
                 <S.containerForm>
@@ -141,6 +179,7 @@ function Agendar() {
                                         value = {formik.values.telefone}
                                         onChange={formik.handleChange}
                                         onBlur={formik.handleBlur}
+                                        minLength={9}
                                     />
                                     <div>
                                         {formik.touched.telefone && formik.errors.telefone ? (
@@ -171,11 +210,11 @@ function Agendar() {
                                     <select
                                         name="servicoId"
                                         id="servicoId"
-                                        value={formik.values.servico }
+                                        value={formik.values.servicoId }
                                         onChange={formik.handleChange}
                                         onBlur={formik.handleBlur}
                                     >
-                                        <option value="" disabled>Selecione o serviço *</option>
+                                        <option value="" disabled selected>Documento </option>
                                         {dataService.map((option) => (
                                         <option key={option.id} value={option.id}>
                                             {option.nome}
@@ -232,18 +271,24 @@ function Agendar() {
                                     <select
                                         name="postoId"
                                         id="postoId"
-                                        value={formik.values.posto}
+                                        value={formik.values.postoId}
                                         onChange={formik.handleChange}
                                         onBlur={formik.handleBlur}
                                         >
-                                        <option value="" disabled selected>Posto de atendimento (seleção automática)</option>
+                                        <option value="" disabled selected>Posto de atendimento </option>
                                         {dataPosto.map((option) => (
                                         <option value={option.id} key={option.id}>
                                             {option.nome}
                                         </option>
                                         ))}
                                     </select>
-                                        <div> </div>
+                                        <div>
+                                            {
+                                                formik.touched.postoId && formik.errors.postoId?(
+                                                    <span>{formik.errors.postoId}</span>
+                                                ):null
+                                            }
+                                        </div>
                             
                                 </div>
                             </S.inputs>
@@ -253,34 +298,46 @@ function Agendar() {
                             <div>
                                 <input
                                     type="date"
-                                    name="data"
-                                    id="data"
+                                    name="dataAgenda"
+                                    id="dataAgenda"
                                     placeholder=""
-                                    value = {formik.values.data}
+                                    value = {formik.values.dataAgenda}
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                     min={new Date().toISOString().split("T")[0]}
                                 />
                                 <div>
-                                    {formik.touched.data && formik.errors.data ? (
-                                        <span> {formik.errors.data} </span>
+                                    {formik.touched.dataAgenda && formik.errors.dataAgenda ? (
+                                        <span> {formik.errors.dataAgenda} </span>
                                     ):null}
                                 </div>
                             </div>
-
-                            <S.containerHoras>
-                                {
-                                    dataHorario.map((horas) => (
-                                        <S.horas key={horas.id}>
-                                            <label htmlFor={horas.hora}>{horas.hora}</label>
-                                            <input type="radio" name="hora" id={horas.hora} value={horas.hora} placeholder={horas.hora}/>
-                                        </S.horas>
-                                    ))
-                                }
-                            </S.containerHoras>
-                        </S.sessao2>
                             
-                        <button type='submit' onClick={() => setOpenModal(true)}>Submeter</button>
+                        </S.sessao2>
+                        <S.containerHoras>
+                        {horariosDisponiveis.map((horario) => (
+                            <S.horas key={horario.id}>
+                                <label htmlFor={horario.id}>{horario.hora}</label>
+                                <input
+                                type="radio"
+                                id={horario.id}
+                                name="horaId"
+                                value={horario.id}
+                                checked={formik.values.horaId === horario.id}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                />
+                            </S.horas>
+                            ))}
+
+                                <section>
+                                    {formik.touched.horaId && formik.errors.horaId ? (
+                                        <span> {formik.errors.horaId} </span>
+                                    ):null}
+                                </section>
+                                </S.containerHoras>
+                            
+                        <button type='submit'>Submeter</button>
                     </form>
                         <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
                             <C.contentModal>
@@ -295,4 +352,4 @@ function Agendar() {
     )
 }
 
-export { Agendar }
+export { Agendar }      

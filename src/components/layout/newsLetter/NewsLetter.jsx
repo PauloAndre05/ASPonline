@@ -6,7 +6,7 @@ import { toast } from 'react-toastify'
 
 function NewsLetter(){
     
-    const urlNewsleter = "http://localhost:3001/newsleter/"
+    const urlNewsleter = "http://localhost:5555/newsleter/"
 
     const formik = useFormik({
         initialValues:{
@@ -22,6 +22,7 @@ function NewsLetter(){
         }),
 
         onSubmit: async (data, {resetForm}) => {
+            console.log(data);
             try{
                 const response = await fetch(urlNewsleter, {
                     method: "POST",
@@ -32,7 +33,7 @@ function NewsLetter(){
                 })
 
                 if(response.ok){
-                    const responseData = await response.json()
+                    const responseData = await response.json()  
                     console.log("Dados Enviados com sucesso para o backend");
                     console.log("Resposta do backend: ", responseData);
                     toast.success("Enviado com sucesso!")

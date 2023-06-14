@@ -95,6 +95,7 @@ export const containerLabelInput = styled.div`
         overflow: hidden;
         max-height: 0;
         padding-bottom: 2.5rem;
+        resize: none;
     }
 
     label{

@@ -20,6 +20,15 @@ export const text = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+
     margin: 2rem 0;
 
     @media screen and (max-width: 600px){
@@ -37,9 +46,10 @@ export const text = styled.div`
 export const containerForm = styled.section`
     width: 70%;
     background-color: #ffffff;
-    border-radius: .5rem;
-    padding: 3rem 4rem;
+    border-radius: .4rem;
+    padding: 4rem 4rem;
     box-shadow: 0 0 1rem #0000002d;
+    margin-bottom: 3rem;
     
     /* ::-webkit-scrollbar {
     width: 8px;
@@ -68,16 +78,22 @@ export const containerForm = styled.section`
         outline: none;
         height: 2.5rem;
         padding-left: .5rem;
-        border: 1px solid #00000045;
-        border-radius: .3rem;
+        border: none;
+        border-bottom: 1px solid #00000045;
+        color: #000;
+    }
+
+    select{
+        border: none;
+        border-bottom: 1px solid #00000045;
     }
 
     select:focus{
-        border: 1px solid #604dbd88;
+        border-bottom: 1px solid #604dbd88;
     }
 
     input:focus{
-        border: 1px solid #604dbd88;
+        border-bottom: 1px solid #604dbd88;
     }
 
     option :disabled{
@@ -88,9 +104,10 @@ export const containerForm = styled.section`
         background-color: #604dbd;
         color: #fcfcfc;
         width: 12rem;
-        height: 2.7rem;
+        height: 2.2rem;
         border: none;
-        margin: 1rem auto;
+        margin: 0 auto;
+        font-size: .9rem;
         border-radius: .3rem;
     }
 
@@ -114,7 +131,7 @@ export const containerForm = styled.section`
 export const sessao1 = styled.div`
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 5rem;
 
     @media screen and (max-width: 768px){
         display: flex;
@@ -141,10 +158,12 @@ export const inputs = styled.div`
 `
 
 export const sessao2 = styled.div`
-    span{
-        color: red;
-        font-size: .8rem;
-    } 
+    display: flex;
+
+    > div{
+        width: 23.3rem;
+    }
+  
 `
 
 export const containerHoras = styled.div`
@@ -153,15 +172,38 @@ export const containerHoras = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
-    gap: 1rem;
+    min-height: 5rem;
+    margin: 1rem 0;
+    gap: 2rem;    
+
+    > section{
+        min-height: 2rem;
+        padding-left: .5rem;
+        display: flex;
+    } 
+
+    > section > span{
+        color: red;
+        font-size: .8rem;
+    } 
 `
 export const horas = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 3rem;
+    width: 1.3rem;
+
+    label{
+    }
+
+    label:hover{
+        cursor: pointer;
+    }    
+
+    input:hover{
+        cursor: pointer;
+    } 
 `
 
 export const contentModal = styled.div`

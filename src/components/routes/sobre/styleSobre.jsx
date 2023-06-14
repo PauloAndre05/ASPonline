@@ -25,10 +25,11 @@ export const text = styled.div`
     padding: 0 1rem;
 
     p{
+        color: #ffffffd6;
         width: 100%;
         height: 100%;
         font-size: 1.4rem;
-        font-weight: lighter;
+        text-align: center;
         opacity: 0;
         animation: moveBanner 1s 0.7s forwards;
     }

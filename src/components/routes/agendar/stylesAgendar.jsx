@@ -81,10 +81,12 @@ export const containerForm = styled.section`
         border: none;
         border-bottom: 1px solid #00000045;
         color: #000;
+        background-color: transparent;
     }
 
     select{
         border: none;
+        background-color: transparent;
         border-bottom: 1px solid #00000045;
     }
 

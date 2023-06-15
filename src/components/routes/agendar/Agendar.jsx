@@ -21,6 +21,7 @@ function Agendar() {
     const [openModal, setOpenModal] = useState (false)
     const [horariosDisponiveis, setHorariosDisponiveis] = useState([]);
     const urlAgendamento = "http://localhost:5555/agendamento"
+    const [dataResponseAgendamento, setDataResponseAgendamento] = useState({})
 
 
     /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» COLLING FUNCTIONS REQUEST ««««««««««««««««««««««««««««««««««««««««««««««««« */
@@ -104,9 +105,22 @@ function Agendar() {
     
                 if (response.ok) {
                     const responseData = await response.json()
-                    toast.success("Agendado com sucesso!")
                     console.log("Dados enviados no back");
                     console.log("Resultado: ", responseData);
+                    try{
+                        const encontrarAgendamento = await fetch(`http://localhost:5555/agendamento/${responseData.id}`)
+                        if (encontrarAgendamento.ok) {
+                            const agendamentoEncontrado = await encontrarAgendamento.json()
+                            formik.resetForm()
+                            setDataResponseAgendamento(agendamentoEncontrado)
+                            console.log(agendamentoEncontrado.postoAtendimento);
+                            setOpenModal(true)
+                        }
+                    }
+
+                    catch(error){
+                        console.log("Erro do servidor");
+                    }
                 }
 
                 else {
@@ -341,9 +355,12 @@ function Agendar() {
                     </form>
                         <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
                             <C.contentModal>
-                                <CheckCircle size={52} color='green'/>
-                                <p>SUCESSO</p>
-                                <button onClick={Comprovativo} type='button'> Baixar Comprovativo</button>
+                                <CheckCircle size={52} color="#35dd0b"/>
+                                <p>Agendado com sucesso!</p>
+                                <span>Baixe o seu comprovativo de agendamento e o imprima</span>
+                                <button onClick={() => {Comprovativo(dataResponseAgendamento)
+                                    setOpenModal(false)
+                                }} type='button'> Baixar Comprovativo</button>
                             </C.contentModal>
                         </Modal>
                 </S.containerForm>

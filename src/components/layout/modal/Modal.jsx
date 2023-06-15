@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import * as S from './stylesModal';
-import { XCircle } from 'phosphor-react';
-
+/* import { XCircle } from 'phosphor-react';
+ */
 export const Modal = ({ isOpen, children, setModalOpen, openModal }) => {
   if (isOpen) {
     return (
       <S.containerModal>
         <S.modal>
-          <S.close onClick={setModalOpen}>
+          {/* <S.close onClick={setModalOpen}>
             <XCircle size={38} color="#000000" weight="fill" />
-          </S.close>
+          </S.close> */}
           <S.containerChildren>{children}</S.containerChildren>
         </S.modal>
       </S.containerModal>

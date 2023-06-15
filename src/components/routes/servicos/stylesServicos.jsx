@@ -67,6 +67,7 @@ export const card = styled.article`
     border: .3px solid #9b9b9bc5;
     border-radius: 5px;
     transition: all .5s;
+    background-color: #fff;
 
     :hover{
         cursor: pointer;
@@ -76,7 +77,7 @@ export const card = styled.article`
         text-align: center;
         font-size: 1rem;
         text-transform: uppercase;
-        color: #248d84; 
+        color: #000;
     }
     p{
         font-weight: bolder;
@@ -112,6 +113,7 @@ export const desc = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 1px solid red;
     }
 
     @media screen and (max-width: 600px){

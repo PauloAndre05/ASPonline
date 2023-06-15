@@ -6,7 +6,7 @@ export const containerModal = styled.main`
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgb(0, 0, 0, .8);
+    background-color: rgb(0, 0, 0, .3);
     z-index: 1000;
 `
 
@@ -16,11 +16,11 @@ export const modal = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    max-width: 40rem;
-    min-width: 40rem;
+    max-width: 35rem;
+    min-width: 35rem;
     max-height: 20rem;
     min-height: 20rem;
-    background-color: #ffffffeb;
+    background-color: #ffffff;
     border-radius: .5rem;
     
     @media screen and (max-width: 700px ){
@@ -131,11 +131,18 @@ export const form = styled.form`
 export const contentModal = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: center;
 
     p{
+        color: #35dd0b;
+        text-align: center;
+    }
+
+    span{
+        text-align: center;
         color: #000;
+        display: flex;
     }
 
 `

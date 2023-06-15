@@ -3,9 +3,10 @@ import pdfFonts from 'pdfmake/build/vfs_fonts'/*
 import logoAngola from '../../../images/logo-angola.png'
 import logoASPO from '../../../images/logo.svg' */
 
-export const Comprovativo = () =>{
+export const Comprovativo = (dataResponseAgendamento) =>{
     pdfMake.vfs = pdfFonts.pdfMake.vfs
 
+    console.log("Dados do pdf",dataResponseAgendamento);
     const title = [        
         {
             text: 'Comprovativo de agendamento Nº: ',
@@ -27,7 +28,7 @@ export const Comprovativo = () =>{
 
         
         {
-            text: 'Paulo Samuel António André',
+            text: dataResponseAgendamento.nome,
             fontSize: 12,
             margin: [50, 12]
         },
@@ -41,10 +42,17 @@ export const Comprovativo = () =>{
                 body:[
                     
                     [
-                        {text: 'SERVIÇO', styles: 'tableHeader', border: ['.1', '.1', '.1', '.1']},
+                        {text: 'SERVIÇO', styles: 'tableHeader', border: ['.1', '.1', '.1', '.1'],},
                         {text: 'DATA/HORA DO AGENDAMENTO', styles: 'tableHeader', border: ['1', '1', '1', '1']},
                         {text: 'POSTO DE ATENDIMENTO', styles: 'tableHeader', border: ['1', '1', '1', '1']},
+                    ],  
+
+                    [
+                        {text: dataResponseAgendamento.servico.nome, styles: 'tableHeader', border: ['.1', '.1', '.1', '.1'],},
+                        {text: `${dataResponseAgendamento.dataAgenda}/${dataResponseAgendamento.horario.hora}`, styles: 'tableHeader', border: ['1', '1', '1', '1'],},
+                        {text: dataResponseAgendamento.postoAtendimento.nome, styles: 'tableHeader', border: ['1', '1', '1', '1'],},
                     ]
+
 
                 ],
             },
@@ -75,7 +83,7 @@ export const Comprovativo = () =>{
         },
 
         {
-            text: '57Q4+GGG, Rua de Antonio Enes, Luanda',
+            text: dataResponseAgendamento.postoAtendimento.local,
             margin: [50, 35, 50, 0],
         },
 

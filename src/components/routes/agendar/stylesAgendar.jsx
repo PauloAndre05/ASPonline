@@ -165,6 +165,18 @@ export const sessao2 = styled.div`
     > div{
         width: 23.3rem;
     }
+
+     > div > div{
+        min-height: 2rem;
+        padding-left: .5rem;
+        display: flex;
+        align-items: center;
+    } 
+
+    > div > div > span{
+        color: red;
+        font-size: .8rem;
+    } 
   
 `
 

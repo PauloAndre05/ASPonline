@@ -35,14 +35,14 @@ export const Comprovativo = (dataResponseAgendamento) =>{
         
         {
             alignment: 'center',
-            margin: [50, 0],
+            margin: [50, 20],
             table:{
                 headerRows: 1,
                 widths: ['*', 'auto', '*',],
                 body:[
                     
                     [
-                        {text: 'SERVIÇO', styles: 'tableHeader', border: ['.1', '.1', '.1', '.1'],},
+                        {text: 'DOCUMENTO', styles: 'tableHeader', border: ['.1', '.1', '.1', '.1'],},
                         {text: 'DATA/HORA DO AGENDAMENTO', styles: 'tableHeader', border: ['1', '1', '1', '1']},
                         {text: 'POSTO DE ATENDIMENTO', styles: 'tableHeader', border: ['1', '1', '1', '1']},
                     ],  
@@ -117,6 +117,7 @@ export const Comprovativo = (dataResponseAgendamento) =>{
     ]
 
     const rodape =[
+        
       
     ]
 

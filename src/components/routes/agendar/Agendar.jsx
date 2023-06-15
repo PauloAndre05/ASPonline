@@ -83,9 +83,9 @@ function Agendar() {
 
         validationSchema: yup.object({
             nome: yup.string().required("O nome é obrigatório").min(6, "O nome deve ter no mínimo 6 caracteres"),
-            telefone: yup.string().required("Digite o número de telefone").matches(/^[0-9]+$/, 'Digite apenas números').min(9, "Digite um número válido de angola").max(12, "Digite um número válido de angola"),
+            telefone: yup.string().required("Digite o número de telefone").matches(/^[0-9]+$/, 'Digite apenas números').min(9, "Digite um número válido de angola").max(9, "Digite um número válido de angola"),
             email: yup.string().email("Digite email válido"),
-            servicoId: yup.string().required("Selecione um serviço"),
+            servicoId: yup.string().required("Selecione um documento"),
             bi: yup.string().required("Informe o número do documento"),
             cedula: yup.string(),
             dataAgenda: yup.string().required("Escolha a data"),
@@ -357,7 +357,7 @@ function Agendar() {
                             <C.contentModal>
                                 <CheckCircle size={52} color="#35dd0b"/>
                                 <p>Agendado com sucesso!</p>
-                                <span>Baixe o seu comprovativo de agendamento e o imprima</span>
+                                <span>Baixe o seu comprovativo de agendamento</span>
                                 <button onClick={() => {Comprovativo(dataResponseAgendamento)
                                     setOpenModal(false)
                                 }} type='button'> Baixar Comprovativo</button>

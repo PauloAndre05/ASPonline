@@ -76,6 +76,7 @@ function Servicos() {
                     <S.text>
                         <h3>Informe-se</h3>
                         <p>Confira os requisitos necessário para tratar o seu documento</p>
+                        <p>selecione um documento</p>
                     </S.text>
 
                     <S.containerSlider>

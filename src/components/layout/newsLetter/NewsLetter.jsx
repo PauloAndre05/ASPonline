@@ -58,7 +58,7 @@ function NewsLetter(){
             <S.containerMain>
                 <S.texto>
                     <h1>Feed Back</h1>
-                    <p>Deixa a sua mensagem para contribuir no desnvolvimento da plataforma. Garantimos privacidade e conteúdos úteis para aproveitar ao máximo nossos serviços.</p>
+                    <p>Deixa a sua mensagem para contribuir no desnvolvimento do ASPO.</p>
                 </S.texto>
                 <S.containerFormulario >
                     <S.form onSubmit={formik.handleSubmit}>

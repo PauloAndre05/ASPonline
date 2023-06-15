@@ -11,7 +11,8 @@ export const containerContainer = styled.main`
 
 export const assineAqui = styled.div`
     width: 100%;
-    background: linear-gradient(to right, #248b84, #000);
+    background-color: #1d1d1d;
+    /* background: linear-gradient(to right, #248b84, #000); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +21,8 @@ export const assineAqui = styled.div`
     justify-content: center;
 
     h2{
-        color: #fff;
+        font-size: 1.3rem;
+        color: #d4d4d4;
     }
 
     form input, button{

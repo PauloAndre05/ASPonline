@@ -46,7 +46,7 @@ export const text = styled.div`
 export const containerForm = styled.section`
     width: 70%;
     background-color: #ffffff;
-    border-radius: .4rem;
+    border-radius: 3rem;
     padding: 4rem 4rem;
     box-shadow: 0 0 1rem #0000002d;
     margin-bottom: 3rem;
@@ -102,15 +102,15 @@ export const containerForm = styled.section`
         color: #000;
     }
 
-    button{
+    > form > button{
         background-color: #604dbd;
         color: #fcfcfc;
-        width: 12rem;
-        height: 2.2rem;
+        width: 15rem;
+        height: 2.3rem;
         border: none;
         margin: 0 auto;
         font-size: .9rem;
-        border-radius: .3rem;
+        border-radius: .5rem;
     }
 
     button:hover{

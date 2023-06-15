@@ -18,7 +18,7 @@ function QuemSomos() {
 
                 
                 <S.assineAqui>
-                    <h2>Increva-se no ASPO</h2>
+                    <h2>Increva-se para receber notificações sobre o ASPO</h2>
                     <form >
                         <input type="text" placeholder='Seu email....'/>
                         <button>Enviar</button>

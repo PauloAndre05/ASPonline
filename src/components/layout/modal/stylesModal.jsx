@@ -40,8 +40,8 @@ export const modal = styled.div`
 
 export const close = styled.div`
     position: fixed;
-    top: .5rem;
-    right: .5rem; 
+    top: .8rem;
+    right: .8rem; 
 
     :hover{
         cursor: pointer;
@@ -98,25 +98,6 @@ export const form = styled.form`
 
     }
 
-    button{
-        margin-top: 1rem;
-        background-color: #000;
-        color: #fff;
-        height: 3rem;
-        border: none;
-        font-size: .9rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: .7;
-        transition: all .4s;
-    }
-
-    button:hover{
-        opacity: 1;
-        cursor: pointer;
-    }
-
     div{
         min-height: 1.7rem;
     }
@@ -145,21 +126,20 @@ export const contentModal = styled.div`
         display: flex;
     }
 
-`
-
-
-export const respostaConsulta = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-
-    p{
-        color: #248307;
-    }
-
     button{
-        padding: .5rem 1rem;
+        background-color: #000;
+        color: #fff;
+        padding: .5rem 1.6rem;
+        border: none;
+        opacity: .9;
         border-radius: .3rem;
     }
+    
+    button:hover{
+        color: #fff;
+        background-color: #24860c;
+        opacity: 1;
+    }
 `
+
+

@@ -16,7 +16,7 @@ export const containerForm = styled.div`
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    border-radius: .5rem;
+    border-radius: 1rem;
     padding: 3rem 4rem;
     box-shadow: 0 0 1rem #0000002d;
     gap: 1.5rem;
@@ -34,18 +34,18 @@ export const containerForm = styled.div`
     
     form input, select{
         height: 2.5rem;
-        padding-left: 1rem;
+        padding-left: .5rem;
         border: none;
         outline: none;
-        border: 1px solid #00000045;
+        border-bottom: 1px solid #00000045;
     }
 
     form input:focus {
-        border: 1px solid #604dbd88;
+        border-bottom: 1px solid #604dbd88;
     }
 
     form select:focus {
-        border: 1px solid #604dbd88;
+        border-bottom: 1px solid #604dbd88;
     }
 
     form button{
@@ -54,6 +54,8 @@ export const containerForm = styled.div`
         height: 2.5rem;
         border: none;
         color: #ffffff;
+        border-radius: .5rem;
+        transition: all .4s;
     }
 
     form button:hover{

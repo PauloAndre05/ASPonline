@@ -27,6 +27,7 @@ export const text = styled.div`
     }
 
     p{
+        text-align: center;
     }
 `
 
@@ -113,7 +114,6 @@ export const desc = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid red;
     }
 
     @media screen and (max-width: 600px){

@@ -59,9 +59,6 @@ function Agendar() {
     }
 
     /* ««««««««««««««««««««««««««««««««««««««««« REQUEST HORARIODISPONIVEL »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
-
-   
-
       
 /* 
     getHorario() */
@@ -94,6 +91,24 @@ function Agendar() {
 
         onSubmit: async(data) => {
             console.log(data);
+
+            try{
+                const responseApiIdentificacao = await fetch(`http://localhost:5050/bilhete/procurar/${data.bi}`)
+                if(responseApiIdentificacao.ok){
+                    const responseDataApiIdentificacao = await responseApiIdentificacao.json() 
+                    console.log(responseDataApiIdentificacao);
+                }
+
+                else{
+                    toast.error("BI inválido")
+                    return
+                }
+            }   
+
+            catch (error){
+                console.log(error);
+            }
+
             try{
                 const response = await fetch(urlAgendamento, {
                     method: "POST",
@@ -102,6 +117,7 @@ function Agendar() {
                     },
                     body: JSON.stringify(data)
                 })
+                
     
                 if (response.ok) {
                     const responseData = await response.json()

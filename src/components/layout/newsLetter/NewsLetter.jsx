@@ -36,7 +36,8 @@ function NewsLetter(){
                     const responseData = await response.json()  
                     console.log("Dados Enviados com sucesso para o backend");
                     console.log("Resposta do backend: ", responseData);
-                    toast.success("Enviado com sucesso!")
+                    const firstName = responseData.nome.split(" ")[0];
+                    toast.success(`Enviado com sucesso, obrigado pelo seu feedBak ${firstName}`)
                     resetForm()
                 }
 
@@ -57,7 +58,7 @@ function NewsLetter(){
         <S.container>
             <S.containerMain>
                 <S.texto>
-                    <h1>Feed Back</h1>
+                    <h1>FeedBack</h1>
                     <p>Deixa a sua mensagem para contribuir no desnvolvimento do ASPO.</p>
                 </S.texto>
                 <S.containerFormulario >

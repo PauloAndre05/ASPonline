@@ -46,27 +46,10 @@ export const text = styled.div`
 export const containerForm = styled.section`
     width: 70%;
     background-color: #ffffff;
-    border-radius: 3rem;
+    border-radius: 1rem;
     padding: 4rem 4rem;
     box-shadow: 0 0 1rem #0000002d;
     margin-bottom: 3rem;
-    
-    /* ::-webkit-scrollbar {
-    width: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background-color:#ccc;
-    }
-
-    ::-webkit-scrollbar-thumb {
-    background-color: #9887F1;
-    border-radius: .5rem;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-    background-color: #ffffff;
-    } */
 
     form{
         display: flex;
@@ -121,12 +104,13 @@ export const containerForm = styled.section`
     @media screen and (max-width: 768px){
         width: 98%;
         padding: 3rem 2rem;
-        min-height: 85vh;
+        border-radius: 1rem;
     }
 
     @media screen and (max-width: 600px){
         width: 98%;
         padding: 3rem 1rem;
+        border-radius: 1rem;
     }
 `
 

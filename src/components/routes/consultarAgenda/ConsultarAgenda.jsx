@@ -5,7 +5,8 @@ import { useFormik } from "formik"
 import * as yup from 'yup'
 import { Comprovativo } from "../../layout/comprovativo/Comprovativo"
 import { toast } from "react-toastify"
-import { Modal } from "./Modal"
+import { Modal } from "../../layout/modal/Modal"
+import * as C from '../../layout/modal/stylesModal'
 
 export const ConsultarAgenda = () => {
     const [data, setData] = useState() /* 
@@ -117,12 +118,48 @@ export const ConsultarAgenda = () => {
                        
                     </form>
                         <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} >
-                            <S.respostaConsulta>
-                                <p>Agendamento em andamento</p>
+                            <C.contentModal>
+                                <C.sucesso>
+                                    <p>Agendamento em Andamento</p>
+                                </C.sucesso>
+                                
+                                <strong>Detalhes do agendamento</strong>
+                                
+                                <div>
+                                    <span>Nome: </span>
+                                    <p>{dataResponseAgendamento?.nome}</p>
+                                </div>
+
+                                <div>
+                                    <span>Documento: </span>
+                                    <p>{dataResponseAgendamento?.servico?.nome}</p>
+                                </div>
+
+                                <div>
+                                    <span>Posto de atendimento: </span>
+                                    <p>{dataResponseAgendamento?.postoAtendimento?.nome}</p>
+                                </div>
+
+                                <div>
+                                    <span>Data da Agenda: </span>
+                                    <p>{dataResponseAgendamento?.dataAgenda}</p>
+                                </div>
+                                
+                                <div>
+                                    <span>Horário: </span>
+                                    <p>{dataResponseAgendamento?.horario?.hora}</p>
+                                </div>
+
+                                <div>
+                                    <span>Localização: </span>
+                                    <p>{dataResponseAgendamento?.postoAtendimento?.local}</p>
+                                </div>
+
+                                <article>Baixe novo comprovativo</article>
                                 <button onClick={() => {Comprovativo(dataResponseAgendamento)
                                     setOpenModal(false)
-                                }} type='button'> Baixar novo comprovativo</button>
-                            </S.respostaConsulta>
+                                }} type='button'> Baixar Comprovativo</button>
+                            </C.contentModal>
                         </Modal>
 
                 </S.containerForm>

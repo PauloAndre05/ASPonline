@@ -7,7 +7,7 @@ export const Modal = ({ isOpen, children, setModalOpen, openModal }) => {
     return (
       <S.containerModal>
         <S.modal> 
-            <S.close onClick={setModalOpen}>
+          <S.close onClick={setModalOpen}>
             <X size={28} weight="fill" />
           </S.close> 
           <S.containerChildren>{children}</S.containerChildren>

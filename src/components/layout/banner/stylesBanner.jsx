@@ -33,7 +33,7 @@ export const ImageBanner = styled.div`
 
     img{
         object-fit: cover;
-        opacity: .4;
+        opacity: .45;
     }
     @media screen and (max-width: 600px){
        display: none;

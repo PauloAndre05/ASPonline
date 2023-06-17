@@ -3,13 +3,15 @@ import pdfFonts from 'pdfmake/build/vfs_fonts'/*
 import logoAngola from '../../../images/logo-angola.png'
 import logoASPO from '../../../images/logo.svg' */
 
+const nomeDoArquivo = "Comprovativo ASPO";
+
 export const Comprovativo = (dataResponseAgendamento) =>{
     pdfMake.vfs = pdfFonts.pdfMake.vfs
 
     console.log("Dados do pdf",dataResponseAgendamento);
     const title = [        
         {
-            text: 'Comprovativo de agendamento Nº: ',
+            text: `Comprovativo de agendamento Nº: ${dataResponseAgendamento.comprovativo}`,
             alignment: 'center',
             fontSize: 20,
             bold: true,
@@ -130,5 +132,5 @@ export const Comprovativo = (dataResponseAgendamento) =>{
         footer: [rodape]
     }
 
-    pdfMake.createPdf(docDefinitions).download();
+    pdfMake.createPdf(docDefinitions).download(nomeDoArquivo);
 }

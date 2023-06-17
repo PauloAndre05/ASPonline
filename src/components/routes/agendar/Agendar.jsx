@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react'
 import { NavBar } from '../../layout/NavBar/NavBar'
 import { Comprovativo } from '../../layout/comprovativo/Comprovativo'
 import { Modal } from '../../layout/modal/Modal'
-import { CheckCircle } from 'phosphor-react'
 import { toast } from 'react-toastify'
 
 function Agendar() {
@@ -371,9 +370,43 @@ function Agendar() {
                     </form>
                         <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
                             <C.contentModal>
-                                <CheckCircle size={52} color="#35dd0b"/>
-                                <p>Agendado com sucesso!</p>
-                                <span>Baixe o seu comprovativo de agendamento</span>
+                                <C.sucesso>
+                                    <p>Agendado com sucesso!</p>
+                                </C.sucesso>
+                                
+                                <strong>Detalhes do agendamento</strong>
+                                
+                                <div>
+                                    <span>Nome: </span>
+                                    <p>{dataResponseAgendamento?.nome}</p>
+                                </div>
+
+                                <div>
+                                    <span>Documento: </span>
+                                    <p>{dataResponseAgendamento?.servico?.nome}</p>
+                                </div>
+
+                                <div>
+                                    <span>Posto de atendimento: </span>
+                                    <p>{dataResponseAgendamento?.postoAtendimento?.nome}</p>
+                                </div>
+
+                                <div>
+                                    <span>Data da Agenda: </span>
+                                    <p>{dataResponseAgendamento?.dataAgenda}</p>
+                                </div>
+                                
+                                <div>
+                                    <span>Horário: </span>
+                                    <p>{dataResponseAgendamento?.horario?.hora}</p>
+                                </div>
+
+                                <div>
+                                    <span>Localização: </span>
+                                    <p>{dataResponseAgendamento?.postoAtendimento?.local}</p>
+                                </div>
+
+                                <article>Baixe o seu comprovativo de agendamento</article>
                                 <button onClick={() => {Comprovativo(dataResponseAgendamento)
                                     setOpenModal(false)
                                 }} type='button'> Baixar Comprovativo</button>

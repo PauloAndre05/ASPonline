@@ -21,7 +21,7 @@ function SessaoServicos() {
               </S.contImage>
               <S.text1>
               <h1>Faça um agendamento</h1>
-                <p> Agende serviços públicos como, Bilhete de Identidade, Contribuinte, Atestado de Residência e muitos outros serviços de agendamento disponíveis para si</p>
+                <p> Agende serviços prestado pelas administrações públicas como o Bilhete, Contribuinte, Atestado de Residência e outros serviços disponíveis para si</p>
                 <a href="/agendar">Fazer agendamento</a>
               </S.text1>
             </S.area1> 

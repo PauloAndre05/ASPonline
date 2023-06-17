@@ -23,6 +23,7 @@ export const assineAqui = styled.div`
     h2{
         font-size: 1.3rem;
         color: #d4d4d4;
+        text-align: center;
     }
 
     form input, button{

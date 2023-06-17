@@ -34,7 +34,7 @@ export const content = styled.div`
 
     p{
         line-height: 1.7rem;
-        color: #1b1b1b;
+        color: #949494;
         width: 25rem;
         margin: 1rem 0;
     }
@@ -77,7 +77,8 @@ export const area1 = styled.div`
 
     h1{
         text-align: start;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        color: #3a3a3a;
     }
 
     a:hover{
@@ -111,12 +112,13 @@ export const area1 = styled.div`
 `
 
 export const text1 = styled.div`  
-    padding: 1rem;
+    padding: 2rem;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
+
     
 
     @media screen and (max-width: 768px){
@@ -128,6 +130,12 @@ export const text1 = styled.div`
         align-items: start;
         text-align: justify;
     } 
+
+    @media screen and (max-width: 600px){
+        background-color: #ebebeb;
+        border-radius: 0 0 .7rem .7rem  ;
+    }
+
 `
 
 export const contImage = styled.div` 
@@ -148,6 +156,7 @@ export const contImage = styled.div`
     @media screen and (max-width: 600px){
         width: 100%;
         height: 13rem;
+        border-radius: .7rem .7rem 0 0 ;
     }
 `
 
@@ -177,6 +186,7 @@ export const area3 = styled.div`
     h1{
         text-align: start;
         font-size: 1.5rem;
+        color: #3a3a3a;
     }
 
     @media screen and (max-width: 600px) {
@@ -204,6 +214,11 @@ export const text3 = styled.div`
         align-items: end;
         text-align: right;
     } 
+
+    @media screen and (max-width: 600px){
+        background-color: #ebebeb;
+        border-radius: 0 0 .7rem .7rem  ;
+    }
 `
 
 
@@ -213,7 +228,7 @@ export const containerImage3 = styled.div`
     width: 33rem;
     overflow: hidden;
     background-color: #000;
-    border-radius: .5rem;
+    border-radius: .7rem;
 
     img{
         width: 100%;
@@ -225,6 +240,7 @@ export const containerImage3 = styled.div`
     @media screen and (max-width: 600px){
         width: 100%;
         height: 13rem;
+        border-radius: .7rem .7rem 0 0;
     }
 `
 
@@ -249,7 +265,8 @@ export const area4 = styled.div`
 
     h1{
         text-align: start;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        color: #3a3a3a;
     }
 
     a:hover{
@@ -299,6 +316,8 @@ export const contImage4 = styled.div`
     @media screen and (max-width: 600px){
         width: 100%;
         height: 13rem;
+        border-radius: .7rem .7rem 0 0;
+
     }
     
 `
@@ -321,6 +340,12 @@ export const text4 = styled.div`
         text-align: justify;
 
     } 
+
+
+    @media screen and (max-width: 600px){
+        background-color: #ebebeb;
+        border-radius: 0 0 .7rem .7rem  ;
+    }
 
 `
 

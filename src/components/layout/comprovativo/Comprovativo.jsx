@@ -8,6 +8,11 @@ const nomeDoArquivo = "Comprovativo ASPO";
 export const Comprovativo = (dataResponseAgendamento) =>{
     pdfMake.vfs = pdfFonts.pdfMake.vfs
 
+    const createdAt = dataResponseAgendamento.createdAt
+    const date = new Date(createdAt)
+    const option = { day: 'numeric', month: 'long', year: 'numeric' }
+    const dataFormated = date.toLocaleDateString('pt-BR', option)
+
     console.log("Dados do pdf",dataResponseAgendamento);
     const title = [        
         {
@@ -103,23 +108,21 @@ export const Comprovativo = (dataResponseAgendamento) =>{
         {
             alignment: 'center',
             fontSize: 16,
-            text: 'AGENDADO AOS 06 MAIO, 2023',
+            text: `AGENDADO AOS ${dataFormated.toLocaleUpperCase()}`,
             margin: [50, 40],
         },
         
-        {
-            margin: [150, 60, 0, 0],
-            width: 50,
-            fontSize: 10,
-            alignment: 'right',
-            text: 'Em caso de perda do comprovativo, por favor, visite o website para baixar novo comprovativo, Obrigado!'
-        },
 
         
     ]
 
     const rodape =[
-        
+      
+        {
+            fontSize: 10,
+            alignment: 'center',
+            text: 'Em caso de perda do comprovativo, por favor, visite o website para baixar novo comprovativo, Obrigado!'
+        },
       
     ]
 

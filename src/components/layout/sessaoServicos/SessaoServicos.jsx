@@ -8,19 +8,17 @@ import b1 from '../../../images/B13.jpeg'
 import b10 from "../../../images/b10.jpg"
 
 function SessaoServicos() {
-
+ 
     return(
       <S.containerContainer>
-        
-        
-
+        <h1>Nossos Serviços</h1>
         <S.content>
             <S.area1>
               <S.contImage>
                 <S.img src={b5} alt="image servico" />
               </S.contImage>
               <S.text1>
-              <h1>Faça um agendamento</h1>
+              <h1>Agendamento</h1>
                 <p> Agende serviços prestado pelas administrações públicas como o Bilhete, Contribuinte, Atestado de Residência e outros serviços disponíveis para si</p>
                 <a href="/agendar">Fazer agendamento</a>
               </S.text1>
@@ -28,7 +26,7 @@ function SessaoServicos() {
 
             <S.area3>
               <S.text3>
-                <h1>Consulte o estado do seu agendamento</h1>
+                <h1>Consultar agendamento</h1>
                   <p>Faça uma busca na plataforma para ver o estado do seu agendamento e poder imprimir o comprovativo de agendamento caso já não o tenha consigo</p>
                   <a href="/consultarAgenda">Consultar agendamento</a>
               </S.text3>
@@ -43,14 +41,12 @@ function SessaoServicos() {
                 <S.img src={b10} alt="image servico" />
               </S.contImage4>
               <S.text4>
-              <h1>Cancele o seu agendamento</h1>
+              <h1>Cancelar agendamento</h1>
                 <p>Cancele o seu agendamento de forma mais rápido e simples</p>
                 <a href="/cancelarAgenda">Cancelar agendamento</a>
               </S.text4>
             </S.area4> 
         </S.content>
-
-        
       </S.containerContainer>
     )
 }

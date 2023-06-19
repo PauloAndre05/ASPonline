@@ -11,7 +11,7 @@ import { toast } from 'react-toastify'
 function Agendar() {
 
     /* const urlIdentificacao = "http://localhost:3002/" */
-    const urlService = "http://localhost:5555/servico"
+    const urlService = "http://localhost:5555/servico/"
     const urlPosto = "http://localhost:5555/posto"
     /* const urlHorario = "http://localhost:3001/hora" */
     const [dataService, setDataService] = useState([])
@@ -42,8 +42,8 @@ function Agendar() {
         catch (error){
             console.log(error);
         }
-    }
-
+    }    
+ 
     /* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» REQUEST POSTO ««««««««««««««««««««««««««««««««««««««««««««««««« */
 
     const getPosto = async () => {
@@ -71,7 +71,6 @@ function Agendar() {
             email: '',
             servicoId: '',
             bi: '',
-            cedula:'',
             postoId: '',
             dataAgenda: '',
             horaId: '',
@@ -82,31 +81,35 @@ function Agendar() {
             telefone: yup.string().required("Digite o número de telefone").matches(/^[0-9]+$/, 'Digite apenas números').min(9, "Digite um número válido de angola").max(9, "Digite um número válido de angola"),
             email: yup.string().email("Digite email válido"),
             servicoId: yup.string().required("Selecione um documento"),
-            bi: yup.string().required("Informe o número do documento"),
-            cedula: yup.string(),
+            bi: yup.string(),
             dataAgenda: yup.string().required("Escolha a data"),
             horaId: yup.string().required("Selecione um horário"),
         }),
 
         onSubmit: async(data) => {
-            console.log(data);
-
-            try{
-                const responseApiIdentificacao = await fetch(`http://localhost:5050/bilhete/procurar/${data.bi}`)
-                if(responseApiIdentificacao.ok){
-                    const responseDataApiIdentificacao = await responseApiIdentificacao.json() 
-                    console.log(responseDataApiIdentificacao);
-                }
-
-                else{
-                    toast.error("BI inválido")
+            
+            if(data.servicoId !== "b322590f-2196-4f63-bd91-e9f05d62c7f8"){
+                try{
+                    const responseApiIdentificacao = await fetch(`http://localhost:5050/bilhete/procurar/${data.bi}`)
+                    if(responseApiIdentificacao.ok){
+                        const responseDataApiIdentificacao = await responseApiIdentificacao.json() 
+                        console.log(responseDataApiIdentificacao);
+                    }
+    
+                    else{
+                        toast.error("BI inválido")
+                        return
+                    }
+                }   
+    
+                catch (error){
+                    console.log(error);
+                    toast.error("Erro!")
+                    formik.resetForm()
                     return
                 }
-            }   
-
-            catch (error){
-                console.log(error);
             }
+            
 
             try{
                 const response = await fetch(urlAgendamento, {
@@ -128,7 +131,6 @@ function Agendar() {
                             const agendamentoEncontrado = await encontrarAgendamento.json()
                             formik.resetForm()
                             setDataResponseAgendamento(agendamentoEncontrado)
-                            console.log(agendamentoEncontrado.postoAtendimento);
                             setOpenModal(true)
                         }
                     }
@@ -155,7 +157,6 @@ function Agendar() {
             method: "GET"
           });
           const responseData = await response.json();
-          console.log(responseData);
           setHorariosDisponiveis(responseData.horariosDisponiveis);
         } catch (error) {
           toast.error(error.response.data.message)
@@ -167,7 +168,6 @@ function Agendar() {
           fetchHorariosDisponiveis(formik.values.postoId, formik.values.dataAgenda);
         }
       }, [formik.values.postoId, formik.values.dataAgenda]);
-      console.log(horariosDisponiveis);
 
 
     return(
@@ -221,7 +221,7 @@ function Agendar() {
                                         type="email"
                                         name="email"
                                         id="email"
-                                        placeholder="E-mail "
+                                        placeholder="E-mail"
                                         value = {formik.values.email}
                                         onChange={formik.handleChange}
                                         onBlur={formik.handleBlur}
@@ -235,6 +235,31 @@ function Agendar() {
                             </S.inputs>
                             
                             <S.inputs>
+
+                            <div>
+                                    <select
+                                        name="postoId"
+                                        id="postoId"
+                                        value={formik.values.postoId}
+                                        onChange={formik.handleChange}
+                                        onBlur={formik.handleBlur}
+                                        >
+                                        <option value="" disabled selected>Posto de atendimento </option>
+                                        {dataPosto.map((option) => (
+                                        <option value={option.id} key={option.id}>
+                                            {option.nome}
+                                        </option>
+                                        ))}
+                                    </select>
+                                        <div>
+                                            {
+                                                formik.touched.postoId && formik.errors.postoId?(
+                                                    <span>{formik.errors.postoId}</span>
+                                                ):null
+                                            }
+                                        </div>
+                                </div>
+
                                 <div>
                                     <select
                                         name="servicoId"
@@ -257,8 +282,10 @@ function Agendar() {
                                         ):null}
                                     </div>
                                 </div>
+
+                                
                             
-                                {dataService.servico !== "de15629f-b447-480d-a778-60d2b984f8a3" &&(
+                                {formik.values.servicoId !== "b322590f-2196-4f63-bd91-e9f05d62c7f8" &&(
                                     <div>
                                         <input
                                             type="text"
@@ -276,50 +303,8 @@ function Agendar() {
                                         </div>
                                     </div>
                                 )}
-                                {dataService.servico === "de15629f-b447-480d-a778-60d2b984f8a3" &&(
-                                    <div>
-                                    <input
-                                        type="text"
-                                        name="cedula"
-                                        id="cedula"
-                                        required placeholder="Nº de cédula pessoal ou certidão de nascimento *"
-                                        value = {formik.values.cedula}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                    />
-                            
-                                    <div>
-                                        {formik.touched.cedula && formik.errors.cedula ? (
-                                            <span> {formik.errors.cedula} </span>
-                                        ):null}
-                                    </div>
-                                </div>
-                                )}
-
-                                <div>
-                                    <select
-                                        name="postoId"
-                                        id="postoId"
-                                        value={formik.values.postoId}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        >
-                                        <option value="" disabled selected>Posto de atendimento </option>
-                                        {dataPosto.map((option) => (
-                                        <option value={option.id} key={option.id}>
-                                            {option.nome}
-                                        </option>
-                                        ))}
-                                    </select>
-                                        <div>
-                                            {
-                                                formik.touched.postoId && formik.errors.postoId?(
-                                                    <span>{formik.errors.postoId}</span>
-                                                ):null
-                                            }
-                                        </div>
-                            
-                                </div>
+                               
+                                
                             </S.inputs>
                         </S.sessao1>
                                             
@@ -387,11 +372,6 @@ function Agendar() {
                                 </div>
 
                                 <div>
-                                    <span>Posto de atendimento: </span>
-                                    <p>{dataResponseAgendamento?.postoAtendimento?.nome}</p>
-                                </div>
-
-                                <div>
                                     <span>Data da Agenda: </span>
                                     <p>{dataResponseAgendamento?.dataAgenda}</p>
                                 </div>
@@ -399,6 +379,12 @@ function Agendar() {
                                 <div>
                                     <span>Horário: </span>
                                     <p>{dataResponseAgendamento?.horario?.hora}</p>
+                                </div>
+
+                                
+                                <div>
+                                    <span>Posto de atendimento: </span>
+                                    <p>{dataResponseAgendamento?.postoAtendimento?.nome}</p>
                                 </div>
 
                                 <div>

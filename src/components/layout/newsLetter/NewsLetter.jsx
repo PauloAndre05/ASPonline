@@ -108,6 +108,7 @@ function NewsLetter(){
                                 id="mensagem" 
                                 cols="30" 
                                 rows="5" 
+                                maxLength={50}
                                 placeholder='Sua Mensagem' 
                                 onChange={formik.handleChange} 
                                 value={formik.values.mensagem}

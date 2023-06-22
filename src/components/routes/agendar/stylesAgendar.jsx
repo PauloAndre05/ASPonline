@@ -86,7 +86,7 @@ export const containerForm = styled.section`
     }
 
     > form > button{
-        background-color: #604dbd;
+        background-color: #248b84;
         color: #fcfcfc;
         width: 15rem;
         height: 2.3rem;

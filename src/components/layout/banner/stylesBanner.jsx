@@ -159,13 +159,13 @@ export const Text = styled.div`
         height: 2.2rem;
         text-decoration: none;
         border-radius: .6rem;
-        background-color: #613bc2;
+        background-color: #248b84;
         border: .5px solid ;
     }
     
     button:hover{
         color: #ffffffdf;
-        background-color: #613bc289;
+        background-color: #248b84a7;
         box-shadow: none;
     }
 

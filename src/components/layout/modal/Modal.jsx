@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
-import * as S from './stylesModal';/* 
-import { X } from 'phosphor-react'; */
+import * as S from './stylesModal';
+import { X } from 'phosphor-react';
 
 export const Modal = ({ isOpen, children, setModalOpen, openModal }) => {
   if (isOpen) {
     return (
       <S.containerModal>
-        <S.modal>{/* 
+        <S.modal>
           <S.close onClick={setModalOpen}>
             <X size={25} weight="fill" />
-          </S.close>  */}
+          </S.close>  
           <S.containerChildren>{children}</S.containerChildren>
         </S.modal>
       </S.containerModal>

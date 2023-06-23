@@ -37,6 +37,7 @@ export const ConsultarAgenda = () => {
             }
             catch (error){
                 console.log(error);
+                toast.error("Erro, tente mais tarde")
             }
         }
     })

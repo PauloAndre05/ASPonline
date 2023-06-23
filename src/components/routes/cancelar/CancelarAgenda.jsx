@@ -16,7 +16,6 @@ export const CancelarAgenda = () => {
         }),
 
         onSubmit: async(data) =>{
-            console.log(data.comprovativo);
             try{
                 const response = await fetch(`http://localhost:5555/agendamento/comprovativo/eliminar/${data.comprovativo}`, {
                     method: "DELETE"

@@ -24,6 +24,22 @@ export const CancelarAgenda = () => {
                 if (response.ok) {
                     toast.success('Agendamento cancelado')
                     formik.resetForm()
+                    const responseData = await response.json()
+                    try{
+                        const responseCancelado = await fetch("http://localhost:5555/cancelado/", {
+                          method: "POST",
+                          headers:{
+                            "Content-type": "application/json"
+                          },
+                          body: JSON.stringify(responseData)
+                        })
+
+                        if(responseCancelado.ok) toast.success("Enviado para cancelado com sucesso")
+                        else toast.error("Erro ao enviar para cancelados")
+                      }
+                      catch (error){
+                        console.log("Erro de servidor");
+                      }
                 }
                 else{
                     toast.error('Agendamento não encontrado!')

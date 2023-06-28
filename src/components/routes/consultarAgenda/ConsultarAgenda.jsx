@@ -52,7 +52,7 @@ export const ConsultarAgenda = () => {
                     
                         <div>
                             <input type="text" 
-                            placeholder="Número do Comprovativo" 
+                            placeholder="Número do comprovativo de agendamento" 
                             name="comprovativo" 
                             id="comprovativo" 
                             onChange={formik.handleChange} 

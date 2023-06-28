@@ -33,9 +33,6 @@ export const CancelarAgenda = () => {
                           },
                           body: JSON.stringify(responseData)
                         })
-
-                        if(responseCancelado.ok) toast.success("Enviado para cancelado com sucesso")
-                        else toast.error("Erro ao enviar para cancelados")
                       }
                       catch (error){
                         console.log("Erro de servidor");
@@ -65,7 +62,7 @@ export const CancelarAgenda = () => {
                         <div>
                             <input type="text" 
                                 name='comprovativo'
-                                placeholder="Número do Bilhete"
+                                placeholder="Número do comprovativo de agendamento"
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 value={formik.values.comprovativo}

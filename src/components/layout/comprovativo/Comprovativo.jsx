@@ -14,13 +14,14 @@ export const Comprovativo = (dataResponseAgendamento) =>{
     const dataFormated = date.toLocaleDateString('pt-BR', option)
 
     console.log("Dados do pdf",dataResponseAgendamento);
-    const title = [        
+    const title = [  
         {
             text: `Comprovativo de agendamento Nº: ${dataResponseAgendamento.comprovativo}`,
             alignment: 'center',
             fontSize: 20,
             bold: true,
-            margin: [50, 20, 50, 20]
+            margin: [50, 20, 50, 20],
+            img: "https://th.bing.com/th/id/OIP.YczErgtE71ZkacUJm2pB1AHaEK?pid=ImgDet&rs=1"
         }
     ]
 

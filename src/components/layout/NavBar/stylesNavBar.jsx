@@ -341,7 +341,7 @@ export const dropDown = styled.div`
     a:hover{
         border: none;
         color: #fff;
-        background-color: #473892;
+        background-color: #248B84;
     }
 `
 

@@ -10,14 +10,14 @@ export const containerContainer = styled.main`
 `
 
 export const container2 = styled.section`
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 3rem;
 
     @media screen and (max-width: 600px){
-        width: 85%;
+        width: 80%;
     }
 `
             
@@ -99,8 +99,9 @@ export const cardBotton = styled.section`
     h3{
         width: 100%;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #000;
+        font-weight: bold;
     }
 
     p{
@@ -108,14 +109,14 @@ export const cardBotton = styled.section`
         text-align: left;
         text-align: center;
         color: #000;
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     div{
-        width: 80%;
+        width: 70%;
         position: absolute;
         bottom: .7rem;
-        height: 3rem;
+        height: 2.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -125,6 +126,7 @@ export const cardBotton = styled.section`
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: .8rem;
         width: 100%;
         height: 100%;
         background-color: #000;
@@ -182,9 +184,11 @@ export const containerEstado = styled.article`
 `
 
 export const aberto = styled.span`
-    color: #00bd9df4    
+    color: #00bd9df4;
+    font-size: 8rem;   
 `
 
 export const fechado = styled.span`
     color: #ff1100; 
+    font-size: .8rem;
 `

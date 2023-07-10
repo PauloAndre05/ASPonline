@@ -74,26 +74,26 @@ function Servicos() {
             <S.container>
                 <S.content>
                     <S.text>
-                        <h3>Informe-se</h3>
+                        <h3>Informe-se</h3> 
                         <p>Confira os requisitos necessário para tratar o seu documento</p>
-                        <p>selecione um documento</p>
+                        <p>selecione um documento</p> 
                     </S.text>
 
                     <S.containerSlider>
-                            <S.coment>
-                                <Slider {...settings}>
-                                    {
-                                        dataService.map((item) => (
-                                            <S.containerCard key = {item.id} onClick={() => setOpenDesc(item)}>
-                                                <S.card >
-                                                <h1>{item.nome}</h1>  
-                                                </S.card>
-                                            </S.containerCard>
-                                        ))
-                                    }
-                                </Slider>
-                            </S.coment>
-                        </S.containerSlider> 
+                      <S.coment>
+                          <Slider {...settings}>
+                            {
+                              dataService.map((item) => (
+                                  <S.containerCard key = {item.id} onClick={() => setOpenDesc(item)}>
+                                      <S.card >
+                                      <h1>{item.nome}</h1>  
+                                      </S.card>
+                                  </S.containerCard>
+                              ))
+                            }
+                          </Slider>
+                      </S.coment>
+                    </S.containerSlider> 
                 </S.content>
 
                 <S.desc opendesc = "true">

@@ -72,7 +72,7 @@ function Artigo(  ){
                                         <p>{instituicao.localizacao}</p>
                                         <S.containerEstado>
                                           <p>Estado: </p>
-                                            {hours >= 8 && hours <= 15 ? (
+                                            {hours >= 8 && hours <= 14 ? (
                                               <S.aberto>Aberto</S.aberto>
                                             ): (
                                               <S.fechado>Fechado</S.fechado>

@@ -4,7 +4,7 @@ import * as S from './stylesServicos';
 
 
 import b5 from '../../../images/B12.jpeg'
-import b1 from '../../../images/B13.jpeg'
+import b1 from '../../../images/imgConsul.png'
 import b10 from "../../../images/b10.jpg"
 
 function SessaoServicos() {

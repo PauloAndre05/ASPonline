@@ -95,7 +95,6 @@ export const desc = styled.div`
 
     >div{
         padding: 1rem;
-        height: 10rem;
         text-align: center;
         background-color: #fff;
         max-width: 60%;
@@ -114,6 +113,10 @@ export const desc = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    h3{
+        font-size: 1.5rem;
     }
 
     @media screen and (max-width: 600px){

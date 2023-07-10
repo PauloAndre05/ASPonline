@@ -69,10 +69,13 @@ export const area1 = styled.div`
         text-decoration: none;
         padding: .7rem 1rem;
         color: #fff;
-        font-size: 1rem;
+        font-size: .8rem;
+        font-weight: 400;
+        letter-spacing: .1rem;
         opacity: .89;
         text-align: center;
         border-radius: .3rem;
+        width: 50%;
     }
 
     h1{
@@ -100,8 +103,7 @@ export const area1 = styled.div`
 
     @media screen and (max-width: 600px) {
         a{
-            padding: .5rem 1rem;
-            font-size: .9rem;
+            width: 100%;
         }
     
     }
@@ -133,7 +135,9 @@ export const text1 = styled.div`
 
     @media screen and (max-width: 600px){
         background-color: #ebebeb;
-        border-radius: 0 0 .7rem .7rem  ;
+        border-radius: 0 0 .7rem .7rem;
+        text-align: center;
+        align-items: center;
     }
 
 `
@@ -168,15 +172,18 @@ export const area3 = styled.div`
     align-items: center;
     flex-wrap: wrap;
     
-    a{
+        a{
         background-color: #248B84;
         text-decoration: none;
         padding: .7rem 1rem;
         color: #fff;
-        font-size: 1rem;
+        font-size: .8rem;
+        font-weight: 400;
+        letter-spacing: .1rem;
+        opacity: .89;
         text-align: center;
-        opacity:  .89;
         border-radius: .3rem;
+        width: 60%;
     }
     
     a:hover{
@@ -191,8 +198,7 @@ export const area3 = styled.div`
 
     @media screen and (max-width: 600px) {
         a{
-            padding: .5rem 1rem;
-            font-size: .9rem;
+            width: 100%;
         }
     
     }
@@ -217,7 +223,9 @@ export const text3 = styled.div`
 
     @media screen and (max-width: 600px){
         background-color: #ebebeb;
-        border-radius: 0 0 .7rem .7rem  ;
+        border-radius: 0 0 .7rem .7rem;
+        text-align: center;
+        align-items: center;
     }
 `
 
@@ -257,10 +265,13 @@ export const area4 = styled.div`
         text-decoration: none;
         padding: .7rem 1rem;
         color: #fff;
-        font-size: 1rem;
+        font-size: .8rem;
+        font-weight: 400;
+        letter-spacing: .1rem;
         opacity: .89;
         text-align: center;
         border-radius: .3rem;
+        width: 50%;
     }
 
     h1{
@@ -288,8 +299,7 @@ export const area4 = styled.div`
 
     @media screen and (max-width: 600px) {
         a{
-            padding: .5rem 1rem;
-            font-size: .9rem;
+            width: 100%;
         }
     
     }
@@ -345,6 +355,8 @@ export const text4 = styled.div`
     @media screen and (max-width: 600px){
         background-color: #ebebeb;
         border-radius: 0 0 .7rem .7rem  ;
+        text-align: center;
+        align-items: center;
     }
 
 `
